@@ -1,0 +1,2443 @@
+# Loading input network graph
+# Loading input network took 0 seconds
+# Clique finding beginning
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding missing edges...checking 1 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	O411,causal_A03,	0.917807	1	0.867047	0.711147
+# dt: 0.917807
+# Next dt: 0.711147
+# Num current clusters before delete: 1
+# Num current clusters: 1
+# Num valid clusters: 1
+# Largest cluster: 2
+# Num edges in clusterGraph: 1
+# Num real edges: 1
+# Num edges inferred: 0
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding missing edges...checking 2 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	O469,causal_A06,	0.711147	1	0.660387	0.658689
+# dt: 0.711147
+# Next dt: 0.658689
+# Num current clusters before delete: 2
+# Num current clusters: 2
+# Num valid clusters: 2
+# Largest cluster: 2
+# Num edges in clusterGraph: 2
+# Num real edges: 2
+# Num edges inferred: 0
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding missing edges...checking 3 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	O235,causal_A10,	0.658689	1	0.607929	0.592054
+# dt: 0.658689
+# Next dt: 0.592054
+# Num current clusters before delete: 3
+# Num current clusters: 3
+# Num valid clusters: 3
+# Largest cluster: 2
+# Num edges in clusterGraph: 3
+# Num real edges: 3
+# Num edges inferred: 0
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding missing edges...checking 5 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	J680,J398,	0.552848	1	0.502088	0.48226
+# Valid cluster:	9921,9918,	0.592054	1	0.541294	0.48226
+# dt: 0.552848
+# Next dt: 0.48226
+# Num current clusters before delete: 5
+# Num current clusters: 5
+# Num valid clusters: 5
+# Largest cluster: 2
+# Num edges in clusterGraph: 5
+# Num real edges: 5
+# Num edges inferred: 0
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding missing edges...checking 9 cliques
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 1 edges. Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	Z301,697,	0.475535	1	0.424775	0.406584
+# dt: 0.431862
+# Next dt: 0.406584
+# Num current clusters before delete: 9
+# Num current clusters: 8
+# Num valid clusters: 6
+# Largest cluster: 2
+# Num edges in clusterGraph: 13
+# Num real edges: 12
+# Num edges inferred: 1
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding missing edges...checking 9 cliques
+# Combining 2 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 5 edges. Time elapsed: 0 seconds
+# Adding 5 edges
+# Nodes affected = 6
+# Clusters affected = 4
+# Num deleted here: 3
+# Found 2 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 2 edges. Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 3
+# Clusters affected = 3
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	9921,9918,9059,9764,9659,5794,	0.431862	14	0.412562	0.400139
+# dt: 0.406584
+# Next dt: 0.400139
+# Num current clusters before delete: 9
+# Num current clusters: 7
+# Num valid clusters: 7
+# Largest cluster: 6
+# Num edges in clusterGraph: 21
+# Num real edges: 13
+# Num edges inferred: 8
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 2
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding missing edges...checking 11 cliques
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 1 edges. Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	9764,9789,8905,	0.382369	3	0.351689	0.337849
+# dt: 0.358375
+# Next dt: 0.337849
+# Num current clusters before delete: 11
+# Num current clusters: 10
+# Num valid clusters: 8
+# Largest cluster: 6
+# Num edges in clusterGraph: 26
+# Num real edges: 19
+# Num edges inferred: 7
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 0 edges
+# Adding 2 edges
+# Nodes affected = 3
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 0 edges
+# Adding missing edges...checking 11 cliques
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 1 edges. Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	9921,9929,	0.358375	1	0.307615	0.304062
+# dt: 0.311601
+# Next dt: 0.304062
+# Num current clusters before delete: 11
+# Num current clusters: 10
+# Num valid clusters: 9
+# Largest cluster: 6
+# Num edges in clusterGraph: 32
+# Num real edges: 28
+# Num edges inferred: 4
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding missing edges...checking 11 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9616,8602,9775,	0.332138	3	0.301458	0.301327
+# dt: 0.301497
+# Next dt: 0.301327
+# Num current clusters before delete: 11
+# Num current clusters: 11
+# Num valid clusters: 10
+# Largest cluster: 6
+# Num edges in clusterGraph: 34
+# Num real edges: 30
+# Num edges inferred: 4
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 0 edges
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 4
+# Num deleted here: 2
+# Found 2 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 4
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding missing edges...checking 13 cliques
+# Combining 2 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 5 edges. Time elapsed: 0 seconds
+# Adding 5 edges
+# Nodes affected = 7
+# Clusters affected = 6
+# Num deleted here: 3
+# Found 2 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.275598
+# Next dt: 0.26962
+# Num current clusters before delete: 13
+# Num current clusters: 12
+# Num valid clusters: 10
+# Largest cluster: 6
+# Num edges in clusterGraph: 46
+# Num real edges: 38
+# Num edges inferred: 8
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding missing edges...checking 13 cliques
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 3 edges. Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 4
+# Clusters affected = 5
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	5794,9357,	0.304062	1	0.253302	0.250606
+# Valid cluster:	9921,9918,9059,9764,9659,5794,9789,8905,9396,	0.275598	18	0.258378	0.250606
+# dt: 0.264785
+# Next dt: 0.250606
+# Num current clusters before delete: 13
+# Num current clusters: 12
+# Num valid clusters: 12
+# Largest cluster: 9
+# Num edges in clusterGraph: 52
+# Num real edges: 41
+# Num edges inferred: 11
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding missing edges...checking 13 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	J459,9394,	0.282861	1	0.232101	0.230934
+# dt: 0.242066
+# Next dt: 0.230934
+# Num current clusters before delete: 13
+# Num current clusters: 13
+# Num valid clusters: 13
+# Largest cluster: 9
+# Num edges in clusterGraph: 54
+# Num real edges: 44
+# Num edges inferred: 10
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 0 edges
+# Adding 0 edges
+# Adding 0 edges
+# Adding missing edges...checking 13 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9921,9059,5794,9396,9929,	0.250606	3	0.219926	0.219899
+# dt: 0.220824
+# Next dt: 0.219899
+# Num current clusters before delete: 13
+# Num current clusters: 13
+# Num valid clusters: 14
+# Largest cluster: 9
+# Num edges in clusterGraph: 55
+# Num real edges: 48
+# Num edges inferred: 7
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding missing edges...checking 13 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9789,8905,734,	0.26962	2	0.21886	0.216633
+# dt: 0.219899
+# Next dt: 0.216633
+# Num current clusters before delete: 13
+# Num current clusters: 13
+# Num valid clusters: 15
+# Largest cluster: 9
+# Num edges in clusterGraph: 55
+# Num real edges: 49
+# Num edges inferred: 6
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 0 edges
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 3
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 4
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 0 edges
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 4
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 5
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding missing edges...checking 17 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9059,9139,	0.242066	1	0.191306	0.191194
+# dt: 0.191739
+# Next dt: 0.191194
+# Num current clusters before delete: 17
+# Num current clusters: 17
+# Num valid clusters: 16
+# Largest cluster: 9
+# Num edges in clusterGraph: 65
+# Num real edges: 63
+# Num edges inferred: 2
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 0 edges
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 4
+# Num deleted here: 1
+# Found 2 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 5
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding missing edges...checking 21 cliques
+# Combining 3 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 3 edges. Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 3
+# Clusters affected = 5
+# Num deleted here: 3
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	9616,8602,9775,9131,598,	0.20296	7	0.1834	0.172777
+# dt: 0.180596
+# Next dt: 0.172777
+# Num current clusters before delete: 21
+# Num current clusters: 19
+# Num valid clusters: 17
+# Largest cluster: 9
+# Num edges in clusterGraph: 74
+# Num real edges: 70
+# Num edges inferred: 4
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 5
+# Num deleted here: 2
+# Found 3 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 4
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 8
+# Num deleted here: 2
+# Found 2 new clusters to add
+# Adding missing edges...checking 21 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	H522,H521,	0.213386	1	0.162626	0.162152
+# dt: 0.16346
+# Next dt: 0.162152
+# Num current clusters before delete: 21
+# Num current clusters: 21
+# Num valid clusters: 18
+# Largest cluster: 9
+# Num edges in clusterGraph: 81
+# Num real edges: 77
+# Num edges inferred: 4
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 6
+# Num deleted here: 3
+# Found 2 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 5
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 4
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding missing edges...checking 22 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9764,9775,	0.205281	1	0.154521	0.153416
+# dt: 0.156228
+# Next dt: 0.153416
+# Num current clusters before delete: 22
+# Num current clusters: 22
+# Num valid clusters: 19
+# Largest cluster: 9
+# Num edges in clusterGraph: 86
+# Num real edges: 82
+# Num edges inferred: 4
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 10
+# Num deleted here: 2
+# Found 3 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 3
+# Num deleted here: 2
+# Found 2 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Adding missing edges...checking 25 cliques
+# Combining 5 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 30 edges. Time elapsed: 0 seconds
+# Adding 30 edges
+# Nodes affected = 17
+# Clusters affected = 12
+# Num deleted here: 7
+# Found 4 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.143526
+# Next dt: 0.142082
+# Num current clusters before delete: 25
+# Num current clusters: 22
+# Num valid clusters: 19
+# Largest cluster: 9
+# Num edges in clusterGraph: 125
+# Num real edges: 92
+# Num edges inferred: 33
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 4
+# Num deleted here: 2
+# Found 3 new clusters to add
+# Adding missing edges...checking 23 cliques
+# Combining 0 pairs of clusters
+# dt: 0.142082
+# Next dt: 0.140664
+# Num current clusters before delete: 23
+# Num current clusters: 23
+# Num valid clusters: 19
+# Largest cluster: 9
+# Num edges in clusterGraph: 127
+# Num real edges: 94
+# Num edges inferred: 33
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Adding missing edges...checking 22 cliques
+# Combining 10 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 31 edges. Time elapsed: 0 seconds
+# Adding 31 edges
+# Nodes affected = 13
+# Clusters affected = 7
+# Num deleted here: 5
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.140664
+# Next dt: 0.137658
+# Num current clusters before delete: 22
+# Num current clusters: 18
+# Num valid clusters: 19
+# Largest cluster: 9
+# Num edges in clusterGraph: 159
+# Num real edges: 95
+# Num edges inferred: 64
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding 0 edges
+# Adding missing edges...checking 18 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9921,9918,9059,9764,9659,5794,9789,8905,9396,9929,9616,8602,9775,9357,734,9131,598,	0.14128	82	0.136228	0.135071
+# dt: 0.136501
+# Next dt: 0.135071
+# Num current clusters before delete: 18
+# Num current clusters: 18
+# Num valid clusters: 20
+# Largest cluster: 17
+# Num edges in clusterGraph: 159
+# Num real edges: 97
+# Num edges inferred: 62
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 3
+# Num deleted here: 2
+# Found 2 new clusters to add
+# Adding 2 edges
+# Nodes affected = 3
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 5
+# Num deleted here: 1
+# Found 3 new clusters to add
+# Adding missing edges...checking 20 cliques
+# Combining 2 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 2 edges. Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 5
+# Num deleted here: 3
+# Found 2 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 1 edges. Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	J40,J180,	0.180473	1	0.129713	0.129668
+# dt: 0.130187
+# Next dt: 0.129668
+# Num current clusters before delete: 20
+# Num current clusters: 18
+# Num valid clusters: 21
+# Largest cluster: 17
+# Num edges in clusterGraph: 169
+# Num real edges: 106
+# Num edges inferred: 63
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding missing edges...checking 18 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9059,9139,8878,Z349,	0.157576	5	0.126896	0.124467
+# dt: 0.127434
+# Next dt: 0.124467
+# Num current clusters before delete: 18
+# Num current clusters: 18
+# Num valid clusters: 22
+# Largest cluster: 17
+# Num edges in clusterGraph: 170
+# Num real edges: 108
+# Num edges inferred: 62
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 3
+# Num deleted here: 1
+# Found 2 new clusters to add
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 1
+# Num deleted here: 0
+# Found 3 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding missing edges...checking 23 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	Q501,N946,	0.172777	1	0.122017	0.121072
+# dt: 0.122181
+# Next dt: 0.121072
+# Num current clusters before delete: 23
+# Num current clusters: 23
+# Num valid clusters: 23
+# Largest cluster: 17
+# Num edges in clusterGraph: 176
+# Num real edges: 115
+# Num edges inferred: 61
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 4
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 0
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 6
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding 3 edges
+# Nodes affected = 5
+# Clusters affected = 7
+# Num deleted here: 4
+# Found 3 new clusters to add
+# Adding missing edges...checking 25 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	K073,H531,H811,	0.140664	3	0.109984	0.109443
+# dt: 0.113548
+# Next dt: 0.109443
+# Num current clusters before delete: 25
+# Num current clusters: 25
+# Num valid clusters: 24
+# Largest cluster: 17
+# Num edges in clusterGraph: 183
+# Num real edges: 124
+# Num edges inferred: 59
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding 2 edges
+# Nodes affected = 3
+# Clusters affected = 6
+# Num deleted here: 2
+# Found 2 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 3
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 7
+# Num deleted here: 3
+# Found 3 new clusters to add
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 4
+# Num deleted here: 0
+# Found 3 new clusters to add
+# Adding 3 edges
+# Nodes affected = 5
+# Clusters affected = 7
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 9
+# Num deleted here: 3
+# Found 3 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 3
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding missing edges...checking 32 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	N760,B379,	0.147273	1	0.0965131	0.0964586
+# dt: 0.0972449
+# Next dt: 0.0964586
+# Num current clusters before delete: 32
+# Num current clusters: 32
+# Num valid clusters: 25
+# Largest cluster: 17
+# Num edges in clusterGraph: 200
+# Num real edges: 147
+# Num edges inferred: 53
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 4
+# Num deleted here: 0
+# Found 1 new clusters to add
+# Adding 3 edges
+# Nodes affected = 5
+# Clusters affected = 7
+# Num deleted here: 0
+# Found 3 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 4
+# Num deleted here: 1
+# Found 1 new clusters to add
+# Adding missing edges...checking 36 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	O469,causal_A06,O441,	0.144206	2	0.0934464	0.0908558
+# Valid cluster:	H522,H521,H527,	0.143526	2	0.0927658	0.0908558
+# dt: 0.0937436
+# Next dt: 0.0908558
+# Num current clusters before delete: 36
+# Num current clusters: 36
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 205
+# Num real edges: 154
+# Num edges inferred: 51
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 7
+# Clusters affected = 13
+# Num deleted here: 2
+# Found 4 new clusters to add
+# Adding missing edges...checking 37 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0908558
+# Next dt: 0.0882183
+# Num current clusters before delete: 38
+# Num current clusters: 37
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 209
+# Num real edges: 158
+# Num edges inferred: 51
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 4
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding missing edges...checking 39 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0882183
+# Next dt: 0.0871929
+# Num current clusters before delete: 39
+# Num current clusters: 39
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 211
+# Num real edges: 160
+# Num edges inferred: 51
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 7
+# Num deleted here: 2
+# Found 2 new clusters to add
+# Adding missing edges...checking 39 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0871929
+# Next dt: 0.0861218
+# Num current clusters before delete: 39
+# Num current clusters: 39
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 213
+# Num real edges: 162
+# Num edges inferred: 51
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 10
+# Num deleted here: 2
+# Found 5 new clusters to add
+# Adding missing edges...checking 42 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0861218
+# Next dt: 0.0850513
+# Num current clusters before delete: 42
+# Num current clusters: 42
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 217
+# Num real edges: 166
+# Num edges inferred: 51
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 8
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding missing edges...checking 44 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0850513
+# Next dt: 0.0839413
+# Num current clusters before delete: 44
+# Num current clusters: 44
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 219
+# Num real edges: 169
+# Num edges inferred: 50
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 9
+# Num deleted here: 1
+# Found 4 new clusters to add
+# Adding missing edges...checking 47 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0839413
+# Next dt: 0.0824531
+# Num current clusters before delete: 47
+# Num current clusters: 47
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 223
+# Num real edges: 174
+# Num edges inferred: 49
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 16
+# Num deleted here: 2
+# Found 4 new clusters to add
+# Adding missing edges...checking 49 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0824531
+# Next dt: 0.0810579
+# Num current clusters before delete: 49
+# Num current clusters: 49
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 227
+# Num real edges: 178
+# Num edges inferred: 49
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 17
+# Num deleted here: 1
+# Found 3 new clusters to add
+# Adding missing edges...checking 51 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0810579
+# Next dt: 0.0798512
+# Num current clusters before delete: 51
+# Num current clusters: 51
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 230
+# Num real edges: 185
+# Num edges inferred: 45
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 8
+# Num deleted here: 1
+# Found 3 new clusters to add
+# Adding missing edges...checking 53 cliques
+# Combining 2 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 2 edges. Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 3
+# Num deleted here: 3
+# Found 2 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0798512
+# Next dt: 0.079355
+# Num current clusters before delete: 53
+# Num current clusters: 52
+# Num valid clusters: 27
+# Largest cluster: 17
+# Num edges in clusterGraph: 235
+# Num real edges: 188
+# Num edges inferred: 47
+# Time elapsed: 0 seconds
+# Adding 6 edges
+# Nodes affected = 11
+# Clusters affected = 25
+# Num deleted here: 3
+# Found 7 new clusters to add
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 20
+# Num deleted here: 3
+# Found 3 new clusters to add
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 9
+# Num deleted here: 2
+# Found 2 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 10
+# Num deleted here: 4
+# Found 4 new clusters to add
+# Adding 5 edges
+# Nodes affected = 10
+# Clusters affected = 20
+# Num deleted here: 3
+# Found 7 new clusters to add
+# Adding 5 edges
+# Nodes affected = 9
+# Clusters affected = 19
+# Num deleted here: 1
+# Found 5 new clusters to add
+# Adding 0 edges
+# Adding missing edges...checking 61 cliques
+# Combining 2 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 2 edges. Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 5
+# Num deleted here: 3
+# Found 2 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	O311,O262,	0.122483	1	0.0717225	0.0711572
+# dt: 0.0718082
+# Next dt: 0.0711572
+# Num current clusters before delete: 64
+# Num current clusters: 60
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 259
+# Num real edges: 214
+# Num edges inferred: 45
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 7
+# Num deleted here: 2
+# Found 3 new clusters to add
+# Adding missing edges...checking 61 cliques
+# Combining 12 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 10 edges. Time elapsed: 0 seconds
+# Adding 10 edges
+# Nodes affected = 10
+# Clusters affected = 12
+# Num deleted here: 9
+# Found 6 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0711572
+# Next dt: 0.0700471
+# Num current clusters before delete: 61
+# Num current clusters: 58
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 272
+# Num real edges: 217
+# Num edges inferred: 55
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 10
+# Num deleted here: 2
+# Found 4 new clusters to add
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 11
+# Num deleted here: 5
+# Found 5 new clusters to add
+# Adding missing edges...checking 60 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0690312
+# Next dt: 0.0675907
+# Num current clusters before delete: 60
+# Num current clusters: 60
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 279
+# Num real edges: 224
+# Num edges inferred: 55
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 7
+# Num deleted here: 2
+# Found 4 new clusters to add
+# Adding missing edges...checking 62 cliques
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 1 edges. Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0675907
+# Next dt: 0.0671068
+# Num current clusters before delete: 62
+# Num current clusters: 61
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 284
+# Num real edges: 229
+# Num edges inferred: 55
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 19
+# Num deleted here: 1
+# Found 4 new clusters to add
+# Adding missing edges...checking 64 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0671068
+# Next dt: 0.0656493
+# Num current clusters before delete: 64
+# Num current clusters: 64
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 288
+# Num real edges: 233
+# Num edges inferred: 55
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 7
+# Clusters affected = 15
+# Num deleted here: 2
+# Found 4 new clusters to add
+# Adding missing edges...checking 66 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0656493
+# Next dt: 0.0643376
+# Num current clusters before delete: 66
+# Num current clusters: 66
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 292
+# Num real edges: 237
+# Num edges inferred: 55
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 20
+# Num deleted here: 3
+# Found 5 new clusters to add
+# Adding missing edges...checking 68 cliques
+# Combining 11 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 29 edges. Time elapsed: 0 seconds
+# Adding 29 edges
+# Nodes affected = 15
+# Clusters affected = 22
+# Num deleted here: 13
+# Found 10 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0643376
+# Next dt: 0.0621021
+# Num current clusters before delete: 68
+# Num current clusters: 65
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 325
+# Num real edges: 243
+# Num edges inferred: 82
+# Time elapsed: 0 seconds
+# Adding 11 edges
+# Nodes affected = 21
+# Clusters affected = 31
+# Num deleted here: 4
+# Found 11 new clusters to add
+# Adding 4 edges
+# Nodes affected = 7
+# Clusters affected = 23
+# Num deleted here: 2
+# Found 4 new clusters to add
+# Adding missing edges...checking 74 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0605454
+# Next dt: 0.0594906
+# Num current clusters before delete: 74
+# Num current clusters: 74
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 340
+# Num real edges: 259
+# Num edges inferred: 81
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 14
+# Num deleted here: 1
+# Found 3 new clusters to add
+# Adding missing edges...checking 75 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0594906
+# Next dt: 0.0581774
+# Num current clusters before delete: 76
+# Num current clusters: 75
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 343
+# Num real edges: 263
+# Num edges inferred: 80
+# Time elapsed: 0 seconds
+# Adding 5 edges
+# Nodes affected = 9
+# Clusters affected = 21
+# Num deleted here: 1
+# Found 5 new clusters to add
+# Adding missing edges...checking 79 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0581774
+# Next dt: 0.0569208
+# Num current clusters before delete: 79
+# Num current clusters: 79
+# Num valid clusters: 28
+# Largest cluster: 17
+# Num edges in clusterGraph: 348
+# Num real edges: 269
+# Num edges inferred: 79
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 22
+# Num deleted here: 1
+# Found 4 new clusters to add
+# Adding missing edges...checking 82 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9616,8602,9131,Z018,	0.0871929	3	0.0565129	0.0563909
+# dt: 0.0569208
+# Next dt: 0.0563909
+# Num current clusters before delete: 82
+# Num current clusters: 82
+# Num valid clusters: 29
+# Largest cluster: 17
+# Num edges in clusterGraph: 352
+# Num real edges: 273
+# Num edges inferred: 79
+# Time elapsed: 0 seconds
+# Adding 12 edges
+# Nodes affected = 21
+# Clusters affected = 39
+# Num deleted here: 5
+# Found 12 new clusters to add
+# Adding missing edges...checking 89 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0563909
+# Next dt: 0.0550949
+# Num current clusters before delete: 89
+# Num current clusters: 89
+# Num valid clusters: 29
+# Largest cluster: 17
+# Num edges in clusterGraph: 364
+# Num real edges: 285
+# Num edges inferred: 79
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 7
+# Clusters affected = 25
+# Num deleted here: 3
+# Found 4 new clusters to add
+# Adding missing edges...checking 90 cliques
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 1 edges. Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 2
+# Num deleted here: 2
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	J680,J398,I959,Z320,	0.0991029	5	0.0684229	0.0539696
+# dt: 0.0550949
+# Next dt: 0.0539696
+# Num current clusters before delete: 90
+# Num current clusters: 89
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 369
+# Num real edges: 289
+# Num edges inferred: 80
+# Time elapsed: 0 seconds
+# Adding 6 edges
+# Nodes affected = 11
+# Clusters affected = 19
+# Num deleted here: 5
+# Found 6 new clusters to add
+# Adding missing edges...checking 90 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0539696
+# Next dt: 0.0529095
+# Num current clusters before delete: 90
+# Num current clusters: 90
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 375
+# Num real edges: 295
+# Num edges inferred: 80
+# Time elapsed: 0 seconds
+# Adding 8 edges
+# Nodes affected = 15
+# Clusters affected = 34
+# Num deleted here: 4
+# Found 8 new clusters to add
+# Adding missing edges...checking 94 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0529095
+# Next dt: 0.0518152
+# Num current clusters before delete: 94
+# Num current clusters: 94
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 383
+# Num real edges: 303
+# Num edges inferred: 80
+# Time elapsed: 0 seconds
+# Adding 9 edges
+# Nodes affected = 18
+# Clusters affected = 36
+# Num deleted here: 3
+# Found 9 new clusters to add
+# Adding missing edges...checking 99 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0518152
+# Next dt: 0.0506322
+# Num current clusters before delete: 100
+# Num current clusters: 99
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 392
+# Num real edges: 312
+# Num edges inferred: 80
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding missing edges...checking 99 cliques
+# Combining 69 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 91 edges. Time elapsed: 0 seconds
+# Adding 91 edges
+# Nodes affected = 38
+# Clusters affected = 65
+# Num deleted here: 36
+# Found 25 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0506322
+# Next dt: 0.0504483
+# Num current clusters before delete: 99
+# Num current clusters: 87
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 483
+# Num real edges: 313
+# Num edges inferred: 170
+# Time elapsed: 0 seconds
+# Adding 8 edges
+# Nodes affected = 16
+# Clusters affected = 48
+# Num deleted here: 2
+# Found 8 new clusters to add
+# Adding missing edges...checking 93 cliques
+# Combining 148 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 329 edges. Time elapsed: 0 seconds
+# Adding 329 edges
+# Nodes affected = 74
+# Clusters affected = 78
+# Num deleted here: 55
+# Found 32 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0504483
+# Next dt: 0.0497044
+# Num current clusters before delete: 93
+# Num current clusters: 68
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 820
+# Num real edges: 322
+# Num edges inferred: 498
+# Time elapsed: 0 seconds
+# Adding 9 edges
+# Nodes affected = 18
+# Clusters affected = 30
+# Num deleted here: 4
+# Found 9 new clusters to add
+# Adding missing edges...checking 72 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0497044
+# Next dt: 0.0486967
+# Num current clusters before delete: 73
+# Num current clusters: 72
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 829
+# Num real edges: 335
+# Num edges inferred: 494
+# Time elapsed: 0 seconds
+# Adding 10 edges
+# Nodes affected = 19
+# Clusters affected = 42
+# Num deleted here: 4
+# Found 10 new clusters to add
+# Adding missing edges...checking 78 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0486967
+# Next dt: 0.0476377
+# Num current clusters before delete: 78
+# Num current clusters: 78
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 839
+# Num real edges: 347
+# Num edges inferred: 492
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 24
+# Num deleted here: 2
+# Found 5 new clusters to add
+# Adding missing edges...checking 81 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0476377
+# Next dt: 0.0465268
+# Num current clusters before delete: 81
+# Num current clusters: 81
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 843
+# Num real edges: 356
+# Num edges inferred: 487
+# Time elapsed: 0 seconds
+# Adding 6 edges
+# Nodes affected = 12
+# Clusters affected = 28
+# Num deleted here: 1
+# Found 6 new clusters to add
+# Adding missing edges...checking 86 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0465268
+# Next dt: 0.0452382
+# Num current clusters before delete: 86
+# Num current clusters: 86
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 849
+# Num real edges: 365
+# Num edges inferred: 484
+# Time elapsed: 0 seconds
+# Adding 9 edges
+# Nodes affected = 16
+# Clusters affected = 42
+# Num deleted here: 4
+# Found 10 new clusters to add
+# Adding missing edges...checking 91 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0452382
+# Next dt: 0.0442377
+# Num current clusters before delete: 92
+# Num current clusters: 91
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 858
+# Num real edges: 379
+# Num edges inferred: 479
+# Time elapsed: 0 seconds
+# Adding 10 edges
+# Nodes affected = 19
+# Clusters affected = 45
+# Num deleted here: 6
+# Found 10 new clusters to add
+# Adding missing edges...checking 94 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0442377
+# Next dt: 0.0432263
+# Num current clusters before delete: 95
+# Num current clusters: 94
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 868
+# Num real edges: 392
+# Num edges inferred: 476
+# Time elapsed: 0 seconds
+# Adding 1 edges
+# Nodes affected = 2
+# Clusters affected = 5
+# Num deleted here: 3
+# Found 2 new clusters to add
+# Adding missing edges...checking 93 cliques
+# Combining 161 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 782 edges. Time elapsed: 0 seconds
+# Adding 782 edges
+# Nodes affected = 90
+# Clusters affected = 83
+# Num deleted here: 63
+# Found 43 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 79 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 719 edges. Time elapsed: 0 seconds
+# Adding 719 edges
+# Nodes affected = 88
+# Clusters affected = 56
+# Num deleted here: 36
+# Found 22 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0432263
+# Next dt: 0.0427139
+# Num current clusters before delete: 93
+# Num current clusters: 51
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 2370
+# Num real edges: 395
+# Num edges inferred: 1975
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 13
+# Num deleted here: 0
+# Found 3 new clusters to add
+# Adding missing edges...checking 54 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0427139
+# Next dt: 0.0416795
+# Num current clusters before delete: 54
+# Num current clusters: 54
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 2373
+# Num real edges: 405
+# Num edges inferred: 1968
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 9
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding missing edges...checking 56 cliques
+# Combining 41 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 585 edges. Time elapsed: 0 seconds
+# Adding 585 edges
+# Nodes affected = 87
+# Clusters affected = 45
+# Num deleted here: 21
+# Found 13 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0416795
+# Next dt: 0.0411735
+# Num current clusters before delete: 56
+# Num current clusters: 46
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 2960
+# Num real edges: 411
+# Num edges inferred: 2549
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 11
+# Num deleted here: 1
+# Found 3 new clusters to add
+# Adding missing edges...checking 48 cliques
+# Combining 14 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 300 edges. Time elapsed: 0 seconds
+# Adding 300 edges
+# Nodes affected = 87
+# Clusters affected = 36
+# Num deleted here: 10
+# Found 5 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0411735
+# Next dt: 0.040491
+# Num current clusters before delete: 48
+# Num current clusters: 43
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 3263
+# Num real edges: 420
+# Num edges inferred: 2843
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 6
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding missing edges...checking 45 cliques
+# Combining 0 pairs of clusters
+# dt: 0.040491
+# Next dt: 0.0392739
+# Num current clusters before delete: 45
+# Num current clusters: 45
+# Num valid clusters: 30
+# Largest cluster: 17
+# Num edges in clusterGraph: 3265
+# Num real edges: 430
+# Num edges inferred: 2835
+# Time elapsed: 0 seconds
+# Adding 0 edges
+# Adding missing edges...checking 45 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	9921,9918,J680,9059,9764,9659,5794,Z301,697,9789,8905,9396,9929,9616,8602,9775,9357,734,J459,9394,9131,9139,598,8878,J40,J180,Q501,N946,7534,897,Z349,O441,Z018,M545,E780,9716,N832,8879,R12,I500,8749,I219,B373,H669,7171,D259,Z090,O410,I849,I842,9904,9783,N390,K30,Z038,B909,K297,K291,J069,8876,R53,6909,K290,J060,N920,M069,O13,A09,O321,Z309,Z300,O342,I10,Z719,L024,Z099,O268,	0.0406219	2315	0.0391099	0.0390618
+# dt: 0.0392739
+# Next dt: 0.0390618
+# Num current clusters before delete: 45
+# Num current clusters: 45
+# Num valid clusters: 31
+# Largest cluster: 77
+# Num edges in clusterGraph: 3265
+# Num real edges: 431
+# Num edges inferred: 2834
+# Time elapsed: 0 seconds
+# Adding 5 edges
+# Nodes affected = 10
+# Clusters affected = 14
+# Num deleted here: 2
+# Found 5 new clusters to add
+# Adding missing edges...checking 47 cliques
+# Combining 3 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 48 edges. Time elapsed: 0 seconds
+# Adding 48 edges
+# Nodes affected = 37
+# Clusters affected = 15
+# Num deleted here: 4
+# Found 3 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0390618
+# Next dt: 0.0380109
+# Num current clusters before delete: 48
+# Num current clusters: 46
+# Num valid clusters: 31
+# Largest cluster: 77
+# Num edges in clusterGraph: 3318
+# Num real edges: 453
+# Num edges inferred: 2865
+# Time elapsed: 0 seconds
+# Adding 7 edges
+# Nodes affected = 12
+# Clusters affected = 22
+# Num deleted here: 5
+# Found 6 new clusters to add
+# Adding missing edges...checking 47 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0380109
+# Next dt: 0.0370063
+# Num current clusters before delete: 47
+# Num current clusters: 47
+# Num valid clusters: 31
+# Largest cluster: 77
+# Num edges in clusterGraph: 3325
+# Num real edges: 468
+# Num edges inferred: 2857
+# Time elapsed: 0 seconds
+# Adding 6 edges
+# Nodes affected = 11
+# Clusters affected = 15
+# Num deleted here: 2
+# Found 6 new clusters to add
+# Adding missing edges...checking 51 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0370063
+# Next dt: 0.0359614
+# Num current clusters before delete: 51
+# Num current clusters: 51
+# Num valid clusters: 31
+# Largest cluster: 77
+# Num edges in clusterGraph: 3331
+# Num real edges: 481
+# Num edges inferred: 2850
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 5
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding missing edges...checking 53 cliques
+# Combining 4 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 54 edges. Time elapsed: 0 seconds
+# Adding 54 edges
+# Nodes affected = 32
+# Clusters affected = 16
+# Num deleted here: 4
+# Found 2 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0359614
+# Next dt: 0.0356678
+# Num current clusters before delete: 53
+# Num current clusters: 51
+# Num valid clusters: 31
+# Largest cluster: 77
+# Num edges in clusterGraph: 3387
+# Num real edges: 485
+# Num edges inferred: 2902
+# Time elapsed: 0 seconds
+# Adding 6 edges
+# Nodes affected = 11
+# Clusters affected = 19
+# Num deleted here: 3
+# Found 6 new clusters to add
+# Adding missing edges...checking 54 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0356678
+# Next dt: 0.0346318
+# Num current clusters before delete: 54
+# Num current clusters: 54
+# Num valid clusters: 31
+# Largest cluster: 77
+# Num edges in clusterGraph: 3393
+# Num real edges: 504
+# Num edges inferred: 2889
+# Time elapsed: 0 seconds
+# Adding 8 edges
+# Nodes affected = 15
+# Clusters affected = 22
+# Num deleted here: 7
+# Found 9 new clusters to add
+# Adding missing edges...checking 56 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0346318
+# Next dt: 0.0336605
+# Num current clusters before delete: 56
+# Num current clusters: 56
+# Num valid clusters: 31
+# Largest cluster: 77
+# Num edges in clusterGraph: 3401
+# Num real edges: 532
+# Num edges inferred: 2869
+# Time elapsed: 0 seconds
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 9
+# Num deleted here: 0
+# Found 2 new clusters to add
+# Adding missing edges...checking 58 cliques
+# Combining 3 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 29 edges. Time elapsed: 0 seconds
+# Adding 29 edges
+# Nodes affected = 13
+# Clusters affected = 5
+# Num deleted here: 3
+# Found 1 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# dt: 0.0336605
+# Next dt: 0.0331887
+# Num current clusters before delete: 58
+# Num current clusters: 56
+# Num valid clusters: 31
+# Largest cluster: 77
+# Num edges in clusterGraph: 3432
+# Num real edges: 542
+# Num edges inferred: 2890
+# Time elapsed: 0 seconds
+# Adding 5 edges
+# Nodes affected = 9
+# Clusters affected = 14
+# Num deleted here: 2
+# Found 5 new clusters to add
+# Adding missing edges...checking 59 cliques
+# Combining 0 pairs of clusters
+# Valid cluster:	734,O622,	0.0834926	1	0.0327326	0.0327284
+# dt: 0.0331887
+# Next dt: 0.0327284
+# Num current clusters before delete: 59
+# Num current clusters: 59
+# Num valid clusters: 32
+# Largest cluster: 77
+# Num edges in clusterGraph: 3437
+# Num real edges: 554
+# Num edges inferred: 2883
+# Time elapsed: 0 seconds
+# Adding 3 edges
+# Nodes affected = 6
+# Clusters affected = 11
+# Num deleted here: 1
+# Found 3 new clusters to add
+# Adding missing edges...checking 61 cliques
+# Combining 1 pairs of clusters
+# Sorted. Time elapsed: 0 seconds
+# Got all 420 edges. Time elapsed: 0 seconds
+# Adding 420 edges
+# Nodes affected = 52
+# Clusters affected = 31
+# Num deleted here: 3
+# Found 2 new clusters to add
+# Added all edges. Time elapsed: 0 seconds
+# Rechecking
+# Combining 0 pairs of clusters
+# Valid cluster:	9921,9918,J680,9059,9764,9659,5794,Z301,697,9789,8905,9396,9929,9616,8602,9775,9357,734,J459,9394,9131,9139,598,8878,J40,J180,Q501,N946,7534,897,Z349,O441,N760,B379,Z018,M545,E780,9716,N832,8879,R12,I500,8749,I219,B373,H669,7171,D259,Z090,O410,I849,I842,9904,9783,N390,K30,Z038,B909,K297,K291,J069,8876,O149,O141,R53,6909,K290,J060,N920,M069,O13,O365,A09,O321,Z309,Z300,O342,I10,O860,Z719,L024,O610,Z099,O268,Z355,O150,O619,	0.0345264	809	0.0325044	0.0324639
+# dt: 0.0327284
+# Next dt: 0.0324639
+# Num current clusters before delete: 61
+# Num current clusters: 60
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 3860
+# Num real edges: 560
+# Num edges inferred: 3300
+# Time elapsed: 0 seconds
+# Adding 4 edges
+# Nodes affected = 8
+# Clusters affected = 12
+# Num deleted here: 2
+# Found 4 new clusters to add
+# Adding 8 edges
+# Nodes affected = 13
+# Clusters affected = 23
+# Num deleted here: 3
+# Found 8 new clusters to add
+# Adding 11 edges
+# Nodes affected = 20
+# Clusters affected = 28
+# Num deleted here: 8
+# Found 10 new clusters to add
+# Adding 6 edges
+# Nodes affected = 12
+# Clusters affected = 22
+# Num deleted here: 3
+# Found 6 new clusters to add
+# Adding 9 edges
+# Nodes affected = 18
+# Clusters affected = 28
+# Num deleted here: 8
+# Found 10 new clusters to add
+# Adding 7 edges
+# Nodes affected = 13
+# Clusters affected = 31
+# Num deleted here: 9
+# Found 8 new clusters to add
+# Adding 6 edges
+# Nodes affected = 12
+# Clusters affected = 21
+# Num deleted here: 6
+# Found 7 new clusters to add
+# Adding 8 edges
+# Nodes affected = 14
+# Clusters affected = 28
+# Num deleted here: 4
+# Found 8 new clusters to add
+# Adding 13 edges
+# Nodes affected = 24
+# Clusters affected = 42
+# Num deleted here: 10
+# Found 14 new clusters to add
+# Adding 18 edges
+# Nodes affected = 34
+# Clusters affected = 57
+# Num deleted here: 17
+# Found 20 new clusters to add
+# Adding 18 edges
+# Nodes affected = 30
+# Clusters affected = 44
+# Num deleted here: 12
+# Found 18 new clusters to add
+# Adding 22 edges
+# Nodes affected = 36
+# Clusters affected = 64
+# Num deleted here: 17
+# Found 21 new clusters to add
+# Adding 15 edges
+# Nodes affected = 24
+# Clusters affected = 61
+# Num deleted here: 12
+# Found 16 new clusters to add
+# Adding 24 edges
+# Nodes affected = 39
+# Clusters affected = 71
+# Num deleted here: 19
+# Found 20 new clusters to add
+# Adding 2 edges
+# Nodes affected = 4
+# Clusters affected = 16
+# Num deleted here: 4
+# Found 4 new clusters to add
+# Adding missing edges...checking 97 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0180726
+# Next dt: 0.0180072
+# Num current clusters before delete: 100
+# Num current clusters: 97
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4031
+# Num real edges: 962
+# Num edges inferred: 3069
+# Time elapsed: 0 seconds
+# Adding 29 edges
+# Nodes affected = 42
+# Clusters affected = 78
+# Num deleted here: 22
+# Found 25 new clusters to add
+# Adding missing edges...checking 100 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0180072
+# Next dt: 0.0169981
+# Num current clusters before delete: 100
+# Num current clusters: 100
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4060
+# Num real edges: 1018
+# Num edges inferred: 3042
+# Time elapsed: 0 seconds
+# Adding 24 edges
+# Nodes affected = 36
+# Clusters affected = 73
+# Num deleted here: 21
+# Found 26 new clusters to add
+# Adding missing edges...checking 105 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0169981
+# Next dt: 0.015983
+# Num current clusters before delete: 105
+# Num current clusters: 105
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4084
+# Num real edges: 1072
+# Num edges inferred: 3012
+# Time elapsed: 0 seconds
+# Adding 22 edges
+# Nodes affected = 37
+# Clusters affected = 86
+# Num deleted here: 24
+# Found 24 new clusters to add
+# Adding missing edges...checking 105 cliques
+# Combining 0 pairs of clusters
+# dt: 0.015983
+# Next dt: 0.014973
+# Num current clusters before delete: 105
+# Num current clusters: 105
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4106
+# Num real edges: 1120
+# Num edges inferred: 2986
+# Time elapsed: 0 seconds
+# Adding 26 edges
+# Nodes affected = 39
+# Clusters affected = 91
+# Num deleted here: 22
+# Found 29 new clusters to add
+# Adding missing edges...checking 109 cliques
+# Combining 0 pairs of clusters
+# dt: 0.014973
+# Next dt: 0.013932
+# Num current clusters before delete: 112
+# Num current clusters: 109
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4132
+# Num real edges: 1169
+# Num edges inferred: 2963
+# Time elapsed: 0 seconds
+# Adding 20 edges
+# Nodes affected = 32
+# Clusters affected = 82
+# Num deleted here: 19
+# Found 22 new clusters to add
+# Adding missing edges...checking 112 cliques
+# Combining 0 pairs of clusters
+# dt: 0.013932
+# Next dt: 0.0129184
+# Num current clusters before delete: 112
+# Num current clusters: 112
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4152
+# Num real edges: 1211
+# Num edges inferred: 2941
+# Time elapsed: 0 seconds
+# Adding 38 edges
+# Nodes affected = 51
+# Clusters affected = 103
+# Num deleted here: 32
+# Found 36 new clusters to add
+# Adding missing edges...checking 112 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0129184
+# Next dt: 0.0118856
+# Num current clusters before delete: 116
+# Num current clusters: 112
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4190
+# Num real edges: 1291
+# Num edges inferred: 2899
+# Time elapsed: 0 seconds
+# Adding 42 edges
+# Nodes affected = 60
+# Clusters affected = 104
+# Num deleted here: 39
+# Found 43 new clusters to add
+# Adding 40 edges
+# Nodes affected = 59
+# Clusters affected = 111
+# Num deleted here: 37
+# Found 40 new clusters to add
+# Adding 45 edges
+# Nodes affected = 56
+# Clusters affected = 112
+# Num deleted here: 39
+# Found 44 new clusters to add
+# Adding 53 edges
+# Nodes affected = 66
+# Clusters affected = 119
+# Num deleted here: 46
+# Found 52 new clusters to add
+# Adding 6 edges
+# Nodes affected = 11
+# Clusters affected = 71
+# Num deleted here: 11
+# Found 12 new clusters to add
+# Adding missing edges...checking 126 cliques
+# Combining 0 pairs of clusters
+# dt: 0.00785071
+# Next dt: 0.00779165
+# Num current clusters before delete: 131
+# Num current clusters: 126
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4376
+# Num real edges: 1604
+# Num edges inferred: 2772
+# Time elapsed: 0 seconds
+# Adding 32 edges
+# Nodes affected = 47
+# Clusters affected = 118
+# Num deleted here: 37
+# Found 40 new clusters to add
+# Adding 72 edges
+# Nodes affected = 78
+# Clusters affected = 128
+# Num deleted here: 67
+# Found 73 new clusters to add
+# Adding 45 edges
+# Nodes affected = 58
+# Clusters affected = 129
+# Num deleted here: 52
+# Found 57 new clusters to add
+# Adding 62 edges
+# Nodes affected = 67
+# Clusters affected = 137
+# Num deleted here: 67
+# Found 70 new clusters to add
+# Adding 7 edges
+# Nodes affected = 14
+# Clusters affected = 117
+# Num deleted here: 13
+# Found 15 new clusters to add
+# Adding missing edges...checking 134 cliques
+# Combining 0 pairs of clusters
+# dt: 0.00374488
+# Next dt: 0.00360587
+# Num current clusters before delete: 145
+# Num current clusters: 134
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4594
+# Num real edges: 1981
+# Num edges inferred: 2613
+# Time elapsed: 0 seconds
+# Adding 76 edges
+# Nodes affected = 77
+# Clusters affected = 133
+# Num deleted here: 68
+# Found 77 new clusters to add
+# Adding missing edges...checking 141 cliques
+# Combining 0 pairs of clusters
+# dt: 0.00360587
+# Next dt: 0.0026013
+# Num current clusters before delete: 143
+# Num current clusters: 141
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4670
+# Num real edges: 2101
+# Num edges inferred: 2569
+# Time elapsed: 0 seconds
+# Adding 65 edges
+# Nodes affected = 73
+# Clusters affected = 140
+# Num deleted here: 56
+# Found 64 new clusters to add
+# Adding missing edges...checking 144 cliques
+# Combining 0 pairs of clusters
+# dt: 0.0026013
+# Next dt: 0.00159985
+# Num current clusters before delete: 149
+# Num current clusters: 144
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4735
+# Num real edges: 2217
+# Num edges inferred: 2518
+# Time elapsed: 0 seconds
+# Adding 37 edges
+# Nodes affected = 53
+# Clusters affected = 143
+# Num deleted here: 39
+# Found 49 new clusters to add
+# Adding missing edges...checking 152 cliques
+# Combining 0 pairs of clusters
+# dt: 0.00159985
+# Next dt: 0.000998974
+# Num current clusters before delete: 154
+# Num current clusters: 152
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4772
+# Num real edges: 2285
+# Num edges inferred: 2487
+# Time elapsed: 0 seconds
+# Adding at end
+# Adding missing edges...checking 152 clusters
+# Combining 0 pairs of clusters
+# dt: 0.000998974
+# Num current clusters: 152
+# Num valid clusters: 33
+# Largest cluster: 87
+# Num edges in clusterGraph: 4772
+# Num clusters: 33
+# Ontology construction took 0 seconds
+# Ontology is: 
+144	5794	feature	0.304062
+144	9357	feature	0.304062
+145	O311	feature	0.122483
+145	O262	feature	0.122483
+146	9764	feature	0.205281
+146	9775	feature	0.205281
+147	H522	feature	0.213386
+147	H521	feature	0.213386
+148	O411	feature	0.917807
+148	causal_A03	feature	0.917807
+149	9059	feature	0.242066
+149	9139	feature	0.242066
+150	J40	feature	0.180473
+150	J180	feature	0.180473
+151	Q501	feature	0.172777
+151	N946	feature	0.172777
+152	J459	feature	0.282861
+152	9394	feature	0.282861
+153	N760	feature	0.147273
+153	B379	feature	0.147273
+154	9921	feature	0.358375
+154	9929	feature	0.358375
+155	734	feature	0.0834926
+155	O622	feature	0.0834926
+156	Z301	feature	0.475535
+156	697	feature	0.475535
+157	9921	feature	0.592054
+157	9918	feature	0.592054
+158	J680	feature	0.552848
+158	J398	feature	0.552848
+159	O235	feature	0.658689
+159	causal_A10	feature	0.658689
+160	O469	feature	0.711147
+160	causal_A06	feature	0.711147
+161	H527	feature	0.143526
+161	147	default	0.143526
+162	K073	feature	0.140664
+162	H531	feature	0.140664
+162	H811	feature	0.140664
+163	O441	feature	0.144206
+163	160	default	0.144206
+164	9789	feature	0.26962
+164	8905	feature	0.26962
+164	734	feature	0.26962
+165	9616	feature	0.332138
+165	8602	feature	0.332138
+165	9775	feature	0.332138
+166	9764	feature	0.382369
+166	9789	feature	0.382369
+166	8905	feature	0.382369
+167	8878	feature	0.157576
+167	Z349	feature	0.157576
+167	149	default	0.157576
+168	9616	feature	0.0871929
+168	8602	feature	0.0871929
+168	9131	feature	0.0871929
+168	Z018	feature	0.0871929
+169	I959	feature	0.0991029
+169	Z320	feature	0.0991029
+169	158	default	0.0991029
+170	9131	feature	0.20296
+170	598	feature	0.20296
+170	165	default	0.20296
+171	9059	feature	0.250606
+171	5794	feature	0.250606
+171	9396	feature	0.250606
+171	154	default	0.250606
+172	9059	feature	0.431862
+172	9764	feature	0.431862
+172	9659	feature	0.431862
+172	5794	feature	0.431862
+172	157	default	0.431862
+173	9396	feature	0.275598
+173	166	default	0.275598
+173	172	default	0.275598
+174	144	default	0.14128
+174	146	default	0.14128
+174	164	default	0.14128
+174	170	default	0.14128
+174	171	default	0.14128
+174	173	default	0.14128
+175	J680	feature	0.0406219
+175	7534	feature	0.0406219
+175	897	feature	0.0406219
+175	O441	feature	0.0406219
+175	M545	feature	0.0406219
+175	E780	feature	0.0406219
+175	9716	feature	0.0406219
+175	N832	feature	0.0406219
+175	8879	feature	0.0406219
+175	R12	feature	0.0406219
+175	I500	feature	0.0406219
+175	8749	feature	0.0406219
+175	I219	feature	0.0406219
+175	B373	feature	0.0406219
+175	H669	feature	0.0406219
+175	7171	feature	0.0406219
+175	D259	feature	0.0406219
+175	Z090	feature	0.0406219
+175	O410	feature	0.0406219
+175	I849	feature	0.0406219
+175	I842	feature	0.0406219
+175	9904	feature	0.0406219
+175	9783	feature	0.0406219
+175	N390	feature	0.0406219
+175	K30	feature	0.0406219
+175	Z038	feature	0.0406219
+175	B909	feature	0.0406219
+175	K297	feature	0.0406219
+175	K291	feature	0.0406219
+175	J069	feature	0.0406219
+175	8876	feature	0.0406219
+175	R53	feature	0.0406219
+175	6909	feature	0.0406219
+175	K290	feature	0.0406219
+175	J060	feature	0.0406219
+175	N920	feature	0.0406219
+175	M069	feature	0.0406219
+175	O13	feature	0.0406219
+175	A09	feature	0.0406219
+175	O321	feature	0.0406219
+175	Z309	feature	0.0406219
+175	Z300	feature	0.0406219
+175	O342	feature	0.0406219
+175	I10	feature	0.0406219
+175	Z719	feature	0.0406219
+175	L024	feature	0.0406219
+175	Z099	feature	0.0406219
+175	O268	feature	0.0406219
+175	150	default	0.0406219
+175	151	default	0.0406219
+175	152	default	0.0406219
+175	156	default	0.0406219
+175	167	default	0.0406219
+175	168	default	0.0406219
+175	174	default	0.0406219
+176	O149	feature	0.0345264
+176	O141	feature	0.0345264
+176	O365	feature	0.0345264
+176	O860	feature	0.0345264
+176	O610	feature	0.0345264
+176	Z355	feature	0.0345264
+176	O150	feature	0.0345264
+176	O619	feature	0.0345264
+176	153	default	0.0345264
+176	175	default	0.0345264
+177	O440	feature	0
+177	R69	feature	0
+177	9389	feature	0
+177	D500	feature	0
+177	O479	feature	0
+177	K029	feature	0
+177	Z710	feature	0
+177	O140	feature	0
+177	O363	feature	0
+177	Z354	feature	0
+177	H663	feature	0
+177	Z305	feature	0
+177	O600	feature	0
+177	O109	feature	0
+177	Z369	feature	0
+177	Z368	feature	0
+177	Z000	feature	0
+177	O901	feature	0
+177	causal_A11	feature	0
+177	K089	feature	0
+177	Z308	feature	0
+177	K529	feature	0
+177	Z012	feature	0
+177	L209	feature	0
+177	Z380	feature	0
+177	O345	feature	0
+177	G439	feature	0
+177	O991	feature	0
+177	Z508	feature	0
+177	O120	feature	0
+177	Z014	feature	0
+177	O985	feature	0
+177	R202	feature	0
+177	Z360	feature	0
+177	O632	feature	0
+177	P229	feature	0
+177	T384	feature	0
+177	N342	feature	0
+177	Z479	feature	0
+177	145	default	0
+177	148	default	0
+177	155	default	0
+177	159	default	0
+177	161	default	0
+177	162	default	0
+177	163	default	0
+177	169	default	0
+177	176	default	0

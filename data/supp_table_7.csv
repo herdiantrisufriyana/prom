@@ -1,0 +1,221 @@
+Code,Description
+650,Normal delivery
+6901,Dilation and curettage for termination of pregnancy
+6902,Dilation and curettage following delivery or abortion
+6951,Aspiration curettage of uterus for termination of pregnancy
+6952,Aspiration curettage following delivery or abortion
+728,Other specified instrumental delivery
+729,Unspecified instrumental delivery
+7301,Induction of labor by artificial rupture of membranes
+7359,Other manually assisted delivery
+738,Operations on fetus to facilitate delivery
+7393,Incision of cervix to assist delivery
+7399,Other operations to assist delivery
+740,Classical cesarean section
+741,Low cervical cesarean section
+744,Cesarean section of other specified type
+7491,Hysterotomy to terminate pregnancy
+7499,Other cesarean section of unspecified type
+O000,Abdominal pregnancy
+O001,Tubal pregnancy
+O002,Ovarian pregnancy
+O008,Other ectopic pregnancy
+O009,"Ectopic pregnancy, unspecified"
+O010,Classical hydatidiform mole
+O011,Incomplete and partial hydatidiform mole
+O019,"Hydatidiform mole, unspecified"
+O020,Blighted ovum and nonhydatidiform mole
+O021,Missed abortion
+O028,Other specified abnormal products of conception
+O029,"Abnormal product of conception, unspecified"
+O030,"Spontaneous abortion, incomplete, complicated by genital tract and pelvic infection"
+O031,"Spontaneous abortion, incomplete, complicated by delayed or excessive haemorrhage"
+O032,"Spontaneous abortion, incomplete, complicated by embolism"
+O033,"Spontaenous abortion, incomplete, with other and unspecified complications"
+O034,"Spontaneous abortion, incomplete, without complication"
+O035,"Spontaneous abortion, complete or unspecified, complicated by genital tract and pelvic infection"
+O036,"Spontaneous abortion, complete or unspecified, complicated by delayed or excessive haemorrhage"
+O037,"Spontaneous abortion, complete or unspecified, complicated by embolism"
+O038,"Spontaneous abortion, complete or unspecified, with other and unspecified complications"
+O039,"Spontaneous abortion, complete or unspecified, without complication"
+O0390,
+O040,"Medical abortion, incomplete, complicated by genital tract and pelvic infection"
+O041,"Medical abortion, incomplete, complicated by delayed or excessive haemorrhage"
+O042,"Medical abortion, incomplete, complicated by embolism"
+O043,"Medical abortion, incomplete, with other and unspecified complications"
+O044,"Medical abortion, incomplete, without complication"
+O045,"Medical abortion, complete or unspecified, complicated by genital tract and pelvic infection"
+O046,"Medical abortion, complete or unspecified, complicated by delayed or excessive haemorrhage"
+O048,"Medical abortion, complete or unspecified, with other and unspecified complications"
+O049,"Medical abortion, complete or unspecified, without complication"
+O050,"Other abortion, incomplete, complicated by genital tract and pelvic infection"
+O051,"Other abortion, incomplete, complicated by delayed or excessive haemorrhage"
+O052,"Other abortion, incomplete, complicated by embolism"
+O053,"Other abortion, incomplete, with other and unspecified complications"
+O054,"Other abortion, incomplete, without complication"
+O055,"Other abortion, complete or unspecified, complicated by genital tract and pelvic infection"
+O056,"Other abortion, complete or unspecified, complicated by delayed or excessive haemorrhage"
+O057,"Other abortion, complete or unspecified, complicated by embolism"
+O058,"Other abortion, complete or unspecified, with other and unspecified complications"
+O059,"Other abortion, complete or unspecified, without complication"
+O060,"Unspecified abortion, incomplete, complicated by genital tract and pelvic infection"
+O061,"Unspecified abortion, incomplete, complicated by delayed or excessive haemorrhage"
+O062,"Unspecified abortion, incomplete, complicated by embolism"
+O063,"Unspecified abortion, incomplete, with other and unspecified complications"
+O064,"Unspecified abortion, incomplete, without complication"
+O065,"Unspecified abortion, complete or unspecified, complicated by genital tract and pelvic infection"
+O066,"Unspecified abortion, complete or unspecified, complicated by delayed or excessive haemorrhage"
+O067,"Unspecified abortion, complete or unspecified, complicated by embolism"
+O068,"Unspecified abortion, complete or unspecified, with other and unspecified complications"
+O069,"Unspecified abortion, complete or unspecified, without complication"
+O080,Genital tract and pelvic infection following abortion and ectopic and molar pregnancy
+O081,Delayed or excessive haemorrhage following abortion and ectopic and molar pregnancy
+O082,Embolism following abortion and ectopic and molar pregnancy
+O083,Shock following abortion and ectopic and molar pregnancy
+O085,Metabolic disorders following abortion and ectopic and molar pregnancy
+O086,Damage to pelvic organs and tissues following abortion and ectopic and molar pregnancy
+O087,Other venous complications following abortion and ectopic and molar pregnancy
+O088,Other complications following abortion and ectopic and molar pregnancy
+O089,"Complication following abortion and ectopic and molar pregnancy, unspecified"
+O152,Eclampsia in the puerperium
+O364,Maternal care for intrauterine death
+O420,"Premature rupture of membranes, onset of labour within 24 hours"
+O421,"Premature rupture of membranes, onset of labour after 24 hours"
+O60,Preterm labour and delivery
+O601,Preterm labour with preterm delivery
+O602,Preterm labour with term delivery
+O603,Preterm delivery without spontaneous labour
+O630,Prolonged first stage (of labour)
+O631,Prolonged second stage (of labour)
+O639,"Long labour, unspecified"
+O640,Obstructed labour due to incomplete rotation of fetal head
+O641,Obstructed labour due to breech presentation
+O642,Obstructed labour due to face presentation
+O643,Obstructed labour due to brow presentation
+O644,Obstructed labour due to shoulder presentation
+O648,Obstructed labour due to other malposition and malpresentation
+O649,"Obstructed labour due to malposition and malpresentation, unspecified"
+O650,Obstructed labour due to deformed pelvis
+O651,Obstructed labour due to generally contracted pelvis
+O652,Obstructed labour due to pelvic inlet contraction
+O653,Obstructed labour due to pelvic outlet and mid-cavity contraction
+O654,"Obstructed labour due to fetopelvic disproportion, unspecified"
+O655,Obstructed labour due to abnormality of maternal pelvic organs
+O658,Obstructed labour due to other maternal pelvic abnormalities
+O659,"Obstructed labour due to maternal pelvic abnormality, unspecified"
+O660,Obstructed labour due to shoulder dystocia
+O661,Obstructed labour due to locked twins
+O662,Obstructed labour due to unusually large fetus
+O663,Obstructed labour due to other abnormalities of fetus
+O680,Labour and delivery complicated by fetal heart rate anomaly
+O681,Labour and delivery complicated by meconium in amniotic fluid
+O682,Labour and delivery complicated by fetal heart rate anomaly with meconium in amniotic fluid
+O683,Labour and delivery complicated by biochemical evidence of fetal stress
+O688,Labour and delivery complicated by other evidence of fetal stress
+O689,"Labour and delivery complicated by fetal stress, unspecified"
+O690,Labour and delivery complicated by prolapse of cord
+O691,"Labour and delivery complicated by cord around neck, with compression"
+O692,Labour and delivery complicated by other cord entanglement
+O693,Labour and delivery complicated by short cord
+O694,Labour and delivery complicated by vasa praevia
+O695,Labour and delivery complicated by vascular lesion of cord
+O698,Labour and delivery complicated by other cord complications
+O699,"Labour and delivery complicated by cord complication, unspecified"
+O70,NA
+O700,First degree perineal laceration during delivery
+O701,Second degree perineal laceration during delivery
+O702,Third degree perineal laceration during delivery
+O703,Fourth degree perineal laceration during delivery
+O709,"Perineal laceration during delivery, unspecified"
+O712,Postpartum inversion of uterus
+O720,Third-stage haemorrhage
+O721,Other immediate postpartum haemorrhage
+O722,Delayed and secondary postpartum haemorrhage
+O723,Postpartum coagulation defects
+O750,Maternal distress during labour and delivery
+O751,Shock during or following labour and delivery
+O757,Vaginal delivery following previous caesarean section
+O758,Other specified complications of labour and delivery
+O759,"Complication of labour and delivery, unspecified"
+O80,Single spontaneous delivery
+O800,Spontaneous vertex delivery
+O801,Spontaneous breech delivery
+O808,Other single spontaneous delivery
+O809,"Single spontaneous delivery, unspecified"
+O810,Low forceps delivery
+O813,Other and unspecified forceps delivery
+O814,Vacuum extractor delivery
+O815,Delivery by combination of forceps and vacuum extractor
+O820,Delivery by elective caesarean section
+O821,Delivery by emergency caesarean section
+O822,Delivery by caesarean hysterectomy
+O828,Other single delivery by caesarean section
+O829,"Delivery by caesarean section, unspecified"
+O831,Other assisted breech delivery
+O832,Other manipulation-assisted delivery
+O833,Delivery of viable fetus in abdominal pregnancy
+O834,Destructive operation for delivery
+O838,Other specified assisted single delivery
+O839,"Assisted single delivery, unspecified"
+O840,"Multiple delivery, all spontaneous"
+O841,"Multiple delivery, all by forceps and vacuum extractor"
+O842,"Multiple delivery, all by caesarean section"
+O848,Other multiple delivery
+O849,"Multiple delivery, unspecified"
+O85,Puerperal sepsis
+O861,Other infection of genital tract following delivery
+O862,Urinary tract infection following delivery
+O863,Other genitourinary tract infections following delivery
+O864,Pyrexia of unknown origin following delivery
+O872,Haemorrhoids in the puerperium
+O873,NA
+O878,Other venous complications in the puerperium
+O890,Pulmonary complications of anaesthesia during the puerperium
+O894,NA
+O896,Failed or difficult intubation during the puerperium
+O899,"Complication of anaesthesia during the puerperium, unspecified"
+O900,Disruption of caesarean section wound
+O902,Haematoma of obstetric wound
+O904,Postpartum acute renal failure
+O905,Postpartum thyroiditis
+P030,Fetus and newborn affected by breech delivery and extraction
+P031,"Fetus and newborn affected by other malpresentation, malposition and disproportion during labour and delivery"
+P033,Fetus and newborn affected by delivery by vacuum extractor [ventouse]
+P034,Fetus and newborn affected by caesarean delivery
+P035,Fetus and newborn affected by precipitate delivery
+P038,Fetus and newborn affected by other specified complications of labour and delivery
+P039,"Fetus and newborn affected by complication of labour and delivery, unspecified"
+P201,Intrauterine hypoxia first noted during labour and delivery
+P242,Neonatal aspiration of blood
+P243,Neonatal aspiration of milk and regurgitated food
+P248,Other neonatal aspiration syndromes
+P249,"Neonatal aspiration syndrome, unspecified"
+P290,Neonatal cardiac failure
+P292,Neonatal hypertension
+P375,Neonatal candidiasis
+P390,Neonatal infective mastitis
+P393,Neonatal urinary tract infection
+P394,Neonatal skin infection
+P540,Neonatal haematemesis
+P545,Neonatal cutaneous haemorrhage
+P546,Neonatal vaginal haemorrhage
+P592,Neonatal jaundice from other and unspecified hepatocellular damage
+P599,"Neonatal jaundice, unspecified"
+P615,Transient neonatal neutropenia
+P702,Neonatal diabetes mellitus
+P711,Other neonatal hypocalcaemia
+P721,Transitory neonatal hyperthyroidism
+P783,Noninfective neonatal diarrhoea
+P925,Neonatal difficulty in feeding at breast
+P940,Transient neonatal myasthenia gravis
+P964,"Termination of pregnancy, fetus and newborn"
+Z37,NA
+Z370,Single live birth
+Z371,Single stillbirth
+Z372,"Twins, both liveborn"
+Z373,NA
+Z374,NA
+Z375,"Other multiple births, all liveborn"
+Z377,NA
+Z379,"Outcome of delivery, unspecified"
+Z390,Care and examination immediately after delivery

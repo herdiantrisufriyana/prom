@@ -1,0 +1,55 @@
+Code,Description
+6902,Dilation and curettage following delivery or abortion
+7359,Other manually assisted delivery
+740,Classical cesarean section
+741,Low cervical cesarean section
+744,Cesarean section of other specified type
+7499,Other cesarean section of unspecified type
+A231,Brucellosis due to Brucella abortus
+O000,Abdominal pregnancy
+O020,Blighted ovum and nonhydatidiform mole
+O034,"Spontaneous abortion, incomplete, without complication"
+O035,"Spontaneous abortion, complete or unspecified, complicated by genital tract and pelvic infection"
+O0390,
+O053,"Other abortion, incomplete, with other and unspecified complications"
+O060,"Unspecified abortion, incomplete, complicated by genital tract and pelvic infection"
+O063,"Unspecified abortion, incomplete, with other and unspecified complications"
+O364,Maternal care for intrauterine death
+O630,Prolonged first stage (of labour)
+O631,Prolonged second stage (of labour)
+O639,"Long labour, unspecified"
+O640,Obstructed labour due to incomplete rotation of fetal head
+O641,Obstructed labour due to breech presentation
+O654,"Obstructed labour due to fetopelvic disproportion, unspecified"
+O659,"Obstructed labour due to maternal pelvic abnormality, unspecified"
+O662,Obstructed labour due to unusually large fetus
+O680,Labour and delivery complicated by fetal heart rate anomaly
+O681,Labour and delivery complicated by meconium in amniotic fluid
+O688,Labour and delivery complicated by other evidence of fetal stress
+O689,"Labour and delivery complicated by fetal stress, unspecified"
+O691,"Labour and delivery complicated by cord around neck, with compression"
+O701,Second degree perineal laceration during delivery
+O702,Third degree perineal laceration during delivery
+O709,"Perineal laceration during delivery, unspecified"
+O720,Third-stage haemorrhage
+O721,Other immediate postpartum haemorrhage
+O722,Delayed and secondary postpartum haemorrhage
+O757,Vaginal delivery following previous caesarean section
+O759,"Complication of labour and delivery, unspecified"
+O800,Spontaneous vertex delivery
+O801,Spontaneous breech delivery
+O808,Other single spontaneous delivery
+O809,"Single spontaneous delivery, unspecified"
+O820,Delivery by elective caesarean section
+O821,Delivery by emergency caesarean section
+O828,Other single delivery by caesarean section
+O829,"Delivery by caesarean section, unspecified"
+O839,"Assisted single delivery, unspecified"
+O842,"Multiple delivery, all by caesarean section"
+O900,Disruption of caesarean section wound
+P031,"Fetus and newborn affected by other malpresentation, malposition and disproportion during labour and delivery"
+Z370,Single live birth
+Z372,"Twins, both liveborn"
+Z390,Care and examination immediately after delivery
+Z391,Care and examination of lactating mother
+Z392,Routine postpartum follow-up

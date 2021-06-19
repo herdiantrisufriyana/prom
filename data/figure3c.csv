@@ -1,0 +1,28 @@
+Set,Model,AUROC (95% CI),Lower bound,Upper bound,Average AUROC per set
+Internal calibration split,DI-VNN,0.7346397077260013,0.72237141173523,0.746908003716772,0.6376226609601676
+Internal calibration split,PC-GBM,0.6267305049776253,0.614187486967049,0.639273522988202,0.6376226609601676
+Internal calibration split,PC-RF,0.6872276939246323,0.669552245115012,0.704903142734252,0.6376226609601676
+Internal calibration split,PC-ENR,0.6312302514523719,0.619152637792856,0.643307865111888,0.6376226609601676
+Internal calibration split,Causal RR,0.5082851467202072,0.502634094241593,0.513936199198821,0.6376226609601676
+Training set,"Başbuğ, et al. [38]",0.641,NA,NA,0.654
+Training set,"El-Achi, et al. [23]",0.667,NA,NA,0.654
+External random split,DI-VNN,0.71,0.7,0.72,0.58
+External random split,PC-GBM,0.57,0.56,0.58,0.58
+External random split,PC-RF,0.6,0.59,0.61,0.58
+External random split,PC-ENR,0.51,0.5,0.52,0.58
+External random split,Causal RR,0.51,0.5,0.52,0.58
+External geographical split,DI-VNN,0.53,0.52,0.54,0.508
+External geographical split,PC-GBM,0.53,0.52,0.54,0.508
+External geographical split,PC-RF,0.51,0.5,0.52,0.508
+External geographical split,PC-ENR,0.47,0.46,0.48,0.508
+External geographical split,Causal RR,0.5,0.49,0.51,0.508
+External temporal split,DI-VNN,0.56,0.55,0.57,0.52
+External temporal split,PC-GBM,0.52,0.51,0.53,0.52
+External temporal split,PC-RF,0.53,0.52,0.54,0.52
+External temporal split,PC-ENR,0.49,0.48,0.5,0.52
+External temporal split,Causal RR,0.5,0.49,0.51,0.52
+External geotemporal split,DI-VNN,0.6,0.56,0.64,0.534
+External geotemporal split,PC-GBM,0.5,0.46,0.54,0.534
+External geotemporal split,PC-RF,0.52,0.48,0.56,0.534
+External geotemporal split,PC-ENR,0.55,0.51,0.59,0.534
+External geotemporal split,Causal RR,0.5,0.46,0.54,0.534

@@ -1,0 +1,1163 @@
+Model,Set,Criteria fulfilled (%),Predicted time of deliver (week),Prediction of PROM by DI-VNN,True time of delivery (average week)
+Causal RR,Internal calibration split,9.523809523809524,0,event,0
+Causal RR,Internal calibration split,9.523809523809524,0,nonevent,0
+Causal RR,Internal calibration split,9.523809523809524,1,event,3
+Causal RR,Internal calibration split,9.523809523809524,1,nonevent,2
+Causal RR,Internal calibration split,9.523809523809524,2,event,1
+Causal RR,Internal calibration split,9.523809523809524,2,nonevent,2
+Causal RR,Internal calibration split,9.523809523809524,3,event,3
+Causal RR,Internal calibration split,9.523809523809524,3,nonevent,5
+Causal RR,Internal calibration split,9.523809523809524,4,event,0
+Causal RR,Internal calibration split,9.523809523809524,4,nonevent,5
+Causal RR,Internal calibration split,9.523809523809524,5,event,2
+Causal RR,Internal calibration split,9.523809523809524,5,nonevent,5
+Causal RR,Internal calibration split,9.523809523809524,6,nonevent,2
+Causal RR,Internal calibration split,9.523809523809524,7,nonevent,11
+Causal RR,Internal calibration split,9.523809523809524,8,event,1
+Causal RR,Internal calibration split,9.523809523809524,8,nonevent,10
+Causal RR,Internal calibration split,9.523809523809524,9,event,0
+Causal RR,Internal calibration split,9.523809523809524,9,nonevent,7
+Causal RR,Internal calibration split,9.523809523809524,10,event,0
+Causal RR,Internal calibration split,9.523809523809524,10,nonevent,7
+Causal RR,Internal calibration split,9.523809523809524,11,event,2
+Causal RR,Internal calibration split,9.523809523809524,11,nonevent,15
+Causal RR,Internal calibration split,9.523809523809524,12,event,4
+Causal RR,Internal calibration split,9.523809523809524,12,nonevent,17
+Causal RR,Internal calibration split,9.523809523809524,13,event,0
+Causal RR,Internal calibration split,9.523809523809524,13,nonevent,9
+Causal RR,Internal calibration split,9.523809523809524,14,nonevent,9
+Causal RR,Internal calibration split,9.523809523809524,15,event,0
+Causal RR,Internal calibration split,9.523809523809524,15,nonevent,4
+Causal RR,Internal calibration split,9.523809523809524,16,event,9
+Causal RR,Internal calibration split,9.523809523809524,16,nonevent,11
+Causal RR,Internal calibration split,9.523809523809524,17,nonevent,16
+Causal RR,Internal calibration split,9.523809523809524,18,event,0
+Causal RR,Internal calibration split,9.523809523809524,18,nonevent,6
+Causal RR,Internal calibration split,9.523809523809524,19,nonevent,14
+Causal RR,Internal calibration split,9.523809523809524,20,nonevent,3
+Causal RR,Internal calibration split,9.523809523809524,21,nonevent,7
+Causal RR,Internal calibration split,9.523809523809524,22,event,6
+Causal RR,Internal calibration split,9.523809523809524,22,nonevent,29
+Causal RR,Internal calibration split,9.523809523809524,23,nonevent,4
+Causal RR,Internal calibration split,9.523809523809524,24,nonevent,22
+Causal RR,Internal calibration split,9.523809523809524,25,event,31
+Causal RR,Internal calibration split,9.523809523809524,25,nonevent,28
+Causal RR,Internal calibration split,9.523809523809524,26,nonevent,10
+Causal RR,Internal calibration split,9.523809523809524,27,nonevent,27
+Causal RR,Internal calibration split,9.523809523809524,28,nonevent,11
+Causal RR,Internal calibration split,9.523809523809524,29,nonevent,17
+Causal RR,Internal calibration split,9.523809523809524,30,nonevent,3
+Causal RR,Internal calibration split,9.523809523809524,31,nonevent,38
+Causal RR,Internal calibration split,9.523809523809524,34,nonevent,21
+Causal RR,Internal calibration split,9.523809523809524,36,nonevent,0
+Causal RR,Internal calibration split,9.523809523809524,38,nonevent,25
+Causal RR,Internal calibration split,9.523809523809524,42,nonevent,25
+Causal RR,External random split,26.190476190476193,0,event,0
+Causal RR,External random split,26.190476190476193,0,nonevent,0
+Causal RR,External random split,26.190476190476193,1,event,3
+Causal RR,External random split,26.190476190476193,1,nonevent,1
+Causal RR,External random split,26.190476190476193,2,event,1
+Causal RR,External random split,26.190476190476193,2,nonevent,2
+Causal RR,External random split,26.190476190476193,3,event,0
+Causal RR,External random split,26.190476190476193,3,nonevent,4
+Causal RR,External random split,26.190476190476193,4,event,3
+Causal RR,External random split,26.190476190476193,4,nonevent,3
+Causal RR,External random split,26.190476190476193,5,event,2
+Causal RR,External random split,26.190476190476193,5,nonevent,5
+Causal RR,External random split,26.190476190476193,6,nonevent,4
+Causal RR,External random split,26.190476190476193,7,nonevent,11
+Causal RR,External random split,26.190476190476193,8,event,2
+Causal RR,External random split,26.190476190476193,8,nonevent,9
+Causal RR,External random split,26.190476190476193,9,event,5
+Causal RR,External random split,26.190476190476193,9,nonevent,8
+Causal RR,External random split,26.190476190476193,10,event,12
+Causal RR,External random split,26.190476190476193,10,nonevent,8
+Causal RR,External random split,26.190476190476193,11,event,1
+Causal RR,External random split,26.190476190476193,11,nonevent,9
+Causal RR,External random split,26.190476190476193,12,event,4
+Causal RR,External random split,26.190476190476193,12,nonevent,19
+Causal RR,External random split,26.190476190476193,13,event,0
+Causal RR,External random split,26.190476190476193,13,nonevent,11
+Causal RR,External random split,26.190476190476193,14,nonevent,13
+Causal RR,External random split,26.190476190476193,15,nonevent,12
+Causal RR,External random split,26.190476190476193,16,event,0
+Causal RR,External random split,26.190476190476193,16,nonevent,15
+Causal RR,External random split,26.190476190476193,17,nonevent,15
+Causal RR,External random split,26.190476190476193,18,event,0
+Causal RR,External random split,26.190476190476193,18,nonevent,19
+Causal RR,External random split,26.190476190476193,19,nonevent,17
+Causal RR,External random split,26.190476190476193,20,nonevent,8
+Causal RR,External random split,26.190476190476193,21,event,7
+Causal RR,External random split,26.190476190476193,21,nonevent,9
+Causal RR,External random split,26.190476190476193,22,event,5
+Causal RR,External random split,26.190476190476193,22,nonevent,29
+Causal RR,External random split,26.190476190476193,23,event,67
+Causal RR,External random split,26.190476190476193,23,nonevent,6
+Causal RR,External random split,26.190476190476193,24,nonevent,15
+Causal RR,External random split,26.190476190476193,25,nonevent,39
+Causal RR,External random split,26.190476190476193,26,nonevent,14
+Causal RR,External random split,26.190476190476193,27,nonevent,31
+Causal RR,External random split,26.190476190476193,28,nonevent,20
+Causal RR,External random split,26.190476190476193,29,nonevent,15
+Causal RR,External random split,26.190476190476193,30,nonevent,27
+Causal RR,External random split,26.190476190476193,31,nonevent,39
+Causal RR,External random split,26.190476190476193,33,nonevent,74
+Causal RR,External random split,26.190476190476193,36,event,24
+Causal RR,External random split,26.190476190476193,36,nonevent,22
+Causal RR,External random split,26.190476190476193,37,nonevent,36
+Causal RR,External random split,26.190476190476193,42,nonevent,39
+Causal RR,External geographical split,16.666666666666664,0,nonevent,0
+Causal RR,External geographical split,16.666666666666664,1,nonevent,0
+Causal RR,External geographical split,16.666666666666664,2,nonevent,3
+Causal RR,External geographical split,16.666666666666664,3,event,0
+Causal RR,External geographical split,16.666666666666664,3,nonevent,2
+Causal RR,External geographical split,16.666666666666664,4,nonevent,4
+Causal RR,External geographical split,16.666666666666664,5,event,1
+Causal RR,External geographical split,16.666666666666664,5,nonevent,5
+Causal RR,External geographical split,16.666666666666664,6,event,1
+Causal RR,External geographical split,16.666666666666664,6,nonevent,3
+Causal RR,External geographical split,16.666666666666664,7,nonevent,21
+Causal RR,External geographical split,16.666666666666664,8,nonevent,3
+Causal RR,External geographical split,16.666666666666664,9,event,0
+Causal RR,External geographical split,16.666666666666664,9,nonevent,3
+Causal RR,External geographical split,16.666666666666664,10,nonevent,2
+Causal RR,External geographical split,16.666666666666664,11,nonevent,11
+Causal RR,External geographical split,16.666666666666664,12,event,0
+Causal RR,External geographical split,16.666666666666664,12,nonevent,12
+Causal RR,External geographical split,16.666666666666664,13,nonevent,18
+Causal RR,External geographical split,16.666666666666664,14,nonevent,5
+Causal RR,External geographical split,16.666666666666664,15,nonevent,17
+Causal RR,External geographical split,16.666666666666664,16,nonevent,22
+Causal RR,External geographical split,16.666666666666664,17,nonevent,22
+Causal RR,External geographical split,16.666666666666664,18,nonevent,22
+Causal RR,External geographical split,16.666666666666664,19,nonevent,32
+Causal RR,External geographical split,16.666666666666664,20,nonevent,11
+Causal RR,External geographical split,16.666666666666664,21,nonevent,11
+Causal RR,External geographical split,16.666666666666664,22,nonevent,28
+Causal RR,External geographical split,16.666666666666664,23,nonevent,0
+Causal RR,External geographical split,16.666666666666664,24,nonevent,7
+Causal RR,External geographical split,16.666666666666664,25,nonevent,10
+Causal RR,External geographical split,16.666666666666664,26,nonevent,7
+Causal RR,External geographical split,16.666666666666664,27,nonevent,7
+Causal RR,External geographical split,16.666666666666664,28,nonevent,22
+Causal RR,External geographical split,16.666666666666664,29,nonevent,10
+Causal RR,External geographical split,16.666666666666664,30,nonevent,7
+Causal RR,External geographical split,16.666666666666664,31,nonevent,24
+Causal RR,External geographical split,16.666666666666664,33,nonevent,24
+Causal RR,External geographical split,16.666666666666664,34,nonevent,19
+Causal RR,External geographical split,16.666666666666664,35,nonevent,25
+Causal RR,External geographical split,16.666666666666664,36,nonevent,25
+Causal RR,External geographical split,16.666666666666664,38,nonevent,23
+Causal RR,External geographical split,16.666666666666664,39,nonevent,47
+Causal RR,External temporal split,16.666666666666664,0,nonevent,0
+Causal RR,External temporal split,16.666666666666664,2,event,4
+Causal RR,External temporal split,16.666666666666664,2,nonevent,0
+Causal RR,External temporal split,16.666666666666664,3,nonevent,1
+Causal RR,External temporal split,16.666666666666664,4,nonevent,5
+Causal RR,External temporal split,16.666666666666664,5,event,2
+Causal RR,External temporal split,16.666666666666664,5,nonevent,7
+Causal RR,External temporal split,16.666666666666664,6,nonevent,1
+Causal RR,External temporal split,16.666666666666664,7,nonevent,2
+Causal RR,External temporal split,16.666666666666664,8,event,3
+Causal RR,External temporal split,16.666666666666664,8,nonevent,5
+Causal RR,External temporal split,16.666666666666664,9,event,11
+Causal RR,External temporal split,16.666666666666664,9,nonevent,10
+Causal RR,External temporal split,16.666666666666664,10,event,4
+Causal RR,External temporal split,16.666666666666664,10,nonevent,16
+Causal RR,External temporal split,16.666666666666664,11,event,7
+Causal RR,External temporal split,16.666666666666664,11,nonevent,23
+Causal RR,External temporal split,16.666666666666664,12,event,5
+Causal RR,External temporal split,16.666666666666664,12,nonevent,20
+Causal RR,External temporal split,16.666666666666664,13,event,11
+Causal RR,External temporal split,16.666666666666664,13,nonevent,7
+Causal RR,External temporal split,16.666666666666664,14,nonevent,14
+Causal RR,External temporal split,16.666666666666664,15,nonevent,10
+Causal RR,External temporal split,16.666666666666664,16,event,2
+Causal RR,External temporal split,16.666666666666664,16,nonevent,9
+Causal RR,External temporal split,16.666666666666664,17,nonevent,10
+Causal RR,External temporal split,16.666666666666664,18,nonevent,8
+Causal RR,External temporal split,16.666666666666664,19,nonevent,11
+Causal RR,External temporal split,16.666666666666664,20,nonevent,12
+Causal RR,External temporal split,16.666666666666664,21,nonevent,19
+Causal RR,External temporal split,16.666666666666664,22,nonevent,39
+Causal RR,External temporal split,16.666666666666664,23,nonevent,25
+Causal RR,External temporal split,16.666666666666664,24,nonevent,9
+Causal RR,External temporal split,16.666666666666664,25,nonevent,18
+Causal RR,External temporal split,16.666666666666664,26,nonevent,27
+Causal RR,External temporal split,16.666666666666664,27,nonevent,39
+Causal RR,External temporal split,16.666666666666664,28,nonevent,31
+Causal RR,External temporal split,16.666666666666664,29,nonevent,73
+Causal RR,External temporal split,16.666666666666664,31,nonevent,40
+Causal RR,External temporal split,16.666666666666664,32,nonevent,42
+Causal RR,External temporal split,16.666666666666664,35,nonevent,15
+Causal RR,External temporal split,16.666666666666664,37,nonevent,4
+Causal RR,External temporal split,16.666666666666664,38,nonevent,17
+Causal RR,External temporal split,16.666666666666664,39,nonevent,20
+Causal RR,External temporal split,16.666666666666664,40,nonevent,3
+Causal RR,External temporal split,16.666666666666664,41,nonevent,1
+Causal RR,External temporal split,16.666666666666664,42,nonevent,2
+Causal RR,External geotemporal split,14.285714285714285,0,nonevent,0
+Causal RR,External geotemporal split,14.285714285714285,2,nonevent,2
+Causal RR,External geotemporal split,14.285714285714285,4,nonevent,0
+Causal RR,External geotemporal split,14.285714285714285,5,event,0
+Causal RR,External geotemporal split,14.285714285714285,5,nonevent,8
+Causal RR,External geotemporal split,14.285714285714285,6,nonevent,2
+Causal RR,External geotemporal split,14.285714285714285,7,nonevent,0
+Causal RR,External geotemporal split,14.285714285714285,8,nonevent,0
+Causal RR,External geotemporal split,14.285714285714285,9,nonevent,1
+Causal RR,External geotemporal split,14.285714285714285,10,nonevent,8
+Causal RR,External geotemporal split,14.285714285714285,11,nonevent,2
+Causal RR,External geotemporal split,14.285714285714285,12,nonevent,69
+Causal RR,External geotemporal split,14.285714285714285,13,nonevent,14
+Causal RR,External geotemporal split,14.285714285714285,14,nonevent,1
+Causal RR,External geotemporal split,14.285714285714285,15,nonevent,28
+Causal RR,External geotemporal split,14.285714285714285,16,nonevent,0
+Causal RR,External geotemporal split,14.285714285714285,17,nonevent,15
+Causal RR,External geotemporal split,14.285714285714285,18,nonevent,20
+Causal RR,External geotemporal split,14.285714285714285,19,nonevent,16
+Causal RR,External geotemporal split,14.285714285714285,20,nonevent,10
+Causal RR,External geotemporal split,14.285714285714285,21,nonevent,21
+Causal RR,External geotemporal split,14.285714285714285,22,nonevent,43
+Causal RR,External geotemporal split,14.285714285714285,24,nonevent,17
+Causal RR,External geotemporal split,14.285714285714285,26,nonevent,17
+Causal RR,External geotemporal split,14.285714285714285,31,nonevent,33
+PC-ENR,Internal calibration split,47.61904761904761,0,event,1
+PC-ENR,Internal calibration split,47.61904761904761,0,nonevent,0
+PC-ENR,Internal calibration split,47.61904761904761,1,event,0
+PC-ENR,Internal calibration split,47.61904761904761,1,nonevent,1
+PC-ENR,Internal calibration split,47.61904761904761,2,event,0
+PC-ENR,Internal calibration split,47.61904761904761,2,nonevent,1
+PC-ENR,Internal calibration split,47.61904761904761,3,event,1
+PC-ENR,Internal calibration split,47.61904761904761,3,nonevent,2
+PC-ENR,Internal calibration split,47.61904761904761,4,event,1
+PC-ENR,Internal calibration split,47.61904761904761,4,nonevent,3
+PC-ENR,Internal calibration split,47.61904761904761,5,event,0
+PC-ENR,Internal calibration split,47.61904761904761,5,nonevent,3
+PC-ENR,Internal calibration split,47.61904761904761,6,event,1
+PC-ENR,Internal calibration split,47.61904761904761,6,nonevent,6
+PC-ENR,Internal calibration split,47.61904761904761,7,event,5
+PC-ENR,Internal calibration split,47.61904761904761,7,nonevent,6
+PC-ENR,Internal calibration split,47.61904761904761,8,event,3
+PC-ENR,Internal calibration split,47.61904761904761,8,nonevent,8
+PC-ENR,Internal calibration split,47.61904761904761,9,event,1
+PC-ENR,Internal calibration split,47.61904761904761,9,nonevent,12
+PC-ENR,Internal calibration split,47.61904761904761,10,event,16
+PC-ENR,Internal calibration split,47.61904761904761,10,nonevent,14
+PC-ENR,Internal calibration split,47.61904761904761,11,event,6
+PC-ENR,Internal calibration split,47.61904761904761,11,nonevent,12
+PC-ENR,Internal calibration split,47.61904761904761,12,event,7
+PC-ENR,Internal calibration split,47.61904761904761,12,nonevent,19
+PC-ENR,Internal calibration split,47.61904761904761,13,event,5
+PC-ENR,Internal calibration split,47.61904761904761,13,nonevent,17
+PC-ENR,Internal calibration split,47.61904761904761,14,event,8
+PC-ENR,Internal calibration split,47.61904761904761,14,nonevent,16
+PC-ENR,Internal calibration split,47.61904761904761,15,event,7
+PC-ENR,Internal calibration split,47.61904761904761,15,nonevent,22
+PC-ENR,Internal calibration split,47.61904761904761,16,event,9
+PC-ENR,Internal calibration split,47.61904761904761,16,nonevent,23
+PC-ENR,Internal calibration split,47.61904761904761,17,event,9
+PC-ENR,Internal calibration split,47.61904761904761,17,nonevent,17
+PC-ENR,Internal calibration split,47.61904761904761,18,event,29
+PC-ENR,Internal calibration split,47.61904761904761,18,nonevent,19
+PC-ENR,Internal calibration split,47.61904761904761,19,event,7
+PC-ENR,Internal calibration split,47.61904761904761,19,nonevent,24
+PC-ENR,Internal calibration split,47.61904761904761,20,event,6
+PC-ENR,Internal calibration split,47.61904761904761,20,nonevent,27
+PC-ENR,Internal calibration split,47.61904761904761,21,event,11
+PC-ENR,Internal calibration split,47.61904761904761,21,nonevent,27
+PC-ENR,Internal calibration split,47.61904761904761,22,event,11
+PC-ENR,Internal calibration split,47.61904761904761,22,nonevent,25
+PC-ENR,Internal calibration split,47.61904761904761,23,event,10
+PC-ENR,Internal calibration split,47.61904761904761,23,nonevent,21
+PC-ENR,Internal calibration split,47.61904761904761,24,nonevent,23
+PC-ENR,Internal calibration split,47.61904761904761,25,nonevent,24
+PC-ENR,Internal calibration split,47.61904761904761,26,nonevent,21
+PC-ENR,Internal calibration split,47.61904761904761,27,nonevent,26
+PC-ENR,Internal calibration split,47.61904761904761,28,nonevent,34
+PC-ENR,Internal calibration split,47.61904761904761,29,nonevent,30
+PC-ENR,Internal calibration split,47.61904761904761,30,nonevent,25
+PC-ENR,Internal calibration split,47.61904761904761,31,nonevent,25
+PC-ENR,Internal calibration split,47.61904761904761,32,event,79
+PC-ENR,Internal calibration split,47.61904761904761,32,nonevent,34
+PC-ENR,Internal calibration split,47.61904761904761,33,nonevent,31
+PC-ENR,Internal calibration split,47.61904761904761,34,nonevent,40
+PC-ENR,Internal calibration split,47.61904761904761,35,event,43
+PC-ENR,Internal calibration split,47.61904761904761,35,nonevent,33
+PC-ENR,Internal calibration split,47.61904761904761,36,nonevent,29
+PC-ENR,Internal calibration split,47.61904761904761,37,nonevent,16
+PC-ENR,Internal calibration split,47.61904761904761,38,nonevent,30
+PC-ENR,Internal calibration split,47.61904761904761,39,nonevent,48
+PC-ENR,Internal calibration split,47.61904761904761,40,nonevent,16
+PC-ENR,Internal calibration split,47.61904761904761,41,nonevent,50
+PC-ENR,Internal calibration split,47.61904761904761,42,nonevent,42
+PC-ENR,External random split,7.142857142857142,0,event,46
+PC-ENR,External random split,7.142857142857142,0,nonevent,5
+PC-ENR,External random split,7.142857142857142,1,event,0
+PC-ENR,External random split,7.142857142857142,1,nonevent,7
+PC-ENR,External random split,7.142857142857142,2,event,5
+PC-ENR,External random split,7.142857142857142,2,nonevent,17
+PC-ENR,External random split,7.142857142857142,3,event,1
+PC-ENR,External random split,7.142857142857142,3,nonevent,12
+PC-ENR,External random split,7.142857142857142,4,event,0
+PC-ENR,External random split,7.142857142857142,4,nonevent,3
+PC-ENR,External random split,7.142857142857142,5,event,26
+PC-ENR,External random split,7.142857142857142,5,nonevent,19
+PC-ENR,External random split,7.142857142857142,6,event,0
+PC-ENR,External random split,7.142857142857142,6,nonevent,4
+PC-ENR,External random split,7.142857142857142,7,event,0
+PC-ENR,External random split,7.142857142857142,7,nonevent,5
+PC-ENR,External random split,7.142857142857142,8,event,1
+PC-ENR,External random split,7.142857142857142,8,nonevent,3
+PC-ENR,External random split,7.142857142857142,9,event,1
+PC-ENR,External random split,7.142857142857142,9,nonevent,6
+PC-ENR,External random split,7.142857142857142,10,event,0
+PC-ENR,External random split,7.142857142857142,10,nonevent,4
+PC-ENR,External random split,7.142857142857142,11,event,13
+PC-ENR,External random split,7.142857142857142,11,nonevent,16
+PC-ENR,External random split,7.142857142857142,12,event,0
+PC-ENR,External random split,7.142857142857142,12,nonevent,3
+PC-ENR,External random split,7.142857142857142,13,event,0
+PC-ENR,External random split,7.142857142857142,13,nonevent,7
+PC-ENR,External random split,7.142857142857142,14,event,1
+PC-ENR,External random split,7.142857142857142,14,nonevent,0
+PC-ENR,External random split,7.142857142857142,15,event,1
+PC-ENR,External random split,7.142857142857142,15,nonevent,7
+PC-ENR,External random split,7.142857142857142,16,event,1
+PC-ENR,External random split,7.142857142857142,16,nonevent,4
+PC-ENR,External random split,7.142857142857142,17,event,0
+PC-ENR,External random split,7.142857142857142,17,nonevent,3
+PC-ENR,External random split,7.142857142857142,18,event,10
+PC-ENR,External random split,7.142857142857142,18,nonevent,4
+PC-ENR,External random split,7.142857142857142,19,event,0
+PC-ENR,External random split,7.142857142857142,19,nonevent,10
+PC-ENR,External random split,7.142857142857142,20,event,4
+PC-ENR,External random split,7.142857142857142,20,nonevent,9
+PC-ENR,External random split,7.142857142857142,21,event,6
+PC-ENR,External random split,7.142857142857142,21,nonevent,5
+PC-ENR,External random split,7.142857142857142,22,event,2
+PC-ENR,External random split,7.142857142857142,22,nonevent,5
+PC-ENR,External random split,7.142857142857142,23,event,0
+PC-ENR,External random split,7.142857142857142,23,nonevent,6
+PC-ENR,External random split,7.142857142857142,24,event,0
+PC-ENR,External random split,7.142857142857142,24,nonevent,6
+PC-ENR,External random split,7.142857142857142,25,event,0
+PC-ENR,External random split,7.142857142857142,25,nonevent,4
+PC-ENR,External random split,7.142857142857142,26,event,3
+PC-ENR,External random split,7.142857142857142,26,nonevent,6
+PC-ENR,External random split,7.142857142857142,27,event,0
+PC-ENR,External random split,7.142857142857142,27,nonevent,2
+PC-ENR,External random split,7.142857142857142,28,event,0
+PC-ENR,External random split,7.142857142857142,28,nonevent,5
+PC-ENR,External random split,7.142857142857142,29,event,0
+PC-ENR,External random split,7.142857142857142,29,nonevent,7
+PC-ENR,External random split,7.142857142857142,30,event,7
+PC-ENR,External random split,7.142857142857142,30,nonevent,4
+PC-ENR,External random split,7.142857142857142,31,event,6
+PC-ENR,External random split,7.142857142857142,31,nonevent,9
+PC-ENR,External random split,7.142857142857142,32,event,0
+PC-ENR,External random split,7.142857142857142,32,nonevent,3
+PC-ENR,External random split,7.142857142857142,33,event,1
+PC-ENR,External random split,7.142857142857142,33,nonevent,10
+PC-ENR,External random split,7.142857142857142,34,event,0
+PC-ENR,External random split,7.142857142857142,34,nonevent,7
+PC-ENR,External random split,7.142857142857142,35,event,1
+PC-ENR,External random split,7.142857142857142,35,nonevent,7
+PC-ENR,External random split,7.142857142857142,36,nonevent,6
+PC-ENR,External random split,7.142857142857142,37,event,13
+PC-ENR,External random split,7.142857142857142,37,nonevent,12
+PC-ENR,External random split,7.142857142857142,38,event,12
+PC-ENR,External random split,7.142857142857142,38,nonevent,7
+PC-ENR,External random split,7.142857142857142,39,nonevent,9
+PC-ENR,External random split,7.142857142857142,40,event,0
+PC-ENR,External random split,7.142857142857142,40,nonevent,6
+PC-ENR,External random split,7.142857142857142,41,event,0
+PC-ENR,External random split,7.142857142857142,41,nonevent,6
+PC-ENR,External random split,7.142857142857142,42,event,0
+PC-ENR,External random split,7.142857142857142,42,nonevent,9
+PC-ENR,External geographical split,2.380952380952381,0,nonevent,3
+PC-ENR,External geographical split,2.380952380952381,1,event,2
+PC-ENR,External geographical split,2.380952380952381,1,nonevent,6
+PC-ENR,External geographical split,2.380952380952381,2,nonevent,5
+PC-ENR,External geographical split,2.380952380952381,3,nonevent,2
+PC-ENR,External geographical split,2.380952380952381,4,nonevent,1
+PC-ENR,External geographical split,2.380952380952381,5,nonevent,11
+PC-ENR,External geographical split,2.380952380952381,6,event,2
+PC-ENR,External geographical split,2.380952380952381,6,nonevent,4
+PC-ENR,External geographical split,2.380952380952381,7,event,0
+PC-ENR,External geographical split,2.380952380952381,7,nonevent,21
+PC-ENR,External geographical split,2.380952380952381,8,event,0
+PC-ENR,External geographical split,2.380952380952381,8,nonevent,2
+PC-ENR,External geographical split,2.380952380952381,9,nonevent,14
+PC-ENR,External geographical split,2.380952380952381,10,nonevent,15
+PC-ENR,External geographical split,2.380952380952381,11,event,0
+PC-ENR,External geographical split,2.380952380952381,11,nonevent,5
+PC-ENR,External geographical split,2.380952380952381,12,nonevent,3
+PC-ENR,External geographical split,2.380952380952381,13,nonevent,5
+PC-ENR,External geographical split,2.380952380952381,14,event,0
+PC-ENR,External geographical split,2.380952380952381,14,nonevent,3
+PC-ENR,External geographical split,2.380952380952381,15,event,9
+PC-ENR,External geographical split,2.380952380952381,15,nonevent,5
+PC-ENR,External geographical split,2.380952380952381,16,nonevent,3
+PC-ENR,External geographical split,2.380952380952381,17,event,0
+PC-ENR,External geographical split,2.380952380952381,17,nonevent,0
+PC-ENR,External geographical split,2.380952380952381,18,nonevent,2
+PC-ENR,External geographical split,2.380952380952381,19,nonevent,7
+PC-ENR,External geographical split,2.380952380952381,20,event,0
+PC-ENR,External geographical split,2.380952380952381,20,nonevent,9
+PC-ENR,External geographical split,2.380952380952381,21,nonevent,5
+PC-ENR,External geographical split,2.380952380952381,22,nonevent,2
+PC-ENR,External geographical split,2.380952380952381,23,nonevent,3
+PC-ENR,External geographical split,2.380952380952381,24,nonevent,7
+PC-ENR,External geographical split,2.380952380952381,25,nonevent,7
+PC-ENR,External geographical split,2.380952380952381,26,nonevent,12
+PC-ENR,External geographical split,2.380952380952381,27,nonevent,2
+PC-ENR,External geographical split,2.380952380952381,28,nonevent,3
+PC-ENR,External geographical split,2.380952380952381,29,nonevent,2
+PC-ENR,External geographical split,2.380952380952381,30,event,0
+PC-ENR,External geographical split,2.380952380952381,30,nonevent,3
+PC-ENR,External geographical split,2.380952380952381,31,nonevent,8
+PC-ENR,External geographical split,2.380952380952381,32,event,24
+PC-ENR,External geographical split,2.380952380952381,32,nonevent,4
+PC-ENR,External geographical split,2.380952380952381,33,nonevent,7
+PC-ENR,External geographical split,2.380952380952381,34,nonevent,3
+PC-ENR,External geographical split,2.380952380952381,35,nonevent,12
+PC-ENR,External geographical split,2.380952380952381,36,event,0
+PC-ENR,External geographical split,2.380952380952381,36,nonevent,4
+PC-ENR,External geographical split,2.380952380952381,37,event,0
+PC-ENR,External geographical split,2.380952380952381,37,nonevent,2
+PC-ENR,External geographical split,2.380952380952381,38,nonevent,8
+PC-ENR,External geographical split,2.380952380952381,39,event,2
+PC-ENR,External geographical split,2.380952380952381,39,nonevent,2
+PC-ENR,External geographical split,2.380952380952381,40,event,2
+PC-ENR,External geographical split,2.380952380952381,40,nonevent,12
+PC-ENR,External geographical split,2.380952380952381,41,event,0
+PC-ENR,External geographical split,2.380952380952381,41,nonevent,5
+PC-ENR,External geographical split,2.380952380952381,42,nonevent,9
+PC-ENR,External temporal split,16.666666666666664,0,event,0
+PC-ENR,External temporal split,16.666666666666664,0,nonevent,11
+PC-ENR,External temporal split,16.666666666666664,1,event,0
+PC-ENR,External temporal split,16.666666666666664,1,nonevent,9
+PC-ENR,External temporal split,16.666666666666664,2,event,4
+PC-ENR,External temporal split,16.666666666666664,2,nonevent,14
+PC-ENR,External temporal split,16.666666666666664,3,event,0
+PC-ENR,External temporal split,16.666666666666664,3,nonevent,1
+PC-ENR,External temporal split,16.666666666666664,4,nonevent,5
+PC-ENR,External temporal split,16.666666666666664,5,event,1
+PC-ENR,External temporal split,16.666666666666664,5,nonevent,8
+PC-ENR,External temporal split,16.666666666666664,6,event,1
+PC-ENR,External temporal split,16.666666666666664,6,nonevent,12
+PC-ENR,External temporal split,16.666666666666664,7,nonevent,14
+PC-ENR,External temporal split,16.666666666666664,8,nonevent,10
+PC-ENR,External temporal split,16.666666666666664,9,event,0
+PC-ENR,External temporal split,16.666666666666664,9,nonevent,9
+PC-ENR,External temporal split,16.666666666666664,10,event,8
+PC-ENR,External temporal split,16.666666666666664,10,nonevent,8
+PC-ENR,External temporal split,16.666666666666664,11,nonevent,8
+PC-ENR,External temporal split,16.666666666666664,12,event,15
+PC-ENR,External temporal split,16.666666666666664,12,nonevent,22
+PC-ENR,External temporal split,16.666666666666664,13,event,71
+PC-ENR,External temporal split,16.666666666666664,13,nonevent,8
+PC-ENR,External temporal split,16.666666666666664,14,nonevent,15
+PC-ENR,External temporal split,16.666666666666664,15,event,8
+PC-ENR,External temporal split,16.666666666666664,15,nonevent,2
+PC-ENR,External temporal split,16.666666666666664,16,event,0
+PC-ENR,External temporal split,16.666666666666664,16,nonevent,16
+PC-ENR,External temporal split,16.666666666666664,17,event,7
+PC-ENR,External temporal split,16.666666666666664,17,nonevent,12
+PC-ENR,External temporal split,16.666666666666664,18,event,0
+PC-ENR,External temporal split,16.666666666666664,18,nonevent,24
+PC-ENR,External temporal split,16.666666666666664,19,nonevent,5
+PC-ENR,External temporal split,16.666666666666664,20,nonevent,12
+PC-ENR,External temporal split,16.666666666666664,21,event,0
+PC-ENR,External temporal split,16.666666666666664,21,nonevent,19
+PC-ENR,External temporal split,16.666666666666664,22,event,0
+PC-ENR,External temporal split,16.666666666666664,22,nonevent,14
+PC-ENR,External temporal split,16.666666666666664,23,nonevent,14
+PC-ENR,External temporal split,16.666666666666664,24,event,16
+PC-ENR,External temporal split,16.666666666666664,24,nonevent,12
+PC-ENR,External temporal split,16.666666666666664,25,nonevent,4
+PC-ENR,External temporal split,16.666666666666664,26,event,0
+PC-ENR,External temporal split,16.666666666666664,26,nonevent,15
+PC-ENR,External temporal split,16.666666666666664,27,event,7
+PC-ENR,External temporal split,16.666666666666664,27,nonevent,9
+PC-ENR,External temporal split,16.666666666666664,28,event,8
+PC-ENR,External temporal split,16.666666666666664,28,nonevent,4
+PC-ENR,External temporal split,16.666666666666664,29,event,6
+PC-ENR,External temporal split,16.666666666666664,29,nonevent,11
+PC-ENR,External temporal split,16.666666666666664,30,nonevent,11
+PC-ENR,External temporal split,16.666666666666664,31,event,0
+PC-ENR,External temporal split,16.666666666666664,31,nonevent,8
+PC-ENR,External temporal split,16.666666666666664,32,nonevent,10
+PC-ENR,External temporal split,16.666666666666664,33,nonevent,8
+PC-ENR,External temporal split,16.666666666666664,34,nonevent,12
+PC-ENR,External temporal split,16.666666666666664,35,nonevent,10
+PC-ENR,External temporal split,16.666666666666664,36,nonevent,3
+PC-ENR,External temporal split,16.666666666666664,37,nonevent,20
+PC-ENR,External temporal split,16.666666666666664,38,nonevent,5
+PC-ENR,External temporal split,16.666666666666664,39,event,9
+PC-ENR,External temporal split,16.666666666666664,39,nonevent,4
+PC-ENR,External temporal split,16.666666666666664,40,event,0
+PC-ENR,External temporal split,16.666666666666664,40,nonevent,11
+PC-ENR,External temporal split,16.666666666666664,41,event,0
+PC-ENR,External temporal split,16.666666666666664,41,nonevent,15
+PC-ENR,External temporal split,16.666666666666664,42,event,3
+PC-ENR,External temporal split,16.666666666666664,42,nonevent,11
+PC-ENR,External geotemporal split,2.380952380952381,0,nonevent,8
+PC-ENR,External geotemporal split,2.380952380952381,1,nonevent,10
+PC-ENR,External geotemporal split,2.380952380952381,2,nonevent,10
+PC-ENR,External geotemporal split,2.380952380952381,3,nonevent,19
+PC-ENR,External geotemporal split,2.380952380952381,4,nonevent,21
+PC-ENR,External geotemporal split,2.380952380952381,5,nonevent,12
+PC-ENR,External geotemporal split,2.380952380952381,6,nonevent,4
+PC-ENR,External geotemporal split,2.380952380952381,7,event,0
+PC-ENR,External geotemporal split,2.380952380952381,7,nonevent,5
+PC-ENR,External geotemporal split,2.380952380952381,8,event,0
+PC-ENR,External geotemporal split,2.380952380952381,8,nonevent,3
+PC-ENR,External geotemporal split,2.380952380952381,9,nonevent,7
+PC-ENR,External geotemporal split,2.380952380952381,10,nonevent,0
+PC-ENR,External geotemporal split,2.380952380952381,11,nonevent,10
+PC-ENR,External geotemporal split,2.380952380952381,12,nonevent,5
+PC-ENR,External geotemporal split,2.380952380952381,13,nonevent,11
+PC-ENR,External geotemporal split,2.380952380952381,14,nonevent,27
+PC-ENR,External geotemporal split,2.380952380952381,15,nonevent,8
+PC-ENR,External geotemporal split,2.380952380952381,16,nonevent,9
+PC-ENR,External geotemporal split,2.380952380952381,17,event,0
+PC-ENR,External geotemporal split,2.380952380952381,17,nonevent,8
+PC-ENR,External geotemporal split,2.380952380952381,18,nonevent,8
+PC-ENR,External geotemporal split,2.380952380952381,19,nonevent,10
+PC-ENR,External geotemporal split,2.380952380952381,20,nonevent,16
+PC-ENR,External geotemporal split,2.380952380952381,21,nonevent,3
+PC-ENR,External geotemporal split,2.380952380952381,22,nonevent,10
+PC-ENR,External geotemporal split,2.380952380952381,23,event,0
+PC-ENR,External geotemporal split,2.380952380952381,23,nonevent,9
+PC-ENR,External geotemporal split,2.380952380952381,24,nonevent,0
+PC-ENR,External geotemporal split,2.380952380952381,25,nonevent,46
+PC-ENR,External geotemporal split,2.380952380952381,26,nonevent,12
+PC-ENR,External geotemporal split,2.380952380952381,27,nonevent,15
+PC-ENR,External geotemporal split,2.380952380952381,28,nonevent,40
+PC-ENR,External geotemporal split,2.380952380952381,29,nonevent,0
+PC-ENR,External geotemporal split,2.380952380952381,30,nonevent,18
+PC-ENR,External geotemporal split,2.380952380952381,31,nonevent,20
+PC-ENR,External geotemporal split,2.380952380952381,32,nonevent,2
+PC-ENR,External geotemporal split,2.380952380952381,33,nonevent,10
+PC-ENR,External geotemporal split,2.380952380952381,34,nonevent,0
+PC-ENR,External geotemporal split,2.380952380952381,35,nonevent,17
+PC-ENR,External geotemporal split,2.380952380952381,36,nonevent,3
+PC-ENR,External geotemporal split,2.380952380952381,37,nonevent,14
+PC-ENR,External geotemporal split,2.380952380952381,38,nonevent,3
+PC-ENR,External geotemporal split,2.380952380952381,39,nonevent,31
+PC-ENR,External geotemporal split,2.380952380952381,40,nonevent,14
+PC-ENR,External geotemporal split,2.380952380952381,41,nonevent,1
+PC-ENR,External geotemporal split,2.380952380952381,42,nonevent,2
+PC-RF,Internal calibration split,78.57142857142857,0,event,0
+PC-RF,Internal calibration split,78.57142857142857,0,nonevent,0
+PC-RF,Internal calibration split,78.57142857142857,1,event,0
+PC-RF,Internal calibration split,78.57142857142857,1,nonevent,0
+PC-RF,Internal calibration split,78.57142857142857,2,event,0
+PC-RF,Internal calibration split,78.57142857142857,2,nonevent,1
+PC-RF,Internal calibration split,78.57142857142857,3,event,1
+PC-RF,Internal calibration split,78.57142857142857,3,nonevent,1
+PC-RF,Internal calibration split,78.57142857142857,4,event,2
+PC-RF,Internal calibration split,78.57142857142857,4,nonevent,2
+PC-RF,Internal calibration split,78.57142857142857,5,event,3
+PC-RF,Internal calibration split,78.57142857142857,5,nonevent,3
+PC-RF,Internal calibration split,78.57142857142857,6,event,6
+PC-RF,Internal calibration split,78.57142857142857,6,nonevent,4
+PC-RF,Internal calibration split,78.57142857142857,7,event,5
+PC-RF,Internal calibration split,78.57142857142857,7,nonevent,5
+PC-RF,Internal calibration split,78.57142857142857,8,event,7
+PC-RF,Internal calibration split,78.57142857142857,8,nonevent,6
+PC-RF,Internal calibration split,78.57142857142857,9,event,9
+PC-RF,Internal calibration split,78.57142857142857,9,nonevent,8
+PC-RF,Internal calibration split,78.57142857142857,10,event,10
+PC-RF,Internal calibration split,78.57142857142857,10,nonevent,10
+PC-RF,Internal calibration split,78.57142857142857,11,event,11
+PC-RF,Internal calibration split,78.57142857142857,11,nonevent,10
+PC-RF,Internal calibration split,78.57142857142857,12,event,16
+PC-RF,Internal calibration split,78.57142857142857,12,nonevent,11
+PC-RF,Internal calibration split,78.57142857142857,13,event,13
+PC-RF,Internal calibration split,78.57142857142857,13,nonevent,14
+PC-RF,Internal calibration split,78.57142857142857,14,event,16
+PC-RF,Internal calibration split,78.57142857142857,14,nonevent,14
+PC-RF,Internal calibration split,78.57142857142857,15,nonevent,17
+PC-RF,Internal calibration split,78.57142857142857,16,event,17
+PC-RF,Internal calibration split,78.57142857142857,16,nonevent,17
+PC-RF,Internal calibration split,78.57142857142857,17,event,21
+PC-RF,Internal calibration split,78.57142857142857,17,nonevent,19
+PC-RF,Internal calibration split,78.57142857142857,18,event,23
+PC-RF,Internal calibration split,78.57142857142857,18,nonevent,19
+PC-RF,Internal calibration split,78.57142857142857,19,event,19
+PC-RF,Internal calibration split,78.57142857142857,19,nonevent,20
+PC-RF,Internal calibration split,78.57142857142857,20,event,21
+PC-RF,Internal calibration split,78.57142857142857,20,nonevent,23
+PC-RF,Internal calibration split,78.57142857142857,21,event,23
+PC-RF,Internal calibration split,78.57142857142857,21,nonevent,26
+PC-RF,Internal calibration split,78.57142857142857,22,event,28
+PC-RF,Internal calibration split,78.57142857142857,22,nonevent,25
+PC-RF,Internal calibration split,78.57142857142857,23,event,29
+PC-RF,Internal calibration split,78.57142857142857,23,nonevent,25
+PC-RF,Internal calibration split,78.57142857142857,24,nonevent,26
+PC-RF,Internal calibration split,78.57142857142857,25,event,30
+PC-RF,Internal calibration split,78.57142857142857,25,nonevent,27
+PC-RF,Internal calibration split,78.57142857142857,26,event,32
+PC-RF,Internal calibration split,78.57142857142857,26,nonevent,29
+PC-RF,Internal calibration split,78.57142857142857,27,nonevent,31
+PC-RF,Internal calibration split,78.57142857142857,28,event,30
+PC-RF,Internal calibration split,78.57142857142857,28,nonevent,33
+PC-RF,Internal calibration split,78.57142857142857,29,nonevent,32
+PC-RF,Internal calibration split,78.57142857142857,30,event,27
+PC-RF,Internal calibration split,78.57142857142857,30,nonevent,30
+PC-RF,Internal calibration split,78.57142857142857,31,nonevent,32
+PC-RF,Internal calibration split,78.57142857142857,32,nonevent,35
+PC-RF,Internal calibration split,78.57142857142857,33,nonevent,33
+PC-RF,Internal calibration split,78.57142857142857,34,nonevent,34
+PC-RF,Internal calibration split,78.57142857142857,35,nonevent,38
+PC-RF,Internal calibration split,78.57142857142857,36,nonevent,42
+PC-RF,Internal calibration split,78.57142857142857,37,nonevent,44
+PC-RF,Internal calibration split,78.57142857142857,38,nonevent,44
+PC-RF,Internal calibration split,78.57142857142857,39,event,46
+PC-RF,Internal calibration split,78.57142857142857,39,nonevent,51
+PC-RF,Internal calibration split,78.57142857142857,40,event,43
+PC-RF,Internal calibration split,78.57142857142857,40,nonevent,49
+PC-RF,Internal calibration split,78.57142857142857,41,nonevent,50
+PC-RF,Internal calibration split,78.57142857142857,42,nonevent,52
+PC-RF,External random split,23.809523809523807,0,event,0
+PC-RF,External random split,23.809523809523807,0,nonevent,0
+PC-RF,External random split,23.809523809523807,1,event,0
+PC-RF,External random split,23.809523809523807,1,nonevent,0
+PC-RF,External random split,23.809523809523807,2,event,0
+PC-RF,External random split,23.809523809523807,2,nonevent,1
+PC-RF,External random split,23.809523809523807,3,event,0
+PC-RF,External random split,23.809523809523807,3,nonevent,0
+PC-RF,External random split,23.809523809523807,4,event,0
+PC-RF,External random split,23.809523809523807,4,nonevent,2
+PC-RF,External random split,23.809523809523807,5,event,1
+PC-RF,External random split,23.809523809523807,5,nonevent,1
+PC-RF,External random split,23.809523809523807,6,event,2
+PC-RF,External random split,23.809523809523807,6,nonevent,2
+PC-RF,External random split,23.809523809523807,7,event,2
+PC-RF,External random split,23.809523809523807,7,nonevent,3
+PC-RF,External random split,23.809523809523807,8,event,3
+PC-RF,External random split,23.809523809523807,8,nonevent,7
+PC-RF,External random split,23.809523809523807,9,event,4
+PC-RF,External random split,23.809523809523807,9,nonevent,6
+PC-RF,External random split,23.809523809523807,10,event,4
+PC-RF,External random split,23.809523809523807,10,nonevent,8
+PC-RF,External random split,23.809523809523807,11,event,2
+PC-RF,External random split,23.809523809523807,11,nonevent,7
+PC-RF,External random split,23.809523809523807,12,event,4
+PC-RF,External random split,23.809523809523807,12,nonevent,8
+PC-RF,External random split,23.809523809523807,13,event,4
+PC-RF,External random split,23.809523809523807,13,nonevent,9
+PC-RF,External random split,23.809523809523807,14,event,5
+PC-RF,External random split,23.809523809523807,14,nonevent,10
+PC-RF,External random split,23.809523809523807,15,event,10
+PC-RF,External random split,23.809523809523807,15,nonevent,12
+PC-RF,External random split,23.809523809523807,16,event,6
+PC-RF,External random split,23.809523809523807,16,nonevent,11
+PC-RF,External random split,23.809523809523807,17,event,11
+PC-RF,External random split,23.809523809523807,17,nonevent,14
+PC-RF,External random split,23.809523809523807,18,event,11
+PC-RF,External random split,23.809523809523807,18,nonevent,19
+PC-RF,External random split,23.809523809523807,19,event,5
+PC-RF,External random split,23.809523809523807,19,nonevent,14
+PC-RF,External random split,23.809523809523807,20,event,14
+PC-RF,External random split,23.809523809523807,20,nonevent,16
+PC-RF,External random split,23.809523809523807,21,event,10
+PC-RF,External random split,23.809523809523807,21,nonevent,19
+PC-RF,External random split,23.809523809523807,22,event,3
+PC-RF,External random split,23.809523809523807,22,nonevent,20
+PC-RF,External random split,23.809523809523807,23,event,12
+PC-RF,External random split,23.809523809523807,23,nonevent,22
+PC-RF,External random split,23.809523809523807,24,event,26
+PC-RF,External random split,23.809523809523807,24,nonevent,27
+PC-RF,External random split,23.809523809523807,25,event,6
+PC-RF,External random split,23.809523809523807,25,nonevent,32
+PC-RF,External random split,23.809523809523807,26,nonevent,26
+PC-RF,External random split,23.809523809523807,27,event,7
+PC-RF,External random split,23.809523809523807,27,nonevent,36
+PC-RF,External random split,23.809523809523807,28,nonevent,37
+PC-RF,External random split,23.809523809523807,29,event,39
+PC-RF,External random split,23.809523809523807,29,nonevent,39
+PC-RF,External random split,23.809523809523807,30,event,6
+PC-RF,External random split,23.809523809523807,30,nonevent,27
+PC-RF,External random split,23.809523809523807,31,nonevent,33
+PC-RF,External random split,23.809523809523807,32,nonevent,54
+PC-RF,External random split,23.809523809523807,33,nonevent,31
+PC-RF,External random split,23.809523809523807,34,nonevent,39
+PC-RF,External random split,23.809523809523807,35,nonevent,52
+PC-RF,External random split,23.809523809523807,36,nonevent,38
+PC-RF,External random split,23.809523809523807,37,nonevent,45
+PC-RF,External random split,23.809523809523807,38,nonevent,52
+PC-RF,External random split,23.809523809523807,39,nonevent,61
+PC-RF,External random split,23.809523809523807,40,nonevent,43
+PC-RF,External random split,23.809523809523807,41,nonevent,55
+PC-RF,External random split,23.809523809523807,42,nonevent,40
+PC-RF,External geographical split,2.380952380952381,1,nonevent,0
+PC-RF,External geographical split,2.380952380952381,2,event,0
+PC-RF,External geographical split,2.380952380952381,2,nonevent,0
+PC-RF,External geographical split,2.380952380952381,3,event,0
+PC-RF,External geographical split,2.380952380952381,3,nonevent,0
+PC-RF,External geographical split,2.380952380952381,4,event,0
+PC-RF,External geographical split,2.380952380952381,4,nonevent,2
+PC-RF,External geographical split,2.380952380952381,5,event,0
+PC-RF,External geographical split,2.380952380952381,5,nonevent,1
+PC-RF,External geographical split,2.380952380952381,6,event,0
+PC-RF,External geographical split,2.380952380952381,6,nonevent,4
+PC-RF,External geographical split,2.380952380952381,7,event,0
+PC-RF,External geographical split,2.380952380952381,7,nonevent,4
+PC-RF,External geographical split,2.380952380952381,8,event,1
+PC-RF,External geographical split,2.380952380952381,8,nonevent,5
+PC-RF,External geographical split,2.380952380952381,9,event,2
+PC-RF,External geographical split,2.380952380952381,9,nonevent,5
+PC-RF,External geographical split,2.380952380952381,10,event,4
+PC-RF,External geographical split,2.380952380952381,10,nonevent,2
+PC-RF,External geographical split,2.380952380952381,11,event,0
+PC-RF,External geographical split,2.380952380952381,11,nonevent,5
+PC-RF,External geographical split,2.380952380952381,12,event,1
+PC-RF,External geographical split,2.380952380952381,12,nonevent,7
+PC-RF,External geographical split,2.380952380952381,13,event,0
+PC-RF,External geographical split,2.380952380952381,13,nonevent,5
+PC-RF,External geographical split,2.380952380952381,14,event,1
+PC-RF,External geographical split,2.380952380952381,14,nonevent,8
+PC-RF,External geographical split,2.380952380952381,15,event,0
+PC-RF,External geographical split,2.380952380952381,15,nonevent,8
+PC-RF,External geographical split,2.380952380952381,16,event,0
+PC-RF,External geographical split,2.380952380952381,16,nonevent,7
+PC-RF,External geographical split,2.380952380952381,17,event,5
+PC-RF,External geographical split,2.380952380952381,17,nonevent,12
+PC-RF,External geographical split,2.380952380952381,18,event,3
+PC-RF,External geographical split,2.380952380952381,18,nonevent,8
+PC-RF,External geographical split,2.380952380952381,19,nonevent,11
+PC-RF,External geographical split,2.380952380952381,20,event,0
+PC-RF,External geographical split,2.380952380952381,20,nonevent,9
+PC-RF,External geographical split,2.380952380952381,21,event,0
+PC-RF,External geographical split,2.380952380952381,21,nonevent,11
+PC-RF,External geographical split,2.380952380952381,22,event,1
+PC-RF,External geographical split,2.380952380952381,22,nonevent,11
+PC-RF,External geographical split,2.380952380952381,23,event,3
+PC-RF,External geographical split,2.380952380952381,23,nonevent,9
+PC-RF,External geographical split,2.380952380952381,24,event,4
+PC-RF,External geographical split,2.380952380952381,24,nonevent,8
+PC-RF,External geographical split,2.380952380952381,25,nonevent,13
+PC-RF,External geographical split,2.380952380952381,26,event,9
+PC-RF,External geographical split,2.380952380952381,26,nonevent,17
+PC-RF,External geographical split,2.380952380952381,27,nonevent,17
+PC-RF,External geographical split,2.380952380952381,28,nonevent,15
+PC-RF,External geographical split,2.380952380952381,29,nonevent,25
+PC-RF,External geographical split,2.380952380952381,30,nonevent,11
+PC-RF,External geographical split,2.380952380952381,31,nonevent,14
+PC-RF,External geographical split,2.380952380952381,32,nonevent,13
+PC-RF,External geographical split,2.380952380952381,33,nonevent,10
+PC-RF,External geographical split,2.380952380952381,34,nonevent,0
+PC-RF,External geographical split,2.380952380952381,35,nonevent,12
+PC-RF,External temporal split,9.523809523809524,1,event,0
+PC-RF,External temporal split,9.523809523809524,2,nonevent,1
+PC-RF,External temporal split,9.523809523809524,3,event,0
+PC-RF,External temporal split,9.523809523809524,3,nonevent,0
+PC-RF,External temporal split,9.523809523809524,4,nonevent,5
+PC-RF,External temporal split,9.523809523809524,5,event,4
+PC-RF,External temporal split,9.523809523809524,5,nonevent,3
+PC-RF,External temporal split,9.523809523809524,6,event,0
+PC-RF,External temporal split,9.523809523809524,6,nonevent,4
+PC-RF,External temporal split,9.523809523809524,7,event,0
+PC-RF,External temporal split,9.523809523809524,7,nonevent,8
+PC-RF,External temporal split,9.523809523809524,8,event,3
+PC-RF,External temporal split,9.523809523809524,8,nonevent,18
+PC-RF,External temporal split,9.523809523809524,9,event,1
+PC-RF,External temporal split,9.523809523809524,9,nonevent,9
+PC-RF,External temporal split,9.523809523809524,10,event,1
+PC-RF,External temporal split,9.523809523809524,10,nonevent,12
+PC-RF,External temporal split,9.523809523809524,11,event,5
+PC-RF,External temporal split,9.523809523809524,11,nonevent,8
+PC-RF,External temporal split,9.523809523809524,12,event,2
+PC-RF,External temporal split,9.523809523809524,12,nonevent,7
+PC-RF,External temporal split,9.523809523809524,13,event,7
+PC-RF,External temporal split,9.523809523809524,13,nonevent,9
+PC-RF,External temporal split,9.523809523809524,14,event,2
+PC-RF,External temporal split,9.523809523809524,14,nonevent,6
+PC-RF,External temporal split,9.523809523809524,15,event,2
+PC-RF,External temporal split,9.523809523809524,15,nonevent,8
+PC-RF,External temporal split,9.523809523809524,16,event,2
+PC-RF,External temporal split,9.523809523809524,16,nonevent,9
+PC-RF,External temporal split,9.523809523809524,17,event,5
+PC-RF,External temporal split,9.523809523809524,17,nonevent,10
+PC-RF,External temporal split,9.523809523809524,18,event,3
+PC-RF,External temporal split,9.523809523809524,18,nonevent,9
+PC-RF,External temporal split,9.523809523809524,19,event,3
+PC-RF,External temporal split,9.523809523809524,19,nonevent,8
+PC-RF,External temporal split,9.523809523809524,20,event,0
+PC-RF,External temporal split,9.523809523809524,20,nonevent,9
+PC-RF,External temporal split,9.523809523809524,21,event,1
+PC-RF,External temporal split,9.523809523809524,21,nonevent,9
+PC-RF,External temporal split,9.523809523809524,22,event,3
+PC-RF,External temporal split,9.523809523809524,22,nonevent,9
+PC-RF,External temporal split,9.523809523809524,23,nonevent,9
+PC-RF,External temporal split,9.523809523809524,24,event,0
+PC-RF,External temporal split,9.523809523809524,24,nonevent,7
+PC-RF,External temporal split,9.523809523809524,25,event,0
+PC-RF,External temporal split,9.523809523809524,25,nonevent,11
+PC-RF,External temporal split,9.523809523809524,26,nonevent,12
+PC-RF,External temporal split,9.523809523809524,27,event,0
+PC-RF,External temporal split,9.523809523809524,27,nonevent,20
+PC-RF,External temporal split,9.523809523809524,28,event,0
+PC-RF,External temporal split,9.523809523809524,28,nonevent,9
+PC-RF,External temporal split,9.523809523809524,29,nonevent,8
+PC-RF,External temporal split,9.523809523809524,30,nonevent,19
+PC-RF,External temporal split,9.523809523809524,31,nonevent,11
+PC-RF,External temporal split,9.523809523809524,32,nonevent,30
+PC-RF,External temporal split,9.523809523809524,33,nonevent,1
+PC-RF,External temporal split,9.523809523809524,34,nonevent,8
+PC-RF,External temporal split,9.523809523809524,35,nonevent,2
+PC-RF,External geotemporal split,14.285714285714285,3,nonevent,20
+PC-RF,External geotemporal split,14.285714285714285,4,event,0
+PC-RF,External geotemporal split,14.285714285714285,4,nonevent,4
+PC-RF,External geotemporal split,14.285714285714285,5,nonevent,1
+PC-RF,External geotemporal split,14.285714285714285,6,event,3
+PC-RF,External geotemporal split,14.285714285714285,6,nonevent,9
+PC-RF,External geotemporal split,14.285714285714285,7,event,0
+PC-RF,External geotemporal split,14.285714285714285,7,nonevent,7
+PC-RF,External geotemporal split,14.285714285714285,8,nonevent,8
+PC-RF,External geotemporal split,14.285714285714285,9,event,0
+PC-RF,External geotemporal split,14.285714285714285,9,nonevent,8
+PC-RF,External geotemporal split,14.285714285714285,10,event,4
+PC-RF,External geotemporal split,14.285714285714285,10,nonevent,9
+PC-RF,External geotemporal split,14.285714285714285,11,event,6
+PC-RF,External geotemporal split,14.285714285714285,11,nonevent,4
+PC-RF,External geotemporal split,14.285714285714285,12,event,0
+PC-RF,External geotemporal split,14.285714285714285,12,nonevent,9
+PC-RF,External geotemporal split,14.285714285714285,13,event,0
+PC-RF,External geotemporal split,14.285714285714285,13,nonevent,8
+PC-RF,External geotemporal split,14.285714285714285,14,event,1
+PC-RF,External geotemporal split,14.285714285714285,14,nonevent,7
+PC-RF,External geotemporal split,14.285714285714285,15,event,0
+PC-RF,External geotemporal split,14.285714285714285,15,nonevent,9
+PC-RF,External geotemporal split,14.285714285714285,16,event,0
+PC-RF,External geotemporal split,14.285714285714285,16,nonevent,11
+PC-RF,External geotemporal split,14.285714285714285,17,nonevent,9
+PC-RF,External geotemporal split,14.285714285714285,18,event,3
+PC-RF,External geotemporal split,14.285714285714285,18,nonevent,7
+PC-RF,External geotemporal split,14.285714285714285,19,nonevent,20
+PC-RF,External geotemporal split,14.285714285714285,20,event,0
+PC-RF,External geotemporal split,14.285714285714285,20,nonevent,21
+PC-RF,External geotemporal split,14.285714285714285,21,event,0
+PC-RF,External geotemporal split,14.285714285714285,21,nonevent,21
+PC-RF,External geotemporal split,14.285714285714285,22,event,0
+PC-RF,External geotemporal split,14.285714285714285,22,nonevent,14
+PC-RF,External geotemporal split,14.285714285714285,23,event,3
+PC-RF,External geotemporal split,14.285714285714285,23,nonevent,21
+PC-RF,External geotemporal split,14.285714285714285,24,event,2
+PC-RF,External geotemporal split,14.285714285714285,24,nonevent,11
+PC-RF,External geotemporal split,14.285714285714285,25,nonevent,8
+PC-RF,External geotemporal split,14.285714285714285,26,nonevent,28
+PC-RF,External geotemporal split,14.285714285714285,27,nonevent,80
+PC-RF,External geotemporal split,14.285714285714285,28,nonevent,17
+PC-RF,External geotemporal split,14.285714285714285,29,nonevent,0
+PC-RF,External geotemporal split,14.285714285714285,30,event,0
+PC-RF,External geotemporal split,14.285714285714285,30,nonevent,50
+PC-RF,External geotemporal split,14.285714285714285,31,nonevent,65
+PC-GBM,Internal calibration split,11.904761904761903,0,event,0
+PC-GBM,Internal calibration split,11.904761904761903,0,nonevent,0
+PC-GBM,Internal calibration split,11.904761904761903,1,event,0
+PC-GBM,Internal calibration split,11.904761904761903,1,nonevent,0
+PC-GBM,Internal calibration split,11.904761904761903,2,event,0
+PC-GBM,Internal calibration split,11.904761904761903,2,nonevent,1
+PC-GBM,Internal calibration split,11.904761904761903,3,event,1
+PC-GBM,Internal calibration split,11.904761904761903,3,nonevent,1
+PC-GBM,Internal calibration split,11.904761904761903,4,event,2
+PC-GBM,Internal calibration split,11.904761904761903,4,nonevent,2
+PC-GBM,Internal calibration split,11.904761904761903,5,event,1
+PC-GBM,Internal calibration split,11.904761904761903,5,nonevent,3
+PC-GBM,Internal calibration split,11.904761904761903,6,event,2
+PC-GBM,Internal calibration split,11.904761904761903,6,nonevent,4
+PC-GBM,Internal calibration split,11.904761904761903,7,event,5
+PC-GBM,Internal calibration split,11.904761904761903,7,nonevent,5
+PC-GBM,Internal calibration split,11.904761904761903,8,event,2
+PC-GBM,Internal calibration split,11.904761904761903,8,nonevent,7
+PC-GBM,Internal calibration split,11.904761904761903,9,event,6
+PC-GBM,Internal calibration split,11.904761904761903,9,nonevent,8
+PC-GBM,Internal calibration split,11.904761904761903,10,event,3
+PC-GBM,Internal calibration split,11.904761904761903,10,nonevent,10
+PC-GBM,Internal calibration split,11.904761904761903,11,event,6
+PC-GBM,Internal calibration split,11.904761904761903,11,nonevent,10
+PC-GBM,Internal calibration split,11.904761904761903,12,event,7
+PC-GBM,Internal calibration split,11.904761904761903,12,nonevent,14
+PC-GBM,Internal calibration split,11.904761904761903,13,event,0
+PC-GBM,Internal calibration split,11.904761904761903,13,nonevent,17
+PC-GBM,Internal calibration split,11.904761904761903,14,nonevent,16
+PC-GBM,Internal calibration split,11.904761904761903,15,event,9
+PC-GBM,Internal calibration split,11.904761904761903,15,nonevent,21
+PC-GBM,Internal calibration split,11.904761904761903,16,event,42
+PC-GBM,Internal calibration split,11.904761904761903,16,nonevent,24
+PC-GBM,Internal calibration split,11.904761904761903,17,event,32
+PC-GBM,Internal calibration split,11.904761904761903,17,nonevent,23
+PC-GBM,Internal calibration split,11.904761904761903,18,nonevent,26
+PC-GBM,Internal calibration split,11.904761904761903,19,nonevent,26
+PC-GBM,Internal calibration split,11.904761904761903,20,event,40
+PC-GBM,Internal calibration split,11.904761904761903,20,nonevent,31
+PC-GBM,Internal calibration split,11.904761904761903,21,event,31
+PC-GBM,Internal calibration split,11.904761904761903,21,nonevent,28
+PC-GBM,Internal calibration split,11.904761904761903,22,nonevent,37
+PC-GBM,Internal calibration split,11.904761904761903,23,nonevent,30
+PC-GBM,Internal calibration split,11.904761904761903,24,nonevent,29
+PC-GBM,Internal calibration split,11.904761904761903,25,nonevent,40
+PC-GBM,Internal calibration split,11.904761904761903,26,nonevent,37
+PC-GBM,Internal calibration split,11.904761904761903,27,nonevent,22
+PC-GBM,Internal calibration split,11.904761904761903,28,nonevent,41
+PC-GBM,Internal calibration split,11.904761904761903,29,nonevent,46
+PC-GBM,Internal calibration split,11.904761904761903,30,nonevent,45
+PC-GBM,Internal calibration split,11.904761904761903,31,nonevent,35
+PC-GBM,Internal calibration split,11.904761904761903,32,nonevent,43
+PC-GBM,Internal calibration split,11.904761904761903,33,nonevent,53
+PC-GBM,Internal calibration split,11.904761904761903,34,nonevent,49
+PC-GBM,Internal calibration split,11.904761904761903,35,nonevent,47
+PC-GBM,Internal calibration split,11.904761904761903,36,nonevent,60
+PC-GBM,Internal calibration split,11.904761904761903,37,nonevent,33
+PC-GBM,Internal calibration split,11.904761904761903,40,nonevent,39
+PC-GBM,Internal calibration split,11.904761904761903,41,nonevent,74
+PC-GBM,Internal calibration split,11.904761904761903,42,nonevent,86
+PC-GBM,External random split,19.047619047619047,0,event,0
+PC-GBM,External random split,19.047619047619047,0,nonevent,1
+PC-GBM,External random split,19.047619047619047,1,event,0
+PC-GBM,External random split,19.047619047619047,1,nonevent,1
+PC-GBM,External random split,19.047619047619047,2,event,0
+PC-GBM,External random split,19.047619047619047,2,nonevent,2
+PC-GBM,External random split,19.047619047619047,3,event,1
+PC-GBM,External random split,19.047619047619047,3,nonevent,1
+PC-GBM,External random split,19.047619047619047,4,event,2
+PC-GBM,External random split,19.047619047619047,4,nonevent,2
+PC-GBM,External random split,19.047619047619047,5,event,3
+PC-GBM,External random split,19.047619047619047,5,nonevent,3
+PC-GBM,External random split,19.047619047619047,6,event,2
+PC-GBM,External random split,19.047619047619047,6,nonevent,4
+PC-GBM,External random split,19.047619047619047,7,event,1
+PC-GBM,External random split,19.047619047619047,7,nonevent,3
+PC-GBM,External random split,19.047619047619047,8,event,3
+PC-GBM,External random split,19.047619047619047,8,nonevent,5
+PC-GBM,External random split,19.047619047619047,9,event,3
+PC-GBM,External random split,19.047619047619047,9,nonevent,1
+PC-GBM,External random split,19.047619047619047,10,event,7
+PC-GBM,External random split,19.047619047619047,10,nonevent,7
+PC-GBM,External random split,19.047619047619047,11,event,6
+PC-GBM,External random split,19.047619047619047,11,nonevent,5
+PC-GBM,External random split,19.047619047619047,12,event,5
+PC-GBM,External random split,19.047619047619047,12,nonevent,10
+PC-GBM,External random split,19.047619047619047,13,event,6
+PC-GBM,External random split,19.047619047619047,13,nonevent,10
+PC-GBM,External random split,19.047619047619047,14,event,10
+PC-GBM,External random split,19.047619047619047,14,nonevent,11
+PC-GBM,External random split,19.047619047619047,15,event,9
+PC-GBM,External random split,19.047619047619047,15,nonevent,10
+PC-GBM,External random split,19.047619047619047,16,event,2
+PC-GBM,External random split,19.047619047619047,16,nonevent,13
+PC-GBM,External random split,19.047619047619047,17,event,12
+PC-GBM,External random split,19.047619047619047,17,nonevent,13
+PC-GBM,External random split,19.047619047619047,18,event,39
+PC-GBM,External random split,19.047619047619047,18,nonevent,22
+PC-GBM,External random split,19.047619047619047,19,event,0
+PC-GBM,External random split,19.047619047619047,19,nonevent,27
+PC-GBM,External random split,19.047619047619047,20,event,6
+PC-GBM,External random split,19.047619047619047,20,nonevent,27
+PC-GBM,External random split,19.047619047619047,21,event,9
+PC-GBM,External random split,19.047619047619047,21,nonevent,31
+PC-GBM,External random split,19.047619047619047,22,nonevent,23
+PC-GBM,External random split,19.047619047619047,23,nonevent,33
+PC-GBM,External random split,19.047619047619047,24,nonevent,15
+PC-GBM,External random split,19.047619047619047,25,nonevent,27
+PC-GBM,External random split,19.047619047619047,26,nonevent,47
+PC-GBM,External random split,19.047619047619047,27,nonevent,26
+PC-GBM,External random split,19.047619047619047,28,nonevent,21
+PC-GBM,External random split,19.047619047619047,29,nonevent,46
+PC-GBM,External random split,19.047619047619047,30,nonevent,41
+PC-GBM,External random split,19.047619047619047,32,nonevent,22
+PC-GBM,External random split,19.047619047619047,33,nonevent,44
+PC-GBM,External random split,19.047619047619047,34,nonevent,33
+PC-GBM,External random split,19.047619047619047,35,nonevent,33
+PC-GBM,External random split,19.047619047619047,36,nonevent,51
+PC-GBM,External random split,19.047619047619047,37,nonevent,35
+PC-GBM,External random split,19.047619047619047,38,nonevent,49
+PC-GBM,External random split,19.047619047619047,39,nonevent,48
+PC-GBM,External random split,19.047619047619047,40,nonevent,47
+PC-GBM,External random split,19.047619047619047,41,nonevent,44
+PC-GBM,External geographical split,14.285714285714285,0,event,0
+PC-GBM,External geographical split,14.285714285714285,0,nonevent,1
+PC-GBM,External geographical split,14.285714285714285,1,event,0
+PC-GBM,External geographical split,14.285714285714285,1,nonevent,0
+PC-GBM,External geographical split,14.285714285714285,2,event,0
+PC-GBM,External geographical split,14.285714285714285,2,nonevent,1
+PC-GBM,External geographical split,14.285714285714285,3,event,0
+PC-GBM,External geographical split,14.285714285714285,3,nonevent,1
+PC-GBM,External geographical split,14.285714285714285,4,event,0
+PC-GBM,External geographical split,14.285714285714285,4,nonevent,1
+PC-GBM,External geographical split,14.285714285714285,5,event,0
+PC-GBM,External geographical split,14.285714285714285,5,nonevent,1
+PC-GBM,External geographical split,14.285714285714285,6,event,0
+PC-GBM,External geographical split,14.285714285714285,6,nonevent,3
+PC-GBM,External geographical split,14.285714285714285,7,event,0
+PC-GBM,External geographical split,14.285714285714285,7,nonevent,3
+PC-GBM,External geographical split,14.285714285714285,8,event,0
+PC-GBM,External geographical split,14.285714285714285,8,nonevent,3
+PC-GBM,External geographical split,14.285714285714285,9,event,0
+PC-GBM,External geographical split,14.285714285714285,9,nonevent,4
+PC-GBM,External geographical split,14.285714285714285,10,event,2
+PC-GBM,External geographical split,14.285714285714285,10,nonevent,3
+PC-GBM,External geographical split,14.285714285714285,11,event,0
+PC-GBM,External geographical split,14.285714285714285,11,nonevent,4
+PC-GBM,External geographical split,14.285714285714285,12,event,1
+PC-GBM,External geographical split,14.285714285714285,12,nonevent,5
+PC-GBM,External geographical split,14.285714285714285,13,event,1
+PC-GBM,External geographical split,14.285714285714285,13,nonevent,5
+PC-GBM,External geographical split,14.285714285714285,14,event,8
+PC-GBM,External geographical split,14.285714285714285,14,nonevent,8
+PC-GBM,External geographical split,14.285714285714285,15,event,10
+PC-GBM,External geographical split,14.285714285714285,15,nonevent,2
+PC-GBM,External geographical split,14.285714285714285,16,event,15
+PC-GBM,External geographical split,14.285714285714285,16,nonevent,11
+PC-GBM,External geographical split,14.285714285714285,17,event,4
+PC-GBM,External geographical split,14.285714285714285,17,nonevent,13
+PC-GBM,External geographical split,14.285714285714285,18,event,5
+PC-GBM,External geographical split,14.285714285714285,18,nonevent,12
+PC-GBM,External geographical split,14.285714285714285,19,event,0
+PC-GBM,External geographical split,14.285714285714285,19,nonevent,18
+PC-GBM,External geographical split,14.285714285714285,20,event,3
+PC-GBM,External geographical split,14.285714285714285,20,nonevent,24
+PC-GBM,External geographical split,14.285714285714285,21,nonevent,22
+PC-GBM,External geographical split,14.285714285714285,22,nonevent,26
+PC-GBM,External geographical split,14.285714285714285,23,nonevent,28
+PC-GBM,External geographical split,14.285714285714285,24,nonevent,26
+PC-GBM,External geographical split,14.285714285714285,25,nonevent,13
+PC-GBM,External geographical split,14.285714285714285,26,nonevent,11
+PC-GBM,External geographical split,14.285714285714285,27,nonevent,46
+PC-GBM,External geographical split,14.285714285714285,28,nonevent,4
+PC-GBM,External geographical split,14.285714285714285,29,nonevent,2
+PC-GBM,External geographical split,14.285714285714285,30,nonevent,2
+PC-GBM,External geographical split,14.285714285714285,32,event,2
+PC-GBM,External geographical split,14.285714285714285,32,nonevent,4
+PC-GBM,External geographical split,14.285714285714285,33,nonevent,3
+PC-GBM,External geographical split,14.285714285714285,34,nonevent,1
+PC-GBM,External geographical split,14.285714285714285,35,nonevent,5
+PC-GBM,External geographical split,14.285714285714285,36,nonevent,8
+PC-GBM,External geographical split,14.285714285714285,37,nonevent,6
+PC-GBM,External geographical split,14.285714285714285,40,nonevent,24
+PC-GBM,External temporal split,11.904761904761903,0,event,11
+PC-GBM,External temporal split,11.904761904761903,0,nonevent,3
+PC-GBM,External temporal split,11.904761904761903,1,event,0
+PC-GBM,External temporal split,11.904761904761903,1,nonevent,1
+PC-GBM,External temporal split,11.904761904761903,2,event,4
+PC-GBM,External temporal split,11.904761904761903,2,nonevent,5
+PC-GBM,External temporal split,11.904761904761903,3,event,3
+PC-GBM,External temporal split,11.904761904761903,3,nonevent,3
+PC-GBM,External temporal split,11.904761904761903,4,event,3
+PC-GBM,External temporal split,11.904761904761903,4,nonevent,4
+PC-GBM,External temporal split,11.904761904761903,5,event,0
+PC-GBM,External temporal split,11.904761904761903,5,nonevent,5
+PC-GBM,External temporal split,11.904761904761903,6,event,7
+PC-GBM,External temporal split,11.904761904761903,6,nonevent,5
+PC-GBM,External temporal split,11.904761904761903,7,event,1
+PC-GBM,External temporal split,11.904761904761903,7,nonevent,8
+PC-GBM,External temporal split,11.904761904761903,8,event,2
+PC-GBM,External temporal split,11.904761904761903,8,nonevent,6
+PC-GBM,External temporal split,11.904761904761903,9,event,1
+PC-GBM,External temporal split,11.904761904761903,9,nonevent,8
+PC-GBM,External temporal split,11.904761904761903,10,event,3
+PC-GBM,External temporal split,11.904761904761903,10,nonevent,7
+PC-GBM,External temporal split,11.904761904761903,11,event,0
+PC-GBM,External temporal split,11.904761904761903,11,nonevent,8
+PC-GBM,External temporal split,11.904761904761903,12,event,1
+PC-GBM,External temporal split,11.904761904761903,12,nonevent,8
+PC-GBM,External temporal split,11.904761904761903,13,event,7
+PC-GBM,External temporal split,11.904761904761903,13,nonevent,10
+PC-GBM,External temporal split,11.904761904761903,14,event,7
+PC-GBM,External temporal split,11.904761904761903,14,nonevent,3
+PC-GBM,External temporal split,11.904761904761903,15,event,2
+PC-GBM,External temporal split,11.904761904761903,15,nonevent,10
+PC-GBM,External temporal split,11.904761904761903,16,event,4
+PC-GBM,External temporal split,11.904761904761903,16,nonevent,11
+PC-GBM,External temporal split,11.904761904761903,17,event,2
+PC-GBM,External temporal split,11.904761904761903,17,nonevent,21
+PC-GBM,External temporal split,11.904761904761903,18,event,0
+PC-GBM,External temporal split,11.904761904761903,18,nonevent,15
+PC-GBM,External temporal split,11.904761904761903,19,event,5
+PC-GBM,External temporal split,11.904761904761903,19,nonevent,10
+PC-GBM,External temporal split,11.904761904761903,20,event,3
+PC-GBM,External temporal split,11.904761904761903,20,nonevent,14
+PC-GBM,External temporal split,11.904761904761903,21,event,0
+PC-GBM,External temporal split,11.904761904761903,21,nonevent,11
+PC-GBM,External temporal split,11.904761904761903,22,event,0
+PC-GBM,External temporal split,11.904761904761903,22,nonevent,4
+PC-GBM,External temporal split,11.904761904761903,23,nonevent,8
+PC-GBM,External temporal split,11.904761904761903,24,event,0
+PC-GBM,External temporal split,11.904761904761903,24,nonevent,9
+PC-GBM,External temporal split,11.904761904761903,25,event,0
+PC-GBM,External temporal split,11.904761904761903,25,nonevent,2
+PC-GBM,External temporal split,11.904761904761903,26,event,0
+PC-GBM,External temporal split,11.904761904761903,26,nonevent,1
+PC-GBM,External temporal split,11.904761904761903,27,event,0
+PC-GBM,External temporal split,11.904761904761903,27,nonevent,2
+PC-GBM,External temporal split,11.904761904761903,28,nonevent,1
+PC-GBM,External temporal split,11.904761904761903,29,event,0
+PC-GBM,External temporal split,11.904761904761903,29,nonevent,3
+PC-GBM,External temporal split,11.904761904761903,30,event,0
+PC-GBM,External temporal split,11.904761904761903,30,nonevent,3
+PC-GBM,External temporal split,11.904761904761903,31,event,0
+PC-GBM,External temporal split,11.904761904761903,31,nonevent,2
+PC-GBM,External temporal split,11.904761904761903,32,nonevent,4
+PC-GBM,External temporal split,11.904761904761903,33,nonevent,8
+PC-GBM,External temporal split,11.904761904761903,34,nonevent,11
+PC-GBM,External temporal split,11.904761904761903,35,nonevent,66
+PC-GBM,External temporal split,11.904761904761903,36,nonevent,0
+PC-GBM,External temporal split,11.904761904761903,37,nonevent,1
+PC-GBM,External temporal split,11.904761904761903,38,nonevent,1
+PC-GBM,External temporal split,11.904761904761903,39,nonevent,28
+PC-GBM,External temporal split,11.904761904761903,40,nonevent,31
+PC-GBM,External geotemporal split,11.904761904761903,0,nonevent,2
+PC-GBM,External geotemporal split,11.904761904761903,1,event,0
+PC-GBM,External geotemporal split,11.904761904761903,1,nonevent,1
+PC-GBM,External geotemporal split,11.904761904761903,2,nonevent,1
+PC-GBM,External geotemporal split,11.904761904761903,3,nonevent,4
+PC-GBM,External geotemporal split,11.904761904761903,4,event,0
+PC-GBM,External geotemporal split,11.904761904761903,4,nonevent,5
+PC-GBM,External geotemporal split,11.904761904761903,5,event,0
+PC-GBM,External geotemporal split,11.904761904761903,5,nonevent,2
+PC-GBM,External geotemporal split,11.904761904761903,6,event,0
+PC-GBM,External geotemporal split,11.904761904761903,6,nonevent,2
+PC-GBM,External geotemporal split,11.904761904761903,7,event,0
+PC-GBM,External geotemporal split,11.904761904761903,7,nonevent,2
+PC-GBM,External geotemporal split,11.904761904761903,8,event,0
+PC-GBM,External geotemporal split,11.904761904761903,8,nonevent,4
+PC-GBM,External geotemporal split,11.904761904761903,9,event,0
+PC-GBM,External geotemporal split,11.904761904761903,9,nonevent,5
+PC-GBM,External geotemporal split,11.904761904761903,10,event,4
+PC-GBM,External geotemporal split,11.904761904761903,10,nonevent,13
+PC-GBM,External geotemporal split,11.904761904761903,11,event,3
+PC-GBM,External geotemporal split,11.904761904761903,11,nonevent,10
+PC-GBM,External geotemporal split,11.904761904761903,12,event,2
+PC-GBM,External geotemporal split,11.904761904761903,12,nonevent,9
+PC-GBM,External geotemporal split,11.904761904761903,13,event,0
+PC-GBM,External geotemporal split,11.904761904761903,13,nonevent,4
+PC-GBM,External geotemporal split,11.904761904761903,14,nonevent,5
+PC-GBM,External geotemporal split,11.904761904761903,15,event,1
+PC-GBM,External geotemporal split,11.904761904761903,15,nonevent,20
+PC-GBM,External geotemporal split,11.904761904761903,16,event,0
+PC-GBM,External geotemporal split,11.904761904761903,16,nonevent,18
+PC-GBM,External geotemporal split,11.904761904761903,17,event,5
+PC-GBM,External geotemporal split,11.904761904761903,17,nonevent,11
+PC-GBM,External geotemporal split,11.904761904761903,18,nonevent,33
+PC-GBM,External geotemporal split,11.904761904761903,19,nonevent,21
+PC-GBM,External geotemporal split,11.904761904761903,20,nonevent,39
+PC-GBM,External geotemporal split,11.904761904761903,21,nonevent,8
+PC-GBM,External geotemporal split,11.904761904761903,22,nonevent,51
+PC-GBM,External geotemporal split,11.904761904761903,25,nonevent,79
+PC-GBM,External geotemporal split,11.904761904761903,27,nonevent,7
+PC-GBM,External geotemporal split,11.904761904761903,29,nonevent,31
+PC-GBM,External geotemporal split,11.904761904761903,32,nonevent,65
+DI-VNN,Internal calibration split,0,6,event,2
+DI-VNN,Internal calibration split,0,6,nonevent,6
+DI-VNN,External random split,2.380952380952381,6,event,3
+DI-VNN,External random split,2.380952380952381,6,nonevent,6
+DI-VNN,External geographical split,0,6,event,1
+DI-VNN,External geographical split,0,6,nonevent,5
+DI-VNN,External temporal split,0,6,event,2
+DI-VNN,External temporal split,0,6,nonevent,7
+DI-VNN,External geotemporal split,0,6,event,0
+DI-VNN,External geotemporal split,0,6,nonevent,9

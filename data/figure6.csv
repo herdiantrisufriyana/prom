@@ -1,0 +1,647 @@
+Information,Description
+Input,20 visits consisting 28 code entries
+Time of prediction,2016-07-30
+Estimated time of delivery,2016-10-18
+Predicted outcome,Prelabor rupture of membranes (PROM)
+Predicted probability,0.687 (threshold=0.67)
+Sensitivity,0.107 (95% CI 0.104 to 0.11)
+Specificity,0.996 (95% CI 0.996 to 0.996)
+Positive Predictive Value,0.809 (95% CI 0.798 to 0.82)
+Negative Predictive Value,0.873 (95% CI 0.872 to 0.874)
+Timing,11 (95% CI 9 to 13)
+Area under receiver operating characteristics curve,0.714 95% CI0.712 to 0.716
+Timeline 2015-12-21,ONT:169:A09 (positive)
+Timeline 2015-12-21,ONT:176:A09 (positive)
+Timeline 2015-12-21,root:A09 (negative)
+Timeline 2016-02-03,ONT:176:J069 (positive)
+Timeline 2016-02-03,ONT:169:J069 (negative)
+Timeline 2016-02-03,root:J069 (negative)
+Timeline 2016-04-09,root:K30 (positive)
+Timeline 2016-04-09,ONT:176:K30 (positive)
+Timeline 2016-04-09,ONT:169:K30 (positive)
+Timeline 2016-07-30,ONT:158:8878 (positive)
+Timeline 2016-07-30,ONT:169:8878 (positive)
+Timeline 2016-07-30,root:8878 (positive)
+Ontology prediction depicted on the network,root Event (including medical history)
+Ontology prediction depicted on the network,ONT:177 Event 
+Ontology prediction depicted on the network,ONT:176 Nonevent (including medical history)
+Ontology prediction depicted on the network,ONT:175 Nonevent 
+Ontology prediction depicted on the network,ONT:174 Nonevent 
+Ontology prediction depicted on the network,ONT:173 Nonevent 
+Ontology prediction depicted on the network,ONT:172 Nonevent 
+Ontology prediction depicted on the network,ONT:171 Nonevent 
+Ontology prediction depicted on the network,ONT:170 Nonevent 
+Ontology prediction depicted on the network,ONT:169 Nonevent (including medical history)
+Ontology prediction depicted on the network,ONT:168 Nonevent 
+Ontology prediction depicted on the network,ONT:167 Nonevent 
+Ontology prediction depicted on the network,ONT:166 Nonevent 
+Ontology prediction depicted on the network,ONT:165 Nonevent 
+Ontology prediction depicted on the network,ONT:164 Nonevent 
+Ontology prediction depicted on the network,ONT:163 Nonevent 
+Ontology prediction depicted on the network,ONT:162 Nonevent 
+Ontology prediction depicted on the network,ONT:161 Nonevent 
+Ontology prediction depicted on the network,ONT:160 Nonevent 
+Ontology prediction depicted on the network,ONT:159 Nonevent 
+Ontology prediction depicted on the network,ONT:158 Nonevent (including medical history)
+Ontology prediction depicted on the network,ONT:157 Nonevent 
+Ontology prediction depicted on the network,ONT:156 Nonevent 
+Ontology prediction depicted on the network,ONT:155 Nonevent 
+Ontology prediction depicted on the network,ONT:154 Nonevent 
+Ontology prediction depicted on the network,ONT:153 Nonevent 
+Ontology prediction depicted on the network,ONT:152 Nonevent 
+Ontology prediction depicted on the network,ONT:151 Nonevent 
+Ontology prediction depicted on the network,ONT:150 Nonevent 
+Ontology prediction depicted on the network,ONT:149 Nonevent 
+Ontology prediction depicted on the network,ONT:148 Nonevent 
+Ontology prediction depicted on the network,ONT:147 Nonevent 
+Ontology prediction depicted on the network,ONT:146 Nonevent 
+Ontology prediction depicted on the network,ONT:145 Event 
+Ontology prediction depicted on the network,ONT:144 Nonevent 
+Ontology array z01,x7.y1 -0.051 
+Ontology array z01,x7.y2 0.002 (9357)
+Ontology array z01,x7.y3 0.137 (N946)
+Ontology array z01,x7.y4 0.274 (N832)
+Ontology array z01,x7.y5 0.265 (H669)
+Ontology array z01,x7.y6 0.063 
+Ontology array z01,x7.y7 -0.025 
+Ontology array z01,x6.y1 -0.011 
+Ontology array z01,x6.y2 0.37 (O619)
+Ontology array z01,x6.y3 0.224 (Z301)
+Ontology array z01,x6.y4 -0.082 
+Ontology array z01,x6.y5 0.401 (Z349)
+Ontology array z01,x6.y6 0.225 (I10)
+Ontology array z01,x6.y7 0.083 (9659)
+Ontology array z01,x5.y1 0.122 (Z309)
+Ontology array z01,x5.y2 0.18 (K30- Yellow Square)
+Ontology array z01,x5.y3 0.378 (H531)
+Ontology array z01,x5.y4 0.396 (B909)
+Ontology array z01,x5.y5 0.452 
+Ontology array z01,x5.y6 0.278 (Z320)
+Ontology array z01,x5.y7 0.238 (O610)
+Ontology array z01,x4.y1 0.13 (O410)
+Ontology array z01,x4.y2 0.237 (O440)
+Ontology array z01,x4.y3 0.163 
+Ontology array z01,x4.y4 0.337 (J180)
+Ontology array z01,x4.y5 0.261 
+Ontology array z01,x4.y6 0.311 (Z308)
+Ontology array z01,x4.y7 0.224 (9716)
+Ontology array z01,x3.y1 0.022 (O622)
+Ontology array z01,x3.y2 0.072 (9918)
+Ontology array z01,x3.y3 0.325 (O632)
+Ontology array z01,x3.y4 0.382 
+Ontology array z01,x3.y5 0.23 (K029)
+Ontology array z01,x3.y6 0.196 (O985)
+Ontology array z01,x3.y7 0.259 (O363)
+Ontology array z01,x2.y1 0.283 (8905)
+Ontology array z01,x2.y2 0.18 (O365)
+Ontology array z01,x2.y3 0.193 (Z368)
+Ontology array z01,x2.y4 0.184 (K529)
+Ontology array z01,x2.y5 0.11 (O109)
+Ontology array z01,x2.y6 0.276 (L209)
+Ontology array z01,x2.y7 0.132 
+Ontology array z01,x1.y1 0.107 
+Ontology array z01,x1.y2 0.095 
+Ontology array z01,x1.y3 0.205 (O469)
+Ontology array z01,x1.y4 0.151 (O140)
+Ontology array z01,x1.y5 0.156 (Z300)
+Ontology array z01,x1.y6 0.198 (I849)
+Ontology array z01,x1.y7 0.036 
+Ontology array z02,x7.y1 0.061 
+Ontology array z02,x7.y2 -0.111 (O13)
+Ontology array z02,x7.y3 -0.177 (O479)
+Ontology array z02,x7.y4 -0.251 (697)
+Ontology array z02,x7.y5 -0.146 
+Ontology array z02,x7.y6 -0.007 
+Ontology array z02,x7.y7 -0.043 
+Ontology array z02,x6.y1 0.062 
+Ontology array z02,x6.y2 -0.087 (8879)
+Ontology array z02,x6.y3 -0.128 (O600)
+Ontology array z02,x6.y4 -0.267 
+Ontology array z02,x6.y5 0.054 (I842)
+Ontology array z02,x6.y6 -0.054 (9789)
+Ontology array z02,x6.y7 -0.094 (8602)
+Ontology array z02,x5.y1 -0.157 (598)
+Ontology array z02,x5.y2 -0.027 
+Ontology array z02,x5.y3 -0.067 (O262)
+Ontology array z02,x5.y4 0.027 (J680)
+Ontology array z02,x5.y5 0.269 
+Ontology array z02,x5.y6 -0.009 (causal_A03)
+Ontology array z02,x5.y7 -0.208 (9904)
+Ontology array z02,x4.y1 -0.055 (O268)
+Ontology array z02,x4.y2 -0.082 (9764)
+Ontology array z02,x4.y3 0.023 
+Ontology array z02,x4.y4 -0.052 (R69)
+Ontology array z02,x4.y5 0.001 
+Ontology array z02,x4.y6 -0.077 (N760)
+Ontology array z02,x4.y7 -0.091 (R53)
+Ontology array z02,x3.y1 -0.07 (B373)
+Ontology array z02,x3.y2 -0.195 (Z038)
+Ontology array z02,x3.y3 -0.024 (9394)
+Ontology array z02,x3.y4 0.047 
+Ontology array z02,x3.y5 -0.083 (N390)
+Ontology array z02,x3.y6 0.025 
+Ontology array z02,x3.y7 -0.007 (9396)
+Ontology array z02,x2.y1 0.009 (O441)
+Ontology array z02,x2.y2 -0.099 (O149)
+Ontology array z02,x2.y3 -0.169 (D259)
+Ontology array z02,x2.y4 -0.186 (Z090)
+Ontology array z02,x2.y5 -0.291 (G439)
+Ontology array z02,x2.y6 -0.156 (9921)
+Ontology array z02,x2.y7 -0.024 
+Ontology array z02,x1.y1 -0.044 
+Ontology array z02,x1.y2 -0.004 
+Ontology array z02,x1.y3 -0.061 
+Ontology array z02,x1.y4 -0.067 (897)
+Ontology array z02,x1.y5 -0.294 (7534)
+Ontology array z02,x1.y6 -0.177 (9929)
+Ontology array z02,x1.y7 -0.055 
+Ontology array z03,x7.y1 0.061 
+Ontology array z03,x7.y2 -0.033 (9059)
+Ontology array z03,x7.y3 0.019 (8878- Yellow Square)
+Ontology array z03,x7.y4 0.011 (5794)
+Ontology array z03,x7.y5 0.081 
+Ontology array z03,x7.y6 0.013 
+Ontology array z03,x7.y7 0.19 
+Ontology array z03,x6.y1 0.092 
+Ontology array z03,x6.y2 0.035 (J40)
+Ontology array z03,x6.y3 -0.182 (Z355)
+Ontology array z03,x6.y4 -0.101 
+Ontology array z03,x6.y5 -0.028 (H521)
+Ontology array z03,x6.y6 -0.003 (causal_A11)
+Ontology array z03,x6.y7 0.068 
+Ontology array z03,x5.y1 0.138 
+Ontology array z03,x5.y2 -0.197 
+Ontology array z03,x5.y3 -0.384 (9783)
+Ontology array z03,x5.y4 -0.037 (R202)
+Ontology array z03,x5.y5 0.079 
+Ontology array z03,x5.y6 -0.144 (H663)
+Ontology array z03,x5.y7 -0.036 (K290)
+Ontology array z03,x4.y1 0.076 
+Ontology array z03,x4.y2 -0.06 (Z719)
+Ontology array z03,x4.y3 -0.007 
+Ontology array z03,x4.y4 0.053 (Z508)
+Ontology array z03,x4.y5 -0.128 
+Ontology array z03,x4.y6 -0.146 (E780)
+Ontology array z03,x4.y7 -0.031 
+Ontology array z03,x3.y1 0.001 (O342)
+Ontology array z03,x3.y2 -0.15 
+Ontology array z03,x3.y3 -0.454 
+Ontology array z03,x3.y4 -0.081 
+Ontology array z03,x3.y5 0.08 (I959)
+Ontology array z03,x3.y6 -0.082 
+Ontology array z03,x3.y7 0.089 (7171)
+Ontology array z03,x2.y1 0.141 
+Ontology array z03,x2.y2 0.169 (734)
+Ontology array z03,x2.y3 -0.081 (J459)
+Ontology array z03,x2.y4 -0.226 
+Ontology array z03,x2.y5 -0.031 (K297)
+Ontology array z03,x2.y6 0.027 (8749)
+Ontology array z03,x2.y7 0.084 
+Ontology array z03,x1.y1 0.056 
+Ontology array z03,x1.y2 -0.001 
+Ontology array z03,x1.y3 0.025 
+Ontology array z03,x1.y4 -0.028 
+Ontology array z03,x1.y5 -0.174 (Z360)
+Ontology array z03,x1.y6 -0.034 
+Ontology array z03,x1.y7 0.055 
+Ontology array z04,x7.y1 0.102 
+Ontology array z04,x7.y2 0.06 
+Ontology array z04,x7.y3 0.131 
+Ontology array z04,x7.y4 -0.017 (Z099)
+Ontology array z04,x7.y5 -0.014 
+Ontology array z04,x7.y6 -0.058 
+Ontology array z04,x7.y7 0.01 
+Ontology array z04,x6.y1 0.097 
+Ontology array z04,x6.y2 0.075 (O991)
+Ontology array z04,x6.y3 -0.244 (J398)
+Ontology array z04,x6.y4 -0.013 
+Ontology array z04,x6.y5 -0.311 
+Ontology array z04,x6.y6 -0.139 (O235)
+Ontology array z04,x6.y7 0.013 
+Ontology array z04,x5.y1 0.096 
+Ontology array z04,x5.y2 0.203 
+Ontology array z04,x5.y3 -0.073 (O860)
+Ontology array z04,x5.y4 -0.046 
+Ontology array z04,x5.y5 -0.285 
+Ontology array z04,x5.y6 -0.314 (O120)
+Ontology array z04,x5.y7 -0.139 (O141)
+Ontology array z04,x4.y1 0.108 
+Ontology array z04,x4.y2 -0.096 (I500)
+Ontology array z04,x4.y3 -0.129 
+Ontology array z04,x4.y4 -0.007 (9389)
+Ontology array z04,x4.y5 -0.024 
+Ontology array z04,x4.y6 0.192 
+Ontology array z04,x4.y7 0.018 
+Ontology array z04,x3.y1 0.03 (O150)
+Ontology array z04,x3.y2 0.047 
+Ontology array z04,x3.y3 0.02 
+Ontology array z04,x3.y4 -0.24 
+Ontology array z04,x3.y5 0.069 (N342)
+Ontology array z04,x3.y6 0.035 
+Ontology array z04,x3.y7 -0.023 
+Ontology array z04,x2.y1 -0.046 
+Ontology array z04,x2.y2 -0.111 (Z018)
+Ontology array z04,x2.y3 -0.228 (H811)
+Ontology array z04,x2.y4 -0.133 
+Ontology array z04,x2.y5 0.007 
+Ontology array z04,x2.y6 -0.112 (9131)
+Ontology array z04,x2.y7 -0.032 
+Ontology array z04,x1.y1 -0.131 
+Ontology array z04,x1.y2 0.028 
+Ontology array z04,x1.y3 0.013 
+Ontology array z04,x1.y4 0.033 
+Ontology array z04,x1.y5 -0.174 (O345)
+Ontology array z04,x1.y6 0.032 
+Ontology array z04,x1.y7 0.008 
+Ontology array z05,x7.y1 -0.129 
+Ontology array z05,x7.y2 0.105 
+Ontology array z05,x7.y3 0.041 
+Ontology array z05,x7.y4 0.135 (M545)
+Ontology array z05,x7.y5 -0.03 
+Ontology array z05,x7.y6 -0.015 
+Ontology array z05,x7.y7 -0.037 
+Ontology array z05,x6.y1 -0.006 
+Ontology array z05,x6.y2 0.105 
+Ontology array z05,x6.y3 0.518 (8876)
+Ontology array z05,x6.y4 0.057 
+Ontology array z05,x6.y5 0.071 
+Ontology array z05,x6.y6 0.088 (K291)
+Ontology array z05,x6.y7 0.14 
+Ontology array z05,x5.y1 -0.03 
+Ontology array z05,x5.y2 0.103 
+Ontology array z05,x5.y3 0.159 (O411)
+Ontology array z05,x5.y4 0.218 
+Ontology array z05,x5.y5 0.279 
+Ontology array z05,x5.y6 0.282 (Z710)
+Ontology array z05,x5.y7 0.189 (M069)
+Ontology array z05,x4.y1 -0.047 
+Ontology array z05,x4.y2 0.17 (Z369)
+Ontology array z05,x4.y3 0.009 
+Ontology array z05,x4.y4 0.281 (K089)
+Ontology array z05,x4.y5 0.223 
+Ontology array z05,x4.y6 0.229 
+Ontology array z05,x4.y7 0.377 
+Ontology array z05,x3.y1 0.017 (Z000)
+Ontology array z05,x3.y2 0.108 
+Ontology array z05,x3.y3 0.356 
+Ontology array z05,x3.y4 0.304 
+Ontology array z05,x3.y5 0.253 (O901)
+Ontology array z05,x3.y6 0.264 
+Ontology array z05,x3.y7 -0.03 
+Ontology array z05,x2.y1 -0.166 
+Ontology array z05,x2.y2 0.036 (Z014)
+Ontology array z05,x2.y3 0.024 
+Ontology array z05,x2.y4 0.205 
+Ontology array z05,x2.y5 0.287 
+Ontology array z05,x2.y6 0.133 
+Ontology array z05,x2.y7 0.007 
+Ontology array z05,x1.y1 0.033 
+Ontology array z05,x1.y2 -0.089 
+Ontology array z05,x1.y3 0.001 
+Ontology array z05,x1.y4 0.229 
+Ontology array z05,x1.y5 -0.147 (A09- Yellow Square)
+Ontology array z05,x1.y6 -0.119 
+Ontology array z05,x1.y7 -0.086 
+Ontology array z06,x7.y1 -0.142 
+Ontology array z06,x7.y2 -0.125 
+Ontology array z06,x7.y3 -0.151 
+Ontology array z06,x7.y4 -0.373 
+Ontology array z06,x7.y5 -0.117 
+Ontology array z06,x7.y6 -0.034 
+Ontology array z06,x7.y7 -0.01 
+Ontology array z06,x6.y1 -0.067 
+Ontology array z06,x6.y2 -0.205 
+Ontology array z06,x6.y3 -0.189 (N920)
+Ontology array z06,x6.y4 0.047 
+Ontology array z06,x6.y5 -0.176 
+Ontology array z06,x6.y6 -0.137 (O321)
+Ontology array z06,x6.y7 0.007 
+Ontology array z06,x5.y1 -0.245 
+Ontology array z06,x5.y2 -0.271 
+Ontology array z06,x5.y3 -0.274 
+Ontology array z06,x5.y4 -0.175 
+Ontology array z06,x5.y5 -0.086 
+Ontology array z06,x5.y6 0.078 (9775)
+Ontology array z06,x5.y7 0.055 
+Ontology array z06,x4.y1 -0.191 
+Ontology array z06,x4.y2 -0.184 
+Ontology array z06,x4.y3 -0.223 
+Ontology array z06,x4.y4 -0.199 (T384)
+Ontology array z06,x4.y5 -0.189 
+Ontology array z06,x4.y6 -0.137 
+Ontology array z06,x4.y7 -0.131 
+Ontology array z06,x3.y1 -0.034 (6909)
+Ontology array z06,x3.y2 -0.246 
+Ontology array z06,x3.y3 -0.26 
+Ontology array z06,x3.y4 -0.284 
+Ontology array z06,x3.y5 -0.173 (P229)
+Ontology array z06,x3.y6 -0.073 
+Ontology array z06,x3.y7 -0.216 
+Ontology array z06,x2.y1 -0.157 
+Ontology array z06,x2.y2 -0.178 (J069- Yellow Square)
+Ontology array z06,x2.y3 -0.227 
+Ontology array z06,x2.y4 -0.142 
+Ontology array z06,x2.y5 -0.193 
+Ontology array z06,x2.y6 -0.156 
+Ontology array z06,x2.y7 -0.154 
+Ontology array z06,x1.y1 0 
+Ontology array z06,x1.y2 -0.127 
+Ontology array z06,x1.y3 -0.178 
+Ontology array z06,x1.y4 -0.095 
+Ontology array z06,x1.y5 -0.394 (H527)
+Ontology array z06,x1.y6 -0.231 
+Ontology array z06,x1.y7 -0.112 
+Ontology array z07,x7.y1 -0.017 
+Ontology array z07,x7.y2 0.132 
+Ontology array z07,x7.y3 0.034 
+Ontology array z07,x7.y4 0.023 
+Ontology array z07,x7.y5 -0.015 
+Ontology array z07,x7.y6 0.031 
+Ontology array z07,x7.y7 0.055 
+Ontology array z07,x6.y1 -0.057 
+Ontology array z07,x6.y2 -0.025 
+Ontology array z07,x6.y3 0.08 (Z012)
+Ontology array z07,x6.y4 -0.095 
+Ontology array z07,x6.y5 -0.068 
+Ontology array z07,x6.y6 -0.003 
+Ontology array z07,x6.y7 0.025 
+Ontology array z07,x5.y1 -0.049 
+Ontology array z07,x5.y2 -0.172 
+Ontology array z07,x5.y3 -0.063 
+Ontology array z07,x5.y4 -0.031 
+Ontology array z07,x5.y5 0.202 
+Ontology array z07,x5.y6 -0.04 (causal_A10)
+Ontology array z07,x5.y7 0.022 
+Ontology array z07,x4.y1 -0.021 
+Ontology array z07,x4.y2 0.1 
+Ontology array z07,x4.y3 -0.06 
+Ontology array z07,x4.y4 -0.084 (Z479)
+Ontology array z07,x4.y5 -0.172 
+Ontology array z07,x4.y6 -0.129 
+Ontology array z07,x4.y7 0.109 
+Ontology array z07,x3.y1 0.05 
+Ontology array z07,x3.y2 0.046 
+Ontology array z07,x3.y3 -0.145 
+Ontology array z07,x3.y4 0.078 
+Ontology array z07,x3.y5 0.034 (I219)
+Ontology array z07,x3.y6 -0.169 
+Ontology array z07,x3.y7 -0.03 
+Ontology array z07,x2.y1 -0.069 
+Ontology array z07,x2.y2 0.142 (H522)
+Ontology array z07,x2.y3 0.033 
+Ontology array z07,x2.y4 -0.146 
+Ontology array z07,x2.y5 -0.114 
+Ontology array z07,x2.y6 -0.191 
+Ontology array z07,x2.y7 0.078 
+Ontology array z07,x1.y1 -0.034 
+Ontology array z07,x1.y2 0.024 
+Ontology array z07,x1.y3 0.019 
+Ontology array z07,x1.y4 -0.027 
+Ontology array z07,x1.y5 -0.097 (causal_A06)
+Ontology array z07,x1.y6 -0.066 
+Ontology array z07,x1.y7 -0.014 
+Ontology array z08,x7.y1 -0.054 
+Ontology array z08,x7.y2 0.003 
+Ontology array z08,x7.y3 0.108 
+Ontology array z08,x7.y4 0.089 
+Ontology array z08,x7.y5 0.183 
+Ontology array z08,x7.y6 0.053 
+Ontology array z08,x7.y7 0.09 
+Ontology array z08,x6.y1 0.014 
+Ontology array z08,x6.y2 0.126 
+Ontology array z08,x6.y3 0.15 (D500)
+Ontology array z08,x6.y4 0.207 
+Ontology array z08,x6.y5 0.029 
+Ontology array z08,x6.y6 0.19 
+Ontology array z08,x6.y7 0.031 
+Ontology array z08,x5.y1 0.097 
+Ontology array z08,x5.y2 0.074 
+Ontology array z08,x5.y3 0.119 
+Ontology array z08,x5.y4 -0.032 
+Ontology array z08,x5.y5 0.137 
+Ontology array z08,x5.y6 0.047 (9616)
+Ontology array z08,x5.y7 0.167 
+Ontology array z08,x4.y1 -0.032 
+Ontology array z08,x4.y2 0.195 
+Ontology array z08,x4.y3 0.121 
+Ontology array z08,x4.y4 0.114 (L024)
+Ontology array z08,x4.y5 0.067 
+Ontology array z08,x4.y6 -0.055 
+Ontology array z08,x4.y7 0.133 
+Ontology array z08,x3.y1 0.108 
+Ontology array z08,x3.y2 0.068 
+Ontology array z08,x3.y3 0.01 
+Ontology array z08,x3.y4 0.026 
+Ontology array z08,x3.y5 0.132 (R12)
+Ontology array z08,x3.y6 -0.021 
+Ontology array z08,x3.y7 0.174 
+Ontology array z08,x2.y1 0.122 
+Ontology array z08,x2.y2 0.13 (9139)
+Ontology array z08,x2.y3 0.248 
+Ontology array z08,x2.y4 0.198 
+Ontology array z08,x2.y5 0.088 
+Ontology array z08,x2.y6 0.063 
+Ontology array z08,x2.y7 0.095 
+Ontology array z08,x1.y1 0.097 
+Ontology array z08,x1.y2 0.115 
+Ontology array z08,x1.y3 0.094 
+Ontology array z08,x1.y4 0.322 
+Ontology array z08,x1.y5 0.216 
+Ontology array z08,x1.y6 0.273 
+Ontology array z08,x1.y7 0.176 
+Ontology array z09,x7.y1 0.116 
+Ontology array z09,x7.y2 0.031 
+Ontology array z09,x7.y3 0.019 
+Ontology array z09,x7.y4 -0.041 
+Ontology array z09,x7.y5 0.232 
+Ontology array z09,x7.y6 0.18 
+Ontology array z09,x7.y7 0.239 
+Ontology array z09,x6.y1 0.1 
+Ontology array z09,x6.y2 -0.142 
+Ontology array z09,x6.y3 -0.159 (Z380)
+Ontology array z09,x6.y4 0.151 
+Ontology array z09,x6.y5 -0.021 
+Ontology array z09,x6.y6 -0.019 
+Ontology array z09,x6.y7 -0.011 
+Ontology array z09,x5.y1 -0.008 
+Ontology array z09,x5.y2 -0.106 
+Ontology array z09,x5.y3 -0.014 
+Ontology array z09,x5.y4 0.02 
+Ontology array z09,x5.y5 0.139 
+Ontology array z09,x5.y6 0.098 
+Ontology array z09,x5.y7 0.178 
+Ontology array z09,x4.y1 0.048 
+Ontology array z09,x4.y2 -0.103 
+Ontology array z09,x4.y3 -0.113 
+Ontology array z09,x4.y4 0.179 (B379)
+Ontology array z09,x4.y5 0.078 
+Ontology array z09,x4.y6 0.031 
+Ontology array z09,x4.y7 0.056 
+Ontology array z09,x3.y1 0.121 
+Ontology array z09,x3.y2 -0.048 
+Ontology array z09,x3.y3 -0.161 
+Ontology array z09,x3.y4 -0.156 
+Ontology array z09,x3.y5 0.017 (Z305)
+Ontology array z09,x3.y6 -0.096 
+Ontology array z09,x3.y7 0.069 
+Ontology array z09,x2.y1 0.024 
+Ontology array z09,x2.y2 -0.016 (J060)
+Ontology array z09,x2.y3 0.02 
+Ontology array z09,x2.y4 0.147 
+Ontology array z09,x2.y5 -0.288 
+Ontology array z09,x2.y6 -0.167 
+Ontology array z09,x2.y7 0.127 
+Ontology array z09,x1.y1 0.086 
+Ontology array z09,x1.y2 0.107 
+Ontology array z09,x1.y3 -0.114 
+Ontology array z09,x1.y4 -0.069 
+Ontology array z09,x1.y5 -0.046 
+Ontology array z09,x1.y6 0.11 
+Ontology array z09,x1.y7 0.13 
+Ontology array z10,x7.y1 0.165 
+Ontology array z10,x7.y2 0.074 
+Ontology array z10,x7.y3 0.095 
+Ontology array z10,x7.y4 0.299 
+Ontology array z10,x7.y5 -0.018 
+Ontology array z10,x7.y6 0.192 
+Ontology array z10,x7.y7 0.09 
+Ontology array z10,x6.y1 0.065 
+Ontology array z10,x6.y2 -0.129 
+Ontology array z10,x6.y3 0.137 
+Ontology array z10,x6.y4 0.155 
+Ontology array z10,x6.y5 -0.086 
+Ontology array z10,x6.y6 0.066 
+Ontology array z10,x6.y7 -0.069 
+Ontology array z10,x5.y1 0.106 
+Ontology array z10,x5.y2 0.038 
+Ontology array z10,x5.y3 0.101 
+Ontology array z10,x5.y4 0.065 
+Ontology array z10,x5.y5 0.008 
+Ontology array z10,x5.y6 0.052 
+Ontology array z10,x5.y7 -0.106 
+Ontology array z10,x4.y1 0.125 
+Ontology array z10,x4.y2 0.236 
+Ontology array z10,x4.y3 0.051 
+Ontology array z10,x4.y4 -0.259 (K073)
+Ontology array z10,x4.y5 -0.11 
+Ontology array z10,x4.y6 -0.032 
+Ontology array z10,x4.y7 -0.115 
+Ontology array z10,x3.y1 0.101 
+Ontology array z10,x3.y2 0.037 
+Ontology array z10,x3.y3 0.076 
+Ontology array z10,x3.y4 -0.217 
+Ontology array z10,x3.y5 0.01 (Z354)
+Ontology array z10,x3.y6 0.184 
+Ontology array z10,x3.y7 0.255 
+Ontology array z10,x2.y1 0.107 
+Ontology array z10,x2.y2 0.219 
+Ontology array z10,x2.y3 0.31 
+Ontology array z10,x2.y4 0.118 
+Ontology array z10,x2.y5 0.048 
+Ontology array z10,x2.y6 0.176 
+Ontology array z10,x2.y7 0.14 
+Ontology array z10,x1.y1 0.166 
+Ontology array z10,x1.y2 0.247 
+Ontology array z10,x1.y3 0.02 
+Ontology array z10,x1.y4 0.136 
+Ontology array z10,x1.y5 0.396 
+Ontology array z10,x1.y6 0.393 
+Ontology array z10,x1.y7 0.21 
+Ontology array z11,x7.y1 0.011 
+Ontology array z11,x7.y2 -0.044 
+Ontology array z11,x7.y3 -0.16 
+Ontology array z11,x7.y4 -0.087 
+Ontology array z11,x7.y5 -0.091 
+Ontology array z11,x7.y6 0.035 
+Ontology array z11,x7.y7 0.036 
+Ontology array z11,x6.y1 0.084 
+Ontology array z11,x6.y2 0.269 
+Ontology array z11,x6.y3 0.049 
+Ontology array z11,x6.y4 0.031 
+Ontology array z11,x6.y5 0.044 
+Ontology array z11,x6.y6 0.013 
+Ontology array z11,x6.y7 0.123 
+Ontology array z11,x5.y1 0.018 
+Ontology array z11,x5.y2 0.102 
+Ontology array z11,x5.y3 -0.093 
+Ontology array z11,x5.y4 0.049 
+Ontology array z11,x5.y5 0.233 
+Ontology array z11,x5.y6 -0.002 
+Ontology array z11,x5.y7 0.082 
+Ontology array z11,x4.y1 0.058 
+Ontology array z11,x4.y2 0.038 
+Ontology array z11,x4.y3 0.022 
+Ontology array z11,x4.y4 -0.039 (Q501)
+Ontology array z11,x4.y5 0.26 
+Ontology array z11,x4.y6 0.225 
+Ontology array z11,x4.y7 0.069 
+Ontology array z11,x3.y1 0.076 
+Ontology array z11,x3.y2 0.134 
+Ontology array z11,x3.y3 -0.002 
+Ontology array z11,x3.y4 0.093 
+Ontology array z11,x3.y5 0.124 
+Ontology array z11,x3.y6 -0.023 
+Ontology array z11,x3.y7 -0.017 
+Ontology array z11,x2.y1 -0.032 
+Ontology array z11,x2.y2 -0.045 
+Ontology array z11,x2.y3 -0.114 
+Ontology array z11,x2.y4 -0.282 
+Ontology array z11,x2.y5 -0.098 
+Ontology array z11,x2.y6 0.184 
+Ontology array z11,x2.y7 -0.007 
+Ontology array z11,x1.y1 0.166 
+Ontology array z11,x1.y2 0.126 
+Ontology array z11,x1.y3 0.018 
+Ontology array z11,x1.y4 -0.126 
+Ontology array z11,x1.y5 -0.294 
+Ontology array z11,x1.y6 -0.204 
+Ontology array z11,x1.y7 0.05 
+Ontology array z12,x7.y1 0.044 
+Ontology array z12,x7.y2 0.144 
+Ontology array z12,x7.y3 -0.147 
+Ontology array z12,x7.y4 0.063 
+Ontology array z12,x7.y5 -0.121 
+Ontology array z12,x7.y6 -0.055 
+Ontology array z12,x7.y7 -0.127 
+Ontology array z12,x6.y1 -0.114 
+Ontology array z12,x6.y2 0.085 
+Ontology array z12,x6.y3 0.218 
+Ontology array z12,x6.y4 -0.082 
+Ontology array z12,x6.y5 0.212 
+Ontology array z12,x6.y6 -0.132 
+Ontology array z12,x6.y7 0.004 
+Ontology array z12,x5.y1 -0.007 
+Ontology array z12,x5.y2 0.097 
+Ontology array z12,x5.y3 0.088 
+Ontology array z12,x5.y4 -0.171 
+Ontology array z12,x5.y5 -0.201 
+Ontology array z12,x5.y6 0.071 
+Ontology array z12,x5.y7 -0.06 
+Ontology array z12,x4.y1 0.002 
+Ontology array z12,x4.y2 0.092 
+Ontology array z12,x4.y3 -0.094 
+Ontology array z12,x4.y4 -0.214 (O311)
+Ontology array z12,x4.y5 0.068 
+Ontology array z12,x4.y6 0.077 
+Ontology array z12,x4.y7 0.053 
+Ontology array z12,x3.y1 -0.067 
+Ontology array z12,x3.y2 0.15 
+Ontology array z12,x3.y3 0.39 
+Ontology array z12,x3.y4 0.233 
+Ontology array z12,x3.y5 0.078 
+Ontology array z12,x3.y6 -0.132 
+Ontology array z12,x3.y7 -0.278 
+Ontology array z12,x2.y1 -0.214 
+Ontology array z12,x2.y2 -0.031 
+Ontology array z12,x2.y3 -0.203 
+Ontology array z12,x2.y4 0.068 
+Ontology array z12,x2.y5 0.105 
+Ontology array z12,x2.y6 0.059 
+Ontology array z12,x2.y7 -0.106 
+Ontology array z12,x1.y1 -0.168 
+Ontology array z12,x1.y2 -0.009 
+Ontology array z12,x1.y3 -0.041 
+Ontology array z12,x1.y4 0.043 
+Ontology array z12,x1.y5 0.083 
+Ontology array z12,x1.y6 -0.094 
+Ontology array z12,x1.y7 -0.142 

@@ -1,0 +1,263 @@
+Causal factor,Variable,Demographics or medical history,Description
+Multiple pregnancy,causal_A02,O300,Twin pregnancy
+Multiple pregnancy,causal_A02,O301,Triplet pregnancy
+Multiple pregnancy,causal_A02,O302,Quadruplet pregnancy
+Multiple pregnancy,causal_A02,O308,Other multiple gestation
+Multiple pregnancy,causal_A02,O309,"Multiple gestation, unspecified"
+Multiple pregnancy,causal_A02,O310,Papyraceous fetus
+Multiple pregnancy,causal_A02,O311,Continuing pregnancy after abortion of one fetus or more
+Multiple pregnancy,causal_A02,O312,Continuing pregnancy after intrauterine death of one fetus or more
+Multiple pregnancy,causal_A02,O318,Other complications specific to multiple gestation
+Chorioamnionitis,causal_A03,O411,Infection of amniotic sac and membranes
+IAI,causal_A04,O418,Other specified disorders of amniotic fluid and membranes
+IAI,causal_A04,O419,"Disorder of amniotic fluid and membranes, unspecified"
+Cervical shortening,causal_A05,6751,Transabdominal cerclage of cervix
+APH,causal_A06,O460,Antepartum haemorrhage with coagulation defect
+APH,causal_A06,O468,Other antepartum haemorrhage
+APH,causal_A06,O469,"Antepartum haemorrhage, unspecified"
+Illicit drug use,causal_A09,F190,"Mental and behavioural disorders due to multiple drug use and use of psychoactive substances, acute intoxication"
+Illicit drug use,causal_A09,F195,NA
+Illicit drug use,causal_A09,F197,"Mental and behavioural disorders due to multiple drug use and use of psychoactive substances, residual and late-onset psychotic disorder"
+Illicit drug use,causal_A09,F199,"Mental and behavioural disorders due to multiple drug use and use of psychoactive substances, unspecified mental and behavioural disorder"
+GTI,causal_A10,9141,"Microscopic examination of specimen from female genital tract, Bacterial smear"
+GTI,causal_A10,9143,"Microscopic examination of specimen from female genital tract, Culture and sensitivity"
+GTI,causal_A10,9149,Other microscopic examination of specimen from female genital tract
+GTI,causal_A10,A600,Herpesviral infection of genitalia and urogenital tract
+GTI,causal_A10,A601,Herpesviral infection of perianal skin and rectum
+GTI,causal_A10,A609,"Anogenital herpesviral infection, unspecified"
+GTI,causal_A10,A630,Anogenital (venereal) warts
+GTI,causal_A10,A631,
+GTI,causal_A10,A638,Other specified predominantly sexually transmitted diseases
+GTI,causal_A10,O235,Infections of the genital tract in pregnancy
+GTI,causal_A10,O239,Other and unspecified genitourinary tract infection in pregnancy
+GTI,causal_A10,R870,"Abnormal findings in specimens from female genital organs, abnormal level of enzymes"
+GTI,causal_A10,R871,"Abnormal findings in specimens from female genital organs, abnormal level of hormones"
+GTI,causal_A10,R875,NA
+GTI,causal_A10,R878,"Abnormal findings in specimens from female genital organs, other abnormal findings"
+Periodontal disease,causal_A11,K05,NA
+Periodontal disease,causal_A11,K050,Acute gingivitis
+Periodontal disease,causal_A11,K051,Chronic gingivitis
+Periodontal disease,causal_A11,K052,Acute periodontitis
+Periodontal disease,causal_A11,K053,Chronic periodontitis
+Periodontal disease,causal_A11,K054,Periodontosis
+Periodontal disease,causal_A11,K055,Other periodontal diseases
+Periodontal disease,causal_A11,K056,"Periodontal disease, unspecified"
+Polyhydramnios,causal_A12,O40,Polyhydramnios
+Pneumonia,causal_A13,J120,Adenoviral pneumonia
+Pneumonia,causal_A13,J121,Respiratory syncytial virus pneumonia
+Pneumonia,causal_A13,J122,Parainfluenza virus pneumonia
+Pneumonia,causal_A13,J128,Other viral pneumonia
+Pneumonia,causal_A13,J129,"Viral pneumonia, unspecified"
+Pneumonia,causal_A13,J13,Pneumonia due to Streptococcus pneumoniae
+Pneumonia,causal_A13,J14,Pneumonia due to Haemophilus influenzae
+Pneumonia,causal_A13,J150,Pneumonia due to Klebsiella pneumoniae
+Pneumonia,causal_A13,J151,Pneumonia due to Pseudomonas
+Pneumonia,causal_A13,J152,Pneumonia due to staphylococcus
+Pneumonia,causal_A13,J153,"Pneumonia due to streptococcus, group B"
+Pneumonia,causal_A13,J154,Pneumonia due to other streptococci
+Pneumonia,causal_A13,J156,Pneumonia due to other aerobic Gram-negative bacteria
+Pneumonia,causal_A13,J157,Pneumonia due to Mycoplasma pneumoniae
+Pneumonia,causal_A13,J158,Other bacterial pneumonia
+Pneumonia,causal_A13,J159,"Bacterial pneumonia, unspecified"
+Pneumonia,causal_A13,J18,NA
+Pneumonia,causal_A13,J180,"Bronchopneumonia, unspecified"
+Pneumonia,causal_A13,J181,"Lobar pneumonia, unspecified"
+Pneumonia,causal_A13,J182,"Hypostatic pneumonia, unspecified"
+Pneumonia,causal_A13,J188,"Other pneumonia, organism unspecified"
+Pneumonia,causal_A13,J189,"Pneumonia, unspecified"
+Tuberculosis,causal_A14,A15,NA
+Tuberculosis,causal_A14,A150,"Tuberculosis of lung, confirmed by sputum microscopy with or without culture"
+Tuberculosis,causal_A14,A151,"Tuberculosis of lung, confirmed by culture only"
+Tuberculosis,causal_A14,A152,"Tuberculosis of lung, confirmed histologically"
+Tuberculosis,causal_A14,A153,"Tuberculosis of lung, confirmed by unspecified means"
+Tuberculosis,causal_A14,A154,"Tuberculosis of intrathoracic lymph nodes, confirmed bacteriologically and histologically"
+Tuberculosis,causal_A14,A155,"Tuberculosis of larynx, trachea and bronchus, confirmed bacteriologically and histologically"
+Tuberculosis,causal_A14,A156,"Tuberculous pleurisy, confirmed bacteriologically and histologically"
+Tuberculosis,causal_A14,A157,"Primary respiratory tuberculosis, confirmed bacteriologically and histologically"
+Tuberculosis,causal_A14,A158,"Other respiratory tuberculosis, confirmed bacteriologically and histologically"
+Tuberculosis,causal_A14,A159,"Respiratory tuberculosis unspecified, confirmed bacteriologically and histologically"
+Tuberculosis,causal_A14,A16,NA
+Tuberculosis,causal_A14,A160,"Tuberculosis of lung, bacteriologically and histologically negative"
+Tuberculosis,causal_A14,A161,"Tuberculosis of lung, bacteriological and histological examination not done"
+Tuberculosis,causal_A14,A162,"Tuberculosis of lung, without mention of bacteriological or histological confirmation"
+Tuberculosis,causal_A14,A163,"Tuberculosis of intrathoracic lymph nodes, without mention of bacteriological or histological confirmation"
+Tuberculosis,causal_A14,A164,"Tuberculosis of larynx, trachea and bronchus, without mention of bacteriological or histological confirmation"
+Tuberculosis,causal_A14,A165,"Tuberculous pleurisy, without mention of bacteriological or histological confirmation"
+Tuberculosis,causal_A14,A167,Primary respiratory tuberculosis without mention of bacteriological or histological confirmation
+Tuberculosis,causal_A14,A168,"Other respiratory tuberculosis, without mention of bacteriological or histological confirmation"
+Tuberculosis,causal_A14,A169,"Respiratory tuberculosis unspecified, without mention of bacteriological or histological confirmation"
+Tuberculosis,causal_A14,A19,NA
+Tuberculosis,causal_A14,A190,Acute miliary tuberculosis of a single specified site
+Tuberculosis,causal_A14,A191,Acute miliary tuberculosis of multiple sites
+Tuberculosis,causal_A14,A192,"Acute miliary tuberculosis, unspecified"
+Tuberculosis,causal_A14,A198,Other miliary tuberculosis
+Tuberculosis,causal_A14,A199,"Miliary tuberculosis, unspecified"
+Asthma,causal_A15,J45,NA
+Asthma,causal_A15,J450,Predominantly allergic asthma
+Asthma,causal_A15,J451,Nonallergic asthma
+Asthma,causal_A15,J458,Mixed asthma
+Asthma,causal_A15,J459,"Asthma, unspecified"
+Asthma,causal_A15,J4590,
+Asthma,causal_A15,J4599,
+Asthma,causal_A15,J46,Status asthmaticus
+Low SES,causal_A19,THIRD,Insurance class third
+Low SES,causal_A19,UNEMPLOYED,Occupation segment unemployed householder
+Maternal age,causal_A20,TOO YOUNG,Age Too Young
+Maternal age,causal_A20,TOO OLD,Age Too Old
+Uterine anomaly,causal_A24,Q510,Agenesis and aplasia of uterus
+Uterine anomaly,causal_A24,Q512,Other doubling of uterus
+Uterine anomaly,causal_A24,Q515,NA
+Uterine anomaly,causal_A24,Q516,Embryonic cyst of cervix
+Uterine anomaly,causal_A24,Q517,Congenital fistulae between uterus and digestive and urinary tracts
+Uterine anomaly,causal_A24,Q518,Other congenital malformations of uterus and cervix
+Uterine anomaly,causal_A24,Q519,"Congenital malformation of uterus and cervix, unspecified"
+Assisted reproduction,causal_A25,Z310,Tuboplasty or vasoplasty after previous sterilization
+Assisted reproduction,causal_A25,Z312,In vitro fertilization
+Assisted reproduction,causal_A25,Z313,Other assisted fertilization methods
+Assisted reproduction,causal_A25,Z314,Procreative investigation and testing
+Assisted reproduction,causal_A25,Z315,Genetic counselling
+Assisted reproduction,causal_A25,Z316,General counselling and advice on procreation
+Assisted reproduction,causal_A25,Z318,Other procreative management
+Assisted reproduction,causal_A25,Z319,"Procreative management, unspecified"
+Assisted reproduction,causal_A25,N980,Infection associated with artificial insemination
+Assisted reproduction,causal_A25,N981,Hyperstimulation of ovaries
+Assisted reproduction,causal_A25,N983,Complications of attempted introduction of embryo in embryo transfer
+Assisted reproduction,causal_A25,N988,Other complications associated with artificial fertilization
+Assisted reproduction,causal_A25,N989,"Complication associated with artificial fertilization, unspecified"
+Influenza,causal_A28,J00,Acute nasopharyngitis [common cold]
+Influenza,causal_A28,J09,Influenza due to identified avian infliuenza virus
+Influenza,causal_A28,J100,"Influenza with pneumonia, influenza virus identified"
+Influenza,causal_A28,J101,"Influenza with other respiratory manifestations, influenza virus identified"
+Influenza,causal_A28,J108,"Influenza with other manifestations, influenza virus identified"
+Influenza,causal_A28,J11,NA
+Influenza,causal_A28,J110,"Influenza with pneumonia, virus not identified"
+Influenza,causal_A28,J111,"Influenza with other respiratory manifestations, virus not identified"
+Influenza,causal_A28,J118,"Influenza with other manifestations, virus not identified"
+UTI,causal_L29,N390,"Urinary tract infection, site not specified"
+UTI,causal_L29,O230,Infections of kidney in pregnancy
+UTI,causal_L29,O231,Infections of bladder in pregnancy
+UTI,causal_L29,O232,Infections of urethra in pregnancy
+UTI,causal_L29,O234,Unspecified infection of urinary tract in pregnancy
+UTI,causal_L29,O239,Other and unspecified genitourinary tract infection in pregnancy
+Parity,causal_L30,Z641,Problems related to multiparity
+Anorexia nervosa,causal_L33,F500,Anorexia nervosa
+Anorexia nervosa,causal_L33,R630,Anorexia
+Anorexia nervosa,causal_L33,R633,Feeding difficulties and mismanagement
+Anorexia nervosa,causal_L33,R634,Abnormal weight loss
+Type-2 diabetes mellitus,causal_L34,E11,Non-insulin-dependent diabetes mellitus
+Type-2 diabetes mellitus,causal_L34,E110,Non-insulin-dependent diabetes mellitus with coma
+Type-2 diabetes mellitus,causal_L34,E111,Non-insulin-dependent diabetes mellitus with ketoacidosis
+Type-2 diabetes mellitus,causal_L34,E112,Non-insulin-dependent diabetes mellitus with renal complications
+Type-2 diabetes mellitus,causal_L34,E113,Non-insulin-dependent diabetes mellitus with ophthalmic complications
+Type-2 diabetes mellitus,causal_L34,E114,Non-insulin-dependent diabetes mellitus with neurological complications
+Type-2 diabetes mellitus,causal_L34,E115,Non-insulin-dependent diabetes mellitus with peripheral circulatory complications
+Type-2 diabetes mellitus,causal_L34,E116,Non-insulin-dependent diabetes mellitus with other specified complications
+Type-2 diabetes mellitus,causal_L34,E117,Non-insulin-dependent diabetes mellitus with multiple complications
+Type-2 diabetes mellitus,causal_L34,E118,Non-insulin-dependent diabetes mellitus with unspecified complications
+Type-2 diabetes mellitus,causal_L34,E119,Non-insulin-dependent diabetes mellitus without complications
+Type-2 diabetes mellitus,causal_L34,E120,Malnutrition-related diabetes mellitus with coma
+Type-2 diabetes mellitus,causal_L34,E121,Malnutrition-related diabetes mellitus with ketoacidosis
+Type-2 diabetes mellitus,causal_L34,E122,Malnutrition-related diabetes mellitus with renal complications
+Type-2 diabetes mellitus,causal_L34,E123,Malnutrition-related diabetes mellitus with ophthalmic complications
+Type-2 diabetes mellitus,causal_L34,E124,Malnutrition-related diabetes mellitus with neurological complications
+Type-2 diabetes mellitus,causal_L34,E125,Malnutrition-related diabetes mellitus with peripheral circulatory complications
+Type-2 diabetes mellitus,causal_L34,E126,Malnutrition-reltaed diabetes mellitus with other specified complications
+Type-2 diabetes mellitus,causal_L34,E127,Malnutrition-related diabetes mellitus with multiple complications
+Type-2 diabetes mellitus,causal_L34,E128,Malnutrition-related diabetes mellitus with unspecified complications
+Type-2 diabetes mellitus,causal_L34,E129,Malnutrition-related diabetes mellitus without complications
+Type-2 diabetes mellitus,causal_L34,E14,NA
+Type-2 diabetes mellitus,causal_L34,E140,Unspecified diabetes mellitus with coma
+Type-2 diabetes mellitus,causal_L34,E141,Unspecified diabetes mellitus with ketoacidosis
+Type-2 diabetes mellitus,causal_L34,E142,Unspecified diabetes mellitus with renal complications
+Type-2 diabetes mellitus,causal_L34,E143,Unspecified diabetes mellitus with ophthalmic complications
+Type-2 diabetes mellitus,causal_L34,E144,Unspecified diabetes mellitus with neurological complications
+Type-2 diabetes mellitus,causal_L34,E145,Unspecified diabetes mellitus with peripheral circulatory complications
+Type-2 diabetes mellitus,causal_L34,E146,Unspecified diabetes mellitus with other specified complications
+Type-2 diabetes mellitus,causal_L34,E147,Unspecified diabetes mellitus with multiple complications
+Type-2 diabetes mellitus,causal_L34,E148,Unspecified diabetes mellitus with unspecified complications
+Type-2 diabetes mellitus,causal_L34,E149,Unspecified diabetes mellitus without complications
+Anemia,causal_L35,D50,NA
+Anemia,causal_L35,D500,Iron deficiency anaemia secondary to blood loss (chronic)
+Anemia,causal_L35,D501,Sideropenic dysphagia
+Anemia,causal_L35,D508,Other iron deficiency anaemias
+Anemia,causal_L35,D509,"Iron deficiency anaemia, unspecified"
+Anemia,causal_L35,D510,Vitamin B12 deficiency anaemia due to intrinsic factor deficiency
+Anemia,causal_L35,D511,Vitamin B12 deficiency anaemia due to selective vitamin B12 malabsorption with proteinuria
+Anemia,causal_L35,D512,Transcobalamin II deficiency
+Anemia,causal_L35,D513,Other dietary vitamin B12 deficiency anaemia
+Anemia,causal_L35,D518,Other vitamin B12 deficiency anaemias
+Anemia,causal_L35,D519,"Vitamin B12 deficiency anaemia, unspecified"
+Anemia,causal_L35,D520,Dietary folate deficiency anaemia
+Anemia,causal_L35,D521,Drug-induced folate deficiency anaemia
+Anemia,causal_L35,D528,Other folate deficiency anaemias
+Anemia,causal_L35,D529,"Folate deficiency anaemia, unspecified"
+Anemia,causal_L35,D530,Protein deficiency anaemia
+Anemia,causal_L35,D531,"Other megaloblastic anaemias, not elsewhere classified"
+Anemia,causal_L35,D532,Scorbutic anaemia
+Anemia,causal_L35,D538,Other specified nutritional anaemias
+Anemia,causal_L35,D539,"Nutritional anaemia, unspecified"
+Anemia,causal_L35,D550,Anaemia due to glucose-6-phosphate dehydrogenase [G6PD] deficiency
+Anemia,causal_L35,D551,Anaemia due to other disorders of glutathione metabolism
+Anemia,causal_L35,D553,Anaemia due to disorders of nucleotide metabolism
+Anemia,causal_L35,D558,Other anaemias due to enzyme disorders
+Anemia,causal_L35,D559,"Anaemia due to enzyme disorder, unspecified"
+Anemia,causal_L35,D560,Alpha thalassaemia
+Anemia,causal_L35,D561,Beta thalassaemia
+Anemia,causal_L35,D563,Thalassaemia trait
+Anemia,causal_L35,D564,Hereditary persistence of fetal haemoglobin [HPFH]
+Anemia,causal_L35,D568,Other thalassaemias
+Anemia,causal_L35,D569,"Thalassaemia, unspecified"
+Anemia,causal_L35,D572,Double heterozyus sickling disorders
+Anemia,causal_L35,D573,Sickle-cell trait
+Anemia,causal_L35,D582,Other haemoglobinopathies
+Anemia,causal_L35,D588,Other specified hereditary haemolytic anaemias
+Anemia,causal_L35,D589,"Hereditary haemolytic anaemia, unspecified"
+Anemia,causal_L35,D590,Drug-induced autoimmune haemolytic anaemia
+Anemia,causal_L35,D591,Other autoimmune haemolytic anaemias
+Anemia,causal_L35,D592,NA
+Anemia,causal_L35,D593,Haemolytic-uraemic syndrome
+Anemia,causal_L35,D594,Other nonautoimmune haemolytic anaemias
+Anemia,causal_L35,D598,Other acquired haemolytic anaemias
+Anemia,causal_L35,D599,"Acquired haemolytic anaemia, unspecified"
+Anemia,causal_L35,D600,Chronic acquired pure red cell aplasia
+Anemia,causal_L35,D609,"Acquired pure red cell aplasia, unspecified"
+Anemia,causal_L35,D610,Constitutional aplastic anaemia
+Anemia,causal_L35,D612,Aplastic anaemia due to other external agents
+Anemia,causal_L35,D613,Idiopathic aplastic anaemia
+Anemia,causal_L35,D618,Other specified aplastic anaemias
+Anemia,causal_L35,D619,"Aplastic anaemia, unspecified"
+Anemia,causal_L35,D62,Acute posthaemorrhagic anaemia
+Anemia,causal_L35,D63,NA
+Anemia,causal_L35,D630,Anaemia in neoplastic disease
+Anemia,causal_L35,D638,Anaemia in other chronic diseases classified elsewhere
+Anemia,causal_L35,D64,NA
+Anemia,causal_L35,D640,Hereditary sideroblastic anaemia
+Anemia,causal_L35,D641,Secondary sideroblastic anaemia due to disease
+Anemia,causal_L35,D643,Other sideroblastic anaemias
+Anemia,causal_L35,D644,Congenital dyserythropoietic anaemia
+Anemia,causal_L35,D648,Other specified anaemias
+Anemia,causal_L35,D649,"Anaemia, unspecified"
+Chromosomal aberration,causal_L36,Q900,"Trisomy 21, meiotic nondisjunction"
+Chromosomal aberration,causal_L36,Q909,"Down's syndrome, unspecified"
+Chromosomal aberration,causal_L36,Q910,NA
+Chromosomal aberration,causal_L36,Q911,"Trisomy 18, mosaicism (mitotic nondisjunction)"
+Chromosomal aberration,causal_L36,Q912,"Trisomy 18, translocation"
+Chromosomal aberration,causal_L36,Q913,"Edwards' syndrome, unspecified"
+Chromosomal aberration,causal_L36,Q916,"Trisomy 13, translocation"
+Chromosomal aberration,causal_L36,Q921,NA
+Chromosomal aberration,causal_L36,Q928,Other specified trisomies and partial trisomies of autosomes
+Chromosomal aberration,causal_L36,Q932,Chromosome replaced with ring or dicentric
+Chromosomal aberration,causal_L36,Q934,Deletion of short arm of chromosome 5
+Chromosomal aberration,causal_L36,Q950,Balanced translocation and insertion in normal individual
+Chromosomal aberration,causal_L36,Q969,"Turner's syndrome, unspecified"
+Chromosomal aberration,causal_L36,Q970,"Karyotype 47,XXX"
+Chromosomal aberration,causal_L36,Q984,"Klinefelter's syndrome, unspecified"
+Chromosomal aberration,causal_L36,Q990,"Chimera 46,XX/46,XY"
+Chromosomal aberration,causal_L36,Q998,Other specified chromosome abnormalities
+Chromosomal aberration,causal_L36,Q999,"Chromosomal abnormality, unspecified"
+Varicella,causal_L37,B010,Varicella meningitis
+Varicella,causal_L37,B011,Varicella encephalitis
+Varicella,causal_L37,B012,Varicella pneumonia
+Varicella,causal_L37,B018,Varicella with other complications
+Varicella,causal_L37,B019,Varicella without complication
+Acute respiratory syndrome,causal_L38,J80,Adult respiratory distress syndrome

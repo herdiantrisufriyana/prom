@@ -1,0 +1,380 @@
+Ontology,Dimension 1,Dimension 2,Dimension 3,Predictor,Description,Classification Output,Estimation Output
+ONT:144,7,2,3,9059,"Microscopic examination of blood, Other microscopic examination",0.0020469180856259456,2.7732560881716826e-4
+ONT:147,6,7,2,8602,Injection or tattooing of skin lesion or defect,-1.6555383428521527e-4,-1.282924196229114e-6
+ONT:147,5,6,6,9775,Removal of vaginal or vulvar packing,-2.189034696661596e-4,3.883174817826199e-5
+ONT:147,5,6,8,9616,Other vaginal dilation,-5.334270637716073e-4,-1.319097926767562e-4
+ONT:149,3,1,1,O622,Other uterine inertia,-8.888148255180234e-4,0.0036025422952712383
+ONT:149,2,2,3,734,Flat foot,1.5896772923063712e-4,9.895566949594294e-4
+ONT:150,6,3,1,Z301,Insertion of (intrauterine) contraceptive device,0.0020290200055622237,-0.0018332622626702072
+ONT:150,7,4,2,697,Insertion of intrauterine contraceptive device,2.7075668044439227e-4,-1.082343414846032e-5
+ONT:155,5,1,2,598,Ureteral catheterization,-0.01392712017520964,-5.4131538795777756e-5
+ONT:156,6,6,4,O235,Infections of the genital tract in pregnancy,3.083675614076742e-4,1.553817123605694e-4
+ONT:158,6,5,1,Z349,"Supervision of normal pregnancy, unspecified",8.631356474755186e-5,-1.292080056197742e-6
+ONT:158,7,2,3,9059,"Microscopic examination of blood, Other microscopic examination",-9.408979680642915e-4,2.2552483613484664e-5
+ONT:158,7,3,3,8878,Diagnostic ultrasound of gravid uterus,-0.0017646087163578766,2.0740992992707152e-5
+ONT:160,2,1,1,8905,"Diagnostic interview and evaluation, not otherwise specified",3.830238417054481e-4,2.0782942847241692e-6
+ONT:161,2,1,1,8905,"Diagnostic interview and evaluation, not otherwise specified",-0.0011929796718015973,-4.0840820136496016e-4
+ONT:161,6,7,1,9659,Other irrigation of wound,-5.882584752668375e-4,4.431100213726346e-5
+ONT:161,4,2,2,9764,Removal of other urinary drainage device,-0.0033953978284307906,9.2669777766681e-4
+ONT:161,6,6,2,9789,Removal of other therapeutic device,-0.007824439070602596,-3.97573426544286e-4
+ONT:161,3,7,2,9396,Other oxygen enrichment,0.002249034461465932,-6.333352443982573e-4
+ONT:161,7,2,3,9059,"Microscopic examination of blood, Other microscopic examination",-6.280481208588706e-4,4.916184368611298e-5
+ONT:161,7,4,3,5794,Insertion of indwelling urinary catheter,0.0025021004924637436,-9.581939182724472e-5
+ONT:162,3,2,1,9918,Injection or infusion of electrolytes,-2.7607875460513784e-4,4.5277082942944864e-5
+ONT:162,4,2,2,9764,Removal of other urinary drainage device,1.2736569189454594e-4,-1.9330440865557297e-5
+ONT:163,2,1,1,8905,"Diagnostic interview and evaluation, not otherwise specified",-0.003483368896269887,-3.96861100262845e-4
+ONT:163,5,1,2,598,Ureteral catheterization,4.8703610386559293e-4,-6.8431622278486426e-009
+ONT:163,4,2,2,9764,Removal of other urinary drainage device,0.0028911010837286014,2.121328154296165e-6
+ONT:163,3,7,2,9396,Other oxygen enrichment,-4.5517187122630365e-4,3.1179572891362056e-5
+ONT:163,2,2,3,734,Flat foot,0.0032645974304414405,-3.4918616113703907e-4
+ONT:163,2,6,4,9131,"Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen, Bacterial smear",0.002055483462399487,1.2336076048621164e-4
+ONT:163,5,6,6,9775,Removal of vaginal or vulvar packing,-2.329068981040544e-5,-6.652823101443994e-9
+ONT:164,7,3,1,N946,"Dysmenorrhoea, unspecified",0.006175768943191747,-3.1187120222017466e-4
+ONT:165,6,5,3,H521,Myopia,-5.215468738040963e-4,0.005144103637673592
+ONT:166,4,4,12,O311,Continuing pregnancy after abortion of one fetus or more,-3.538069321196158e-4,-3.5665757129599296e-7
+ONT:166,5,3,2,O262,Pregnancy care of habitual aborter,9.348205957396272e-4,-3.6477633524892306e-5
+ONT:167,6,5,3,H521,Myopia,0.001312564368156098,1.5715829290259206e-5
+ONT:167,1,5,6,H527,"Disorder of refraction, unspecified",-0.009711432105852319,4.18801237387495e-6
+ONT:167,2,2,7,H522,Astigmatism,0.038991883511213826,-2.030184135043897e-4
+ONT:168,1,3,1,O469,"Antepartum haemorrhage, unspecified",-5.1337389110174894e-5,-0.009065751425681334
+ONT:168,1,5,7,causal_A06,APH,0.002378223894894553,-0.002198057044822649
+ONT:169,2,1,1,8905,"Diagnostic interview and evaluation, not otherwise specified",-9.595528235387119e-7,-7.154955274091268e-10
+ONT:169,4,1,1,O410,Olihydramnios,-9.481556297544214e-5,8.98493066840006e-8
+ONT:169,5,1,1,Z309,"Contraceptive management, unspecified",-6.488662245564963e-5,2.8362078857268463e-7
+ONT:169,5,2,1,K30,Dyspepsia,-1.1009293182173696e-4,1.3201209267399427e-6
+ONT:169,7,2,1,9357,Application of other wound dressing,2.0430096087483557e-4,-4.839499890585408e-5
+ONT:169,6,3,1,Z301,Insertion of (intrauterine) contraceptive device,-4.68817121960341e-4,1.6054365111872748e-5
+ONT:169,7,3,1,N946,"Dysmenorrhoea, unspecified",5.170175145142036e-4,-5.7742879154387694e-5
+ONT:169,4,4,1,J180,"Bronchopneumonia, unspecified",-3.9843496292372993e-4,2.7567922516180676e-6
+ONT:169,5,4,1,B909,Sequelae of respiratory and unspecified tuberculosis,-1.4043522641644934e-4,2.1092677068290655e-6
+ONT:169,7,4,1,N832,Other and unspecified ovarian cysts,5.089465643121974e-4,-5.050806802406327e-5
+ONT:169,6,5,1,Z349,"Supervision of normal pregnancy, unspecified",2.3790192898262563e-4,2.8845546285599655e-6
+ONT:169,7,5,1,H669,"Otitis media, unspecified",3.0741716357687854e-4,-3.3260383085990247e-7
+ONT:169,6,6,1,I10,Essential (primary) hypertension,2.343592419840751e-5,-1.1877225757073173e-7
+ONT:169,4,7,1,9716,Replacement of wound packing or drain,2.0541026991669972e-5,-2.9460937994718606e-9
+ONT:169,4,4,11,Q501,Developmental ovarian cyst,-1.4855755970587595e-4,-2.3343025200295298e-6
+ONT:169,2,1,2,O441,Placenta praevia with haemorrhage,-3.4665530816019308e-6,-3.178766382061493e-10
+ONT:169,3,1,2,B373,Candidiasis of vulva and vagina,2.431845414532785e-5,-9.496974220923882e-9
+ONT:169,4,1,2,O268,Other specified pregnancy-related conditions,1.0853941997732153e-4,9.623250991214194e-8
+ONT:169,5,1,2,598,Ureteral catheterization,9.118614760894594e-5,-4.492842198243474e-7
+ONT:169,3,2,2,Z038,Observation for other suspected diseases and conditions,9.8001242852086e-5,6.37293504912595e-8
+ONT:169,4,2,2,9764,Removal of other urinary drainage device,1.2744361950937227e-4,-9.8117922554819e-7
+ONT:169,6,2,2,8879,Other diagnostic ultrasound,7.600381220601582e-5,1.981426679995013e-6
+ONT:169,7,2,2,O13,Gestational [pregnancy-induced] hypertension without significant proteinuria,2.2447318224033674e-4,1.3385232532150959e-5
+ONT:169,2,3,2,D259,"Leiomyoma of uterus, unspecified",9.21914514122324e-6,4.170628890853845e-9
+ONT:169,3,3,2,9394,Respiratory medication administered by nebulizer,7.761504554215648e-5,1.1050418787655891e-7
+ONT:169,2,4,2,Z090,Follow-up examination after surgery for other conditions,-2.1613702979220162e-5,1.5720146774589328e-8
+ONT:169,5,4,2,J680,"Bronchitis and pneumonitis due to chemicals, gases, fumes and vapours",-5.165144120438669e-4,-3.483106508467282e-6
+ONT:169,7,4,2,697,Insertion of intrauterine contraceptive device,-6.684046937777688e-4,9.624780294745228e-6
+ONT:169,3,5,2,N390,"Urinary tract infection, site not specified",-2.269160921580804e-6,5.012401187165505e-8
+ONT:169,6,5,2,I842,Internal haemorrhoids without complication,-6.175161114984062e-4,-6.376605377333977e-7
+ONT:169,6,6,2,9789,Removal of other therapeutic device,1.0134140382866974e-5,-1.1410132799011263e-7
+ONT:169,4,7,2,R53,Malaise and fatigue,-2.3892094468458414e-5,5.1482907173494574e-9
+ONT:169,5,7,2,9904,Transfusion of packed cells,2.730594320066171e-5,-3.572015808139817e-10
+ONT:169,6,7,2,8602,Injection or tattooing of skin lesion or defect,1.5195755040914305e-5,-6.857833467766028e-9
+ONT:169,3,1,3,O342,Maternal care due to uterine scar from previous surgery,4.675343409601962e-6,-7.1516781940950125e-9
+ONT:169,2,2,3,734,Flat foot,-7.426198703919251e-6,-6.455845129316184e-10
+ONT:169,4,2,3,Z719,"Counselling, unspecified",-1.262709751344987e-4,-2.089570278834829e-6
+ONT:169,6,2,3,J40,"Bronchitis, not specified as acute or chronic",-4.1993715017288324e-4,1.710949708133569e-6
+ONT:169,7,2,3,9059,"Microscopic examination of blood, Other microscopic examination",8.184064537309337e-4,4.0617398667688875e-5
+ONT:169,2,3,3,J459,"Asthma, unspecified",7.081672027987873e-6,-2.909172044235353e-8
+ONT:169,5,3,3,9783,Removal of abdominal wall sutures,-1.5590677815453813e-4,-3.3053577569580606e-6
+ONT:169,7,3,3,8878,Diagnostic ultrasound of gravid uterus,4.887998518274539e-4,4.6030223922896574e-5
+ONT:169,7,4,3,5794,Insertion of indwelling urinary catheter,-1.0511034933274876e-4,3.63316612923964e-5
+ONT:169,2,5,3,K297,"Gastritis, unspecified",-2.1243457360133056e-5,1.8395335393828205e-9
+ONT:169,4,6,3,E780,Pure hypercholesterolaemia,2.284698231984914e-5,1.960785454141467e-9
+ONT:169,5,7,3,K290,Acute haemorrhagic gastritis,2.431061181605576e-6,-2.182534448308404e-9
+ONT:169,2,2,4,Z018,Other specified special examinations,1.5072128757356862e-5,-2.267738496986027e-9
+ONT:169,4,2,4,I500,Congestive heart failure,4.8748892855610126e-5,5.641512918763691e-7
+ONT:169,7,4,4,Z099,Follow-up examination after unspecified treatment for other conditions,3.6384949327802896e-4,-3.366027845193298e-5
+ONT:169,6,3,5,8876,Diagnostic ultrasound of abdomen and retroperitoneum,6.202473853245127e-5,8.276371624149625e-7
+ONT:169,7,4,5,M545,Low back pain,2.8491023269072713e-4,-2.4543939110291402e-5
+ONT:169,6,6,5,K291,Other acute gastritis,-3.087212674314152e-5,1.383773812041987e-7
+ONT:169,5,7,5,M069,"Rheumatoid arthritis, unspecified",-1.7957990236910134e-5,8.87760633928869e-9
+ONT:169,3,1,6,6909,Other dilation and curettage of uterus,-4.816091300194336e-6,-2.7057746897207746e-8
+ONT:169,2,2,6,J069,"Acute upper respiratory infection, unspecified",-1.1142707764255633e-5,7.296961992975248e-10
+ONT:169,6,3,6,N920,Excessive and frequent menstruation with regular cycle,2.8700957186911236e-4,2.568135197299204e-5
+ONT:169,5,6,6,9775,Removal of vaginal or vulvar packing,-1.2053358063218722e-4,8.540067222839731e-9
+ONT:169,6,6,6,O321,Maternal care for breech presentation,-5.471169343637672e-5,3.263315021262425e-7
+ONT:169,3,5,7,I219,"Acute myocardial infarction, unspecified",1.990317406427855e-5,2.459556840139765e-8
+ONT:169,4,4,8,L024,"Cutaneous abscess, furuncle and carbuncle of limb",-1.2207632754002162e-5,-7.344326732883211e-7
+ONT:169,3,5,8,R12,Heartburn,1.7161622402797616e-5,2.3115421157477584e-8
+ONT:169,5,6,8,9616,Other vaginal dilation,-3.7049099631022986e-5,5.0488859973255376e-8
+ONT:169,2,2,9,J060,Acute larynpharyngitis,1.0114351896778513e-5,-1.0486652008995928e-10
+ONT:170,3,3,2,9394,Respiratory medication administered by nebulizer,1.1091015979119989e-4,1.0343142465081556e-4
+ONT:171,4,6,2,N760,Acute vaginitis,-0.03600942280297548,4.048499750960652e-5
+ONT:171,4,4,9,B379,"Candidiasis, unspecified",0.01584389190429765,-3.671257479552839e-5
+ONT:172,4,2,2,9764,Removal of other urinary drainage device,-0.0071186042907189495,-4.442214237783959e-4
+ONT:172,5,6,6,9775,Removal of vaginal or vulvar packing,-3.9580622141038857e-4,-1.2693391310264826e-5
+ONT:173,1,6,2,9929,Injection or infusion of other therapeutic or prophylactic substance,-0.004541950545245338,0.00203851328517185
+ONT:173,2,6,2,9921,Injection of antibiotic,-0.008452320130070065,0.0010176360327956713
+ONT:174,5,3,1,H531,Subjective visual disturbances,0.0085940503541714,9.948969025637411e-5
+ONT:174,4,4,10,K073,Anomalies of tooth position,4.932320033645965e-5,0.0015850448597842792
+ONT:174,2,3,4,H811,Benign paroxysmal verti,0.018888405627307828,6.902659762249019e-4
+ONT:175,2,1,1,8905,"Diagnostic interview and evaluation, not otherwise specified",0.0018345570192290842,-1.0884526913539777e-5
+ONT:175,6,6,2,9789,Removal of other therapeutic device,0.002219039690514679,4.965724344244901e-4
+ONT:175,2,2,3,734,Flat foot,0.005372997894576098,2.825169416910637e-4
+ONT:176,4,1,1,O410,Olihydramnios,2.8877983250563677e-4,0.0022703816806744354
+ONT:176,5,1,1,Z309,"Contraceptive management, unspecified",0.00902419185068782,0.0018602769385440976
+ONT:176,2,2,1,O365,Maternal care for poor fetal growth,0.0033895774761361214,-7.167544569203765e-4
+ONT:176,5,2,1,K30,Dyspepsia,-0.0027428504892303696,0.0023737622204949016
+ONT:176,6,2,1,O619,"Failed induction of labour, unspecified",-0.008738488437314146,0.002815075716790877
+ONT:176,5,4,1,B909,Sequelae of respiratory and unspecified tuberculosis,0.003776061688804143,0.0011024758645247212
+ONT:176,7,4,1,N832,Other and unspecified ovarian cysts,0.0030767112183024137,0.0019575554710309084
+ONT:176,1,5,1,Z300,General counselling and advice on contraception,0.003512415311678438,-0.0013149821157400765
+ONT:176,7,5,1,H669,"Otitis media, unspecified",0.002811485869617561,0.0014817265636634935
+ONT:176,1,6,1,I849,Unspecified haemorrhoids without complication,0.005656837022810557,-8.474218631040337e-4
+ONT:176,6,6,1,I10,Essential (primary) hypertension,-0.0010799368590085623,0.002266134804465636
+ONT:176,4,7,1,9716,Replacement of wound packing or drain,0.0029212596818966596,9.928788429214297e-4
+ONT:176,5,7,1,O610,Failed medical induction of labour,7.83860767250566e-4,0.0012639318019703472
+ONT:176,2,1,2,O441,Placenta praevia with haemorrhage,8.311304112983697e-4,-7.094256516154973e-4
+ONT:176,3,1,2,B373,Candidiasis of vulva and vagina,-3.4495479205094715e-4,-4.8264300554762274e-4
+ONT:176,4,1,2,O268,Other specified pregnancy-related conditions,0.003918334826290962,1.1458806058370352e-4
+ONT:176,2,2,2,O149,"Pre-eclampsia, unspecified",0.0023729223145531886,-4.768836973994134e-4
+ONT:176,3,2,2,Z038,Observation for other suspected diseases and conditions,-9.375760863999799e-4,-4.8333661028462926e-4
+ONT:176,6,2,2,8879,Other diagnostic ultrasound,-0.001982573280484873,0.0013100392849986486
+ONT:176,7,2,2,O13,Gestational [pregnancy-induced] hypertension without significant proteinuria,0.0012332990385651443,6.326593268475289e-4
+ONT:176,2,3,2,D259,"Leiomyoma of uterus, unspecified",-0.0019254076973689166,-4.152113473529506e-4
+ONT:176,1,4,2,897,General physical examination,-3.097369907325842e-4,-3.0929659175603363e-4
+ONT:176,2,4,2,Z090,Follow-up examination after surgery for other conditions,0.0030080682441429654,-5.927460461374601e-4
+ONT:176,5,4,2,J680,"Bronchitis and pneumonitis due to chemicals, gases, fumes and vapours",-0.0033559450863324403,3.6851269725524105e-5
+ONT:176,1,5,2,7534,Other fetal monitoring,-4.631097047238415e-4,-3.770808739411158e-4
+ONT:176,3,5,2,N390,"Urinary tract infection, site not specified",-1.5067794352766062e-4,-5.213014797648685e-4
+ONT:176,6,5,2,I842,Internal haemorrhoids without complication,0.0029634760738231902,6.943911319253759e-4
+ONT:176,4,6,2,N760,Acute vaginitis,-0.008816179761123366,-2.9086540246886505e-5
+ONT:176,4,7,2,R53,Malaise and fatigue,-0.0032813094104396368,1.0323924345034818e-4
+ONT:176,5,7,2,9904,Transfusion of packed cells,-0.004460653602376047,1.8565798313804893e-4
+ONT:176,3,1,3,O342,Maternal care due to uterine scar from previous surgery,0.004366930674337716,-6.549483912703102e-5
+ONT:176,4,2,3,Z719,"Counselling, unspecified",8.030350449381024e-4,-3.903687870351613e-4
+ONT:176,5,3,3,9783,Removal of abdominal wall sutures,-0.010508092737753397,-5.393004200980323e-4
+ONT:176,6,3,3,Z355,Supervision of elderly primigravida,0.004096171380183893,-8.922627880956213e-4
+ONT:176,2,5,3,K297,"Gastritis, unspecified",-4.958569810289831e-4,-1.4132341528257097e-4
+ONT:176,2,6,3,8749,Other chest x,-0.0019678699885674056,1.275716767957756e-4
+ONT:176,4,6,3,E780,Pure hypercholesterolaemia,0.004307161338312715,-3.0274479039544243e-4
+ONT:176,3,7,3,7171,Suture of laceration of vulva or perineum,0.00312114509932742,8.72156065359897e-5
+ONT:176,5,7,3,K290,Acute haemorrhagic gastritis,-1.282733336932379e-4,-1.1792199373081291e-4
+ONT:176,3,1,4,O150,Eclampsia in pregnancy,-0.00310543519336412,0.0010295576255128225
+ONT:176,4,2,4,I500,Congestive heart failure,-0.009654077783917359,0.003732200712114997
+ONT:176,5,3,4,O860,Infection of obstetric surgical wound,0.006481209267774138,0.003291146025768077
+ONT:176,7,4,4,Z099,Follow-up examination after unspecified treatment for other conditions,-1.589876334746887e-5,0.004053301697601652
+ONT:176,5,7,4,O141,Severe pre-eclampsia,0.006855470142461587,0.0019763889823893044
+ONT:176,6,3,5,8876,Diagnostic ultrasound of abdomen and retroperitoneum,0.006129404260419372,5.949105546247148e-4
+ONT:176,7,4,5,M545,Low back pain,0.005551920109124732,1.8730078794576555e-5
+ONT:176,1,5,5,A09,Diarrhoea and gastroenteritis of presumed infectious origin,0.0037084461982806877,-3.9104810140708907e-4
+ONT:176,6,6,5,K291,Other acute gastritis,-5.001077270703411e-4,2.542457834233819e-4
+ONT:176,5,7,5,M069,"Rheumatoid arthritis, unspecified",-2.71175775873822e-4,4.0845982771556266e-5
+ONT:176,3,1,6,6909,Other dilation and curettage of uterus,5.2833819099859514e-5,3.339498558632692e-5
+ONT:176,2,2,6,J069,"Acute upper respiratory infection, unspecified",-0.0015310067452450437,-4.158528561346714e-4
+ONT:176,6,3,6,N920,Excessive and frequent menstruation with regular cycle,-2.6947638992783074e-4,7.020068865067619e-4
+ONT:176,6,6,6,O321,Maternal care for breech presentation,-9.338306114174688e-4,4.7510458228908203e-4
+ONT:176,3,5,7,I219,"Acute myocardial infarction, unspecified",0.0028264508505344496,3.1093527218457526e-4
+ONT:176,4,4,8,L024,"Cutaneous abscess, furuncle and carbuncle of limb",0.0034059490177430485,3.408365563510249e-4
+ONT:176,3,5,8,R12,Heartburn,-0.0013416839697073177,2.2411951543491182e-4
+ONT:176,2,2,9,J060,Acute larynpharyngitis,-0.0025241297597036055,4.5252002134711644e-4
+ONT:176,4,4,9,B379,"Candidiasis, unspecified",0.0030644895874712696,2.0239152989615095e-4
+ONT:177,3,1,1,O622,Other uterine inertia,0.003308771566801566,-7.803845593971903e-5
+ONT:177,2,2,1,O365,Maternal care for poor fetal growth,0.0046396518633919645,-6.180174176212069e-4
+ONT:177,4,2,1,O440,Placenta praevia specified as without haemorrhage,0.014499143282482668,-2.9033588514436326e-5
+ONT:177,6,2,1,O619,"Failed induction of labour, unspecified",0.007306934866896118,-4.286542764051979e-5
+ONT:177,2,3,1,Z368,Other antenatal screening,0.0030696501008285262,-6.101864855819067e-4
+ONT:177,3,3,1,O632,"Delayed delivery of second twin, triplet, etc.",0.0100554975155321,1.72861387211648e-4
+ONT:177,5,3,1,H531,Subjective visual disturbances,-0.0031325151875486457,-4.7915842667835273e-4
+ONT:177,1,4,1,O140,Moderate pre-eclampsia,0.002418245476363684,-2.4067879083340682e-4
+ONT:177,2,4,1,K529,"Noninfective gastroenteritis and colitis, unspecified",0.0062181099332500045,-1.0382521696104818e-4
+ONT:177,2,5,1,O109,"Unspecified pre-existing hypertension complicating pregnancy, childbirth and the puerperium",0.0031920004487921844,7.390673424705826e-4
+ONT:177,3,5,1,K029,"Dental caries, unspecified",0.004675800299659645,3.775318449262405e-5
+ONT:177,2,6,1,L209,"Atopic dermatitis, unspecified",0.0024774979864930873,0.0010329270463773146
+ONT:177,3,6,1,O985,"Other viral diseases complicating pregnancy, childbirth and the puerperium",0.009321282925153149,5.4695689061152325e-5
+ONT:177,4,6,1,Z308,Other contraceptive management,0.001525267397942509,1.602137650818028e-5
+ONT:177,5,6,1,Z320,"Pregnancy, not (yet) confirmed",-0.0012507657749266654,8.631773118262034e-5
+ONT:177,3,7,1,O363,Maternal care for signs of fetal hypoxia,-0.003383952230584547,-1.1422939307788316e-5
+ONT:177,5,7,1,O610,Failed medical induction of labour,-5.782489730285778e-4,5.4195846720687425e-5
+ONT:177,4,4,10,K073,Anomalies of tooth position,0.012921308064569259,-8.954600129026241e-5
+ONT:177,3,5,10,Z354,Supervision of pregnancy with grand multiparity,6.528171434197483e-5,4.245073935978394e-4
+ONT:177,4,4,12,O311,Continuing pregnancy after abortion of one fetus or more,0.0016822282986247994,-3.0450990749865403e-5
+ONT:177,2,1,2,O441,Placenta praevia with haemorrhage,-0.014322858005964376,0.002851395036731208
+ONT:177,2,2,2,O149,"Pre-eclampsia, unspecified",-0.006566660455514545,0.005845822172238613
+ONT:177,5,3,2,O262,Pregnancy care of habitual aborter,-0.028428180865991193,3.0822846077604993e-4
+ONT:177,6,3,2,O600,Preterm labour without delivery,7.928793408935597e-4,0.001267731809968392
+ONT:177,7,3,2,O479,"False labour, unspecified",0.002530226972405264,8.577360342490459e-5
+ONT:177,4,4,2,R69,Unknown and unspecified causes of morbidity,0.0020404266524198245,-3.3998651143865577e-4
+ONT:177,2,5,2,G439,"Migraine, unspecified",6.722133128294061e-4,-0.010438461768930485
+ONT:177,5,6,2,causal_A03,Chorioamnionitis,-3.8719221482830246e-4,-0.0014289605312211018
+ONT:177,2,2,3,734,Flat foot,-0.0033270506814681577,2.204862555463677e-4
+ONT:177,6,3,3,Z355,Supervision of elderly primigravida,0.001274413874523179,1.376551681121288e-4
+ONT:177,4,4,3,Z508,Care involving use of other rehabilitation procedures,-0.0103396786515534,-2.111513777026744e-4
+ONT:177,5,4,3,R202,Paraesthesia of skin,-0.006153355559833207,-2.0369046433387807e-4
+ONT:177,1,5,3,Z360,Antenatal screening for chromosomal anomalies,0.002256086367241612,-5.871652010680239e-4
+ONT:177,3,5,3,I959,"Hypotension, unspecified",0.0019118536548766302,-3.757039634230616e-4
+ONT:177,5,6,3,H663,Other chronic suppurative otitis media,-0.003432855850492269,-1.5843970629114343e-4
+ONT:177,6,6,3,causal_A11,Periodontal disease,-7.834806744246858e-4,-1.4582190370526424e-4
+ONT:177,3,1,4,O150,Eclampsia in pregnancy,0.006072868370196272,-5.948353050901772e-4
+ONT:177,6,2,4,O991,"Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating pregnancy, childbirth and the puerperium",-0.0020520063634745095,1.48483587983389e-4
+ONT:177,2,3,4,H811,Benign paroxysmal verti,0.004410204432582693,-3.1034120943362886e-4
+ONT:177,5,3,4,O860,Infection of obstetric surgical wound,0.008246995272607027,-4.909460991365799e-4
+ONT:177,4,4,4,9389,"Rehabilitation, not elsewhere classified",-0.010604469333070021,-3.7411974439845175e-4
+ONT:177,1,5,4,O345,Maternal care for other abnormalities of gravid uterus,0.0041820886955071385,-6.264455475308017e-4
+ONT:177,3,5,4,N342,Other urethritis,2.731385708490807e-4,-5.733845633477397e-4
+ONT:177,5,6,4,O120,Gestational oedema,-0.0038212568776582675,-1.5490952210546471e-4
+ONT:177,6,6,4,O235,Infections of the genital tract in pregnancy,-0.001618365067130624,-9.485794134952985e-5
+ONT:177,5,7,4,O141,Severe pre-eclampsia,-0.0043640716293989745,-8.685377654495119e-5
+ONT:177,3,1,5,Z000,General medical examination,0.006184286987143878,3.5444724757684176e-4
+ONT:177,2,2,5,Z014,Gynaecological examination (general) (routine),-0.013609905885964597,-1.0843403066462809e-4
+ONT:177,4,2,5,Z369,"Antenatal screening, unspecified",-0.0015004954070223786,6.99665882046896e-4
+ONT:177,5,3,5,O411,Infection of amniotic sac and membranes,0.005544323545726676,-1.2481193553086356e-4
+ONT:177,4,4,5,K089,"Disorder of teeth and supporting structures, unspecified",1.6483086922686185e-4,8.69729339348091e-5
+ONT:177,3,5,5,O901,Disruption of perineal obstetric wound,-2.96893568619061e-4,-7.281954969247384e-6
+ONT:177,5,6,5,Z710,Person consulting on behalf of another person,0.0031764853694051798,1.427159392982033e-4
+ONT:177,4,4,6,T384,Poisoning by oral contraceptives,-6.404963501768779e-5,-2.818925118802662e-5
+ONT:177,1,5,6,H527,"Disorder of refraction, unspecified",0.001515855892257223,7.445180399017924e-4
+ONT:177,3,5,6,P229,"Respiratory distress of newborn, unspecified",0.0024266147727154963,-6.16388486855083e-5
+ONT:177,6,3,7,Z012,Dental examination,1.6088352251447668e-4,1.599230286163586e-4
+ONT:177,4,4,7,Z479,"Orthopaedic follow-up care, unspecified",-0.005482836980025718,-1.3736815806583355e-4
+ONT:177,5,6,7,causal_A10,GTI,0.0019025091413191406,-1.9010997207168957e-4
+ONT:177,6,3,8,D500,Iron deficiency anaemia secondary to blood loss (chronic),0.012446795376977536,1.0951795529087066e-4
+ONT:177,6,3,9,Z380,"Singleton, born in hospital",0.0028288339409784646,1.5535192662052832e-4
+ONT:177,3,5,9,Z305,Surveillance of (intrauterine) contraceptive device,0.0060414419377801745,-4.831451581006896e-5
+root,2,1,1,8905,"Diagnostic interview and evaluation, not otherwise specified",-0.002108911869220076,7.630034238514383e-4
+root,3,1,1,O622,Other uterine inertia,-0.003924015697761386,6.202250916041985e-4
+root,4,1,1,O410,Olihydramnios,-0.008760765770118611,1.0808440172815903e-5
+root,5,1,1,Z309,"Contraceptive management, unspecified",0.0031846791046620526,-2.0028063869725887e-4
+root,2,2,1,O365,Maternal care for poor fetal growth,-0.004987568375450335,3.899304734941156e-4
+root,3,2,1,9918,Injection or infusion of electrolytes,5.727741320623314e-4,8.827344990016417e-4
+root,4,2,1,O440,Placenta praevia specified as without haemorrhage,-0.0037503810471507526,2.3057698255984915e-4
+root,5,2,1,K30,Dyspepsia,-0.006691279052911808,-5.19503612201655e-4
+root,6,2,1,O619,"Failed induction of labour, unspecified",0.012007231387573036,-1.2304876888041827e-4
+root,7,2,1,9357,Application of other wound dressing,-4.957835547757285e-4,-1.8555966388167366e-6
+root,1,3,1,O469,"Antepartum haemorrhage, unspecified",-0.011940628078126847,3.4915883342626075e-4
+root,2,3,1,Z368,Other antenatal screening,-6.868673531359448e-4,3.4978422836848266e-4
+root,3,3,1,O632,"Delayed delivery of second twin, triplet, etc.",-0.004584154449965627,2.1155088909033393e-4
+root,5,3,1,H531,Subjective visual disturbances,-0.0033231107686854666,1.311335945641534e-4
+root,6,3,1,Z301,Insertion of (intrauterine) contraceptive device,0.006032182891127558,3.942035913845343e-5
+root,7,3,1,N946,"Dysmenorrhoea, unspecified",0.004027716175958096,-1.9777438997337082e-5
+root,1,4,1,O140,Moderate pre-eclampsia,-0.0028132293794610325,1.485034579326583e-4
+root,2,4,1,K529,"Noninfective gastroenteritis and colitis, unspecified",2.5706546235157446e-4,6.056540288651435e-6
+root,4,4,1,J180,"Bronchopneumonia, unspecified",0.004003883295228994,3.2956943309153663e-5
+root,5,4,1,B909,Sequelae of respiratory and unspecified tuberculosis,0.0053661312769685,1.3335075056589152e-4
+root,7,4,1,N832,Other and unspecified ovarian cysts,0.009294629455449899,-1.4750469825811074e-4
+root,1,5,1,Z300,General counselling and advice on contraception,-0.005970316503510837,-2.570349577496467e-5
+root,2,5,1,O109,"Unspecified pre-existing hypertension complicating pregnancy, childbirth and the puerperium",-0.0013305949941558315,-3.736158143617385e-4
+root,3,5,1,K029,"Dental caries, unspecified",-0.007979802929776209,-4.1158614989775244e-4
+root,6,5,1,Z349,"Supervision of normal pregnancy, unspecified",0.001036114204973293,5.1197610125952586e-5
+root,7,5,1,H669,"Otitis media, unspecified",0.00570324952071069,5.795239967854027e-6
+root,1,6,1,I849,Unspecified haemorrhoids without complication,-4.728613745185184e-4,-4.785644477978135e-6
+root,2,6,1,L209,"Atopic dermatitis, unspecified",-0.0018882319091946542,-1.8439754398943964e-4
+root,3,6,1,O985,"Other viral diseases complicating pregnancy, childbirth and the puerperium",-0.003705875592005581,-3.6139776591720407e-4
+root,4,6,1,Z308,Other contraceptive management,-0.0038189932314409147,-3.129361349304971e-5
+root,5,6,1,Z320,"Pregnancy, not (yet) confirmed",-0.0034655422233761946,-1.4380669790786671e-5
+root,6,6,1,I10,Essential (primary) hypertension,0.0013462702590576747,5.9952187103612387e-5
+root,3,7,1,O363,Maternal care for signs of fetal hypoxia,-0.0020248350150018357,-8.657970254333236e-5
+root,4,7,1,9716,Replacement of wound packing or drain,-2.8097681765509863e-5,-3.886844011635748e-5
+root,5,7,1,O610,Failed medical induction of labour,-0.003462143326556283,1.3680203005933533e-5
+root,6,7,1,9659,Other irrigation of wound,9.503942884386274e-4,2.5829187659387465e-4
+root,4,4,10,K073,Anomalies of tooth position,-0.011351874094734676,1.2194456208725057e-4
+root,3,5,10,Z354,Supervision of pregnancy with grand multiparity,-0.004290330666638271,0.001091021150558702
+root,4,4,11,Q501,Developmental ovarian cyst,-0.0053952895530823275,1.4124474010551724e-4
+root,4,4,12,O311,Continuing pregnancy after abortion of one fetus or more,1.7074330260483106e-4,3.436742806475074e-5
+root,2,1,2,O441,Placenta praevia with haemorrhage,-0.0017048557875677661,4.322514338988559e-4
+root,3,1,2,B373,Candidiasis of vulva and vagina,-0.005426335114790806,2.3081642994074447e-4
+root,4,1,2,O268,Other specified pregnancy-related conditions,-0.00886968113454766,-4.197616920323388e-5
+root,5,1,2,598,Ureteral catheterization,0.0023271321447852072,-4.3919906302331e-4
+root,2,2,2,O149,"Pre-eclampsia, unspecified",-0.006048121062746478,1.4225053837108037e-5
+root,3,2,2,Z038,Observation for other suspected diseases and conditions,-0.00915500678047404,-9.432407381290697e-5
+root,4,2,2,9764,Removal of other urinary drainage device,-0.00304336797515381,-6.274119881408136e-5
+root,6,2,2,8879,Other diagnostic ultrasound,0.01087657245449375,5.664317844494837e-5
+root,7,2,2,O13,Gestational [pregnancy-induced] hypertension without significant proteinuria,-1.6752660859802038e-4,-5.983757882477292e-5
+root,2,3,2,D259,"Leiomyoma of uterus, unspecified",-0.004145480665215362,1.0596415956989902e-4
+root,3,3,2,9394,Respiratory medication administered by nebulizer,0.0035175992524115324,8.72410006546448e-5
+root,5,3,2,O262,Pregnancy care of habitual aborter,0.0012082655094077521,3.206153304358139e-5
+root,6,3,2,O600,Preterm labour without delivery,-4.722970398438747e-4,-2.96714670872944e-5
+root,7,3,2,O479,"False labour, unspecified",0.002010991880037477,-5.916658083293669e-5
+root,1,4,2,897,General physical examination,0.003848381028380851,1.7090243183251475e-4
+root,2,4,2,Z090,Follow-up examination after surgery for other conditions,0.006840971006404961,-3.310391041380645e-5
+root,4,4,2,R69,Unknown and unspecified causes of morbidity,-0.0040711602461855345,9.46555031412083e-6
+root,5,4,2,J680,"Bronchitis and pneumonitis due to chemicals, gases, fumes and vapours",-0.0023484756647828425,4.030257645240565e-5
+root,7,4,2,697,Insertion of intrauterine contraceptive device,-0.003225137401164424,-7.930101246436672e-5
+root,1,5,2,7534,Other fetal monitoring,0.008495592456704198,9.563375629326187e-5
+root,2,5,2,G439,"Migraine, unspecified",0.00511286312343448,-2.4043737861240144e-4
+root,3,5,2,N390,"Urinary tract infection, site not specified",-0.003147039105896865,-1.2423589874498847e-4
+root,6,5,2,I842,Internal haemorrhoids without complication,9.811427420412296e-4,2.1726571134861317e-5
+root,1,6,2,9929,Injection or infusion of other therapeutic or prophylactic substance,-5.184183055794295e-4,9.569110739882092e-5
+root,2,6,2,9921,Injection of antibiotic,-4.230110592010339e-4,-1.6681962038939124e-4
+root,4,6,2,N760,Acute vaginitis,0.004115442613087619,-1.4342731037814138e-5
+root,5,6,2,causal_A03,Chorioamnionitis,1.9686765985753307e-4,-2.685953416181608e-6
+root,6,6,2,9789,Removal of other therapeutic device,-0.0023726708920420864,2.1638478781976778e-5
+root,3,7,2,9396,Other oxygen enrichment,4.096313015301972e-4,7.735029818928263e-5
+root,4,7,2,R53,Malaise and fatigue,-0.0012933437843464513,4.090048052191042e-5
+root,5,7,2,9904,Transfusion of packed cells,-5.755621394102628e-4,1.990490617884144e-5
+root,6,7,2,8602,Injection or tattooing of skin lesion or defect,0.0013315774990663165,1.596751360581905e-4
+root,3,1,3,O342,Maternal care due to uterine scar from previous surgery,0.009515681173796975,2.3881823403630598e-4
+root,2,2,3,734,Flat foot,-0.0030276678236039745,0.00214665737109751
+root,4,2,3,Z719,"Counselling, unspecified",0.008621103388296213,4.17672739244368e-5
+root,6,2,3,J40,"Bronchitis, not specified as acute or chronic",4.159297693513281e-4,1.9647770923092445e-4
+root,7,2,3,9059,"Microscopic examination of blood, Other microscopic examination",-9.440002194733618e-4,8.669788453069538e-6
+root,2,3,3,J459,"Asthma, unspecified",0.009212167905288025,0.0015249268307849645
+root,5,3,3,9783,Removal of abdominal wall sutures,-0.00835073325762073,5.394046646325576e-4
+root,6,3,3,Z355,Supervision of elderly primigravida,-6.559026262907275e-4,7.601522198502977e-4
+root,7,3,3,8878,Diagnostic ultrasound of gravid uterus,-0.0021985636181130405,2.856261029838686e-4
+root,4,4,3,Z508,Care involving use of other rehabilitation procedures,-0.002945844976224847,-5.646361680344825e-5
+root,5,4,3,R202,Paraesthesia of skin,0.002277735512735031,4.950476610357801e-4
+root,7,4,3,5794,Insertion of indwelling urinary catheter,-0.0012367256525495848,-8.522143526688841e-5
+root,1,5,3,Z360,Antenatal screening for chromosomal anomalies,0.002702428872938173,-0.0019243804385921937
+root,2,5,3,K297,"Gastritis, unspecified",0.005756506161555559,-0.0023009564020172596
+root,3,5,3,I959,"Hypotension, unspecified",-0.003297722324888022,-0.0016815882972971707
+root,6,5,3,H521,Myopia,0.0021349475031054088,1.575118208897719e-5
+root,2,6,3,8749,Other chest x,0.0033281091507155365,-0.0018884559806977633
+root,4,6,3,E780,Pure hypercholesterolaemia,-0.0013936771589826147,-1.6526379286690984e-4
+root,5,6,3,H663,Other chronic suppurative otitis media,-6.519048634544555e-4,-8.97527923026109e-5
+root,6,6,3,causal_A11,Periodontal disease,-0.0031083121611701434,-2.3624418592532725e-4
+root,3,7,3,7171,Suture of laceration of vulva or perineum,0.0032794659971299572,-0.0017263158203352919
+root,5,7,3,K290,Acute haemorrhagic gastritis,-0.002237408759997575,-2.384787047979703e-4
+root,3,1,4,O150,Eclampsia in pregnancy,-0.010149082619229609,-4.5985326174917407e-4
+root,2,2,4,Z018,Other specified special examinations,-0.005545082117738562,-9.908236858963276e-4
+root,4,2,4,I500,Congestive heart failure,-0.01013652267702354,-1.1814162798744893e-4
+root,6,2,4,O991,"Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating pregnancy, childbirth and the puerperium",-0.009172934759360207,-2.8035181494165395e-4
+root,2,3,4,H811,Benign paroxysmal verti,0.002992191837904501,-0.0010049808874081217
+root,5,3,4,O860,Infection of obstetric surgical wound,-0.011939041500229924,-1.1546948027429949e-4
+root,6,3,4,J398,Other specified diseases of upper respiratory tract,0.007648504373098414,-1.646950028345931e-4
+root,4,4,4,9389,"Rehabilitation, not elsewhere classified",-0.011049848490780924,1.7581469504812652e-5
+root,7,4,4,Z099,Follow-up examination after unspecified treatment for other conditions,-0.003401705577049617,-1.5605419842103924e-5
+root,1,5,4,O345,Maternal care for other abnormalities of gravid uterus,-0.003598254565274614,7.120382004669051e-4
+root,3,5,4,N342,Other urethritis,0.00845965545469518,0.0012370187345077804
+root,2,6,4,9131,"Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen, Bacterial smear",6.712586863601988e-4,0.0017722943323723317
+root,5,6,4,O120,Gestational oedema,-0.00758301448582549,2.0748510447346838e-5
+root,6,6,4,O235,Infections of the genital tract in pregnancy,-0.007483614943796596,4.761119018342752e-6
+root,5,7,4,O141,Severe pre-eclampsia,-0.005248188130828599,8.253037521300036e-5
+root,3,1,5,Z000,General medical examination,0.005852960037086796,-2.843664797992692e-4
+root,2,2,5,Z014,Gynaecological examination (general) (routine),0.006504114346312068,-2.510756289151178e-4
+root,4,2,5,Z369,"Antenatal screening, unspecified",-0.010655859566198606,6.649998881617936e-5
+root,5,3,5,O411,Infection of amniotic sac and membranes,-0.011752979228529803,-1.2770775872928894e-5
+root,6,3,5,8876,Diagnostic ultrasound of abdomen and retroperitoneum,-0.011532536926432468,-8.108385048001716e-5
+root,4,4,5,K089,"Disorder of teeth and supporting structures, unspecified",0.005198279223280672,-2.3136492067962755e-5
+root,7,4,5,M545,Low back pain,-8.495128514843242e-4,6.598770028029208e-5
+root,1,5,5,A09,Diarrhoea and gastroenteritis of presumed infectious origin,0.0023999558075543277,9.722740143455798e-5
+root,3,5,5,O901,Disruption of perineal obstetric wound,-0.0011452803832404657,2.9343625830330344e-4
+root,5,6,5,Z710,Person consulting on behalf of another person,0.0031369996836368985,4.030520365106219e-5
+root,6,6,5,K291,Other acute gastritis,3.932488082450808e-4,2.4019661797161466e-5
+root,5,7,5,M069,"Rheumatoid arthritis, unspecified",-0.0010573924945662116,-2.87255417231215e-5
+root,3,1,6,6909,Other dilation and curettage of uterus,0.0014932972082765117,-3.2301589091569827e-4
+root,2,2,6,J069,"Acute upper respiratory infection, unspecified",0.004960137700224937,2.7545063971091185e-4
+root,6,3,6,N920,Excessive and frequent menstruation with regular cycle,-0.01551000694908386,8.808117282994073e-5
+root,4,4,6,T384,Poisoning by oral contraceptives,-0.00400331922850003,-2.1713996336861566e-5
+root,1,5,6,H527,"Disorder of refraction, unspecified",0.00560288842935644,-2.1735948634194792e-4
+root,3,5,6,P229,"Respiratory distress of newborn, unspecified",0.0015204859660024883,4.0691585459403865e-5
+root,5,6,6,9775,Removal of vaginal or vulvar packing,3.640294088204793e-4,1.934058965018942e-5
+root,6,6,6,O321,Maternal care for breech presentation,-0.0038075549778995854,-2.312596755924337e-5
+root,2,2,7,H522,Astigmatism,9.480204255112035e-4,-0.0010406778395869731
+root,6,3,7,Z012,Dental examination,-0.003962214663522742,1.8381699793235118e-5
+root,4,4,7,Z479,"Orthopaedic follow-up care, unspecified",-1.8413104975516237e-5,9.095143842341447e-6
+root,1,5,7,causal_A06,APH,0.003975001805894836,5.628347853634669e-4
+root,3,5,7,I219,"Acute myocardial infarction, unspecified",-0.0046748117859615225,0.0012297990898780808
+root,5,6,7,causal_A10,GTI,0.001441161601832712,3.5566792826041693e-6
+root,2,2,8,9139,"Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen, Other microscopic examination",0.0031877910979856983,3.4014905786913015e-4
+root,6,3,8,D500,Iron deficiency anaemia secondary to blood loss (chronic),-0.006294092629944514,2.6425792185615776e-4
+root,4,4,8,L024,"Cutaneous abscess, furuncle and carbuncle of limb",0.0036763010574760585,-2.346742503242516e-5
+root,3,5,8,R12,Heartburn,-1.1388465098627343e-4,-6.391764464126898e-4
+root,5,6,8,9616,Other vaginal dilation,0.0028057866574636436,-6.684449944578674e-5
+root,2,2,9,J060,Acute larynpharyngitis,-0.0021648946156584137,0.002606139685321914
+root,6,3,9,Z380,"Singleton, born in hospital",0.002642457165164036,8.155396005607024e-4
+root,4,4,9,B379,"Candidiasis, unspecified",0.0048009037106848396,-4.189279713640026e-5
+root,3,5,9,Z305,Surveillance of (intrauterine) contraceptive device,-0.001044490586779587,-0.002496949037812224

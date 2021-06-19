@@ -1,0 +1,461 @@
+Candidate predictor,Nonevent,Event,Perfect separation,Description
+causal_A02,11.81400542224006,20.837549349278138,No,Multiple pregnancy
+causal_A03,1.1994896874104761,2.8232898025531497,No,Chorioamnionitis
+causal_A04,198.47840238358702,0.3333333333333333,No,IAI
+causal_A06,38.56129232340947,9.045610920389896,No,APH
+causal_A10,72.18228274425313,43.13001100698173,No,GTI
+causal_A11,163.07264804848683,112.74722394780505,No,Periodontal disease
+causal_A13,155.8831840222117,146.78483972736822,No,Pneumonia
+causal_A15,136.88581831552634,94.82258643208223,No,Asthma
+causal_A28,148.15134677027092,124.47627606405831,No,Influenza
+O809,65.22354279694379,72.23983328491258,No,"Single spontaneous delivery, unspecified"
+O48,64.76676912824536,68.6020962501897,No,Prolonged pregnancy
+7359,9.431878349866414,16.999750082785216,No,Other manually assisted delivery
+O800,60.87167013019179,115.26247534890427,No,Spontaneous vertex delivery
+O601,58.23719284859976,0,Yes,Preterm labour with preterm delivery
+Z370,35.93994921979011,37.43779962760966,No,Single live birth
+9139,65.33547644750169,32.15952915874528,No,"Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen, Other microscopic examination"
+8878,45.71080554538039,28.488672204133174,No,Diagnostic ultrasound of gravid uterus
+9059,52.433659381264974,23.68255294756368,No,"Microscopic examination of blood, Other microscopic examination"
+Z340,89.33024639516927,137.47249914138283,No,Supervision of normal first pregnancy
+O820,60.85842869051014,73.37037242235394,No,Delivery by elective caesarean section
+744,17.70698724714217,18.9986698871712,No,Cesarean section of other specified type
+O821,58.36361477473506,84.84183289842225,No,Delivery by emergency caesarean section
+O689,68.1705820435618,47.626153613757026,No,"Labour and delivery complicated by fetal stress, unspecified"
+7499,24.530544488501697,21.248649718919637,No,Other cesarean section of unspecified type
+O688,16.498652970646955,13.819089220739416,No,Labour and delivery complicated by other evidence of fetal stress
+O150,52.37159851989449,249.50090273624355,No,Eclampsia in pregnancy
+O342,58.011139940504435,59.917618173986014,No,Maternal care due to uterine scar from previous surgery
+O829,53.580032291199004,44.41741760256755,No,"Delivery by caesarean section, unspecified"
+741,21.827828979592333,11.435026268436193,No,Low cervical cesarean section
+O210,102.47254700455925,98.581850605957,No,Mild hyperemesis gravidarum
+O631,48.22243905065482,0.5920967380615678,No,Prolonged second stage (of labour)
+M791,151.36950185519746,165.8526802649761,No,Myalgia
+O411,7.116674702663415,2.8232898025531497,No,Infection of amniotic sac and membranes
+O828,44.02771044056646,9.908411719759599,No,Other single delivery by caesarean section
+O610,119.82568746098968,42.70563987576814,No,Failed medical induction of labour
+Z321,97.38233201593745,57.81274169876238,No,Pregnancy confirmed
+Z351,83.47853369548432,52.00707796616018,No,Supervision of pregnancy with history of abortive outcome
+O209,142.7675962710971,97.62027760594994,No,"Haemorrhage in early pregnancy, unspecified"
+9659,53.75183160337482,25.338312398184097,No,Other irrigation of wound
+9644,51.681449483804485,23.67998931856554,No,Vaginal douche
+9918,48.39014415781792,18.393256488615933,No,Injection or infusion of electrolytes
+9921,50.83835809490218,20.825126343406517,No,Injection of antibiotic
+8905,37.323529992954015,54.17475508317085,No,"Diagnostic interview and evaluation, not otherwise specified"
+O619,6.159152605477599,108.57116825596923,No,"Failed induction of labour, unspecified"
+734,6.2078592895317595,12.574854622345372,No,Flat foot
+O200,108.39284947376741,93.66617438985253,No,Threatened abortion
+O269,97.5594636079921,56.74798558479937,No,"Pregnancy-related condition, unspecified"
+O808,57.9268914566993,60.54399422627336,No,Other single spontaneous delivery
+O622,51.12529692850254,82.52380077033996,No,Other uterine inertia
+O731,26.69019155039138,0,Yes,"Retained portions of placenta and membranes, without haemorrhage"
+Z360,82.06901899350166,56.821991974321215,No,Antenatal screening for chromosomal anomalies
+J060,158.82912375413915,147.14276819052043,No,Acute larynpharyngitis
+O701,57.16814156645453,48.71257432891388,No,Second degree perineal laceration during delivery
+736,6.621920832787616,0,Yes,Episiotomy
+O471,80.50458085292036,134.36996271072633,No,False labour at or after 37 completed weeks of gestation
+9929,55.18024272482646,28.238541015084085,No,Injection or infusion of other therapeutic or prophylactic substance
+O842,64.38261831804901,31.039908478720534,No,"Multiple delivery, all by caesarean section"
+Z098,105.02990998020009,146.15339502112215,No,Follow-up examination after other treatment for other conditions
+Z090,144.83982307348646,217.83120875745942,No,Follow-up examination after surgery for other conditions
+O328,20.44678263351907,20.990269925776296,No,Maternal care for other malpresentation of fetus
+740,8.147414633521954,1.9658960627266246,No,Classical cesarean section
+9357,69.19480050808849,36.50207719328697,No,Application of other wound dressing
+Z368,96.63486677049274,50.60604918387026,No,Other antenatal screening
+9716,61.91351682296676,83.03757377703856,No,Replacement of wound packing or drain
+9396,56.973674773590766,16.75018334869859,No,Other oxygen enrichment
+O630,32.89323982830831,69.36455331903323,No,Prolonged first stage (of labour)
+O722,23.091386138441408,1.9023070019911512,No,Delayed and secondary postpartum haemorrhage
+L309,154.39895762578212,77.1559453564413,No,"Dermatitis, unspecified"
+R51,151.45370785897876,158.67434282908926,No,Headache
+J029,157.7076805803729,177.95476760150694,No,"Acute pharyngitis, unspecified"
+J068,163.54093493425785,152.8252887070971,No,Other acute upper respiratory infections of multiple sites
+L209,158.52416455482145,137.35381839822082,No,"Atopic dermatitis, unspecified"
+O664,47.69748381379788,1.5537971921347118,No,"Failed trial of labour, unspecified"
+8952,67.76895833129792,38.438031213950154,No,Electrocardiogram
+O838,48.98495646687301,0,Yes,Other specified assisted single delivery
+5794,36.758468892331855,12.056312258697643,No,Insertion of indwelling urinary catheter
+O839,30.249106273562155,108.56396640500614,No,"Assisted single delivery, unspecified"
+O702,23.750154514744768,52.67977461840696,No,Third degree perineal laceration during delivery
+O991,136.01809790337123,0.508000508000762,No,"Other diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism complicating pregnancy, childbirth and the puerperium"
+O990,68.59993122334019,44.886095652676694,No,"Anaemia complicating pregnancy, childbirth and the puerperium"
+9904,56.590061624112316,13.206234172541604,No,Transfusion of packed cells
+O322,68.17802408006573,87.54512456608701,No,Maternal care for transverse and oblique lie
+O691,115.82016407071875,50.644721939198746,No,"Labour and delivery complicated by cord around neck, with compression"
+O368,91.61545069713877,17.706105469189886,No,Maternal care for other specified fetal problems
+O714,79.44558853996575,16.75168790358296,No,Obstetric high vaginal laceration alone
+O753,1.2994600768119313,7.025338754493239,No,Other infection during labour
+O801,72.65011775626397,12.048928029773714,No,Spontaneous breech delivery
+O331,64.25730797640394,76.03618371912087,No,Maternal care for disproportion due to generally contracted pelvis
+9616,41.80964235802872,0.3480287789935653,No,Other vaginal dilation
+O141,59.778776216257505,128.1363331902827,No,Severe pre-eclampsia
+O365,60.818705191035264,138.87997125605952,No,Maternal care for poor fetal growth
+O709,61.14715702902149,56.03332191001731,No,"Perineal laceration during delivery, unspecified"
+O720,51.1651761794796,68.2294616438966,No,Third-stage haemorrhage
+Z988,157.9858311370767,252.4424800764056,No,Other specified postsurgical states
+O639,60.46883005241319,13.073485470094415,No,"Long labour, unspecified"
+Z920,165.36619715181067,123.17002309560544,No,Personal history of contraception
+R05,154.6961272468358,160.0179220841461,No,Cough
+O208,89.83825748165415,70.6092812625513,No,Other haemorrhage in early pregnancy
+J118,159.68528189400524,135.167225488111,No,"Influenza with other manifestations, virus not identified"
+Z305,170.61408226036065,119.43774408721758,No,Surveillance of (intrauterine) contraceptive device
+N832,130.95810186856133,88.93139451670477,No,Other and unspecified ovarian cysts
+Z348,88.45345631638972,81.89338650025037,No,Supervision of other normal pregnancy
+Z358,76.7843986351869,61.58163182154391,No,Supervision of other high-risk pregnancies
+N390,163.55626810628527,212.90341197494348,No,"Urinary tract infection, site not specified"
+O998,81.29569593706762,43.91877034263077,No,"Other specified diseases and conditions complicating pregnancy, childbirth and the puerperium"
+Z488,145.5071447346628,98.75487927080141,No,Other specified surgical follow-up care
+Z480,148.7679381232326,122.46112591259775,No,Attention to surgical dressings and sutures
+O321,60.74560240806351,61.44984753665099,No,Maternal care for breech presentation
+Z301,144.08342670660747,150.24596235353488,No,Insertion of (intrauterine) contraceptive device
+697,9.530442119571529,1.2763155364709056,No,Insertion of intrauterine contraceptive device
+9789,71.81142377184477,8.581859069266155,No,Removal of other therapeutic device
+A689,185.6274057136592,39.62646098576569,No,"Relapsing fever, unspecified"
+Z349,85.5377696114845,74.49957273926431,No,"Supervision of normal pregnancy, unspecified"
+O441,61.84586242438326,19.2513659671637,No,Placenta praevia with haemorrhage
+K297,147.70718003777105,156.5313467072272,No,"Gastritis, unspecified"
+B019,159.9265518820853,137.28376148995616,No,Varicella without complication
+L239,163.5197031014724,203.82347284061294,No,"Allergic contact dermatitis, unspecified cause"
+Z369,75.1353815880336,90.93993547485316,No,"Antenatal screening, unspecified"
+Z359,69.29594034971532,88.7112510685938,No,"Supervision of high-risk pregnancy, unspecified"
+O329,46.758906434799606,69.76233783755046,No,"Maternal care for malpresentation of fetus, unspecified"
+O149,58.73672640940027,9.015470402055982,No,"Pre-eclampsia, unspecified"
+O721,45.06179965438562,113.835392584812,No,Other immediate postpartum haemorrhage
+O364,76.71958616479027,214.86826108165246,No,Maternal care for intrauterine death
+O300,18.474892236480166,79.74176263039998,No,Twin pregnancy
+O640,45.64390108041683,89.47749071064476,No,Obstructed labour due to incomplete rotation of fetal head
+J069,142.30116381299104,164.62292842992252,No,"Acute upper respiratory infection, unspecified"
+Z875,82.14849794205567,103.46752949472139,No,"Personal history of complications of pregnancy, childbirth and the puerperium"
+8926,52.63306657293381,1.3657580934947202,No,Gynecological examination
+Z353,99.81694122662277,86.83220968305895,No,Supervision of pregnancy with history of insufficient antenatal care
+O211,105.09056918741013,77.00839717155752,No,Hyperemesis gravidarum with metabolic disturbance
+O330,83.30970714929317,0.8439230101333147,No,Maternal care for disproportion due to deformity of maternal pelvic bones
+O984,143.58785156987378,109.30443827801655,No,"Viral hepatitis complicating pregnancy, childbirth and the puerperium"
+Z33,147.21211836181774,60.56069731763382,No,"Pregnant state, incidental"
+K299,160.00344779282634,130.91543687779233,No,"Gastroduodenitis, unspecified"
+N342,225.7017519396578,160.48270934901367,No,Other urethritis
+8908,60.70255396159356,25.31253652495627,No,Other consultation
+O335,97.95821831267271,54.37479362552268,No,Maternal care for disproportion due to unusually large fetus
+7532,26.545882867798714,0,Yes,Fetal EKG (scalp)
+O470,73.83301863237641,63.639288974817596,No,False labour before 37 completed weeks of gestation
+Z719,138.24306520982722,102.90320843041239,No,"Counselling, unspecified"
+O757,123.70662367317934,5.765296813087351,No,Vaginal delivery following previous caesarean section
+O159,50.77895217493011,10.870055324918932,No,"Eclampsia, unspecified as to time period"
+Z350,77.32551522734526,83.81174294265733,No,Supervision of pregnancy with history of infertility
+Z380,52.13176083593166,100.5991172496961,No,"Singleton, born in hospital"
+O000,123.17544250432104,91.38261160667086,No,Abdominal pregnancy
+A09,154.81937576155426,125.02036637631421,No,Diarrhoea and gastroenteritis of presumed infectious origin
+8909,64.35073531058512,31.561069356108625,No,"Consultation, not otherwise specified"
+K30,137.46056331555405,151.84049814003635,No,Dyspepsia
+K036,160.7174868514356,188.23302135828965,No,Deposits [accretions] on teeth
+O367,92.49369773871211,29.888537925975093,No,Maternal care for viable fetus in abdominal pregnancy
+O641,60.15319264146644,1.1300885075317553,No,Obstructed labour due to breech presentation
+D649,119.26368667232742,80.8026082958603,No,"Anaemia, unspecified"
+P229,104.60588165199161,2.2677868380553634,No,"Respiratory distress of newborn, unspecified"
+K529,160.10414307562064,113.1468316559702,No,"Noninfective gastroenteritis and colitis, unspecified"
+Z549,159.0850805584409,51.170738165913185,No,Convalescence following unspecified treatment
+O840,80.65891639662776,0,Yes,"Multiple delivery, all spontaneous"
+757,10.991550040612818,0,Yes,"Manual exploration of uterine cavity, postpartum"
+O349,94.75317321490546,5.840743592581831,No,"Maternal care for abnormality of pelvic organ, unspecified"
+A91,136.01473191398384,216.04452587017784,No,Dengue haemorrhagic fever
+O410,55.108067833499085,36.373265724878394,No,Olihydramnios
+O244,90.13113655047349,27.16886193463998,No,Diabetes mellitus arising in pregnancy
+O289,45.41162027508333,12.838324682183469,No,"Abnormal finding on antenatal screening of mother, unspecified"
+Z352,78.0846674286946,50.124626603714674,No,Supervision of pregnancy with other poor reproductive or obstetric history
+J019,163.3998418606436,106.80973918808189,No,"Acute sinusitis, unspecified"
+N760,173.9022741848947,108.99655265972578,No,Acute vaginitis
+9915,62.46728521129124,15.381509535137141,No,Parenteral infusion of concentrated nutritional substances
+O363,10.580761492762075,88.20029417123217,No,Maternal care for signs of fetal hypoxia
+O224,81.50231366624311,53.76651479181503,No,Haemorrhoids in pregnancy
+758,4.258030969884104,0.49917965490277394,No,Obstetric tamponade of uterus or vagina
+A010,159.45775142538565,185.96414405239915,No,Typhoid fever
+O16,93.93149525058499,54.9897505556152,No,Unspecified maternal hypertension
+6902,42.40166857440705,86.41404134439638,No,Dilation and curettage following delivery or abortion
+Z302,101.11395453567708,90.60043517526992,No,Sterilization
+598,55.57987351681308,0.9958419778324662,No,Ureteral catheterization
+897,52.0781517507829,49.306715929467785,No,General physical examination
+O993,14.233935386726436,17.737280262518013,No,"Mental disorders and diseases of the nervous system complicating pregnancy, childbirth and the puerperium"
+R509,153.10658370335244,129.99076829626839,No,"Fever, unspecified"
+O339,71.49486231124935,32.94317618999526,No,"Maternal care for disproportion, unspecified"
+9903,51.689502619648586,3.478816207074415,No,Other transfusion of whole blood
+Z000,162.70586410174803,106.21793096482104,No,General medical examination
+7569,17.04383816742644,0,Yes,Repair of other current obstetric laceration
+O680,36.69291414941478,137.28544770995774,No,Labour and delivery complicated by fetal heart rate anomaly
+E86,180.9143929661747,110.36883755404106,No,Volume depletion
+Z018,148.28050031058507,130.6822724724935,No,Other specified special examinations
+R69,197.50028298008775,125.32282124102346,No,Unknown and unspecified causes of morbidity
+9912,55.78870978210946,3.6200683840081123,No,Immunization for allergy
+O600,77.40635602605123,17.231891488470556,No,Preterm labour without delivery
+O479,68.72344698948163,49.42299102900917,No,"False labour, unspecified"
+O369,53.88992544224869,41.31652848651041,No,"Maternal care for fetal problem, unspecified"
+O996,70.6954447725818,76.75524821816589,No,"Diseases of the digestive system complicating pregnancy, childbirth and the puerperium"
+Z099,138.2654079686214,192.49728919963093,No,Follow-up examination after unspecified treatment for other conditions
+O621,6.994035731595529,112.24659376528211,No,Secondary uterine inertia
+A419,116.00969813695252,62.35005346161835,No,"Septicaemia, unspecified"
+7534,26.80804790563018,3.5514649408105456,No,Other fetal monitoring
+M069,152.32961902040745,159.7902744793369,No,"Rheumatoid arthritis, unspecified"
+9922,51.54619220617765,0,Yes,Injection of other anti
+J00,151.36169747538426,150.6956895484238,No,Acute nasopharyngitis [common cold]
+K050,160.08643333841027,108.81751743556887,No,Acute gingivitis
+O268,97.89166260267439,39.41936639377207,No,Other specified pregnancy-related conditions
+8628,67.83537821143508,0,Yes,"Nonexcisional debridement of wound, infection, or burn"
+I10,120.2461634655973,208.79063932001318,No,Essential (primary) hypertension
+H109,174.3292424615179,117.6092447888576,No,"Conjunctivitis, unspecified"
+Z320,100.1153428055216,65.6455316075084,No,"Pregnancy, not (yet) confirmed"
+Z355,111.91270809658145,44.203991573912816,No,Supervision of elderly primigravida
+J40,162.49135980582165,107.50308804986044,No,"Bronchitis, not specified as acute or chronic"
+H811,167.66273258046652,86.14835097290104,No,Benign paroxysmal verti
+H521,176.07756450011433,199.49735162752222,No,Myopia
+Z710,154.53415932651305,24.300679329455296,No,Person consulting on behalf of another person
+O13,48.64783745146707,40.50972628462212,No,Gestational [pregnancy-induced] hypertension without significant proteinuria
+L029,164.1968700779273,163.7562279664569,No,"Cutaneous abscess, furuncle and carbuncle, unspecified"
+O860,89.19070912100493,182.51359678347902,No,Infection of obstetric surgical wound
+O440,68.35764572282274,16.75407133674681,No,Placenta praevia specified as without haemorrhage
+O120,74.83263935638965,21.040399537518596,No,Gestational oedema
+K041,152.87489179262707,116.93069198228898,No,Necrosis of pulp
+K040,154.00220655881907,119.45594825297337,No,Pulpitis
+N946,149.2226370338208,124.15756556600138,No,"Dysmenorrhoea, unspecified"
+Z012,155.26799063243047,163.2129845033853,No,Dental examination
+O345,93.8382997889933,36.270147442567946,No,Maternal care for other abnormalities of gravid uterus
+J459,132.7813216465937,135.5100663113337,No,"Asthma, unspecified"
+O995,69.14128414923528,12.71118935813162,No,"Diseases of the respiratory system complicating pregnancy, childbirth and the puerperium"
+O994,77.33762541071088,4.438146671458531,No,"Diseases of the circulatory system complicating pregnancy, childbirth and the puerperium"
+E149,126.46256543801772,147.72047171266473,No,Unspecified diabetes mellitus without complications
+E119,119.02036286603011,15.960641336788656,No,Non-insulin-dependent diabetes mellitus without complications
+Z489,163.17393851942833,200.58758240259726,No,"Surgical follow-up care, unspecified"
+L010,156.38292829214674,125.97173805214719,No,Impeti [any organism] [any site]
+O234,139.8547097044994,133.35012149211107,No,Unspecified infection of urinary tract in pregnancy
+8749,67.73584265391369,107.69452069794353,No,Other chest x
+F419,163.92371465387214,0,Yes,"Anxiety disorder, unspecified"
+R101,117.91242186698635,10.67776689586137,No,Pain localized to upper abdomen
+R202,149.57194266991394,17.671100878773974,No,Paraesthesia of skin
+Z014,140.67311220921727,76.21119959488671,No,Gynaecological examination (general) (routine)
+Z356,82.15319752470643,215.01610470178093,No,Supervision of very young primigravida
+9764,32.5226687331503,0.2684286808145551,No,Removal of other urinary drainage device
+9775,34.58812601946601,0.4122661397245352,No,Removal of vaginal or vulvar packing
+I500,128.5428547893472,150.39956306927414,No,Congestive heart failure
+H669,162.4738250839238,100.31094513703734,No,"Otitis media, unspecified"
+I259,143.7908986818814,144.15432906519072,No,"Chronic ischaemic heart disease, unspecified"
+O140,46.84848558272199,67.3195780833249,No,Moderate pre-eclampsia
+A90,158.20630997222815,238.71002921699895,No,Dengue fever [classical dengue]
+Z390,136.2278189179343,214.6342855334595,No,Care and examination immediately after delivery
+O151,34.43950825609544,0,Yes,Eclampsia in labour
+R11,156.4532335617643,91.0359034792561,No,Nausea and vomiting
+R53,169.998722510177,119.31796921577981,No,Malaise and fatigue
+Z304,145.50332105806086,79.46318431084116,No,Surveillance of contraceptive drugs
+M545,149.40594638723996,111.7705080271467,No,Low back pain
+T784,155.86345764830324,77.561654679872845,No,"Allergy, unspecified"
+K021,160.08497129642546,147.39546532201106,No,Caries of dentine
+O830,110.06229289285083,0,Yes,Breech extraction
+Z309,140.30327082408544,152.36109912821925,No,"Contraceptive management, unspecified"
+R500,169.374997221456,193.86823263654043,No,Fever with chills
+G819,145.57171613616418,4.575130400526108,No,"Hemiplegia, unspecified"
+Z392,123.68257064666281,235.3878504356459,No,Routine postpartum follow-up
+7271,3.7108608382672084,0,Yes,Vacuum extraction with episiotomy
+D24,137.90517200748997,145.59085728176694,No,Benign neoplasm of breast
+O730,61.34319317111757,141.68377922985266,No,Retained placenta without haemorrhage
+O235,105.21789960136194,44.39442005499908,No,Infections of the genital tract in pregnancy
+O219,106.58740282006875,77.10332049349127,No,"Vomiting of pregnancy, unspecified"
+O654,78.01071295714452,0.0944911182523068,No,"Obstructed labour due to fetopelvic disproportion, unspecified"
+H660,151.11091043775886,120.03065084742789,No,Acute suppurative otitis media
+7171,16.370103940729976,11.796963568195164,No,Suture of laceration of vulva or perineum
+O40,89.00893847091652,19.656729232096758,No,Polyhydramnios
+B379,156.91569580218606,79.67532402233778,No,"Candidiasis, unspecified"
+K36,135.9736908429891,93.93656117238545,No,Other appendicitis
+N898,156.3390140435741,108.86410180016352,No,Other specified noninflammatory disorders of vagina
+O618,0,227.62911203024572,Yes,Other failed induction of labour
+J111,161.32057991402058,177.1144153068748,No,"Influenza with other respiratory manifestations, virus not identified"
+O669,68.68476644364937,71.41398585681502,No,"Obstructed labour, unspecified"
+O325,31.24149858759941,50.16953713300882,No,Maternal care for multiple gestation with malpresentation of one fetus or more
+Z372,19.63128649956318,36.48590725980962,No,"Twins, both liveborn"
+Z300,159.6135875200608,101.56280738275261,No,General counselling and advice on contraception
+N926,153.16138737148472,121.44718571839744,No,"Irregular menstruation, unspecified"
+O263,121.50740431697693,0,Yes,Retained intrauterine contraceptive device in pregnancy
+K029,160.75199282280602,230.16731174919138,No,"Dental caries, unspecified"
+O901,61.77595623516296,155.43007294522374,No,Disruption of perineal obstetric wound
+I959,162.65091488448917,142.1074033227954,No,"Hypotension, unspecified"
+N899,148.9456000518567,55.543310025038565,No,"Noninflammatory disorder of vagina, unspecified"
+D259,138.4336870645731,137.90846509458635,No,"Leiomyoma of uterus, unspecified"
+9671,37.87858514764263,0,Yes,Continuous invasive mechanical ventilation for less than 96 consecutive hours
+H522,175.2563583859809,200.6022593175562,No,Astigmatism
+K053,176.7001844326087,162.00044622186365,No,Chronic periodontitis
+I849,160.24704201312002,6.368324391514267,No,Unspecified haemorrhoids without complication
+O681,42.0848137556133,5.380646511976117,No,Labour and delivery complicated by meconium in amniotic fluid
+N709,172.5436353197734,105.75913438325082,No,"Salpingitis and oophoritis, unspecified"
+K051,159.7301604775836,127.55049020297966,No,Chronic gingivitis
+K011,162.60580534384385,180.39917459656502,No,Impacted teeth
+O334,21.671114143223388,0,Yes,Maternal care for disproportion of mixed maternal and fetal origin
+O988,78.90268699493868,56.632528830336824,No,"Other maternal infectious and parasitic diseases complicating pregnancy, childbirth and the puerperium"
+N840,142.84902313510398,118.24047328985758,No,Polyp of corpus uteri
+6909,61.853044869745354,120.62820833646103,No,Other dilation and curettage of uterus
+J100,169.5500551586954,218.6454181882107,No,"Influenza with pneumonia, influenza virus identified"
+K052,163.69178073905042,91.56830535427936,No,Acute periodontitis
+Z354,133.60330326713643,17,No,Supervision of pregnancy with grand multiparity
+9054,47.317812141234995,15.429824599764158,No,"Microscopic examination of blood, Parasitology"
+R104,154.84557890752075,120.13634572737112,No,Other and unspecified abdominal pain
+O060,121.90118298317869,97.10434874635916,No,"Unspecified abortion, incomplete, complicated by genital tract and pelvic infection"
+M139,152.70868391159516,150.99608743623997,No,"Arthritis, unspecified"
+K006,170.27977826881718,80.78515667164073,No,Disturbances in tooth eruption
+K044,166.87480235430812,64.10842749740846,No,Acute apical periodontitis of pulpal origin
+O659,21.330772385610796,58.4078888634188,No,"Obstructed labour due to maternal pelvic abnormality, unspecified"
+M792,169.8787916045768,161.94895049627496,No,"Neuralgia and neuritis, unspecified"
+O985,63.0532675421242,2.23606797749979,No,"Other viral diseases complicating pregnancy, childbirth and the puerperium"
+O662,2.705987513099909,16.816087183924203,No,Obstructed labour due to unusually large fetus
+R042,141.92211383568795,NA,Yes,Haemoptysis
+O020,114.52753145246201,169.69910970380454,No,Blighted ovum and nonhydatidiform mole
+H531,184.03265930117718,120.49374986189817,No,Subjective visual disturbances
+O759,81.48426186391363,167.07769903951834,No,"Complication of labour and delivery, unspecified"
+H527,160.63894614972656,155.8127472164006,No,"Disorder of refraction, unspecified"
+Z038,157.19717705388868,52.48326165191325,No,Observation for other suspected diseases and conditions
+O053,68.13908071051448,48.04804240637664,No,"Other abortion, incomplete, with other and unspecified complications"
+K296,159.3836004681636,111.16312626816156,No,Other gastritis
+K759,132.19057037677646,9.991107156978261,No,"Inflammatory liver disease, unspecified"
+G430,168.8881375824371,103.8984828418688,No,Migraine without aura [common migraine]
+Z017,129.899684381977,23.78468363499578,No,Laboratory examination
+D62,137.01151875609463,6.301951105637329,No,Acute posthaemorrhagic anaemia
+K359,141.05712786740315,91.64966742144533,No,"Acute appendicitis, unspecified"
+K37,153.23785786316196,4.6475800154489,No,Unspecified appendicitis
+Q339,3.365215494537508,6.978239988230079,No,"Congenital malformation of lung, unspecified"
+Z363,106.81087789184498,37.24844960437423,No,Antenatal screening for malformations using ultrasound and other physical methods
+Q210,62.3519173827653,70.71045452722419,No,Ventricular septal defect
+J200,181.2114476962128,122.40375019858689,No,Acute bronchitis due to Mycoplasma pneumoniae
+O439,45.75547581924051,100.81265735569558,No,"Placental disorder, unspecified"
+J122,155.13091139390866,79.84689296265368,No,Parainfluenza virus pneumonia
+N739,161.36857887239495,58.84892380777522,No,"Female pelvic inflammatory disease, unspecified"
+K291,157.80171458219442,195.83345987659143,No,Other acute gastritis
+Q501,131.2251262758798,99.44659950871197,No,Developmental ovarian cyst
+8879,73.70787808119233,84.22443283318675,No,Other diagnostic ultrasound
+J180,161.3115749609382,139.0294117800312,No,"Bronchopneumonia, unspecified"
+O320,64.5311799380986,112.66358462164601,No,Maternal care for unstable lie
+B909,101.67925028359676,214.27603263473793,No,Sequelae of respiratory and unspecified tuberculosis
+J450,168.31471908406914,130.6425522151009,No,Predominantly allergic asthma
+O311,10.806452320937982,63.68052932473344,No,Continuing pregnancy after abortion of one fetus or more
+O620,91.52122136957145,19.256857109191156,No,Primary inadequate contractions
+D500,161.72146699153987,108.13976846567374,No,Iron deficiency anaemia secondary to blood loss (chronic)
+P027,20.353571115233247,8.497325782535672,No,Fetus and newborn affected by chorioamnionitis
+J039,166.5657348037568,108.81758731108846,No,"Acute tonsillitis, unspecified"
+I219,189.4169560969996,3.2506409624359724,No,"Acute myocardial infarction, unspecified"
+O468,77.1626474642109,5.7340027798029425,No,Other antepartum haemorrhage
+O341,219.6783894734336,170.40357325413626,No,Maternal care for tumour of corpus uteri
+N809,147.82256979759597,66.90001352707733,No,"Endometriosis, unspecified"
+K292,202.56763269732488,1.1547005383792515,No,Alcoholic gastritis
+A090,196.51961054965474,144.33073078345043,No,Other and unspecified gastroenteritis and colitis of infectious origin
+H814,156.7353591328267,206.41687624171047,No,Verti of central origin
+I519,148.48541399248919,178.03861940601539,No,"Heart disease, unspecified"
+B354,157.25827853683043,96.07900000741182,No,Tinea corporis
+O034,80.08030012036124,99.09346968892373,No,"Spontaneous abortion, incomplete, without complication"
+B373,181.77934495372054,22.737241320290877,No,Candidiasis of vulva and vagina
+O035,55.17132084584022,77.00554879652859,No,"Spontaneous abortion, complete or unspecified, complicated by genital tract and pelvic infection"
+O265,90.394334263246,33.23401871576773,No,Maternal hypotension syndrome
+B509,130.83799661320495,83.94878475319616,No,"Plasmodium falciparum malaria, unspecified"
+8876,70.7593554395677,24.503425768576427,No,Diagnostic ultrasound of abdomen and retroperitoneum
+T140,172.9418126665892,116.31370994375135,No,Superficial injury of unspecified body region
+9783,47.91996442796403,1.6169041669088866,No,Removal of abdominal wall sutures
+K020,160.6662854640566,248.09849318131816,No,Caries limited to enamel
+O121,135.7889661693222,0,Yes,Gestational proteinuria
+O713,113.86620260979196,0,Yes,Obstetric laceration of cervix
+T384,156.69064634367425,200.7856789935201,No,Poisoning by oral contraceptives
+N912,154.4582110405692,156.93368176201204,No,"Amenorrhoea, unspecified"
+O909,86.12825884696717,145.6297343248264,No,"Complication of the puerperium, unspecified"
+J020,165.46759076986484,103.90545613239304,No,Streptococcal pharyngitis
+N921,159.63475154729255,178.2598689716249,No,Excessive and frequent menstruation with irregular cycle
+H663,170.52770379203267,136.08501802965722,No,Other chronic suppurative otitis media
+N938,155.2637180319363,201.07194736640594,No,Other specified abnormal uterine and vaginal bleeding
+O340,123.24007466240536,15.185018779100584,No,Maternal care for congenital malformation of uterus
+N23,163.1086760436201,165.5190393306836,No,Unspecified renal colic
+N979,150.94267461995358,NA,Yes,"Female infertility, unspecified"
+9131,64.25351525004933,21.861014716993264,No,"Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen, Bacterial smear"
+Z308,155.8001360881714,190.02433428129044,No,Other contraceptive management
+G442,157.8332326726817,114.39603473426581,No,Tension-type headache
+O632,109.90736493056042,0.47047196889696474,No,"Delayed delivery of second twin, triplet, etc."
+O419,179.32701856833395,0.30151134457776363,No,"Disorder of amniotic fluid and membranes, unspecified"
+O109,50.11664454463561,184.27675839402679,No,"Unspecified pre-existing hypertension complicating pregnancy, childbirth and the puerperium"
+P031,61.55235554483906,8.617369550565561,No,"Fetus and newborn affected by other malpresentation, malposition and disproportion during labour and delivery"
+J398,172.40640900809427,32.51096681064657,No,Other specified diseases of upper respiratory tract
+O703,10.526452467492911,0,Yes,Fourth degree perineal laceration during delivery
+H520,190.12387345285498,146.28077856119918,No,Hypermetropia
+9394,70.94498156092396,8.868266676535717,No,Respiratory medication administered by nebulizer
+K089,141.31035568157827,80.06555755437856,No,"Disorder of teeth and supporting structures, unspecified"
+Z097,144.40456535902211,14.400231479620967,No,Follow-up examination after combined treatment for other conditions
+Z010,150.9238794374464,65.94186100087003,No,Examination of eyes and vision
+O469,42.128843168476934,86.36907928849801,No,"Antepartum haemorrhage, unspecified"
+K290,164.97511766249332,135.45984662736473,No,Acute haemorrhagic gastritis
+232,67.09700992565922,49.27594201573889,No,Restoration of tooth by filling
+Z362,66.51052030718029,0,Yes,Other antenatal screening based on amniocentesis
+O908,60.66118718963129,3.24037034920393,No,"Other complications of the puerperium, not elsewhere classified"
+L023,180.34782742090354,NA,Yes,"Cutaneous abscess, furuncle and carbuncle of buttock"
+I842,178.3214216424773,74.66066825722486,No,Internal haemorrhoids without complication
+K121,163.3646504193191,117.7591191582526,No,Other forms of stomatitis
+H609,165.49105577478383,148.15883918322965,No,"Otitis externa, unspecified"
+L509,168.3034923756689,190.78037430383714,No,"Urticaria, unspecified"
+J4590,184.17153391624913,256.98611227994775,No,
+3899,34.285032547195414,38.586395399284314,No,Other puncture of vein
+J101,164.3836190046893,192.08664339674576,No,"Influenza with other respiratory manifestations, influenza virus identified"
+O266,11.199575854702541,NA,Yes,"Liver disorders in pregnancy, childbirth and the puerperium"
+G439,166.00176894397725,154.24073947659133,No,"Migraine, unspecified"
+N920,170.30777257508154,125.53029333772206,No,Excessive and frequent menstruation with regular cycle
+H542,158.83120877718406,229.729924248536,No,"Low vision, both eyes"
+L308,155.05731890437013,179.32923576033858,No,Other specified dermatitis
+Z357,124.1195361649497,27.48090245970827,No,Supervision of high-risk pregnancy due to social problems
+Z391,73.57320312506066,47.44533696792552,No,Care and examination of lactating mother
+O665,105.21291297389125,54.52034332482977,No,"Failed application of vacuum extractor and forceps, unspecified"
+8602,45.64104025284973,22.835589568552773,No,Injection or tattooing of skin lesion or defect
+O0390,205.6361415743789,68.71026124240834,No,
+O900,80.3773525428629,199.2076716107375,No,Disruption of caesarean section wound
+H813,160.83714767588611,235.1837226493566,No,Other peripheral verti
+D648,150.34840817543986,20.825435901507678,No,Other specified anaemias
+O089,11.9237899879513,0,Yes,"Complication following abortion and ectopic and molar pregnancy, unspecified"
+O718,108.48692567990975,0,Yes,Other specified obstetric trauma
+R12,157.12039990873077,127.60132145121867,No,Heartburn
+S009,162.69895967488526,54.22176684690383,No,"Superficial injury of head, part unspecified"
+Z006,202.46765768776876,7.745966692414834,No,Examination for normal comparison and control in clinical research programme
+E780,164.43934833351295,122.88325314069051,No,Pure hypercholesterolaemia
+Z508,173.65088948962406,20.2837021134844,No,Care involving use of other rehabilitation procedures
+Z479,137.96523909516623,109.4927909241874,No,"Orthopaedic follow-up care, unspecified"
+N911,139.32721707613237,146.2365768359523,No,Secondary amenorrhoea
+9339,63.37841439027145,0.8660254037844386,No,Other physical therapy
+9389,69.86575291934429,9.304202374098589,No,"Rehabilitation, not elsewhere classified"
+A78,159.30989890062432,82.34229546951194,No,Q fever
+Q505,112.67829900916621,NA,Yes,Embryonic cyst of broad ligament
+E880,95.05557419409747,7.990903919741837,No,"Disorders of plasma-protein metabolism, not elsewhere classified"
+O629,53.67754377949368,9.981682569993126,No,"Abnormality of forces of labour, unspecified"
+L024,164.70614689839428,174.53509386921442,No,"Cutaneous abscess, furuncle and carbuncle of limb"
+H608,167.3776804828107,75.78831889576223,No,Other otitis externa
+1811,69.38011384203843,75.78831889576223,No,Otoscopy
+O262,70.5975063397472,199.44531431900197,No,Pregnancy care of habitual aborter
+9149,25.393107099037266,71.6846629976797,No,Other microscopic examination of specimen from female genital tract
+N939,157.16043115864238,147.00794979043582,No,"Abnormal uterine and vaginal bleeding, unspecified"
+A014,154.2615187198748,47.08057844597506,No,"Paratyphoid fever, unspecified"
+N300,191.70601299110783,NA,Yes,Acute cystitis
+D508,145.11183562475236,261.2490477208767,No,Other iron deficiency anaemias
+H103,156.43363046815716,318.3398154413583,No,"Acute conjunctivitis, unspecified"
+R609,165.69349136681788,38.49846578932553,No,"Oedema, unspecified"
+2371,63.37650025634101,32.65008082344939,No,Root canal therapy with irrigation
+J209,170.02821289222015,157.8710247602118,No,"Acute bronchitis, unspecified"
+J310,174.532204605717,146.9103622807273,No,Chronic rhinitis
+M199,147.39813673153245,49.080715832867256,No,"Arthrosis, unspecified"
+L235,168.81210003778168,218.9607488199872,No,Allergic contact dermatitis due to other chemical products
+H720,169.31415319499368,96.51584417131018,No,Central perforation of tympanic membrane
+B653,176.96748150741226,37.64305273592867,No,Cercarial dermatitis
+J680,141.12913358113138,29.12700384421948,No,"Bronchitis and pneumonitis due to chemicals, gases, fumes and vapours"
+H46,165.82720062346735,124.10415071851509,No,Optic neuritis
+O063,120.81866657846564,68.48519592552766,No,"Unspecified abortion, incomplete, with other and unspecified complications"
+G560,139.72717467896936,NA,Yes,Carpal tunnel syndrome
+L300,173.72425981131596,30.74666067814752,No,Nummular dermatitis
+K073,183.05772834223754,193.81434415439946,No,Anomalies of tooth position
+A231,166.24306999866383,209.01924894270246,No,Brucellosis due to Brucella abortus
+O288,62.96816234649166,56.574185202904594,No,Other abnormal findings on antenatal screening of mother
+Z711,189.61576371016614,62.897208392180744,No,Person with feared complaint in whom no diagnosis is made
+Z861,165.2203103389536,69.50740967695458,No,Personal history of infectious and parasitic diseases
+J09,97.20999786915378,24.176434807473164,No,Influenza due to identified avian infliuenza virus
+O260,71.79090975970202,127.38053226454974,No,Excessive weight gain in pregnancy
+O221,54.24219964689757,8.234653836654205,No,Genital varices in pregnancy
+E282,187.118939835994,69.28413172647045,No,Polycystic ovarian syndrome
+B359,173.91655493455377,NA,Yes,"Dermatophytosis, unspecified"
+H041,190.14802807744553,NA,Yes,Other disorders of lacrimal gland
+O82,6.0250023730095945,12.324667780408358,No,NA
+O312,42.160557914692745,9.516486119598774,No,Continuing pregnancy after intrauterine death of one fetus or more
+I863,14.495689014324224,69.54546303369781,No,Vulval varices
+D519,146.0912016162979,50.035372103527536,No,"Vitamin B12 deficiency anaemia, unspecified"
+O104,4.750379110651617,0,Yes,"Pre-existing secondary hypertension complicating pregnancy, childbirth and the puerperium"
+B86,174.87477878603514,121.72696720716633,No,Scabies

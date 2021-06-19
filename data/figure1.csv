@@ -1,0 +1,12 @@
+Subset,Nonevent visits,Event visits,Total visits,Nonevent subjects,Event subjects,Total subjects,Note,Prevalence,Excluded visits,Excluded subjects
+Total,NA,NA,3756292,NA,NA,1697452,"NA",NA,0,0
+Age selection by 12 to 55 years old,NA,NA,2321425,NA,NA,1203093,"NA",NA,1434867,494359
+Sex selection by female,NA,NA,1422389,NA,NA,592862,"NA",NA,899036,610231
+Visit healthcare providers,NA,NA,1422389,NA,NA,241439,"NA",NA,0,351423
+Censoring,NA,NA,712646,NA,NA,170053,"NA",NA,NA,NA
+Internal pre-calibration split,74019,12011,86030,29370,4047,33417,"d,e,h",0.12110602388006105,NA,NA
+Internal calibration split,18504,3002,21506,12877,1981,14858,"d,f,i",0.13332884641270695,NA,NA
+External random split,23240,3692,26932,15098,2279,17377,"d,g,j",0.1311503711802958,NA,NA
+External geographical split,13698,2120,15818,4084,522,4606,"NA",0.11333043855840208,NA,NA
+External temporal split,15484,2736,18220,3735,502,4237,"NA",0.11848005664385178,NA,NA
+External geotemporal split,1994,230,2224,453,49,502,"NA",0.09760956175298804,NA,NA

@@ -1,0 +1,102 @@
+Level,Effect on,Factor,Label,Citation,Data availability,Mathematical model
+First,PROM,Multiple pregnancy,A02,ACOG (2016a),Yes,outcome ~ A02 + A20
+First,PROM,Chorioamnionitis,A03,"Fukami T, et al (2017)",Yes,outcome ~ A03 + A15 + A28 + A04 + A10 + A11 + A13 + A02 + A20 + A19
+First,PROM,IAI,A04,ACOG (2016a),Yes,outcome ~ A04 + A02 + A10 + A11 + A13 + A20 + A15 + A28 + A19
+First,PROM,Cervical shortening,A05,ACOG (2016a),No,NA
+First,PROM,APH,A06,ACOG (2016a),Yes,outcome ~ A06 + A19 + A20 + A10 + A19 + A15 + A28
+First,PROM,Low BMI,A07,ACOG (2016a),No,NA
+First,PROM,Cigarette smoking,A08,ACOG (2016a),No,NA
+First,PROM,Illicit drug use,A09,ACOG (2016a),No,NA
+First,PROM,GTI,A10,"Pandey D, et al (2019); Yan JJ, et al (2016)",Yes,outcome ~ A10 + A19 + A15 + A28
+First,PROM,Periodontal disease,A11,"Figueiredo MGOP, et al (2019)",Yes,outcome ~ A11 + A15 + A20 + A28
+First,PROM,Polyhydramnios,A12,"Odibo IN, et al (2016)",Yes,outcome ~ A12 + A02 + A20
+First,PROM,Pneumonia,A13,"Getahun D, et al (2007)",Yes,outcome ~ A13 + A15 + A28
+First,PROM,Tuberculosis,A14,"Fernández AA, et al (2017)",No,NA
+First,PROM,Asthma,A15,"Baghlaf H, et al (2019)",Yes,outcome ~ A15 + A28
+First,PROM,Previous preterm birth,A16,ACOG (2016a),No,NA
+First,PROM,Family history of preterm birth,A17,ACOG (2016a),No,NA
+First,PROM,Previous PROM,A18,ACOG (2016a),No,NA
+First,PROM,Low SES,A19,ACOG (2016a),Yes,outcome ~ A19
+First,PROM,Maternal age,A20,"Song J, et al (2019)",Yes,outcome ~ A20
+First,PROM,Race,A21,Fiscella K (1996),No,NA
+First,PROM,Low education,A22,"Wang W, et al (2020)",No,NA
+First,PROM,Stress,A23,"Wang W, et al (2020)",No,NA
+First,PROM,Uterine anomaly,A24,"Hua M, et al (2011)",No,NA
+First,PROM,Assisted reproduction,A25,"Lei LL, et al (2019)",No,NA
+First,PROM,Conization,A26,"Zhuang H, et al (2019)",No,NA
+First,PROM,Placenta on anterior wall,A27,"Torricelli M, et al (2015)",No,NA
+First,PROM,Influenza,A28,"Littauer EQ, et al (2017)",Yes,outcome ~ A28
+First,Multiple pregnancy,Maternal age,A20,"Thilaganathan B, and Khalil A (2014); Martin JA, and Osterman MJK (2019)",No,NA
+First,Multiple pregnancy,Race,A21,"Martin JA, and Osterman MJK (2019)",No,NA
+First,Multiple pregnancy,Assisted reproduction,A25,"Thilaganathan B, and Khalil A (2014)",No,NA
+First,Chorioamnionitis,IAI,A04,"Tantengco OAG, et al (2019)",No,NA
+First,Chorioamnionitis,Cigarette smoking,A08,"Kim CJ, et al (2015)",No,NA
+First,Chorioamnionitis,Asthma,A15,"Baghlaf H, et al (2019)",No,NA
+First,Chorioamnionitis,Influenza,A28,"Kim CJ, et al (2015)",No,NA
+First,IAI,Multiple pregnancy,A02,"Lee SM, et al (2020)",No,NA
+First,IAI,Cervical shortening,A05,"Kiefer DG, et al (2009)",No,NA
+First,IAI,GTI,A10,"Romero R, et al (2019); Tantengco OAG, et al (2019)",No,NA
+First,IAI,Periodontal disease,A11,"Stinson LF, et al (2019)",No,NA
+First,IAI,Pneumonia,A13,"Stinson LF, et al (2019)",No,NA
+First,IAI,Race,A21,"Menon R, et al (2011)",No,NA
+First,Cervical shortening,GTI,A10,"Sendag F, et al (2010)",No,NA
+First,Cervical shortening,Maternal age,A20,"Tan P C, et al (2011)",No,NA
+First,Cervical shortening,Race,A21,"Dijkstra K, et al (1999)",No,NA
+First,Cervical shortening,Stress,A23,"Dijkstra K, et al (1999)",No,NA
+First,Cervical shortening,Uterine anomaly,A24,"Guimarães FHA, et al (2013)",No,NA
+First,Cervical shortening,Conization,A26,"Guimarães FHA, et al (2013)",No,NA
+First,APH,Cigarette smoking,A08,"Bhandari S, et al (2014)",No,NA
+First,APH,Illicit drug use,A09,"Bhandari S, et al (2014)",No,NA
+First,APH,Low SES,A19,"Bhandari S, et al (2014)",No,NA
+First,APH,Maternal age,A20,"Fan D, et al (2017)",No,NA
+First,APH,Race,A21,"Shen JJ, et al (2005)",No,NA
+First,APH,Assisted reproduction,A25,"Qin J, et al (2016)",No,NA
+First,APH,Placenta on anterior wall,A27,"Fan D, et al (2017)",No,NA
+First,Low BMI,Stress,A23,"Han YS, et al (2011)",No,NA
+First,Cigarette smoking,Low SES,A19,"Najman JM, et al (1998)",No,NA
+First,Cigarette smoking,Maternal age,A20,"De Genna NM, et al (2017)",No,NA
+First,Cigarette smoking,Race,A21,"De Genna NM, et al (2017)",No,NA
+First,Cigarette smoking,Low education,A22,"De Genna NM, et al (2017)",No,NA
+First,Illicit drug use,Cigarette smoking,A08,"Oga EA, et al (2018); De Genna NM, et al (2017)",No,NA
+First,Illicit drug use,Low SES,A19,"Marzban M, et al (2019)",No,NA
+First,Illicit drug use,Maternal age,A20,"Homsup P, et al (2018)",No,NA
+First,Illicit drug use,Race,A21,"Homsup P, et al (2018)",No,NA
+First,Illicit drug use,Low education,A22,"Homsup P, et al (2018)",No,NA
+First,Illicit drug use,Stress,A23,"Rocha PC, et al (2016)",No,NA
+First,GTI,Tuberculosis,A14,"Sharma JB, et al (2018)",No,NA
+First,Periodontal disease,Cigarette smoking,A08,"Genco RJ, and Borgnakke WS (2013)",No,NA
+First,Periodontal disease,Asthma,A15,"Moraschini V, et al (2018)",No,NA
+First,Periodontal disease,Maternal age,A20,"Genco RJ, and Borgnakke WS (2013)",No,NA
+First,Periodontal disease,Low education,A22,"Genco RJ, and Borgnakke WS (2013)",No,NA
+First,Periodontal disease,Stress,A23,"Genco RJ, and Borgnakke WS (2013)",No,NA
+First,Polyhydramnios,Multiple pregnancy,A02,Moise KJ (1997),No,NA
+First,Polyhydramnios,Assisted reproduction,A25,"Lei LL, et al (2019)",No,NA
+First,Pneumonia,Asthma,A15,"Goodnight WH, and Soper DE (2005)",No,NA
+First,Pneumonia,Influenza,A28,"Goodnight WH, and Soper DE (2005)",No,NA
+First,Tuberculosis,Asthma,A15,"Yii AC, et al (2019)",No,NA
+First,Tuberculosis,Low SES,A19,"Malhamé I, et al (2016)",No,NA
+First,Tuberculosis,Race,A21,"Malhamé I, et al (2016)",No,NA
+First,Tuberculosis,Influenza,A28,"de Paus RA, et al (2013)",No,NA
+First,Asthma,Influenza,A28,"Murphy VE, et al (2017)",No,NA
+Second,Chorioamnionitis,Parity,L30,"Kim CJ, et al (2015)",No,NA
+Second,Chorioamnionitis,Gestational age,L32,"Kim CJ, et al (2015)",No,NA
+Second,Chorioamnionitis,Varicella,L37,"Kim CJ, et al (2015)",No,NA
+Second,Chorioamnionitis,Acute respiratory syndrome,L38,"Kim CJ, et al (2015)",No,NA
+Second,IAI,UTI,L29,"Tantengco OAG, et al (2019)",No,NA
+Second,IAI,Parity,L30,"Park KH, et al (2012)",No,NA
+Second,Cervical shortening,Parity,L30,"Kang WS, et al (2010)",No,NA
+Second,Cervical shortening,LEEP loop,L31,"Guimarães FHA, et al (2013)",No,NA
+Second,APH,Parity,L30,"Fan D, et al (2017)",No,NA
+Second,APH,Gestational age,L32,"Fan D, et al (2017)",No,NA
+Second,Low BMI,Anorexia nervosa,L33,"Bjørnholt SM, et al (2019)",No,NA
+Second,GTI,Type-2 diabetes mellitus,L34,"Nichols GA, et al (2017)",No,NA
+Second,Periodontal disease,Anorexia nervosa,L33,"Chiba FY, et al (2019)",No,NA
+Second,Periodontal disease,Type-2 diabetes mellitus,L34,"Genco RJ, and Borgnakke WS (2013)",No,NA
+Second,Periodontal disease,Anemia,L35,"Genco RJ, and Borgnakke WS (2013)",No,NA
+Second,Polyhydramnios,Type-2 diabetes mellitus,L34,Moise KJ (1997),No,NA
+Second,Polyhydramnios,Anemia,L35,"Mathew M, et al (2008)",No,NA
+Second,Polyhydramnios,Chromosomal aberration,L36,"Sagi-Dain L, and Sagi S (2015)",No,NA
+Second,Pneumonia,Anemia,L35,"Goodnight WH, and Soper DE (2005)",No,NA
+Second,Pneumonia,Varicella,L37,"Goodnight WH, and Soper DE (2005)",No,NA
+Second,Pneumonia,Acute respiratory syndrome,L38,"Goodnight WH, and Soper DE (2005)",No,NA
+Second,Asthma,Varicella,L37,"Murphy VE, et al (2017)",No,NA
