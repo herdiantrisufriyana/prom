@@ -10,7 +10,7 @@ c Clinical Big Data Research Center, Taipei Medical University Hospital, 250
 Wu-Xing Street, Taipei 11031, Taiwan.
 d Research Center for Artificial Intelligence in Medicine, Taipei Medical 
 University, 250 Wu-Xing Street, Taipei 11031, Taiwan.
-* Corresponding author at: Clinical Big Data Research Centre, Taipei Medical 
+\* Corresponding author at: Clinical Big Data Research Centre, Taipei Medical 
 University Hospital, 250 Wu-Xing Street, Taipei 11031, Taiwan. Phone: 
 +886-2-66382736 ext. 1515.
 
