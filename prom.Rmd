@@ -1,8 +1,8 @@
 ---
-title: 'Supplementary Information: Human and machine learning of prognostic 
-       prediction for prelabor rupture of membranes and the time of delivery: 
-       a nationwide development, validation, and deployment using medical 
-       history'
+title: 'Supplementary Information: Human and machine learning methods of 
+        prognostic prediction for prelabor rupture of membranes and estimation 
+        of the time of delivery: a nationwide development, validation, and 
+        deployment using medical histories'
 # author:
 #   - name: Herdiantri Sufriyana
 #     affiliation:
@@ -7095,12 +7095,22 @@ roc_curve=
   geom_point(
     data=
       read_xlsx('data/srma_prom.xlsx') %>%
+      # To modify the citation
+      # mutate(
+      #   study=str_replace(study,'\\[37\\]','[6]')
+      #   ,study=str_replace(study,'\\[23\\]','[7]')
+      # ) %>%
       rename(tnr=spec,tpr=sens)
     ,color='black',fill='black'
   ) +
   geom_label(
     data=
       read_xlsx('data/srma_prom.xlsx') %>%
+      # To modify the citation
+      # mutate(
+      #   study=str_replace(study,'\\[37\\]','[6]')
+      #   ,study=str_replace(study,'\\[23\\]','[7]')
+      # ) %>%
       rename(tnr=spec,tpr=sens)
     ,aes(label=study)
     ,color='black',fill='white'
@@ -7214,6 +7224,11 @@ auroc_table=
   rbind(
     read_xlsx('data/srma_prom.xlsx') %>%
       mutate(set='Training set') %>%
+      # To modify the citation
+      # mutate(
+      #   study=str_replace(study,'\\[37\\]','[6]')
+      #   ,study=str_replace(study,'\\[23\\]','[7]')
+      # ) %>%
       rename(model=study,Score=auroc,lb=auroc_lb,ub=auroc_ub) %>%
       select(set,Score,lb,ub,model) %>%
       mutate(set_score=mean(Score))
@@ -7382,7 +7397,7 @@ auroc_table %>%
   write_csv('data/figure3c.csv')
 ```
 
-```{r Save image of Figure 3 of the main text, eval=FALSE, include=FALSE}
+```{r Save image of Figure 3 of the main text, fig.height=8.85827, fig.width=7.08661, eval=FALSE, include=FALSE}
 # fig.height=8.85827, fig.width=7.08661 on top of this chunk if shown here
 ggarrange(
     ggarrange(
@@ -7406,6 +7421,8 @@ ggarrange(
   ) +
   ggsave(
     filename="figure3.eps"
+    # To modify the citation
+    # filename="figure3b.eps"
     ,device=cairo_ps
     ,width=180
     ,height=225
