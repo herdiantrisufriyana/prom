@@ -102,7 +102,7 @@ ontoproperties1=function(focus
       geom_nodes(aes(color=prediction),size=8) +
       geom_nodetext(
         aes(label=str_remove_all(name,'ONT:'))
-        ,size=3,color='#FFFFFFFF'
+        ,size=3,color='#FFFFFFFF',family='sans'
       ) +
       
       # Highlight the active ontologies.
@@ -110,6 +110,7 @@ ontoproperties1=function(focus
         aes(
           label=ifelse(active,str_remove_all(name,'ONT:'),NA)
         )
+        ,family='sans'
         ,size=3,alpha=0.5,na.rm=T
       ) +
       
@@ -118,6 +119,7 @@ ontoproperties1=function(focus
         aes(
           label=ifelse(focus,str_remove_all(name,'ONT:'),NA)
         )
+        ,family='sans'
         ,fill='orange'
         ,size=3,alpha=0.5,na.rm=T
       ) +
@@ -141,15 +143,20 @@ ontoproperties1=function(focus
               ,NA
             )
         )
-        ,fill='orange'
-        ,size=3,alpha=0.75,na.rm=T,hjust=0,vjust=0,nudge_y=0.04
+        ,fill='#DF8F44FF'
+        ,family='sans'
+        ,size=3,alpha=0.9,na.rm=T,hjust=0,vjust=0,nudge_y=0.04
       ) +
       
       # Customize plot.
-      scale_color_manual('',values=c('#E64B35FF','#00A087FF')) +
+      scale_color_manual('',values=c('#B24745FF','#79AF97FF')) +
       theme_blank() +
       theme(legend.position=legend) +
-      theme(title=element_text(size=unit(8,'pt'),face='bold')) +
+      theme(
+        title=element_text(size=unit(8,'pt'),face='bold',family='sans')
+        ,legend.title=element_text(family='sans')
+        ,legend.text=element_text(family='sans')
+      ) +
       ggtitle('Ontology network')
     
     # Ontology array
@@ -183,7 +190,7 @@ ontoproperties1=function(focus
       ) +
       
       # Customize plot.
-      theme(title=element_text(size=unit(8,'pt'),face='bold')) +
+      theme(title=element_text(size=unit(8,'pt'),face='bold',family='sans')) +
       ggtitle('Ontology array')
     
     # Define the width ratio.

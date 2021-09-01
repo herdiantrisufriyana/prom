@@ -1,14 +1,13 @@
 ################################################################################
-# title: 'Supplementary Information: Human and machine learning methods of 
-#         prognostic prediction for prelabor rupture of membranes and estimation 
-#         of the time of delivery: a nationwide development, validation, and 
-#         deployment using medical histories'
+# title: 'Supplement: Prognostication for prelabor rupture of membranes and the 
+#         time of delivery in nationwide insured women: development, validation, 
+#         and deployment'
 # author:
 #   - name: Herdiantri Sufriyana
 #     affiliation:
 #     - &gibi Graduate Institute of Biomedical Informatics, College of Medical
 #       Science and Technology, Taipei Medical University, Taipei, Taiwan
-#     - Department of Medical Physiology, College of Medicine, University of
+#     - Department of Medical Physiology, Faculty of Medicine, Universitas 
 #       Nahdlatul Ulama Surabaya, Surabaya, Indonesia
 #     email: herdiantrisufriyana@unusa.ac.id
 #   - name: Yu-Wei Wu
@@ -40,6 +39,14 @@
 
 ################################################################################
 ## Programming environment
+################################################################################
+
+
+
+################################################################################
+##### Set up reproducible environment ##########################################
+if(!require(renv)) install.packages('renv')
+if(!file.exists('renv')) renv::init(restart=F)
 ################################################################################
 
 
@@ -122,75 +129,101 @@ memory.limit(size=1000000)
 
 ################################################################################
 ##### Install and set specific version of Bioconductor #########################
+source('R/check_install_load-function.R')
+
 # Install devtools to install specific version of BiocManager.
-if(!require(devtools)) install.packages('devtools')
+check_install_load('devtools',version='2.4.1',repo='cran',load=F)
 
 # Install specific version of BiocManager and Bioconductor.
-if(!require(BiocManager) | packageVersion('BiocManager')!='1.30.10'){
-  devtools::install_version('BiocManager',version='1.30.10')
+check_install_load('BiocManager',version='1.30.10',repo='cran',load=F)
+install_steps=T
+if(BiocManager::version()!='3.11'){
+  BiocManager::install(version='3.11',update=TRUE,ask=FALSE)
+  install_steps=c(F,T)
 }
-if(version()!='3.11') install(version='3.11',update=TRUE,ask=FALSE)
-
-# Unload devtools & BiocManager to prevent overlapped functions with others.
-detach('package:devtools',unload=T)
-detach('package:BiocManager',unload=T)
 ################################################################################
 
 
 
 ################################################################################
 ##### Install and load packages with specific version ##########################
-source('R/check_install_load-function.R')
+for(i in install_steps){
+  if(i) renv::restore()
+  
+  check_install_load('tidyverse','1.3.1',repo='bioc',load=i)
+  check_install_load('dslabs','0.7.4',repo='bioc',load=i)
+  check_install_load('kableExtra','1.3.4',repo='bioc',load=i)
+  check_install_load('parallel','4.0.2',repo='bioc',load=i)
+  check_install_load('doParallel','1.0.16',repo='bioc',load=i)
+  check_install_load('pbapply','1.4.3',repo='bioc',load=i)
+  check_install_load('lubridate','1.7.10',repo='bioc',load=i)
+  check_install_load('broom','0.7.9',repo='bioc',load=i)
+  check_install_load('caret','6.0.88',repo='bioc',load=i)
+  check_install_load('gmethods','0.1.0',repo='herdiantrisufriyana',load=i)
+  check_install_load('igraph','1.2.6',repo='bioc',load=i)
+  check_install_load('glmnet','4.2',repo='bioc',load=i)
+  check_install_load('Rborist','0.2.3',repo='bioc',load=i)
+  check_install_load('gbm','2.1.8',repo='bioc',load=i)
+  check_install_load('gam','1.20',repo='bioc',load=i)
+  check_install_load('preprocessCore','1.50.0',repo='bioc',load=i)
+  check_install_load('limma','3.44.3',repo='bioc',load=i)
+  check_install_load('AnnotationDbi','1.50.3',repo='bioc',load=i)
+  check_install_load('Rcpp','1.0.7',repo='bioc',load=i)
+  check_install_load('GO.db','3.11.4',repo='bioc',load=i)
+  check_install_load('WGCNA','1.70.3',repo='bioc',load=i)
+  check_install_load('matrixStats','0.60.1',repo='bioc',load=i)
+  check_install_load('Rtsne','0.15',repo='bioc',load=i)
+  check_install_load('reticulate','1.20',repo='bioc',load=i)
+  check_install_load('Biobase','2.48.0',repo='bioc',load=i)
+  check_install_load('medhist','0.1.0',repo='herdiantrisufriyana',load=i)
+  check_install_load('survival','3.2.3',repo='bioc',load=i)
+  check_install_load('imputeTS','3.2',repo='bioc',load=i)
+  check_install_load('geepack','1.3.2',repo='bioc',load=i)
+  check_install_load('rsdr','0.1.0',repo='herdiantrisufriyana',load=i)
+  check_install_load('zeallot','0.1.0',repo='bioc',load=i)
+  check_install_load('divnn','0.1.3',repo='herdiantrisufriyana',load=i)
+  check_install_load('clixo','0.1.1',repo='herdiantrisufriyana',load=i)
+  check_install_load('MLeval','0.3',repo='bioc',load=i)
+  check_install_load('ggnetwork','0.5.10',repo='bioc',load=i)
+  check_install_load('visNetwork','2.0.9',repo='bioc',load=i)
+  check_install_load('ggpubr','0.4.0',repo='bioc',load=i)
+  check_install_load('extrafont','0.17',repo='bioc',load=i)
+  check_install_load('ggsci','2.9',repo='bioc',load=i)
+  check_install_load('readxl','1.3.1',repo='bioc',load=i)
+  check_install_load('tensorflow','2.0.0',repo='devtools',load=F)
+  check_install_load('keras','2.3.0.0',repo='devtools',load=F)
+  
+  if(i){
+    options(dplyr.summarise.inform=F)
+    dslabs::ds_theme_set()
+    select=dplyr::select
+    rename=dplyr::rename
+    slice=dplyr::slice
+    use_condaenv('./renv/python/condaenvs/renv-python',required=T)
+    renv::use_python(name='./renv/python/condaenvs/renv-python')
+  }else{
+    extrafont::font_import()
+    reticulate::conda_create(
+      envname='./renv/python/condaenvs/renv-python'
+      ,packages='python=3.6.3'
+    )
+    reticulate::use_condaenv('./renv/python/condaenvs/renv-python',required=T)
+    renv::use_python(name='./renv/python/condaenvs/renv-python')
+    keras::install_keras(
+      method='conda',
+      version='2.3.0',
+      tensorflow='2.0.0-gpu',
+      envname='./renv/python/condaenvs/renv-python',
+      conda_python_version='3.6.3',
+      extra_packages=
+        c('numpy','pandas','matplotlib==3.1.0','scikit-learn','h5py==2.10.0'),
+      restart_session=F
+    )
+    renv::snapshot()
+  }
+}
 
-check_install_load('tidyverse','1.3.0',repo='bioc')
-options(dplyr.summarise.inform=FALSE)
-
-check_install_load('dslabs','0.7.3',repo='bioc',load=F)
-dslabs::ds_theme_set()
-
-check_install_load('kableExtra','1.3.1',repo='bioc')
-check_install_load('parallel','4.0.2',repo='bioc')
-check_install_load('doParallel','1.0.16',repo='bioc')
-check_install_load('pbapply','1.4.3',repo='bioc')
-check_install_load('lubridate','1.7.9',repo='bioc')
-check_install_load('broom','0.7.3',repo='bioc')
-check_install_load('caret','6.0.86',repo='bioc')
-check_install_load('gmethods','0.1.0',repo='herdiantrisufriyana')
-check_install_load('igraph','1.2.6',repo='bioc')
-check_install_load('glmnet','4.1',repo='bioc',load=T)
-check_install_load('Rborist','0.2.3',repo='bioc',load=T)
-check_install_load('gbm','2.1.8',repo='bioc',load=T)
-check_install_load('gam','1.20',repo='bioc',load=T)
-check_install_load('preprocessCore','1.50.0',repo='bioc')
-check_install_load('limma','3.44.3',repo='bioc')
-check_install_load('WGCNA','1.69',repo='bioc')
-check_install_load('matrixStats','0.57.0',repo='bioc')
-check_install_load('Rtsne','0.15',repo='bioc')
-
-check_install_load('reticulate','1.16',repo='bioc')
-use_condaenv('r-reticulate',required=TRUE)
-
-check_install_load('Biobase','2.48.0',repo='bioc')
-check_install_load('medhist','0.1.0',repo='herdiantrisufriyana')
-check_install_load('survival','3.1.12',repo='bioc')
-check_install_load('imputeTS','3.0',repo='bioc')
-check_install_load('gmethods','0.1.0',repo='herdiantrisufriyana')
-check_install_load('geepack','1.3.1',repo='bioc')
-check_install_load('rsdr','0.1.0',repo='herdiantrisufriyana')
-check_install_load('zeallot','0.1.0',repo='bioc')
-check_install_load('divnn','0.1.3',repo='herdiantrisufriyana')
-check_install_load('clixo','0.1.1',repo='herdiantrisufriyana')
-check_install_load('MLeval','0.3',repo='bioc')
-check_install_load('ggnetwork','0.5.8',repo='bioc')
-check_install_load('visNetwork','2.0.9',repo='bioc')
-check_install_load('ggpubr','0.4.0',repo='bioc')
-
-# Import font after installing this package below, if only for the first time.
-check_install_load('extrafont','0.17',repo='bioc')
-# font_import()
-
-check_install_load('ggsci','2.9',repo='bioc')
-check_install_load('readxl','1.3.1',repo='bioc')
+rm(i)
 ################################################################################
 
 
@@ -1632,7 +1665,7 @@ if(run_heavy_computation){
 
 
 ################################################################################
-## Causal inference
+## Association tests
 ################################################################################
 
 
@@ -2208,7 +2241,7 @@ if(run_heavy_computation){
 
 
 ################################################################################
-## Set up tuning grid and training-calibrating configuration
+## Set up tuning-training-calibrating configuration and internal validation
 ################################################################################
 
 
@@ -4813,7 +4846,7 @@ ovl$f=
 
 
 ################################################################################
-## Causal diagram
+## Association diagram
 ################################################################################
 
 
@@ -4878,74 +4911,6 @@ cauinf_tab=
   select(factor,`Outcome regression`,everything()) %>%
   mutate(factor=sapply(X=factor,function(X)str_sub(X,5,str_count(X)))) %>%
   rename(`Causal factor`=factor)
-################################################################################
-
-
-
-################################################################################
-##### Prepare data for Figure 2 of the main text ###############################
-suppressWarnings(set.seed(66,sample.kind=sample.kind))
-figure2=
-  
-  # Filter the edges involving only the causal factors and outcome.
-  dag$baseline_edges[,-3] %>%
-  filter(
-    (from %in% colnames(dag$sig)[dag$sig[2,]==1] &
-       to %in% c('Y01',colnames(dag$sig)[dag$sig[2,]==1]))
-  ) %>%
-  
-  # Join with the IPW results.
-  left_join(
-    dag$ipw %>%
-      lapply(X=seq(length(.)),Y=.,function(X,Y){
-        data.frame(
-          from=names(Y)[X]
-          ,to='Y01'
-          ,marginal_effect=Y[[X]]$marginal_effect
-          ,LB=Y[[X]]$CI95_interval['LB']
-          ,UB=Y[[X]]$CI95_interval['UB']
-          ,p_value=Y[[X]]$p_value
-        ) %>%
-          `rownames<-`(NULL)
-      }) %>%
-      do.call(rbind,.)
-    ,by=c('from','to')
-  ) %>%
-  
-  # Assign the labels.
-  left_join(
-    dag$baseline_nodes %>%
-      rename(from=label) %>%
-      mutate(label=paste(from,name)) %>%
-      select(from,label)
-    ,by='from'
-  ) %>%
-  select(-from) %>%
-  rename(from=label) %>%
-  left_join(
-    dag$baseline_nodes %>%
-      rename(to=label) %>%
-      mutate(label=paste(to,name)) %>%
-      select(to,label)
-    ,by='to'
-  ) %>%
-  select(-to) %>%
-  rename(to=label) %>%
-  
-  # Convert to igraph object then ggnetwork dataframe.
-  select(from,to,everything()) %>%
-  graph_from_data_frame() %>%
-  ggnetwork(
-    layout=
-      layout_as_tree(
-        .
-        ,root=c()
-        ,mode='in'
-        ,circular=T
-      )[,2:1]
-  ) %>%
-  mutate(code=str_sub(name,1,3))  %>%
-  mutate(name=sapply(X=name,function(X)str_sub(X,5,str_count(X))))
 ################################################################################
 
 
@@ -5038,7 +5003,7 @@ roc=
   
   # Clean up naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -5046,7 +5011,7 @@ roc=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   )
 
 # Get optimum threshold per model.
@@ -5124,7 +5089,7 @@ calibration_plot_data=
   
   # Clean up naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -5132,7 +5097,7 @@ calibration_plot_data=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   ) %>%
   
   # Compute the calibration measures.
@@ -5221,7 +5186,7 @@ event_dist_data=
   
   # Clean up naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -5229,7 +5194,7 @@ event_dist_data=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   )
 
 # Plot the probability distribution of events for each model, as histogram.
@@ -5271,7 +5236,7 @@ nonevent_dist_data=
   
   # Clean up naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -5279,7 +5244,7 @@ nonevent_dist_data=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   )
 
 # Plot the probability distribution of nonevents for each model, as histogram.
@@ -5379,7 +5344,7 @@ auroc_table=
   
   # Clean up model naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -5387,7 +5352,7 @@ auroc_table=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   ) %>%
   
   # Clean up subset naming.
@@ -5423,7 +5388,7 @@ auroc_table=
       
       # Clean up model naming.
       mutate(model=case_when(
-        model=='causal_ridge'~'Causal RR'
+        model=='causal_ridge'~'RR'
         ,model=='pc_elnet'~'PC-ENR'
         ,model=='pc_rf'~'PC-RF'
         ,model=='pc_gbm'~'PC-GBM'
@@ -5431,7 +5396,7 @@ auroc_table=
         ,TRUE~''
       )) %>%
       mutate(
-        model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+        model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
       ) %>%
       
       # Clean up subset naming.
@@ -5503,7 +5468,7 @@ model_weight=list()
 
 
 ################################################################################
-##### Prepare weight table of causal RR ########################################
+##### Prepare weight table of RR ###############################################
 model_weight$causal_ridge=
   rbind(
     coef(model$causal_ridge$finalModel,model$causal_ridge$bestTune$lambda) %>%
@@ -5819,7 +5784,7 @@ estimation_plot_all=
   # Clean up model naming.
   eval_timing_model_plt %>%
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -5827,7 +5792,7 @@ estimation_plot_all=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   ) %>%
   
   # Clean up subset naming.

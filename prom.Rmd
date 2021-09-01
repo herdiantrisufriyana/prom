@@ -1,14 +1,13 @@
 ---
-title: 'Supplementary Information: Human and machine learning methods of 
-        prognostic prediction for prelabor rupture of membranes and estimation 
-        of the time of delivery: a nationwide development, validation, and 
-        deployment using medical histories'
+title: 'Supplement: Prognostication for prelabor rupture of membranes and the 
+        time of delivery in nationwide insured women: development, validation, 
+        and deployment'
 # author:
 #   - name: Herdiantri Sufriyana
 #     affiliation:
 #     - &gibi Graduate Institute of Biomedical Informatics, College of Medical
 #       Science and Technology, Taipei Medical University, Taipei, Taiwan
-#     - Department of Medical Physiology, College of Medicine, University of
+#     - Department of Medical Physiology, Faculty of Medicine, Universitas 
 #       Nahdlatul Ulama Surabaya, Surabaya, Indonesia
 #     email: herdiantrisufriyana@unusa.ac.id
 #   - name: Yu-Wei Wu
@@ -30,61 +29,62 @@ always_allow_html: yes
 ---
 
 \tableofcontents
-\newpage
-\listoffigures
-\listoftables
 
-Please kindly see Supplemental Spreadsheet. Most are complex tables. There are 
-20 tables in different tabs.
+Please kindly see List of Figures and List of eTables in Appendix.
 
 \newpage
+# Introduction
 
-In this Supplementary Information, we describe details on this study following 
-chronological order of our analysis pipeline on causal inference or predictive 
-modeling for prelabor rupture of membranes (PROM). There three sections  
-corresponding to the same sections in the main text but different order, which 
-are respectively Methods, Results, and Discussion. Along with this PDF 
-document, we also provide R Markdown (.Rmd) containing the same texts with this 
-document but including the programming codes for the data analysis in-between 
-of these texts. The codes for core steps in the analysis pipeline are also 
-provided exclusively in an R Script (.R). The codes beyond the core steps were 
-used for analytic decision or creating tables or figures. These are shown to 
-provide details on how data are processed to construct all tables and figures 
-in both the main text and this Supplementary Information, including those in 
-Source Data Spreadsheets (.xlsx) for all figures in the main text and those in 
-a single Supplemental Spreadsheet (.xlsx) with multiple tabs for all tables in 
-this Supplementary Information. The complex tables were produced separately 
-as comma-separated value (.csv) files then compiled into the single 
-Supplemental Spreadsheet. We also provided a 5-minute Supplemental Video to 
-briefly explain technical details on deep-insight visible neural network 
-(DI-VNN) pipeline.The R Markdown and Script are available in 
-https://github.com/herdiantrisufriyana/prom.The R Markdown, R Script, and 
-processed data are available in https://github.com/herdiantrisufriyana/prom. To 
-get raw data, one need to request an access from the BPJS Kesehatan for their 
-sample dataset published in August 2019. Up to this date, there are three 
-sample datasets they published in February 2019, August 2019, and December 
-2020. For the first and second versions, a request is applied via 
-https://e-ppid.bpjs-kesehatan.go.id/, while the third is applied via 
-https://data.bpjs-kesehatan.go.id. To preprocess the raw data into the input 
-dataset of this study, follow the codes of the R Markdown in 
-https://github.com/herdiantrisufriyana/medhist/preprocessing.
+In this Supplement, we describe details on this study following chronological 
+order of our analysis pipeline on association test or predictive modelling for 
+prelabor rupture of membranes (PROM). There are four sections corresponding to 
+the same sections in the main text, which are respectively Introduction, 
+Methods, Results, and Discussion. Along with this PDF document, we also provide 
+R Markdown (.Rmd) containing the same texts with this document but including 
+the programming codes for the data analysis in-between of these texts. An 
+exception is subsection of "Comparison to previous studies". The codes for core 
+steps in the analysis pipeline are also provided exclusively in 
+an R Script (.R). The codes beyond the core steps were used for analytic 
+decision or creating tables or figures. These are shown to provide details on 
+how data are processed to construct all tables and figures in both the main 
+text and this Supplement, including those in Appendix of this Supplement 
+(eTables 1 to 5, and 13) and those shown only in the R Markdown due to the 
+complexity (eTables 6 to 12 and 14 to 21). A 5-minute video was provided in the 
+protocol [...] to briefly explain technical details on deep-insight visible 
+neural network (DI-VNN) pipeline.
 
 # Methods
 
 ## Research guidelines
 
-We followed three research guidelines. The checklists for all the guidelines 
-are shown (Table 1 to 3 in Supplemental Spreadsheet). To find comparable models 
-to evaluate success criteria, we also followed other guidelines. The checklist 
-and the comparable models are also described (Table 4 and 5 in Supplemental 
-Spreadsheet).
+To ensure that we conducted rigorous research, we carried out and reported this 
+study by applying three sets of standard guidelines, specifically designed for 
+a multivariable prediction model applying a machine learning algorithm that is 
+suitable for healthcare (Luo W, et al, 2016; Scott I, et al, 2021; Moons KGM, 
+et al, 2019). The checklists for all the guidelines are shown (eTables 1 to 3 
+in Appendix). For a fair comparison to previous models, we also followed 
+methods in the preferred reporting items for systematic reviews and 
+meta-analyses (PRISMA) 2020 expanded checklist (Page MJ, et al, 2021). The 
+checklist and the comparable models are also described (eTables 4 and 5 in 
+Appendix). We also applied four approaches based on previous methods 
+(Ritchie ME, et al, 2015; Maaten LVD, 2014; Ma J, et al 2018; Sharma A, et al, 
+2019; Stalpers LJA, et al, 2018; Goodman LA, 1961; Hernán MA, Robins JM, 2020; 
+Lee J, Spratling R, 2019) to develop the pipeline with several modifications to 
+provide a framework for improving interpretability of a deep learning model 
+[...]. All of the aforementioned procedures were comprehensively described in a 
+human and machine learning pipelines we developed for responsible clinical 
+prediction [...].
 
 ## Programming environment
 
 We set up a programming environment for this study. Bioconductor was utilized 
 as described in the main text. There were 198 R packages which are 9 base 
-packages, 53 other packages, and 136 dependencies (Table 6 in Supplemental 
-Spreadsheet).
+packages, 53 other packages, and 136 dependencies (eTable 6 in R Markdown).
+
+```{r Set up reproducible environment, include=FALSE}
+if(!require(renv)) install.packages('renv')
+if(!file.exists('renv')) renv::init(restart=F)
+```
 
 ```{r Set sample kind, include=FALSE}
 # sample.kind=NULL # if using R 3.5 or earlier
@@ -151,72 +151,98 @@ memory.limit(size=1000000)
 ```
 
 ```{r Install and set specific version of Bioconductor, include=FALSE}
+source('R/check_install_load-function.R')
+
 # Install devtools to install specific version of BiocManager.
-if(!require(devtools)) install.packages('devtools')
+check_install_load('devtools',version='2.4.1',repo='cran',load=F)
 
 # Install specific version of BiocManager and Bioconductor.
-if(!require(BiocManager) | packageVersion('BiocManager')!='1.30.10'){
-  devtools::install_version('BiocManager',version='1.30.10')
+check_install_load('BiocManager',version='1.30.10',repo='cran',load=F)
+install_steps=T
+if(BiocManager::version()!='3.11'){
+  BiocManager::install(version='3.11',update=TRUE,ask=FALSE)
+  install_steps=c(F,T)
 }
-if(version()!='3.11') install(version='3.11',update=TRUE,ask=FALSE)
-
-# Unload devtools & BiocManager to prevent overlapped functions with others.
-detach('package:devtools',unload=T)
-detach('package:BiocManager',unload=T)
 ```
 
 ```{r Install and load packages with specific version, include=FALSE}
-source('R/check_install_load-function.R')
+for(i in install_steps){
+  if(i) renv::restore()
+  
+  check_install_load('tidyverse','1.3.1',repo='bioc',load=i)
+  check_install_load('dslabs','0.7.4',repo='bioc',load=i)
+  check_install_load('kableExtra','1.3.4',repo='bioc',load=i)
+  check_install_load('parallel','4.0.2',repo='bioc',load=i)
+  check_install_load('doParallel','1.0.16',repo='bioc',load=i)
+  check_install_load('pbapply','1.4.3',repo='bioc',load=i)
+  check_install_load('lubridate','1.7.10',repo='bioc',load=i)
+  check_install_load('broom','0.7.9',repo='bioc',load=i)
+  check_install_load('caret','6.0.88',repo='bioc',load=i)
+  check_install_load('gmethods','0.1.0',repo='herdiantrisufriyana',load=i)
+  check_install_load('igraph','1.2.6',repo='bioc',load=i)
+  check_install_load('glmnet','4.2',repo='bioc',load=i)
+  check_install_load('Rborist','0.2.3',repo='bioc',load=i)
+  check_install_load('gbm','2.1.8',repo='bioc',load=i)
+  check_install_load('gam','1.20',repo='bioc',load=i)
+  check_install_load('preprocessCore','1.50.0',repo='bioc',load=i)
+  check_install_load('limma','3.44.3',repo='bioc',load=i)
+  check_install_load('AnnotationDbi','1.50.3',repo='bioc',load=i)
+  check_install_load('Rcpp','1.0.7',repo='bioc',load=i)
+  check_install_load('GO.db','3.11.4',repo='bioc',load=i)
+  check_install_load('WGCNA','1.70.3',repo='bioc',load=i)
+  check_install_load('matrixStats','0.60.1',repo='bioc',load=i)
+  check_install_load('Rtsne','0.15',repo='bioc',load=i)
+  check_install_load('reticulate','1.20',repo='bioc',load=i)
+  check_install_load('Biobase','2.48.0',repo='bioc',load=i)
+  check_install_load('medhist','0.1.0',repo='herdiantrisufriyana',load=i)
+  check_install_load('survival','3.2.3',repo='bioc',load=i)
+  check_install_load('imputeTS','3.2',repo='bioc',load=i)
+  check_install_load('geepack','1.3.2',repo='bioc',load=i)
+  check_install_load('rsdr','0.1.0',repo='herdiantrisufriyana',load=i)
+  check_install_load('zeallot','0.1.0',repo='bioc',load=i)
+  check_install_load('divnn','0.1.3',repo='herdiantrisufriyana',load=i)
+  check_install_load('clixo','0.1.1',repo='herdiantrisufriyana',load=i)
+  check_install_load('MLeval','0.3',repo='bioc',load=i)
+  check_install_load('ggnetwork','0.5.10',repo='bioc',load=i)
+  check_install_load('visNetwork','2.0.9',repo='bioc',load=i)
+  check_install_load('ggpubr','0.4.0',repo='bioc',load=i)
+  check_install_load('extrafont','0.17',repo='bioc',load=i)
+  check_install_load('ggsci','2.9',repo='bioc',load=i)
+  check_install_load('readxl','1.3.1',repo='bioc',load=i)
+  check_install_load('tensorflow','2.0.0',repo='devtools',load=F)
+  check_install_load('keras','2.3.0.0',repo='devtools',load=F)
+  
+  if(i){
+    options(dplyr.summarise.inform=F)
+    dslabs::ds_theme_set()
+    select=dplyr::select
+    rename=dplyr::rename
+    slice=dplyr::slice
+    use_condaenv('./renv/python/condaenvs/renv-python',required=T)
+    renv::use_python(name='./renv/python/condaenvs/renv-python')
+  }else{
+    extrafont::font_import()
+    reticulate::conda_create(
+      envname='./renv/python/condaenvs/renv-python'
+      ,packages='python=3.6.3'
+    )
+    reticulate::use_condaenv('./renv/python/condaenvs/renv-python',required=T)
+    renv::use_python(name='./renv/python/condaenvs/renv-python')
+    keras::install_keras(
+      method='conda',
+      version='2.3.0',
+      tensorflow='2.0.0-gpu',
+      envname='./renv/python/condaenvs/renv-python',
+      conda_python_version='3.6.3',
+      extra_packages=
+        c('numpy','pandas','matplotlib==3.1.0','scikit-learn','h5py==2.10.0'),
+      restart_session=F
+    )
+    renv::snapshot()
+  }
+}
 
-check_install_load('tidyverse','1.3.0',repo='bioc')
-options(dplyr.summarise.inform=FALSE)
-
-check_install_load('dslabs','0.7.3',repo='bioc',load=F)
-dslabs::ds_theme_set()
-
-check_install_load('kableExtra','1.3.1',repo='bioc')
-check_install_load('parallel','4.0.2',repo='bioc')
-check_install_load('doParallel','1.0.16',repo='bioc')
-check_install_load('pbapply','1.4.3',repo='bioc')
-check_install_load('lubridate','1.7.9',repo='bioc')
-check_install_load('broom','0.7.3',repo='bioc')
-check_install_load('caret','6.0.86',repo='bioc')
-check_install_load('gmethods','0.1.0',repo='herdiantrisufriyana')
-check_install_load('igraph','1.2.6',repo='bioc')
-check_install_load('glmnet','4.1',repo='bioc',load=T)
-check_install_load('Rborist','0.2.3',repo='bioc',load=T)
-check_install_load('gbm','2.1.8',repo='bioc',load=T)
-check_install_load('gam','1.20',repo='bioc',load=T)
-check_install_load('preprocessCore','1.50.0',repo='bioc')
-check_install_load('limma','3.44.3',repo='bioc')
-check_install_load('WGCNA','1.69',repo='bioc')
-check_install_load('matrixStats','0.57.0',repo='bioc')
-check_install_load('Rtsne','0.15',repo='bioc')
-
-check_install_load('reticulate','1.16',repo='bioc')
-use_condaenv('r-reticulate',required=TRUE)
-
-check_install_load('Biobase','2.48.0',repo='bioc')
-check_install_load('medhist','0.1.0',repo='herdiantrisufriyana')
-check_install_load('survival','3.1.12',repo='bioc')
-check_install_load('imputeTS','3.0',repo='bioc')
-check_install_load('gmethods','0.1.0',repo='herdiantrisufriyana')
-check_install_load('geepack','1.3.1',repo='bioc')
-check_install_load('rsdr','0.1.0',repo='herdiantrisufriyana')
-check_install_load('zeallot','0.1.0',repo='bioc')
-check_install_load('divnn','0.1.3',repo='herdiantrisufriyana')
-check_install_load('clixo','0.1.1',repo='herdiantrisufriyana')
-check_install_load('MLeval','0.3',repo='bioc')
-check_install_load('ggnetwork','0.5.8',repo='bioc')
-check_install_load('visNetwork','2.0.9',repo='bioc')
-check_install_load('ggpubr','0.4.0',repo='bioc')
-
-# Import font after installing this package below, if only for the first time.
-check_install_load('extrafont','0.17',repo='bioc')
-# font_import()
-
-check_install_load('ggsci','2.9',repo='bioc')
-check_install_load('readxl','1.3.1',repo='bioc')
+rm(i)
 ```
 
 ```{r Load log for the expensive computation, include=FALSE}
@@ -259,7 +285,7 @@ rbind(
   ) %>%
   setNames(str_to_sentence(colnames(.))) %>%
   
-  # Save for Supplementary Spreadsheet at tab 6.
+  # Save for eTable 6.
   write_csv('data/supp_table_6.csv')
 ```
 
@@ -272,14 +298,14 @@ the healthcare facilities (*n*=22,024) and category of family, which were: (1)
 a family of which members never visit the healthcare facilities; (2) a family 
 of which members have visited only primary care; and (3) a family of which 
 members have visited all levels of care. For each stratum, one to ten families 
-were randomly included. This means only 10 families were randomly included if 
+were randomly included. This means only ten families were randomly included if 
 more than that number, resulting 586,969 families with 1,697,452 subjects.
 
 ## The sampling procedures of the dataset in this study
 
 We conducted non-essential data cleaning, e.g. revising the inconsistent name 
 of states, estimating the healthcare identifiers, *et cetera*. These procedures 
-were parts of our R package of ... (DBPR). No sampling was conducted.
+were parts of our R package of medhist 0.1.0. No sampling was conducted.
 
 ```{r Read public data II tables from an R file, eval=FALSE, include=FALSE}
 # This is the output of the raw data after being preprocessed by data.Rmd in:
@@ -315,7 +341,7 @@ public$visits=
 After the non-essential data cleaning, we applied retrospective cohort design, 
 as described in the main text. For pregnant women, we use several codes for 
 determining delivery or immediately after delivery care. The 220 codes are 
-described (Table 7 in Supplemental Spreadsheet).
+described (eTable 7 in R Markdown).
 
 ```{r Determine target population, eval=FALSE, include=FALSE}
 public$target_population=
@@ -690,7 +716,7 @@ readRDS('data/termination_codes.rds') %>%
   filter(!duplicated(.)) %>%
   arrange(code) %>%
   
-  # Save for Supplementary Spreadsheet at tab 7.
+  # Save for eTable 7.
   rename(description=desc) %>%
   setNames(str_to_title(colnames(.))) %>%
   write_csv('data/supp_table_7.csv')
@@ -898,13 +924,13 @@ rm(public)
 
 ## Data preprocessing
 
-We conducted data preprocessing after defining the target population and 
+We conducted data pre-processing after defining the target population and 
 sampling it retrospectively. Demographics were included as categorical 
-variables for causal inference. Then, we applied systematic human learning, as 
-described in the main text, to determine what were causal factors that can be 
-inferred from our dataset. We also computed a number of days for a code in the 
-latest encounter before the time of prediction, including those by codes as a 
-causal factor.
+variables for association tests. Then, we applied systematic human learning, as 
+described in the main text, to determine what were latent candidate predictors 
+that can be inferred from our dataset. We also computed a number of days for a 
+code in the latest encounter before the time of prediction, including those by 
+codes as a latent candidate predictor.
 
 ```{r Load an outcome table, include=FALSE}
 outcome=
@@ -1847,15 +1873,17 @@ inferdata %>%
   kable_classic()
 ```
 
-## Causal inference
+## Association tests
 
-We conducted causal inference as described in the main text. This will help us 
-to include only the confirmed causal factors as candidate predictors before 
-conducting pre-selection of those candidates to fulfill quality control of 
-predictors in the main text. We included causal factors of which the data were 
-available in training set. Details on this information and ICD-10 codes or 
-demographical variables for each candidate of causal factors are shown in the 
-next section.
+We conducted association tests as described in the main text. This will help us 
+to include only the confirmed associated predictors as latent candidate 
+predictors before conducting pre-selection of those candidates to fulfill 
+quality control of predictors in the main text. We included latent candidate 
+predictors of which the data were available in training set. Details on this 
+information and International Classification of Disease version 10 (ICD-10) 
+codes or demographical variables for each candidate of latent candidate 
+predictors are shown in the next section. A protocol of systematic human 
+learning was followed for these association tests [...].
 
 ```{r Unified causal diagram (caugram) plot function, include=FALSE}
 source('R/plot_dag-function.R')
@@ -1972,6 +2000,17 @@ dag$formula$A28=outcome~A28
 dag$backdoor$A28=c()
 ```
 
+```{r Prepare unadjusted formula, include=FALSE}
+dag$formula2=
+  dag$formula %>%
+  lapply(function(x){
+    x=as.character(x)
+    x[3]=str_split(x[3],' \\+ ')[[1]][1]
+    paste0(x[2],x[1],x[3]) %>%
+      as.formula()
+  })
+```
+
 ```{r Show an example of causal diagram for inference of a cause, include=FALSE}
 source('R/backdoor_path-function.R')
 ```
@@ -2013,9 +2052,40 @@ dag$glm=
       )
   )
 
+dag$glm2=
+  dag$formula2 %>%
+  lapply(
+    FUN=glm
+    ,family=binomial(link='logit')
+    ,data=
+      cf_nw_int_bin %>%
+      pData() %>%
+      mutate(outcome=ifelse(censoring,NA,as.integer(outcome=='event'))) %>%
+      select(outcome) %>%
+      cbind(
+        cf_nw_int_bin %>%
+          exprs() %>%
+          t() %>%
+          as.data.frame()
+      )
+  )
+
 # Compute the OR and the 95% CI.
 dag$coef=
   dag$glm %>%
+  lapply(tidy) %>%
+  lapply(
+    mutate
+    ,OR=exp(estimate)
+    ,OR_lb=exp(estimate-qnorm(0.975)*std.error)
+    ,OR_ub=exp(estimate+qnorm(0.975)*std.error)
+    ,Pr=OR/(1+OR)
+    ,Pr_lb=OR_lb/(1+OR_lb)
+    ,Pr_ub=OR_ub/(1+OR_ub)
+  )
+
+dag$coef2=
+  dag$glm2 %>%
   lapply(tidy) %>%
   lapply(
     mutate
@@ -2070,6 +2140,48 @@ if(run_heavy_computation){
 }
 ```
 
+```{r Conduct IPW using unadjusted formula, include=FALSE}
+if(run_heavy_computation){
+  cat('Conduct IPW using unadjusted formula\n')
+  cat('Started:',as.character(now()),'\n')
+  
+    dag$ipw2=
+      
+      # Fit the IPW.
+      dag$formula2 %>%
+      lapply(
+        FUN=ipw
+        ,data=
+          cf_nw_int_bin %>%
+          pData() %>%
+          mutate(outcome=ifelse(censoring,NA,as.integer(outcome=='event'))) %>%
+          select(outcome) %>%
+          cbind(
+            cf_nw_int_bin %>%
+              exprs() %>%
+              t() %>%
+              as.data.frame()
+          )
+        ,bootstrap=30
+        ,state=33
+        ,verbose=T
+      ) %>%
+      
+      # Reduce the size of IPW object.
+      lapply(function(x){
+        x$data=NULL
+        x$index=NULL
+        x
+      })
+  
+  cat('End:',as.character(now()))
+  saveRDS(dag$ipw2,'data/ipw2.rds')
+}else{
+  cat(readRDS('data/log.rds')[['ipw2']])
+  dag$ipw2=readRDS('data/ipw2.rds')
+}
+```
+
 ```{r Save significant causal covariates, include=FALSE}
 dag$sig=
   lapply(X=1:2,Y=dag$coef,Z=dag$ipw,function(X,Y,Z){
@@ -2095,10 +2207,46 @@ dag$sig=
   }) %>%
   do.call(rbind,.) %>%
   `rownames<-`(c('glm','ipw'))
+
+dag$sig2=
+  lapply(X=1:2,Y=dag$coef2,Z=dag$ipw2,function(X,Y,Z){
+    if(X==1){
+      # Logistic regression
+      sapply(Y,function(x){
+        ifelse(
+          between(1,round(x$OR_lb[2],4),round(x$OR_ub[2],4)) |
+          is.na(x$OR[2])
+          ,0,1
+        )
+      })
+    }else{
+      # IPW
+      sapply(Z,function(x){
+        ifelse(
+          between(0,round(x$CI95_interval[1],4),round(x$CI95_interval[2],4)) |
+          is.na(x$marginal_effect)
+          ,0,1
+        )
+      })
+    }
+  }) %>%
+  do.call(rbind,.) %>%
+  `rownames<-`(c('glm2','ipw2'))
 ```
 
 ```{r Show significant causal covariates, eval=FALSE, include=FALSE}
 dag$sig %>%
+  t() %>%
+  as.data.frame() %>%
+  rownames_to_column(var='variable') %>%
+  mutate_at(2:3,function(x)ifelse(x==1,'yes','no')) %>%
+  left_join(rename(dag$baseline_nodes,variable=label),by='variable') %>%
+  kable() %>%
+  kable_classic()
+```
+
+```{r Show significant unadjusted covariates, eval=FALSE, include=FALSE}
+dag$sig2 %>%
   t() %>%
   as.data.frame() %>%
   rownames_to_column(var='variable') %>%
@@ -2119,10 +2267,18 @@ dag$baseline_edges[,-3] %>%
 
 ## Quality control of candidate predictors
 
-All candidate predictors, including non-demographical causal factors, have 
-non-zero variances (Table 8 in Supplemental Spreadsheet). There were 460 
-candidate predictors fulfilling this criterion. We also showed in the same 
-table that there are 426 candidate predictors without perfect separation.
+For determining candidate predictors, we utilized nationwide medical histories, 
+excluding those for validation. But, for the downstream analysis, medical 
+histories were provider-wise by estimation. This means our prediction models 
+only used medical histories recorded by a healthcare provider, which was 
+blinded to those recorded by others. This reflects most real-world situations 
+in which a healthcare provider does not have access to medical records of other 
+providers.
+
+All candidate predictors, including non-demographical associated factors, have 
+non-zero variances (eTable 8 in R Markdown). There were 460 candidate 
+predictors fulfilling this criterion. We also showed in the same eTable that 
+there are 426 candidate predictors without perfect separation
 
 ```{r Combine selected causal factors and medical histories, include=FALSE}
 # Nationwide data for inference by causal factors,
@@ -2360,17 +2516,16 @@ var_candidate_predictors %>%
   rename(candidate_predictor=key,description=desc) %>%
   setNames(str_to_title(colnames(.)) %>% str_replace_all('_',' ')) %>%
   
-  # Save for Supplementary Spreadsheet at tab 8.
+  # Save for eTable 8.
   write_csv('data/supp_table_8.csv')
 ```
 
-We excluded the diagnosis/procedure codes that may leak the outcome information 
-(Table 9 in Supplemental Spreadsheet). We only used the existing codes in the 
-training set to determine outcome-leaker codes based on the previous codes for 
-determining delivery or immediately after delivery care (Table 7 in 
-Supplemental Spreadsheet). There were 54 codes that may leak the outcome. All 
-of them were also irredundant (Table 10 in Supplemental Spreadsheet), as 
-described in the main text.
+To prevent outcome leakage, we removed the maternal or baby diagnosis/procedure 
+codes that demonstrated the delivery or after delivery care (typically up to 6 
+weeks following childbirth; eTable 9 in R Markdown). We only used the existing 
+codes in the training set to determine outcome-leaker codes based on the 
+previous codes for determining delivery or immediately after delivery care 
+(eTable 7 in R Markdown). There were 54 codes that may leak the outcome.
 
 ```{r Save outcome leakers, eval=FALSE, include=FALSE}
 outcome_leaker %>%
@@ -2378,9 +2533,15 @@ outcome_leaker %>%
   rename(code=key,description=desc) %>%
   setNames(str_to_title(colnames(.))) %>%
   
-  # Save for Supplementary Spreadsheet at tab 9.
+  # Save for eTable 9.
   write_csv('data/supp_table_9.csv')
 ```
+
+To avoid redundancy, we computed pair-wise Pearson correlation coefficients 
+(eTable 10 in R Markdown). None of the estimates showed a perfect correlation 
+(*r*=1). High correlations (i.e., >~0.70) were reasonably identified between 
+latent candidate predictors and the code components. We did not remove those 
+pairs of predictors.
 
 ```{r Correlations of candidate predictors, eval=FALSE, include=FALSE}
 cor_predictors=
@@ -2413,7 +2574,7 @@ cor_predictors %>%
   as.data.frame() %>%
   rownames_to_column(var=' ') %>%
   
-  # Save for Supplementary Spreadsheet at tab 10.
+  # Save for eTable 10.
   write_csv('data/supp_table_10.csv')
 
 # Show the correlation coefficients.
@@ -2457,13 +2618,13 @@ cor_predictors %>%
   )
 ```
 
-By systematic human learning and causal inference using available data, we also 
-determined causal factors as the candidate predictors (Table 11 in Supplemental 
-Spreadsheet). There were 27 first- and 10 second-level factors of PROM. Only 
-data for 12 out of 27 causal factors were available in training set. Either the 
-diagnosis/procedure codes, or demographical variables (not included as 
-candidate predictors), for causal factors are also described (Table 12 in 
-Supplemental Spreadsheet).
+By systematic human learning and association tests using available data, we 
+also determined latent candidate predictors (eTable 11 in R Markdown). There 
+were 27 first- and 10 second-level factors that are considerably associated 
+with PROM. Only data for 12 out of 27 factors were available in training set. 
+Either the diagnosis/procedure codes, or demographical variables (not included 
+as candidate predictors), for latent candidate predictors are also described 
+(eTable 12 in R Markdown).
 
 ```{r Save results of systematic human learning, eval=FALSE, include=FALSE}
 dag$baseline_nodes %>%
@@ -2510,7 +2671,7 @@ dag$baseline_nodes %>%
     ,by=c('label','effect_on')
   ) %>%
   
-  # Save for Supplementary Spreadsheet at tab 11.
+  # Save for eTable 11.
   arrange(
     level
     ,factor(effect_on,dag$baseline_nodes$name)
@@ -2647,7 +2808,7 @@ dag$measure_nodes %>%
   }) %>%
   do.call(rbind,.) %>%
   
-  # Save for Supplementary Spreadsheet at tab 12.
+  # Save for eTable 12.
   select(causal_factor,variable,everything()) %>%
   rename(demographics_or_medical_history=code,description=desc) %>%
   setNames(str_to_title(colnames(.)) %>% str_replace_all('_',' ')) %>%
@@ -2656,11 +2817,15 @@ dag$measure_nodes %>%
 
 ## Feature extraction as historical rates
 
-We inferred the nationwide historical rates given the day number from a code 
-encounter to current visit for each candidate predictor, as described in the 
-main text. This used irredundant candidate predictors with non-zero variances 
-and no perfect separation in training set only. The candidate predictors were 
-transformed into the historical rates in all data partitions.
+To deal with a problem in which a healthcare provider does not have access to 
+medical records of other providers, medical histories were quantified as 
+Kaplan-Meier (KM) estimators for each candidate predictors, so called 
+historical rates.  We inferred these rates given the day number from a code 
+encounter to current visit for each candidate predictor, derived only from the 
+same nationwide medical histories, as previously described [...]. This used 
+irredundant candidate predictors with non-zero variances and no perfect 
+separation in training set only. The candidate predictors were transformed into 
+the historical rates in all data partitions.
 
 ```{r Compute historical rate based on nationwide training set, include=FALSE}
 if(run_heavy_computation){
@@ -2707,9 +2872,10 @@ pw_hlin %>%
 ## Feature representation as principal components by 10-fold cross validation
 
 The historical rates of all candidate predictors were fitted to a principal 
-component (PC) model. Only training set was used for the model fitting. We 
-applied 10-fold cross validation to estimate weights for all candidate 
-predictors in each PC.
+component (PC) model. Only nationwide medical histories in training set were 
+used for the model fitting. We applied 10-fold cross validation to estimate 
+weights for all candidate predictors in each PC. A protocol for resampled dimensional reduction was followed for feature representation in this study 
+[...].
 
 ```{r Fit PC models with resampling based on train set, include=FALSE}
 if(run_heavy_computation){
@@ -2732,11 +2898,11 @@ if(run_heavy_computation){
 }
 ```
 
-## Set up tuning grid and training-calibrating configuration
+## Set up tuning-training-calibrating configuration and internal validation
 
 Previous data partition had not held out instances for calibration yet. This 
-took 80% of training set. We also gave different weights for event and nonevent 
-by including censored outcome, as described in the main text. For 
+took 80% of training set. We also gave different weights for event and 
+non-event by including censored outcome, as described in the main text. For 
 hyperparameter tuning, we applied 5-fold cross validation, instead of 10-fold 
 as applied for PC modeling. Meanwhile, the final training and calibration for 
 each model were conducted by bootstrapping for 30 times. The same resampling 
@@ -2871,8 +3037,8 @@ source('R/caret_timereg_evaluator-function.R')
 
 We applied the tuning grids and the training configurations for all models, 
 except DI-VNN which required several modifications. This is already described 
-clearly in the main text. More details will be described for DI-VNN in the next 
-section.
+in a protocol we followed for these procedures, as previously described [...]. 
+More details for DI-VNN will be described in the next section.
 
 ```{r Empty lists to save models and the evaluation results, include=FALSE}
 model=list()
@@ -3257,114 +3423,22 @@ if(run_heavy_computation){
 
 ## Deep-insight visible neural network (DI-VNN)
 
-We applied different preprocessing pipelines for feature selection and 
+We applied different pre-processing pipelines for feature selection and 
 representation in DI-VNN. Instead of PCs, we used the historical rates of the 
 candidate predictors. A 5-minute video explaining DI-VNN pipeline is available 
-(see Supplemental Video). Only pre-calibration training set was used for the 
-downstream pipeline.
-
-We used nationwide, pre-calibration training set to conduct feature selection 
-by differential analysis. Nationwide, instead of provider-wise, training set 
-was used because we need to find the differential effect at population level as 
-such in causal inference. First, we applied quantile-to-quantile normalization, 
-then we conducted differential analysis as described in the main text. Only 
-candidate predictors that showed adjusted *p*-values <0.05 were selected.
-
-For 1-bit stochastic gradient descent transformation, we used the 
-post-normalization, feature-wise average based on nationwide training set as 
-the target of which quantile-to-quantile normalization of any subsets were 
-applied onto. These included subsets for calibration and external validation. 
-Instead of nationwide, these subsets were provider-wise, because we used these 
-for prediction that likely uses medical history from a healthcare provider 
-visited by a subject. Then, the transformation was applied as described in the 
-main text, depending on the feature wise averages.
-
-Demanding different statistical assumption, we used unnormalized candidate 
-predictors for creating a feature map (i.e. ontology array) and a network 
-architecture (i.e. ontology network). Both procedures need a 
-distance/similarity matrix. We also used nationwide, pre-calibration training 
-set to construct this matrix. Only the candidate features selected by 
-differential analysis were used. Standardization was applied by subtracting 
-each value with feature-wise average and dividing it with feature-wise standard 
-deviation. Then, we computed a feature-to-feature Pearson correlation matrix.
-
-For creating a feature map, we projected the filtered candidate predictors onto 
-three dimensions, as described in the main text. The results consisted three 
-numbers for each of the candidate predictors. We transformed two of these 
-values as ranks. If we have 5 candidate predictors, then we order these for 
-axes of *x* and *y*. For example, a candidate predictor is mapped at *x=1* and 
-*y=3* in a two-dimensional space. This is because that predictor has values on 
-dimensions of *x* and *y*, that rank respectively at 1^st^ and 3^rd^ 
-positions among the five candidate predictors. Then, we split axes of *x* and 
-*y* into  $7\times7$ grid; thus, there might be more than one candidate 
-predictors at the same position. We rotated the map by convex-hull algorithm, 
-as applied in the original DeepInsight, to find smallest feature map size then 
-re-ranking the dimensions. For any positions, we computed maximum number 
-of candidate predictors residing on the same position. That number determined 
-the number of the two-dimensional layers, i.e. channels. The overlapped 
-candidate predictors were ranked based on the third dimension. The ranks 
-determined which channels a candidate predictor residing on for each position 
-on the two-dimensional space.
-
-This can be considered as a three-dimensional array. In each position, a  
-candidate predictor may have a value of -1, 0, or 1, depending on the 1-bit 
-stochastic gradient descent transformation. For any positions in the array, 
-that have no candidate predictor residing on, a value of 0 is applied. The 
-empty position may be occupied by an unfiltered candidate predictor had it 
-surpassed filtering by the differential analysis. Therefore, zero value for the 
-empty position has the same notion with either the unfiltered candidate 
-predictors or those with normalized values equal to the feature-wise averages, 
-i.e. undifferentiated features in relative to the outcome. Ranking the 
-dimension is a novel method to reduce array dimensions, different to that 
-applied by the previous DeepInsight transformation. Positioning of candidate 
-predictors on the feature map was derived from pre-calibration training set. 
-This positioning is also used for constructing the three-dimensional array of 
-the other subsets in calibration and external validation.
-
-Meanwhile, using the same correlation matrix, we applied CliXO algorithm, as 
-described in the main text. We applied $\alpha$*=0.01* and $\beta$*=0.5*, as 
-recommended. The resulting ontologies derived from pre-calibration training set 
-were used to subset a feature map into different arrays, including in 
-calibration and external validation. If we have 5 candidate predictors, feature 
-1 and 5 may be clustered into the same ontology while feature 3 and 4 into 
-another ontology. To subset the feature map into an array for the first 
-ontology, we multiplied all numbers in the array with 0 except the feature 
-members of that ontology, which are feature 1 and 5. The same method is applied 
-for the ontology including feature 3 and 4. Since CliXO is an agglomerative 
-hierarchical clustering algorithm, both ontologies may unite into an ontology. 
-In this example, the unified ontology includes all candidate features. But, 
-this may not be the case. An additional ontology, called root ontology, is 
-added to include all candidate predictors, either from the remaining candidate 
-predictors, if any, or ones in the ontology consisting the most candidate 
-predictors (i.e. highest ontology in the hierarchy). Eventually, we had an 
-array for each ontology derived by CliXO algorithm.
-
-Each ontology array was fed to a block of neural network, i.e. 
-Inception v4-Resnet. In this architecture, an array in terminal branch of 
-an ontology hierarchy is filtered by feeding it through Inception v4, then 
-reconstructing the array into the same dimensions as it entered the 
-Inception v4. Element-wise addition is applied between the filtered array and 
-the original one. This mathematical operation is the Resnet architecture 
-itself. To connect a child ontology array with a sibling ontology, if any, we 
-applied depth concatenation, i.e. by the channel. The concatenated array 
-(double or more channels) is fed to the Inception v4, then reconstructing the 
-array into the same dimensions with the parent ontology array. The same 
-mathematical operation is applied for the concatenated, filtered array and the 
-parent one. Child-to-parent connection was applied between one or more arrays 
-in non-terminal branch of an ontology hierarchy and the parent array. Each of 
-either the terminal or non-terminal branch had a transformed array as a 
-representation of an input array of each ontology. To get a representation, the 
-transformation is achieved by a series of iterations using backpropagation 
-algorithm.
-
-Before explaining the backpropagation, we need to know how each ontology array 
-was transformed into a single number from 0 to 1 that predicts a probability 
-of an event, or an integer for estimation task. After transformation by a block 
-of Inception v4-Resnet, the transformed array was fed to a block of layers for 
-convolution. This reduced the dimensions from $7\times7$ in each channel into a 
-single number by a series of mathematical operation of convolution. Therefore, 
-we have multiple numbers showing probabilities of an event for each instance, 
-transformed and convoluted from all ontology arrays.
+in the protocol [...]. Only pre-calibration training set was used for the 
+downstream pipeline. We followed a protocol for this model [...]. Briefly, we 
+applied differential analysis for feature selection. Then, 1-bit stochastic 
+gradient descent transformation was applied using the post-normalization, 
+feature-wise average based on nationwide training set to determine if a value 
+is lower, equal to, or higher than the average respectively as -1, 0, and 1. 
+Using a feature-to-feature Pearson correlation matrix, we created a feature map 
+*t*-stochastic neighbor embedding (*t*-SNE) with Barnes-Hut approximation. We 
+also subset this map hierarchically by clique-extracted ontology (CliXO) 
+algorithm based on the same correlation matrix. We constructed convolutional 
+neural network (CNN) model using the hierarchy with input of feature map onto 
+which transformed, candidate predictors were projected. We trained the CNN 
+model to get the learning representation.
 
 ```{r DI-VNN feature selection and representation, include=FALSE}
 if(run_heavy_computation){
@@ -3598,40 +3672,6 @@ output %>%
   )
 ```
 
-For each iteration, we computed differences between the outcome, which is 0 and 
-1 respectively for nonevent and event, and each probability convoluted from 
-each ontology array. For estimation task, this was the differences between 
-the true time and the predicted time of delivery. The computation was applied 
-by the loss function, as described in the main text. A batch size of 512 
-instances was computed for the loss in each iteration. The loss or error was 
-used to update the weights. These were initiated randomly, as described in the 
-main text, then the weights were updated via backpropagation from the root 
-ontology to the terminal ones. This procedure is iterative using 512 instances 
-each time until 80% instances were used in pre-calibration training set. This 
-achieved a cycle of iterations, or epoch. At the end of each epoch, we computed 
-the loss and AUROC using another 20% instances. Each update was multiplied by a 
-number, called learning rate. We applied a learning rate of 2^-6. For the 
-iterations covering the first 5% of instances in each epoch, the learning rate 
-was initiated at one thirty-second of the learning rate at the first iteration 
-for that epoch. This is gradually increased until reaching the learning rate at 
-the last iteration covering the first 5% of instances, i.e. warm-up strategy. 
-From an epoch to the next one, the learning rate for the next epoch was reduced 
-by 4% if the AUROC of the 20%-validation subset was no higher than 0.01 in 
-addition to that of the previous epoch. No reduction was applied if reaching 
-the minimum, which is 1/512 of the initial learning rate. Maximum epochs of 5 
-and 500 was set respectively for the hyperparameter tuning and the final 
-training. After 50% of the maximum epochs, the iterations were stopped earlier 
-if the AUROC of the 20%-validation subset was no higher than 0.001 in addition 
-to that of the previous epoch. Only weights of the best iteration were finally 
-used. This was determined based on the validation AUROC. After stopping, we 
-computed AUROCs of the 20% validation subsets by bootstrapping for 30 times. 
-All of these procedures were applied for each trial in the hyperparameter 
-tuning and the final training. The tuning grid was applying different $\lambda$ 
-values, as described in the main text. The best tuning parameter was determined 
-by the bootstrapped, validation AUROC. Eventually, the same calibration and 
-external validation procedures were applied on DI-VNN, as applied on the other 
-models.
-
 ```{r Create a function to refresh keras backend session, include=FALSE}
 source('R/refresh_session-function.R')
 refresh_session()
@@ -3756,10 +3796,11 @@ if(run_heavy_computation){
   refresh_session()
   modeling_divnn$ontonet=
     output %>%
-    generator.ontonet(l2_norm=lambda[10]) %>%
     # readLines('data/ontonet.json') %>%
     # model_from_json() %>%
+    generator.ontonet(l2_norm=lambda[10]) %>%
     load_model_weights_hdf5('data/ontonet.h5') %>%
+    # load_model_hdf5('data/entire_ontonet.h5',compile=T)
     compile(
       optimizer=optimizer_sgd(
         lr=modeling_divnn$history$metrics$lr %>%
@@ -3934,7 +3975,7 @@ source('R/test_transformer-function.R')
 ```{r Transform test data for DI-VNN input, include=FALSE}
 if(run_heavy_computation){
   test_data=
-    list('int','calib','ran','geo','tem','bgt') %>%
+    list('calib','ran','geo','tem','bgt') %>%
     lapply(function(x){
       cat('Compile data for set of:',x,'\n')
       
@@ -4183,11 +4224,26 @@ eval_timing_model_plt=
 
 ## Evaluating the best model for classification and estimation
 
-Model evaluation is already clearly described in the main text. We started from 
-evaluating the calibration measures of all models for classification task. 
-Then, we chose the best model for classification by AUROC using only internal 
-validation (calibration split) bootstrapped for 30 times. Using the same 
-subset, the best estimation model was also chosen.
+Model evaluation is already clearly described in the main text. Practical costs 
+of prediction errors were considered when evaluating the models. Under-
+prognosis may cause pregnancy monitoring to be off-guard. A pregnant woman with 
+a preterm delivery may not reside in an area with a readily available NICU, 
+particularly in low-resource settings. Over-prognosis may lead to unnecessary 
+enrollment of patients into a cohort study in an early intervention for 
+preventing PROM or complications, e.g., an antibiotic administration. This may 
+also lead to unnecessary tests for more-specific prognostications.
+
+In addition, unlike other time-varying outcomes, e.g., cancer, we did not 
+predict a survival rate for the estimation task because the time interval for a 
+pregnancy period is definitely known. It is also more intuitive for clinicians 
+if the given information is the estimated days from the current visit to the 
+day a pregnant woman will deliver a baby, as such normal delivery estimations 
+are based on the last menstrual period and ultrasound examination.
+
+We started from evaluating the calibration measures of all models for 
+classification task. Then, we chose the best model for classification by AUROC 
+using only internal validation (calibration split) bootstrapped for 30 times. 
+Using the same subset, the best estimation model was also chosen.
 
 ```{r Show calibration plot before calibration, eval=FALSE, include=FALSE}
 model %>%
@@ -4566,8 +4622,18 @@ eval_timing_model_plt %>%
 ## External validation
 
 We also confirmed the robustness of the best models using external validation 
-sets. Uncertainty intervals were also computed by bootstrapping for 30 times. 
-A clear description on model validation is already given in the main text.
+sets. By stratified random splitting, we provided three non-overlapping splits 
+comprising ~20% for external validation: (1) geographical split; (2) temporal 
+split; and (3) geotemporal split. We set these subsets challenging to predict 
+by our models, in which the geotemporal split was the most difficult. This way 
+we can estimate robustness of our model generalizability. In addition, 
+uncertainty intervals were also computed by bootstrapping for 30 times. But, 
+these do not reflect common situations nationwide; thus, the ~20% of the 
+remaining was held out by simple random splitting for external validation, 
+which is called external random split. For association tests and predictive 
+modeling, including calibration, we only used the remaining ~64% of all the 
+selected visits. A clear description on model validation is given in a protocol 
+we followed for these procedures, as previously described [...].
 
 ```{r ROC scores of any models for each partition set, eval=FALSE, include=FALSE}
 eval_model %>%
@@ -4735,9 +4801,9 @@ eval_timing_model_plt %>%
 ## Exploring the best model
 
 Model exploration method is also described in the main text (see Model 
-evaluation in Methods). In this Supplementary Information (see R Markdown and 
-R Script), we directly explored the best model for classification task. None of 
-the remaining models were explored.
+evaluation in Methods). In this Supplement (see R Markdown and R Script), we 
+directly explored the best model for classification task. None of the remaining 
+models were explored.
 
 ```{r Visualization tables, include=FALSE}
 if(run_heavy_computation){
@@ -5463,6 +5529,35 @@ if(run_heavy_computation){
 }else{
   cat(readRDS('data/log.rds')[['app']])
   app=readRDS('data/app.rds')
+  
+  # Calling DI-VNN.
+  cat('Calling DI-VNN\n')
+  refresh_session()
+  app$ontonet=
+    readRDS('data/output.rds') %>%
+    generator.ontonet(l2_norm=0.1) %>%
+    load_model_weights_hdf5('data/ontonet.h5') %>%
+    compile(
+      optimizer=optimizer_sgd(
+        lr=readRDS('data/modeling_divnn.rds')$history$metrics$lr %>%
+          .[which.max(
+            readRDS('data/modeling_divnn.rds')$history$metrics$val_root_roc
+          )]
+        ,momentum=0.9
+      )
+      ,loss='mean_squared_error'
+      ,loss_weights=c(rep(
+          0.3/(0.3*(length(.$outputs)-1)+1),length(.$outputs)-1)
+          ,1/(0.3*(length(.$outputs)-1)+1)
+        )
+      ,metrics=c(
+          tf$keras$metrics$AUC(name='roc')
+          ,tf$keras$metrics$TruePositives(name='tp')
+          ,tf$keras$metrics$FalseNegatives(name='fn')
+          ,tf$keras$metrics$FalsePositives(name='fp')
+          ,tf$keras$metrics$TrueNegatives(name='tn')
+        )
+    )
 }
 ```
 
@@ -5638,7 +5733,7 @@ results$timeline=
       ,ymin=0
       ,ymax=level
     )
-    ,fill=ifelse(app$prediction>app$threshold,'#00A087FF','#E64B35FF')
+    ,fill=ifelse(app$prediction>app$threshold,'#79AF97FF','#B24745FF')
     ,alpha=0.5,lty=2,na.rm=T
   ) +
   
@@ -5648,6 +5743,7 @@ results$timeline=
       label=paste0(ontology,':',feature)
       ,fill=ifelse(fill>=0,'Positive','Negative')
     )
+    ,family='sans'
     ,label.padding=unit(0.1,'lines')
     ,hjust=1.2
     ,vjust=0.5
@@ -5658,7 +5754,7 @@ results$timeline=
   geom_text(
     label='\u25BA'
     ,aes(color=ifelse(fill>=0,'Positive','Negative'))
-    ,size=3
+    ,size=3,family='sans'
   ) +
   
   # Draw a line for the prediction date.
@@ -5673,7 +5769,7 @@ results$timeline=
         'Time of prediction: '
         ,app$prediction_date
       )
-    ,hjust=0,vjust=1.1,angle=90,size=3
+    ,hjust=0,vjust=1.1,angle=90,size=3,family='sans'
   ) +
   
   # Draw a line for the estimated date of delivery.
@@ -5695,7 +5791,7 @@ results$timeline=
           ,'NOT Prelabor rupture of membranes (PROM)'
         )
       )
-    ,hjust=0,vjust=1.1,angle=90,size=3
+    ,hjust=0,vjust=1.1,angle=90,size=3,family='sans'
   ) +
   
   # Customize plot.
@@ -5703,8 +5799,9 @@ results$timeline=
   theme(
     axis.line.x=element_line()
     ,axis.ticks.x=element_line()
-    ,axis.text.x=element_text(size=8)
-    ,legend.title=element_text(size=10)
+    ,axis.text.x=element_text(size=8,family='sans')
+    ,legend.title=element_text(size=10,family='sans')
+    ,legend.text=element_text(family='sans')
     ,legend.position='top'
   ) +
   scale_x_date(
@@ -5712,9 +5809,9 @@ results$timeline=
     ,date_minor_breaks='1 week'
     ,date_labels='%b'
   ) +
-  scale_color_manual('Output',values=c('#E64B35FF','#00A087FF')) +
-  scale_fill_manual('Output',values=c('#E64B35FF','#00A087FF')) +
-  theme(title=element_text(size=unit(8,'pt'),face='bold')) +
+  scale_color_manual('Output',values=c('#B24745FF','#79AF97FF')) +
+  scale_fill_manual('Output',values=c('#B24745FF','#79AF97FF')) +
+  theme(title=element_text(size=unit(8,'pt'),face='bold',family='sans')) +
   ggtitle('Timeline')
 ```
 
@@ -5790,7 +5887,15 @@ results$pop_est_data=
     ,metric=ifelse(metric=='NPV','Negative Predictive Value',metric)
   ) %>%
   mutate(
-    value=paste0(avg,' (95% CI ',lb,' to ',ub,')')
+    value=
+      paste0(
+        formatC(avg,decimal.mark='.')
+        ,' (95% CI '
+        ,formatC(lb,decimal.mark='.')
+        ,' to '
+        ,formatC(ub,decimal.mark='.')
+        ,')'
+      )
   ) %>%
   select(-lb,-avg,-ub) %>%
   mutate_all(as.character) %>%
@@ -5815,10 +5920,12 @@ results$pop_est=
   ggplot(aes(x=column,y=row)) +
   geom_blank(data=data.frame(column=3.25,row=7)) +
   geom_hline(yintercept=c(0.8,1.8,7)) +
-  geom_text(aes(label=value),hjust=0,vjust=1,size=3) +
+  geom_text(aes(label=value),hjust=0,vjust=1,size=3,family='sans') +
   scale_y_reverse() +
   theme_blank() +
-  theme(title=element_text(size=unit(8,'pt'),face='bold')) +
+  theme(
+    title=element_text(size=unit(8,'pt'),face='bold',family='sans')
+  ) +
   ggtitle('Population-level performances')
 ```
 
@@ -5863,8 +5970,11 @@ results$identity_results=
           )
         )
         ,paste0(
-          'Predicted probability: ',round(app$prediction,3)
-          ,' (threshold=',app$threshold,')'
+          'Predicted probability: '
+          ,formatC(round(app$prediction,3),decimal.mark='.')
+          ,' (threshold='
+          ,formatC(app$threshold,decimal.mark='.')
+          ,')'
         )
       )
   )
@@ -6026,26 +6136,16 @@ estimation %>%
   )
 ```
 
-# Result
+# Results
 
-By stratified random splitting, we provided three non-overlapping splits 
-comprising ~20% for external validation: (1) geographical split; (2) temporal 
-split; and (3) geotemporal split. We set these subsets challenging to predict 
-by our models, in which the geotemporal split was the most difficult. This way 
-we can estimate robustness of our model generalizability. But, these do not 
-reflect common situations nationwide; thus, the ~20% of the remaining was held 
-out by simple random splitting for external validation, which is called 
-external random split. For causal inference and predictive modeling, including 
-calibration, we only used the remaining ~64% of all the selected visits.
-
-We provided Source Data Spreadsheet for Figure 1 in the main text. Up to the 
-latest date for uncensored outcome and after splitting if >1 pregnancies, the 
-total visit was the sum of totals from all subsets, while the total subject was 
-the sum of totals from all subsets with attention for the overlaps (d to j in 
-footnote of Source Data Spreadsheet of Figure 1). For causal inference, visits 
+In the R Markdown, we show data for Figure 1 in the main text. Up to the latest 
+date for uncensored outcome and after splitting if >1 pregnancies, the total 
+visit was the sum of totals from all subsets, while the total subject was the 
+sum of totals from all subsets with attention for the overlaps (d to j in 
+footnote of data for Figure 1 in the R Markdown). For association tests, visits 
 and subjects of the censored outcome were those after external random splitting 
-(k and j in footnote of Source Data Spreadsheet of Figure 1). In this 
-spreadsheet, PROM prevalence for each subset is explicitly shown.
+(k and j in footnote of data for Figure 1 in the R Markdown). We also 
+explicitly show PROM prevalence for each subset.
 
 ```{r Prepare data for Figure 1 of the main text, include=FALSE}
 # Create an empty list to save the results.
@@ -6282,7 +6382,7 @@ ovl$f=
   )
 ```
 
-```{r Save and show data for Figure 1 of the main text, eval=FALSE, include=FALSE}
+```{r Show data for Figure 1 of the main text, eval=FALSE, include=FALSE}
 ovl$f %>%
   
   # Clean up naming.
@@ -6299,14 +6399,6 @@ ovl$f %>%
              ,'Nonevent visits','Event visits','Total visits'
              ,'Nonevent subjects','Event subjects','Total subjects'
              ,'Note','Prevalence','Excluded visits','Excluded subjects')) %>%
-  
-  # Save data for Figure 1.
-  lapply(X=1,Y=.,function(X,Y){
-    Y %>% 
-      write_csv('data/figure1.csv')
-    Y
-  }) %>%
-  .[[1]] %>%
   
   # Show the table.
   kable(format.args=list(big.mark=',')) %>%
@@ -6325,31 +6417,824 @@ ovl$f %>%
   )
 ```
 
-## Causal diagram
+```{r The subject characteristics 1, eval=FALSE, include=FALSE}
+char_sub1=
+  cf_nw_int_bin %>%
+  phenoData() %>%
+  pData() %>%
+  rownames_to_column(var='id') %>%
+  left_join(
+    infercause %>%
+      protocolData() %>%
+      pData() %>%
+      rownames_to_column(var='id') %>%
+      select(id,subject_id)
+    ,by='id'
+  ) %>%
+  mutate(outcome=as.character(outcome)) %>%
+  mutate(outcome=ifelse(censoring,'censored',outcome)) %>%
+  group_by(subject_id) %>%
+  arrange(desc(age)) %>%
+  slice(1) %>%
+  ungroup() %>%
+  select(
+    outcome
+    ,gestation
+    ,subject_id
+    ,age
+    ,marital_status
+    ,insurance_class
+    ,occupation_segment
+  ) %>%
+  mutate(gestation=as.integer(gestation>0)) %>%
+  lapply(X=1,Y=.,function(X,Y){
+    Z=data.frame(variable='age',term='y') %>%
+      cbind(
+        Y %>%
+          mutate(group=paste0(outcome,gestation)) %>%
+          group_by(group) %>%
+          summarize(
+            n=round(mean(age))
+            ,p=round(sd(age))
+            ,total=n()
+          )
+      )
+    
+    K=Y %>%
+      filter(outcome!='censored') %>%
+      select(outcome,age) %>%
+      mutate(outcome=factor(outcome,c('nonevent','event'))) %>%
+      glm(outcome~age,data=.,family=binomial(link='logit')) %>%
+      tidy() %>%
+      filter(term!='(Intercept)') %>%
+      mutate(
+        variable=term
+        ,term='y'
+        ,OR=exp(estimate)
+        ,LB=exp(estimate-qnorm(0.975)*std.error)
+        ,UB=exp(estimate+qnorm(0.975)*std.error)
+      ) %>%
+      select(variable,term,OR,LB,UB, p.value)
+    
+    L=Y  %>%
+      mutate(group=paste0(outcome,gestation)) %>%
+      select(-subject_id,-age,-gestation)
+    L=suppressWarnings(gather(L,variable,term,-group)) %>%
+      group_by(group,variable,term) %>%
+      summarize(n=n()) %>%
+      group_by(group,variable) %>%
+      mutate(
+        p=round(n/sum(n)*100,2)
+        ,total=sum(n)
+      ) %>%
+      mutate(term=ifelse(is.na(term),'unspecified',term))
+    
+    M=Y %>%
+      filter(outcome!='censored') %>%
+      select(-subject_id,-age,-gestation) %>%
+      gather(variable,value,-outcome) %>%
+      mutate(
+        value=
+          ifelse(
+            value%in%c('first','married','central-government-paid householder')
+            ,paste0('0_',value)
+            ,ifelse(is.na(value),'unspecified',value)
+          )
+      ) %>%
+      group_by(variable)
+    
+    M=suppressWarnings(suppressMessages(
+        M %>%
+          mutate(outcome=factor(outcome,c('nonevent','event'))) %>%
+          do(tidy(glm(outcome~value,data=.,family=binomial(link='logit'))))
+      )) %>%
+      mutate(
+        term=
+          ifelse(
+            term=='(Intercept)'
+            ,case_when(
+              variable=='insurance_class'
+              ~'first'
+              ,variable=='marital_status'
+               ~'married'
+              ,variable=='occupation_segment'
+               ~'central-government-paid householder'
+              ,TRUE~'(Intercept)'
+            )
+            ,term
+          )
+      ) %>%
+      mutate(
+        term=str_remove_all(term,'value')
+        ,OR=exp(estimate)
+        ,LB=exp(estimate-qnorm(0.975)*std.error)
+        ,UB=exp(estimate+qnorm(0.975)*std.error)
+      ) %>%
+      select(variable,term,OR,LB,UB, p.value)
+    
+    Z %>%
+      left_join(K,by=c('variable','term')) %>%
+      rbind(
+        L %>%
+        left_join(M,by=c('variable','term'))
+      )
+  }) %>%
+  .[[1]] %>%
+  pivot_wider(names_from='group',values_from=c('n','p','total')) %>%
+  group_by(variable) %>%
+  fill(
+    n_censored0,n_censored1,n_nonevent1,n_event1
+    ,p_censored0,p_censored1,p_nonevent1,p_event1
+    ,total_censored0,total_censored1,total_nonevent1,total_event1
+    ,.direction='updown'
+  ) %>%
+  filter(!(variable=='outcome' & term%in%c('nonevent','event'))) %>%
+  mutate(
+    term=ifelse(variable=='outcome','',term)
+    ,total=total_censored0+total_censored1+total_nonevent1+total_event1
+  ) %>%
+  arrange(variable,term) %>%
+  mutate(
+    OR=
+      ifelse(
+        term%in%c('first','married','central-government-paid householder')
+        ,NA
+        ,OR
+      )
+    ,LB=ifelse(is.na(OR),NA,LB)
+    ,UB=ifelse(is.na(OR),NA,UB)
+  ) %>%
+  mutate(
+    term=
+      ifelse(
+        variable%in%c('age','outcome')
+        ,ifelse(
+          variable=='age'
+          ,paste0('mean (SD), ',term)
+          ,'no. (%)'
+        )
+        ,paste0(term,', no. (%)')
+      )
+    ,censored0=
+      ifelse(
+        variable=='age'
+        ,paste0(
+          format(n_censored0,digits=0,scientific=F)
+          ,' ('
+          ,format(p_censored0,digits=0,scientific=F)
+          ,')'
+        )
+        ,ifelse(
+          variable=='outcome'
+          ,paste0(
+            format(total_censored0,digits=0,big.mark=',',scientific=F)
+            ,'/'
+            ,format(
+              total_censored0+total_censored1+total_nonevent1+total_event1
+              ,digits=0
+              ,big.mark=','
+              ,scientific=F
+            )
+            ,' ('
+            ,round(
+              total_censored0
+              /(total_censored0+total_censored1+total_nonevent1+total_event1)
+              *100
+              ,2
+            )
+            ,')'
+          )
+          ,paste0(
+            format(n_censored0,digits=0,big.mark=',',scientific=F)
+            ,' ('
+            ,format(p_censored0,digits=2,scientific=F)
+            ,')'
+          )
+        )
+      )
+    ,censored1=
+      ifelse(
+        variable=='age'
+        ,paste0(
+          format(n_censored1,digits=0,scientific=F)
+          ,' ('
+          ,format(p_censored1,digits=0,scientific=F)
+          ,')'
+        )
+        ,ifelse(
+          variable=='outcome'
+          ,paste0(
+            format(total_censored1,digits=0,big.mark=',',scientific=F)
+            ,'/'
+            ,format(
+              total_censored0+total_censored1+total_nonevent1+total_event1
+              ,digits=0
+              ,big.mark=','
+              ,scientific=F
+            )
+            ,' ('
+            ,round(
+              total_censored1
+              /(total_censored0+total_censored1+total_nonevent1+total_event1)
+              *100
+              ,2
+            )
+            ,')'
+          )
+          ,paste0(
+            format(n_censored1,digits=0,big.mark=',',scientific=F)
+            ,' ('
+            ,format(p_censored1,digits=2,scientific=F)
+            ,')'
+          )
+        )
+      )
+    ,nonevent1=
+      ifelse(
+        variable=='age'
+        ,paste0(
+          format(n_nonevent1,digits=0,scientific=F)
+          ,' ('
+          ,format(p_nonevent1,digits=0,scientific=F)
+          ,')'
+        )
+        ,ifelse(
+          variable=='outcome'
+          ,paste0(
+            format(total_nonevent1,digits=0,big.mark=',',scientific=F)
+            ,'/'
+            ,format(
+              total_nonevent1+total_event1
+              ,digits=0
+              ,big.mark=','
+              ,scientific=F
+            )
+            ,' ('
+            ,round(total_nonevent1/(total_nonevent1+total_event1)*100,2)
+            ,')'
+          )
+          ,paste0(
+            format(n_nonevent1,digits=0,big.mark=',',scientific=F)
+            ,' ('
+            ,format(p_nonevent1,digits=2,scientific=F)
+            ,')'
+          )
+        )
+      )
+    ,event1=
+      ifelse(
+        variable=='age'
+        ,paste0(
+          format(n_event1,digits=0,scientific=F)
+          ,' ('
+          ,format(p_event1,digits=0,scientific=F)
+          ,')'
+        )
+        ,ifelse(
+          variable=='outcome'
+          ,paste0(
+            format(total_event1,digits=0,big.mark=',',scientific=F)
+            ,'/'
+            ,format(
+              total_nonevent1+total_event1
+              ,digits=0
+              ,big.mark=','
+              ,scientific=F
+            )
+            ,' ('
+            ,round(total_event1/(total_nonevent1+total_event1)*100,2)
+            ,')'
+          )
+          ,paste0(
+            format(n_event1,digits=0,big.mark=',',scientific=F)
+            ,' ('
+            ,format(p_event1,digits=2,scientific=F)
+            ,')'
+          )
+        )
+      )
+    ,unadjusted_OR=
+      ifelse(
+        is.na(OR)
+        ,ifelse(variable=='outcome','','(reference)')
+        ,paste0(
+          round(OR,3)
+          ,' ('
+          ,round(LB,3)
+          ,' to '
+          ,round(UB,3)
+          ,'; '
+          ,case_when(
+            p.value<0.001~'P<.001***'
+            ,p.value<0.01
+             ~paste0(
+               'P='
+               ,p.value %>%
+                 round(3) %>%
+                 as.character() %>%
+                 str_replace_all('0\\.','.')
+               ,'**'
+              )
+            ,p.value<0.05
+             ~paste0(
+               'P='
+               ,p.value %>%
+                 round(2) %>%
+                 as.character() %>%
+                 str_replace_all('0\\.','.')
+               ,'*'
+              )
+            ,p.value<=0.99
+             ~paste0(
+               'P='
+               ,p.value %>%
+                 round(2) %>%
+                 as.character() %>%
+                 str_replace_all('0\\.','.')
+              )
+            ,TRUE~'p>.99'
+          )
+          ,')'
+        )
+      )
+  ) %>%
+  arrange(
+    factor(
+      variable
+      ,c('outcome'
+         ,'age'
+         ,'insurance_class'
+         ,'marital_status'
+         ,'occupation_segment')
+    )
+    ,desc(unadjusted_OR=='(reference)')
+    ,desc(OR)
+  ) %>%
+  group_by(variable) %>%
+  mutate(variable=ifelse(seq(n())==1,variable,'')) %>%
+  ungroup() %>%
+  select(variable,term,censored0,censored1,nonevent1,event1,unadjusted_OR)
+```
 
-For candidate causal factors whose data were available, we created the causal 
-diagrams (Figure 1 to 12). We excluded all common effects of PROM that we found 
-during the systematic human learning. These are not needed for causal 
-inference. Instead, inclusion of these variables will cause 
-collider-stratification bias. In the causal diagrams, we apply different colors 
-based on the types of nodes representing several factors: (1) type A is a 
-first-level factor (with variable prefixed by A) that has a role as a 
-confounder or common cause; (2) type I is a first-level factor (with variable 
-also prefixed by A) that has a role as a candidate causal factor of interest; 
-(3) type U is an unmeasured variable that can affect measure variable of 
-type-A/I/Y variable; and (4) type Y is a target or dependent factor which is 
-PROM. Node, of which variable  denoted by asterisk, represents a type-A/I/Y 
-variable that can be represented by several diagnosis or procedure codes. In 
-each of the diagrams, we also show causal models or formulas which were used 
-for causal inferences. Conceivably, all variables of type A/I/Y with asterisk 
-may be included in each formula, but, some of these variables cannot be 
-included because these were not available in our data, particularly in the 
-training set  (likely because of low prevalence). All measurement errors that 
-may be affected by Type-U variables in this study were assumed as independent 
-non-differential errors, because all data were measured from electronic medical 
-records. As the main text, results of the causal inferences were also 
-described (Table 13 in Supplemental Spreadsheet), either by outcome regression 
-or inverse probability weighting (IPW).
+```{r The subject characteristics 2, eval=FALSE, include=FALSE}
+cat('Extract baseline data of medical histories\n')
+cat('Started:',as.character(now()),'\n')
+
+nw_bin=
+  ExpressionSet(
+    assayData=
+      rbind(
+        exprs(infercause) %>%
+          `rownames<-`(paste0('causal_',rownames(.)))
+        ,exprs(inferdata)
+      )
+    ,phenoData=phenoData(inferdata)
+    ,featureData=
+      rbind(
+        fData(infercause) %>%
+          `rownames<-`(paste0('causal_',rownames(.)))
+        ,fData(inferdata)
+      ) %>%
+      AnnotatedDataFrame(varMetadata=fvarMetadata(inferdata))
+    ,experimentData=
+      MIAME(
+        name='Herdiantri Sufriyana'
+        ,lab='Emily Chia-Yu Su Lab'
+        ,contact='herdiantrisufriyana@unusa.ac.id'
+        ,title='Medical history dataset for causal inference'
+        ,abstract=
+          str_replace_all(
+            'This dataset is a medical-history table from the BPJS Kesehatan.
+            Selected causal factors, that is re-assigned by regex, are added.
+            The target population is health insurance holders of 
+            12-to-55-years-old females who visit healthcare providers between 
+            2015 and 2016. The outcome of interest is prelabor rupture of 
+            membrane (PROM). The medical history scenario is recorded
+            individually within each healthcare provider nationwide.'
+            ,'\n',' '
+          ) %>%
+          str_replace_all('\\s+',' ')
+        ,url='https://github.com/herdiantrisufriyana/prom'
+      )
+    ,annotation=annotation(inferdata)
+    ,protocolData=protocolData(inferdata)
+  ) %>%
+  trans_binary()
+
+nw_subject_bin=
+  cbind(
+    nw_bin %>%
+      protocolData() %>%
+      pData() %>%
+      select(subject_id)
+    ,nw_bin %>%
+      phenoData() %>%
+      pData() %>%
+      select(outcome)
+    ,nw_bin %>%
+      exprs() %>%
+      t() %>%
+      as.data.frame()
+  ) %>%
+  group_by(subject_id,outcome) %>%
+  summarize_all(function(x)as.integer(sum(x)>0)) %>%
+  ungroup()
+
+cat('End:',as.character(now()))
+
+# Extract baseline data of medical histories
+# Started: 2021-08-19 17:07:19 
+# Convert the day intervals into the binarized ones
+#   |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed=12s  
+# End: 2021-08-19 17:16:39
+
+char_sub2=
+  cf_nw_int_bin %>%
+  phenoData() %>%
+  pData() %>%
+  rownames_to_column(var='id') %>%
+  left_join(
+    infercause %>%
+      protocolData() %>%
+      pData() %>%
+      rownames_to_column(var='id') %>%
+      select(id,subject_id)
+    ,by='id'
+  ) %>%
+  mutate(outcome=as.character(outcome)) %>%
+  mutate(outcome=ifelse(censoring,'censored',outcome)) %>%
+  group_by(subject_id) %>%
+  arrange(desc(age)) %>%
+  slice(1) %>%
+  ungroup() %>%
+  select(subject_id,outcome) %>%
+  left_join(select(nw_subject_bin,-outcome),by='subject_id') %>%
+  separate(subject_id,c('subject_id','pregnancy'),sep='\\.') %>%
+  mutate(gestation=as.integer(pregnancy>0)) %>%
+  .[,c('outcome','gestation',paste0('causal_',colnames(dag$sig2)))] %>%
+  lapply(X=1,Y=.,function(X,Y){
+    Z=Y %>%
+      unite(outcome,outcome,gestation,sep='') %>%
+      mutate(
+        outcome=factor(outcome,c('censored0','censored1','nonevent1','event1'))
+      )
+    
+    K=dag$ipw2 %>%
+      lapply(function(x){
+        data.frame(
+            OR=exp(x$marginal_effect)
+            ,LB=exp(x$CI95_interval[1])
+            ,UB=exp(x$CI95_interval[2])
+            ,p.value=x$p_value
+          ) %>%
+          `rownames<-`(NULL)
+      }) %>%
+      do.call(rbind,.) %>%
+      rownames_to_column(var='variable') %>%
+      mutate(term='positive') %>%
+      select(variable,term,OR,LB,UB, p.value) %>%
+      mutate(variable=paste0('causal_',variable))
+
+    Z=Z %>%
+      group_by(outcome) %>%
+      summarize_all(function(x)sum(x==0)) %>%
+      gather(variable,negative,-outcome) %>%
+      left_join(
+        Z %>%
+          group_by(outcome) %>%
+          summarize_all(function(x)sum(x==1)) %>%
+          gather(variable,positive,-outcome)
+        ,by=c('outcome','variable')
+      ) %>%
+      gather(term,n,-outcome,-variable) %>%
+      group_by(outcome,variable) %>%
+      mutate(
+        p=n/sum(n)
+        ,total=sum(n)
+      ) %>%
+      ungroup() %>%
+      pivot_wider(names_from='outcome',values_from=c('n','p','total'))
+
+    Z %>%
+      left_join(K,by=c('variable','term')) %>%
+      arrange(variable,term)
+  }) %>%
+  .[[1]] %>%
+  mutate(
+    term=
+      ifelse(
+        variable=='causal_A20'
+        ,ifelse(
+          term=='negative'
+          ,'20 to 35 y'
+          ,'<20 or >35 y'
+        )
+        ,term
+      )
+    ,term=paste0(term,', no. (%)')
+    ,censored0=
+      paste0(
+        format(n_censored0,digits=0,big.mark=',',scientific=F)
+        ,' ('
+        ,format(p_censored0,digits=2,scientific=T)
+        ,')'
+      )
+    ,censored1=
+      paste0(
+        format(n_censored1,digits=0,big.mark=',',scientific=F)
+        ,' ('
+        ,format(p_censored1,digits=2,scientific=T)
+        ,')'
+      )
+    ,nonevent1=
+      paste0(
+        format(n_nonevent1,digits=0,big.mark=',',scientific=F)
+        ,' ('
+        ,format(p_nonevent1,digits=2,scientific=T)
+        ,')'
+      )
+    ,event1=
+      paste0(
+        format(n_event1,digits=0,big.mark=',',scientific=F)
+        ,' ('
+        ,format(p_event1,digits=2,scientific=T)
+        ,')'
+      )
+    ,unadjusted_OR=
+      ifelse(
+        is.na(OR)
+        ,ifelse(variable=='outcome','','(reference)')
+        ,paste0(
+          round(OR,3)
+          ,' ('
+          ,round(LB,3)
+          ,' to '
+          ,round(UB,3)
+          ,'; '
+          ,case_when(
+            p.value<0.001~'P<.001***'
+            ,p.value<0.01
+             ~paste0(
+               'P='
+               ,p.value %>%
+                 round(3) %>%
+                 as.character() %>%
+                 str_replace_all('0\\.','.')
+               ,'**'
+              )
+            ,p.value<0.05
+             ~paste0(
+               'P='
+               ,p.value %>%
+                 round(2) %>%
+                 as.character() %>%
+                 str_replace_all('0\\.','.')
+               ,'*'
+              )
+            ,p.value<=0.99
+             ~paste0(
+               'P='
+               ,p.value %>%
+                 round(2) %>%
+                 as.character() %>%
+                 str_replace_all('0\\.','.')
+              )
+            ,TRUE~'p>.99'
+          )
+          ,')'
+        )
+      )
+  ) %>%
+  arrange(
+    factor(
+      variable
+      ,c(paste0('causal_',colnames(dag$sig2)))
+    )
+    ,desc(unadjusted_OR=='(reference)')
+    ,desc(OR)
+  ) %>%
+  left_join(
+    dag$baseline_nodes %>%
+      rename(variable=label,desc=name) %>%
+      mutate(variable=paste0('causal_',variable)) %>%
+      select(variable,desc)
+    ,by='variable'
+  ) %>%
+  unite(variable,variable,desc,sep=': ') %>%
+  group_by(variable) %>%
+  mutate(variable=ifelse(seq(n())==1,variable,'')) %>%
+  ungroup() %>%
+  select(variable,term,censored0,censored1,nonevent1,event1,unadjusted_OR)
+```
+
+```{r The subject characteristics 3, eval=FALSE, include=FALSE}
+char_sub3=
+  cf_nw_int_bin %>%
+  phenoData() %>%
+  pData() %>%
+  rownames_to_column(var='id') %>%
+  left_join(
+    infercause %>%
+      protocolData() %>%
+      pData() %>%
+      rownames_to_column(var='id') %>%
+      select(id,subject_id)
+    ,by='id'
+  ) %>%
+  mutate(outcome=as.character(outcome)) %>%
+  mutate(outcome=ifelse(censoring,'censored',outcome)) %>%
+  group_by(subject_id) %>%
+  arrange(desc(age)) %>%
+  slice(1) %>%
+  ungroup() %>%
+  lapply(X=1,Y=.,function(X,Y){
+    Z=Y %>%
+      filter(gestation>=1) %>%
+      mutate(gestation=factor(gestation,c(1,2))) %>%
+      mutate(outcome=factor(outcome,c('nonevent','event'))) %>%
+      glm(outcome~gestation,data=.,family=binomial(link='logit')) %>%
+      tidy() %>%
+      mutate(
+        variable='pregnancy episode within the database period'
+        ,estimate=ifelse(term=='(Intercept)',NA,estimate)
+        ,term=ifelse(term=='(Intercept)','first pregnancy','second pregnancy')
+        ,term=paste0(term,',c no. (%)')
+        ,OR=exp(estimate)
+        ,LB=exp(estimate-qnorm(0.975)*std.error)
+        ,UB=exp(estimate+qnorm(0.975)*std.error)
+      ) %>%
+      mutate(
+        unadjusted_OR=
+          ifelse(
+            is.na(OR)
+            ,ifelse(variable=='outcome','','(reference)')
+            ,paste0(
+              round(OR,3)
+              ,' ('
+              ,round(LB,3)
+              ,' to '
+              ,round(UB,3)
+              ,'; '
+              ,case_when(
+                p.value<0.001~'P<.001***'
+                ,p.value<0.01
+                 ~paste0(
+                   'P='
+                   ,p.value %>%
+                     round(3) %>%
+                     as.character() %>%
+                     str_replace_all('0\\.','.')
+                   ,'**'
+                  )
+                ,p.value<0.05
+                 ~paste0(
+                   'P='
+                   ,p.value %>%
+                     round(2) %>%
+                     as.character() %>%
+                     str_replace_all('0\\.','.')
+                   ,'*'
+                  )
+                ,p.value<=0.99
+                 ~paste0(
+                   'P='
+                   ,p.value %>%
+                     round(2) %>%
+                     as.character() %>%
+                     str_replace_all('0\\.','.')
+                  )
+                ,TRUE~'P>.99'
+              )
+              ,')'
+            )
+          )
+      ) %>%
+      select(variable,term,unadjusted_OR)
+    
+    K=Y %>%
+      mutate(
+        gestation2=as.integer(gestation>0)
+      ) %>%
+      unite(outcome,outcome,gestation2,sep='') %>%
+      select(gestation,outcome) %>%
+      table() %>%
+      as.data.frame() %>%
+      group_by(outcome) %>%
+      mutate(p=Freq/sum(Freq)) %>%
+      mutate(
+        Freq=format(Freq,digits=0,big.mark=',')
+        ,p=paste0('(',round(p*100,2),')')
+      ) %>%
+      unite(summary,Freq,p,sep=' ') %>%
+      spread(outcome,summary) %>%
+      mutate(
+        variable='pregnancy episode within the database period'
+        ,term=
+          case_when(
+            gestation==0~'no pregnancy, no. (%)'
+            ,gestation==1~'first pregnancy,c no. (%)'
+            ,gestation==2~'second pregnancy,c no. (%)'
+            ,TRUE~''
+          )
+      ) %>%
+      select(-gestation) %>%
+      select(variable,term,censored0,censored1,nonevent1,event1)
+    
+    K %>%
+      left_join(Z,by=c('variable','term')) %>%
+      mutate(unadjusted_OR=ifelse(is.na(unadjusted_OR),'N/A',unadjusted_OR))
+  }) %>%
+  .[[1]] %>%
+  group_by(variable) %>%
+  mutate(variable=ifelse(seq(n())==1,variable,'')) %>%
+  ungroup()
+```
+
+```{r The subject_characteristics, eval=FALSE, include=FALSE}
+char_sub3 %>%
+  mutate(variable=ifelse(variable=='',NA,variable)) %>%
+  fill(variable) %>%
+  filter(term!='no pregnancy, no. (%)') %>%
+  group_by(variable) %>%
+  mutate(variable=ifelse(seq(n())==1,variable,'')) %>%
+  ungroup() %>%
+  rbind(char_sub1 %>% .[2:nrow(.),]) %>%
+  rbind(char_sub2) %>%
+  mutate(
+    unadjusted_OR=
+      ifelse(
+        unadjusted_OR%in%c('-','(reference)')
+        ,unadjusted_OR
+        ,str_split_fixed(unadjusted_OR,'; ',2)[,2] %>%
+          str_remove_all('\\)')
+      )
+  ) %>%
+  mutate(
+    variable=
+      case_when(
+        str_detect(variable,'causal_')
+         ~str_split_fixed(variable,': ',2)[,2]
+        ,str_detect(variable,'_')
+         ~str_to_sentence(str_replace_all(variable,'_',' '))
+        ,variable==''~''
+        ,TRUE~str_to_sentence(variable)
+      )
+  ) %>%
+  select(-censored0,-censored1) %>%
+  setNames(
+    c('Variable'
+      ,''
+      ,paste0(
+        'Not PROMa (n='
+        ,str_split_fixed(char_sub1$nonevent1,'/',2)[1,1]
+        ,')'
+      )
+      ,paste0(
+        'PROMa (n='
+        ,str_split_fixed(char_sub1$event1,'/',2)[1,1]
+        ,')'
+      )
+      ,'P value')
+  ) %>%
+  kable() %>%
+  kable_classic() %>%
+  
+  # Add the footnote.
+  add_footnote(
+    c('Subject per pregnancy episode (not including censored delivery)'
+      ,'Not PROM vs. PROM (not including those who were not pregnant)'
+      ,paste0(
+        'The first and second pregnancies of '
+        ,'a subject within the database period'
+      ))
+    ,notation='alphabet'
+  )
+```
+
+## Association diagram
+
+For latent candidate predictors whose data were available, we created the 
+association diagrams (eFigures 1 to 12 in Appendix). We excluded all common 
+effects of PROM that we found during the systematic human learning. These are 
+not needed for association tests. Instead, inclusion of these variables will 
+cause collider-stratification bias. In the association diagrams, we apply 
+different colors based on the types of nodes representing several factors: (1) 
+type A is a first-level factor (with variable prefixed by A) that has a role as 
+a confounder; (2) type I is a first-level factor (with variable also prefixed 
+by A) that has a role as a candidate factor of interest; (3) type U is an 
+unmeasured variable that can affect measure variable of type-A/I/Y variable; 
+and (4) type Y is a target or dependent factor which is PROM. Node, of which 
+variable denoted by asterisk, represents a type-A/I/Y variable that can be 
+represented by several diagnosis or procedure codes. In each of the diagrams, 
+we also show adjustment formulas which were used for association tests. 
+Conceivably, all variables of type A/I/Y with asterisk may be included in each 
+formula, but, some of these variables cannot be included because these were not 
+available in our data, particularly in the training set (likely because of low 
+prevalence). All measurement errors that may be affected by Type-U variables in 
+this study were assumed as independent non-differential errors, because all 
+data were measured from electronic medical records. As the main text, results 
+of the association tests were also described (eTable 13 in Appendix), either by 
+outcome regression or inverse probability weighting (IPW).
 
 ```{r Prepare causal inference table, include=FALSE}
 cauinf_tab=
@@ -6367,12 +7252,12 @@ cauinf_tab=
             ,marginal_effect=OR
             ,lb=OR_lb
             ,ub=OR_ub
-            ,sig=ifelse(p.value<0.05,'*','')
+            ,p.value=p.value
           ) %>%
-          select(code,marginal_effect,lb,ub,sig)
+          select(code,marginal_effect,lb,ub,p.value)
       }) %>%
       do.call(rbind,.) %>%
-      mutate(method='Outcome regression')
+      mutate(method='Outcome regression (95% CI; P value)')
     
     # Causal inference table by IPW
     ,dag$ipw %>%
@@ -6382,12 +7267,12 @@ cauinf_tab=
           ,marginal_effect=exp(Y[[X]]$marginal_effect)
           ,lb=exp(Y[[X]]$CI95_interval['LB'])
           ,ub=exp(Y[[X]]$CI95_interval['UB'])
-          ,sig=ifelse(Y[[X]]$p_value<0.05,'*','')
+          ,p.value=Y[[X]]$p_value
         ) %>%
           `rownames<-`(NULL)
       }) %>%
       do.call(rbind,.) %>%
-      mutate(method='Inverse probability weighting (IPW)')
+      mutate(method='Inverse probability weighting (95% CI; P value)')
     
   ) %>%
   
@@ -6404,341 +7289,274 @@ cauinf_tab=
   # Wrap up.
   select(method,factor,everything()) %>%
   mutate_at(c('marginal_effect','lb','ub'),round,3) %>%
-  mutate(effect=paste0(marginal_effect,' (95% CI ',lb,' to ',ub,')',sig)) %>%
-  select(-marginal_effect,-lb,-ub,-sig) %>%
+  mutate(
+    effect=
+      paste0(
+        marginal_effect
+        ,' ('
+        ,lb
+        ,' to '
+        ,ub
+        ,'; '
+        ,case_when(
+          p.value<0.001~'P<.001***'
+          ,p.value<0.01
+           ~paste0(
+             'P='
+             ,p.value %>%
+               round(3) %>%
+               as.character() %>%
+               str_replace_all('0\\.','.')
+             ,'**'
+            )
+          ,p.value<0.05
+           ~paste0(
+             'P='
+             ,p.value %>%
+               round(2) %>%
+               as.character() %>%
+               str_replace_all('0\\.','.')
+             ,'*'
+            )
+          ,p.value<=0.99
+           ~paste0(
+             'P='
+             ,p.value %>%
+               round(2) %>%
+               as.character() %>%
+               str_replace_all('0\\.','.')
+            )
+          ,TRUE~'P>.99'
+        )
+        ,')'
+      )
+  ) %>%
+  select(-marginal_effect,-lb,-ub,-p.value) %>%
   spread(method,effect) %>%
-  select(factor,`Outcome regression`,everything()) %>%
+  select(factor,`Outcome regression (95% CI; P value)`,everything()) %>%
   mutate(factor=sapply(X=factor,function(X)str_sub(X,5,str_count(X)))) %>%
-  rename(`Causal factor`=factor)
+  rename(`Latent candidate predictors`=factor)
 ```
 
 ```{r Causal inference, eval=FALSE, include=FALSE}
 cauinf_tab %>%
   kable() %>%
   kable_classic() %>%
-  add_footnote(c('Statistically significant by 95% CI'),'symbol')
+  add_footnote(
+    c('P<.05; ** P<.01; *** P<.001; CI, confidence interval')
+    ,'symbol'
+  )
 ```
 
 ```{r Save causal inference table, eval=FALSE, include=FALSE}
 cauinf_tab %>%
   
-  # Save for Supplementary Spreadsheet at tab 13.
+  # Save for eTable 13.
   write_csv('data/supp_table_13.csv')
 ```
 
-```{r Prepare data for Figure 2 of the main text, include=FALSE}
-suppressWarnings(set.seed(66,sample.kind=sample.kind))
-figure2=
-  
-  # Filter the edges involving only the causal factors and outcome.
-  dag$baseline_edges[,-3] %>%
-  filter(
-    (from %in% colnames(dag$sig)[dag$sig[2,]==1] &
-     to %in% c('Y01',colnames(dag$sig)[dag$sig[2,]==1]))
-  ) %>%
-  
-  # Join with the IPW results.
+```{r Show causal inference table with unadjusted OR, eval=FALSE, include=FALSE}
+char_sub2 %>%
+  mutate(variable=ifelse(variable=='',NA,variable)) %>%
+  fill(variable) %>%
+  separate(variable,c('code','variable'),sep=': ') %>%
+  filter(unadjusted_OR!='(reference)') %>%
+  select(variable,unadjusted_OR) %>%
   left_join(
-    dag$ipw %>%
-      lapply(X=seq(length(.)),Y=.,function(X,Y){
-        data.frame(
-            from=names(Y)[X]
-            ,to='Y01'
-            ,marginal_effect=Y[[X]]$marginal_effect
-            ,LB=Y[[X]]$CI95_interval['LB']
-            ,UB=Y[[X]]$CI95_interval['UB']
-            ,p_value=Y[[X]]$p_value
-          ) %>%
-          `rownames<-`(NULL)
-      }) %>%
-      do.call(rbind,.)
-    ,by=c('from','to')
+    cauinf_tab %>%
+      select(-`Outcome regression (95% CI; P value)`) %>%
+      setNames(c('variable','adjusted_OR'))
+    ,by='variable'
   ) %>%
-  
-  # Assign the labels.
-  left_join(
-    dag$baseline_nodes %>%
-      rename(from=label) %>%
-      mutate(label=paste(from,name)) %>%
-      select(from,label)
-    ,by='from'
+  mutate(
+    adjustment=
+      variable %>%
+      sapply(function(x){
+        y=dag$formula[[
+            dag$baseline_nodes$label[dag$baseline_nodes$name==x]
+          ]] %>%
+          as.character() %>%
+          .[3] %>%
+          str_split(' \\+ ') %>%
+          .[[1]]
+        
+        if(length(y)>1){
+          y %>%
+            .[2:length(.)] %>%
+            data.frame(label=.) %>%
+            left_join(dag$baseline_nodes,by='label') %>%
+            pull(name) %>%
+            paste0(collapse=' + ')
+        }else{
+          '(no adjustment)'
+        }
+      })
   ) %>%
-  select(-from) %>%
-  rename(from=label) %>%
-  left_join(
-    dag$baseline_nodes %>%
-      rename(to=label) %>%
-      mutate(label=paste(to,name)) %>%
-      select(to,label)
-    ,by='to'
-  ) %>%
-  select(-to) %>%
-  rename(to=label) %>%
-  
-  # Convert to igraph object then ggnetwork dataframe.
-  select(from,to,everything()) %>%
-  graph_from_data_frame() %>%
-  ggnetwork(
-    layout=
-      layout_as_tree(
-        .
-        ,root=c()
-        ,mode='in'
-        ,circular=T
-      )[,2:1]
-  ) %>%
-  mutate(code=str_sub(name,1,3))  %>%
-  mutate(name=sapply(X=name,function(X)str_sub(X,5,str_count(X))))
-```
-
-```{r Save data for Figure 2 of the main text, eval=FALSE, include=FALSE}
-figure2 %>%
-  
-  # Save data for Figure 2.
+  mutate(adjusted_OR=str_remove_all(adjusted_OR,'95% CI ')) %>%
   setNames(
-    c('X from','Y from','Causal factor','X to','Y to'
-      ,'Marginal effect','Lower bound','Upper bound','p-value','Variable code')
+    c('Variable of interest'
+      ,'Unadjusted OR (95% CI; P value)'
+      ,'Adjusted OR (95% CI; P value)'
+      ,'Adjustment')
   ) %>%
-  write_csv('data/figure2.csv')
-```
-
-```{r Save image of Figure 2 of the main text, eval=FALSE, include=FALSE}
-# fig.height=3.46457, fig.width=3.46457 on top of this chunk if shown here
-figure2 %>%
-  ggplot(aes(x=x,y=y,xend=xend,yend=yend,fill=code)) +
-  geom_nodes(
-    aes(color=code)
-    ,show.legend=F
-    ,size=8
-  ) +
-  geom_edges(
-    aes(color=code)
-    ,arrow=arrow(length=unit(4,'pt'),type='closed')
-    ,show.legend=F
-  ) +
-  geom_nodelabel_repel(
-    aes(label=name,fill=code)
-    ,family='sans'
-    ,size=unit(3,'pt')
-    ,alpha=0.75
-    ,show.legend=F
-  ) +
-  scale_color_manual(
-    values=
-      unlist(mapply(
-        RColorBrewer::brewer.pal
-        ,RColorBrewer::brewer.pal.info %>%
-          .[.$category=='qual',] %>%
-          .$maxcolors
-        ,RColorBrewer::brewer.pal.info %>%
-          .[.$category=='qual',] %>%
-          rownames()
-      ))[-seq(14)]
-  ) +
-  scale_fill_manual(
-    values=
-      unlist(mapply(
-        RColorBrewer::brewer.pal
-        ,RColorBrewer::brewer.pal.info %>%
-          .[.$category=='qual',] %>%
-          .$maxcolors
-        ,RColorBrewer::brewer.pal.info %>%
-          .[.$category=='qual',] %>%
-          rownames()
-      ))[-seq(14)]
-  ) +
-  theme_blank() +
-  ggsave(
-    filename="figure2.eps"
-    ,device=cairo_ps
-    ,width=88
-    ,height=88
-    ,unit='mm'
+  kable() %>%
+  kable_classic() %>%
+  
+  # Add the footnote.
+  add_footnote(
+    c('P<.05; ** P<.01; *** P<.001; CI, confidence interval;')
+    ,'symbol'
   )
 ```
 
-We would describe each causal diagram. Fifty-six studies were found from PubMed 
-(Table 11 in Supplemental Spreadsheet) (...). Since only some factors are 
-possible to include in the causal inferences, only some of these studies were 
-explained below. After verifying the assumption using our data, we constructed 
-a final causal diagram consisting all the confirmed causal factors (Figure 2 in 
-the main text). The Source Data Spreadsheet for Figure 2 is available.
-
-Outcome regression showed the same ranks for chorioamnionitis and genital tract 
-infection (GTI), while the effect estimate of intra-amniotic infection on PROM 
-was not statistically significant by this method (OR 2.134, 95% CI 1 to 4.555). 
-Three of 11 factors were assigned as causal factors by IPW but not by outcome 
-regression. These included intra-amniotic infection and two variables: 
-(1) pneumonia (OR 0.91, 95% CI 0.538 to 1.539); and (2) influenza (OR 0.957, 
-95% CI 0.863 to 1.061). Effects by outcome regression were mostly larger than 
-those by IPW (Table 13 in Supplemental Spreadsheet).
+We would describe each association diagram. Fifty-six studies were found from 
+PubMed (eTable 11 in R Markdown) [...]. Since only some factors are possible to 
+include in the association tests, only some of these studies were explained 
+below. After verifying the assumption using our data, we constructed a final 
+association diagram consisting all the confirmed latent candidate predictors.
 
 ### Multiple pregnancy
 
-Causal model of multiple pregnancy on PROM (ACOG, 2016a) included only maternal 
-age as a confounder (Song J, et al 2019; Thilaganathan B, and Khalil A, 2014; 
-Martin JA, and Osterman MJK, 2019). However, several common causes were not 
-blocked yet: (1) Assisted reproduction (Lei LL, et al 2019; Thilaganathan B, 
-and Khalil A, 2014); and (2) Race (Fiscella K, 1996; Martin JA, and Osterman 
-MJK 2019). These are shown in the causal diagram (Figure 1). Assisted 
-reproduction can be represented by diagnosis/procedure codes but unavailable in 
-our training set. For race, it is conceivably not able being represented by 
-those codes.
-
-```{r figure-1, echo=FALSE, fig.cap='Multiple pregnancy', fig.height=5.11811, fig.width=7.08661}
-caudag_img[[1]]
-```
+Association model of multiple pregnancy on PROM (ACOG, 2016a) included only 
+maternal age as a confounder (Song J, et al 2019; Thilaganathan B, and 
+Khalil A, 2014; Martin JA, and Osterman MJK, 2019). However, several 
+confounders were not blocked yet: (1) Assisted reproduction (Lei LL, et al 
+2019; Thilaganathan B, and Khalil A, 2014); and (2) Race (Fiscella K, 1996; 
+Martin JA, and Osterman MJK 2019). These are shown in the association diagram 
+(eFigure 1 in Appendix). Assisted reproduction can be represented by 
+diagnosis/procedure codes but unavailable in our training set. For race, it is 
+conceivably not able being represented by those codes.
 
 ### Chorioamnionitis
 
 There were two assumptions regarding relationship between chorioamnionitis and 
-PROM. Chorioamnionitis may be a causal factor or an effect of PROM. We applied 
-chorioamnionitis as the causal factor (Figure 2), as previously demonstrated 
-(Fukami T, et al 2017). Similar assumptions were also regarded between 
-chorioamnionitis and intra-amniotic infection (IAI), but, we only treated 
-chorioamnionitis as an  effect of IAI (Tantengco OAG, et al, 2019). Except 
-cigarette smoking (ACOG, 2016a; Kim CJ, et al, 2015), data for all common 
-causes were available in the training set: (1) influenza (Littauer EQ, et al, 
-2017; Kim CJ, et al, 2015); (2) asthma (Baghlaf H, et al, 2019); and (3) IAI 
-(ACOG, 2016a; Tantengco OAG, et al, 2019).
-
-```{r figure-2, echo=FALSE, fig.cap='Chorioamnionitis', fig.height=5.11811, fig.width=7.08661}
-caudag_img[[2]]
-```
+PROM. Chorioamnionitis may affect or be affected by PROM. We applied 
+chorioamnionitis as the former one (eFigure 2 in Appendix), as previously 
+demonstrated (Fukami T, et al 2017). Similar assumptions were also regarded 
+between chorioamnionitis and intra-amniotic infection (IAI), but, we only 
+treated chorioamnionitis as being  affected by IAI (Tantengco OAG, et al, 
+2019). Except cigarette smoking (ACOG, 2016a; Kim CJ, et al, 2015), data for 
+all confounders were available in the training set: (1) influenza (Littauer EQ, 
+et al, 2017; Kim CJ, et al, 2015); (2) asthma (Baghlaf H, et al, 2019); and (3) 
+IAI (ACOG, 2016a; Tantengco OAG, et al, 2019).
 
 ### Intra-amniotic infection (IAI)
 
-Similar to chorioamnionitis, IAI may be a causal factor or an effect of PROM. 
-Consistently, we treated IAI as the causal factor (ACOG, 2016a) (Figure 3). We 
-did not have data for these common causes, especially in training set: 
-(1) cervical shortening (ACOG, 2016a; Kiefer DG, et al, 2009); and (2) race 
-(Fiscella K, 1996; Menon R, et al, 2011). Therefore, we used these factors as 
-the confounders: (1) genital tract infection (GTI) (Pandey D, et al, 2019; 
-Yan JJ, et al, 2016; Romero R, et al, 2019; Tantengco OAG, et al, 2019); 
+Similar to chorioamnionitis, IAI may affect or be affected by PROM. 
+Consistently, we treated IAI as the former one (ACOG, 2016a) (eFigure 3 in 
+Appendix). We did not have data for these confounders, especially in training 
+set: (1) cervical shortening (ACOG, 2016a; Kiefer DG, et al, 2009); and 
+(2) race (Fiscella K, 1996; Menon R, et al, 2011). Therefore, we used these 
+factors as the confounders: (1) genital tract infection (GTI) (Pandey D, et al, 
+2019; Yan JJ, et al, 2016; Romero R, et al, 2019; Tantengco OAG, et al, 2019); 
 (2) periodontal disease (Figueiredo MGOP, et al, 2019; Stinson LF, et al, 
 2019); (3) pneumonia (Getahun D, et al, 2007; Stinson LF, et al, 2019); and (4) 
 multiple pregnancy (ACOG, 2016a; Lee SM, et al, 2020).
 
-```{r figure-3, echo=FALSE, fig.cap='Intra-amniotic infection (IAI)', fig.height=5.11811, fig.width=7.08661}
-caudag_img[[3]]
-```
-
 ### Ante-partum hemorrhage (APH)
 
-Most data for common causes of ante-partum hemorrhage (APH) and PROM (ACOG, 
-2016a) were not available in the training set (Figure 4). Only two common 
-causes were used as confounders: (1) low socioeconomic status (SES) (ACOG, 
-2016a; Bhandari S, et al, 2014); and (2) maternal age (Song J, et al, 2019; 
-Fan D, et al, 2017). The other common causes were: (1) cigarette smoking (ACOG, 
-2016a; Bhandari S, et al, 2014); (2) illicit drug use (ACOG, 2016a; Bhandari S, 
-et al, 2014); (3) race (Fiscella K, 1996; Shen JJ, et al, 2005); (4) assisted 
+Most data for confounders of ante-partum hemorrhage (APH) and PROM (ACOG, 
+2016a) were not available in the training set (eFigure 4 in Appendix). Only two 
+confounders were adjusted: (1) low socioeconomic status (SES) (ACOG, 2016a; 
+Bhandari S, et al, 2014); and (2) maternal age (Song J, et al, 2019; Fan D, et 
+al, 2017). The other confounders were: (1) cigarette smoking (ACOG, 2016a; 
+Bhandari S, et al, 2014); (2) illicit drug use (ACOG, 2016a; Bhandari S, et al, 
+2014); (3) race (Fiscella K, 1996; Shen JJ, et al, 2005); (4) assisted 
 reproduction (Lei LL, et al, 2019; Qin J, et al, 2016); and (5) placenta on 
 anterior wall (Torricelli M, et al, 2015; Fan D, et al, 2017).
 
-```{r figure-4, echo=FALSE, fig.cap='Ante-partum hemorrhage (APH)', fig.height=5.11811, fig.width=7.08661}
-caudag_img[[5]]
-```
-
 ### Genital tract infection (GTI)
 
-Causal relationship between GTI and PROM (Pandey D, et al, 2019; Yan JJ, 
-et al, 2016) was only confounded by tuberculosis (Fernández AA, et al, 2017; 
-Sharma JB, et al, 2018). We did not have data for tuberculosis in the 
-training set. Thus, GTI is the only variable in the causal model (Figure 5).
-
-```{r figure-5, echo=FALSE, fig.cap='Genital tract infection (GTI)', fig.height=3.46457, fig.width=3.46457}
-caudag_img[[9]]
-```
+Association between GTI and PROM (Pandey D, et al, 2019; Yan JJ, et al, 2016) 
+was only confounded by tuberculosis (Fernández AA, et al, 2017; Sharma JB, 
+et al, 2018). We did not have data for tuberculosis in the training set. Thus, 
+GTI is the only variable in the association model (eFigure 5 in Appendix).
 
 ### Periodontal disease
 
-We also found causal relationship between periodontal disease and PROM 
-(Figueiredo MGOP, et al, 2019). A causal model was constructed by adding these 
-common causes: (1) asthma (Baghlaf H, et al, 2019; Moraschini V, et al, 2018); 
-and (2) maternal age (Song J, et al, 2019; Genco RJ, and Borgnakke WS, 2013). 
-Because of data availability, we could not include these common causes into the 
-model: (1) stress (Wang W, et al, 2020; Genco RJ, and Borgnakke WS, 2013); 
-(2) low education (Wang W, et al, 2020; Genco RJ, and Borgnakke WS, 2013); and 
-cigarette smoking (ACOG, 2016a; Genco RJ, and Borgnakke WS, 2013) (Figure 6).
-
-```{r figure-6, echo=FALSE, fig.cap='Periodontal disease', fig.height=5.11811, fig.width=7.08661}
-caudag_img[[10]]
-```
+We also found association between periodontal disease and PROM 
+(Figueiredo MGOP, et al, 2019). An association model was constructed by adding 
+these confounders: (1) asthma (Baghlaf H, et al, 2019; Moraschini V, et al, 
+2018); and (2) maternal age (Song J, et al, 2019; Genco RJ, and Borgnakke WS, 
+2013). Because of data availability, we could not include these confounders 
+into the model: (1) stress (Wang W, et al, 2020; Genco RJ, and Borgnakke WS, 2013); (2) low education (Wang W, et al, 2020; Genco RJ, and Borgnakke WS, 2013); and cigarette smoking (ACOG, 2016a; Genco RJ, and Borgnakke WS, 2013) 
+(eFigure 6 in Appendix).
 
 ### Polyhydramnios
 
-Polyhydramnios was also a causal factor of PROM (Odibo IN, et al, 2016). The  
-common causes were: (1) assisted reproduction (Thilaganathan B, and Khalil A, 
+Polyhydramnios was also an associated factor of PROM (Odibo IN, et al, 2016). 
+The confounders were: (1) assisted reproduction (Thilaganathan B, and Khalil A, 
 2014; Lei LL, et al, 2019); and (2) multiple pregnancy (ACOG, 2016a; Moise KJ, 
 1997). Only multiple pregnancy data were available in our training set; thus, 
-a PROM causal model was constructed using polyhydramnios and multiple pregnancy 
-(Figure 7).
-
-```{r figure-7, echo=FALSE, fig.cap='Polyhydramnios', fig.height=5.11811, fig.width=7.08661}
-caudag_img[[11]]
-```
+a PROM association model was constructed using polyhydramnios and multiple pregnancy (eFigure 7 in Appendix).
 
 ### Pneumonia
 
-Causal model of pneumonia on PROM (Getahun D, et al, 2007) was confounded by 
-two common causes. The first common cause was influenza (Littauer EQ, et al, 
-2017; Goodnight WH, and Soper DE, 2005), while the second one was asthma 
+Association model of pneumonia on PROM (Getahun D, et al, 2007) was confounded 
+by two factors. The first confounder was influenza (Littauer EQ, et al, 2017; 
+Goodnight WH, and Soper DE, 2005), while the second one was asthma 
 (Baghlaf H, et al, 2019; Goodnight WH, and Soper DE, 2005). Both were included 
-in the causal model (Figure 8).
-
-```{r figure-8, echo=FALSE, fig.cap='Pneumonia', fig.height=5.11811, fig.width=7.08661}
-caudag_img[[12]]
-```
+in the causal model (eFigure 8 in Appendix).
 
 ### Asthma
 
-As shown in the causal model of pneumonia and PROM, asthma was also a causal 
-factor of PROM (Baghlaf H, et al, 2019). Influenza was the only common cause 
-(Littauer EQ, et al, 2017; Murphy VE, et al, 2017). Therefore, we included this  
-common cause in the causal model of asthma on PROM (Figure 9.
-
-```{r figure-9, echo=FALSE, fig.cap='Asthma', fig.height=5.11811, fig.width=7.08661}
-caudag_img[[14]]
-```
+As shown in the association model of pneumonia and PROM, asthma was also an 
+associated factor of PROM (Baghlaf H, et al, 2019). Influenza was the only 
+common confounder (Littauer EQ, et al, 2017; Murphy VE, et al, 2017). 
+Therefore, we included this confounder in the association model of asthma on 
+PROM (eFigure 9 in Appendix).
 
 ### Low socioeconomic status (SES)
 
-Low SES was also indicated as a causal factor of PROM (ACOG, 2016a). We could 
-not find the common cause. The causal model only included low SES. We 
-represented several demographical factors as low SES (Figure 10).
-
-```{r figure-10, echo=FALSE, fig.cap='Low socio-economic status (SES)', fig.height=3.46457, fig.width=3.46457}
-caudag_img[[18]]
-```
+Low SES was also indicated as an associated factor of PROM (ACOG, 2016a). We 
+could not find the confounder. The association model only included low SES. We 
+represented several demographical factors as low SES (eFigure 10 in Appendix).
 
 ### Maternal age
 
-We could find maternal age as a common cause of PROM and multiple pregnancy/APH/
-periodontal disease. Obviously, there is no common cause of PROM in a causal 
+We could find maternal age as a confounder of PROM and multiple pregnancy/APH/
+periodontal disease. Obviously, there is no confounder of PROM in an associated 
 model with maternal age as the variable of interest (Song J, et al 2019). We 
-included this variable exclusively in the causal model (Figure 11).
-
-```{r figure-11, echo=FALSE, fig.cap='Maternal age', fig.height=3.46457, fig.width=3.46457}
-caudag_img[[19]]
-```
+included this variable exclusively in the association model (eFigure 11 in 
+Appendix).
 
 ### Influenza
 
-Similar to maternal age, obviously there is no common cause of PROM in a causal 
-model with influenza as the variable of interest (Littauer EQ, et al, 2017). 
-This disease has a specific agent. Therefore, the PROM causal model only 
-included this disease (Figure 12).
+Similar to maternal age, obviously there is no confounder of PROM in an 
+association model with influenza as the variable of interest 
+(Littauer EQ, et al, 2017). This disease has a specific agent. Therefore, the 
+PROM association model only included this disease (eFigure 12 in Appendix).
 
-```{r figure-12, echo=FALSE, fig.cap='Influenza', fig.height=3.46457, fig.width=3.46457}
-caudag_img[[27]]
-```
+### Final association diagram
+
+Chorioamnionitis (odds ratio [OR] 1.351, 95% confidence interval [CI] 1.33 to 
+1.372), intra-amniotic infection (OR 1.118, 95% CI 1.083 to 1.153), and genital 
+tract infection (OR 1.116, 95% CI 1.101 to 1.132) were the top three highest 
+effects estimated by IPW. Polyhydramnios was not verified as being associated 
+with PROM by either IPW (OR 0.998, 95% CI 0.989 to 1.006) or the outcome 
+regression (OR 1.238, 95% CI 0.851 to 1.801) using our data. Outcome regression 
+showed the same ranks for chorioamnionitis and genital tract infection (GTI), 
+while the effect estimate of intra-amniotic infection on PROM was not 
+statistically significant by this method (OR 2.134, 95% CI 1 to 4.555). Three 
+of 11 factors were assigned as associated factors by IPW but not by outcome 
+regression. These included intra-amniotic infection and two variables: 
+(1) pneumonia (OR 0.91, 95% CI 0.538 to 1.539); and (2) influenza (OR 0.957, 
+95% CI 0.863 to 1.061). Effects by outcome regression were mostly larger than 
+those by IPW (eTable 13 in Appendix).
+
+In the final association diagram (eFigure 13 in Appendix), infection- and 
+immune-related conditions were seen: (1) influenza; (2) asthma; and 
+(3) pneumonia. Maternal factors were also observed: (1) maternal age; (2) low 
+socio-economic status; (3) multiple pregnancy; and (4) ante-partum hemorrhage. 
+Both groups are shown colliding on periodontal disease in the final association 
+diagram (eFigure 13 in Appendix), then collided with genital tract infection on 
+intra-amniotic infection continuing to either chorioamnionitis or PROM.
 
 ## Prognostic prediction of premature rupture of membranes
 
 Predictive performances for classification task were already clearly described 
-in the main text. The Source Data Spreadsheet for Figure 3 in the main text is 
-available. In this Supplementary Information, parameter estimates in each model 
-is described. However, these were not always straightforward because of the 
+in the main text. In this Supplement, parameter estimates in each model is 
+described. However, these were not always straightforward because of the 
 complexity of several models.
 
 ```{r Compute ROC, include=FALSE}
@@ -6816,7 +7634,7 @@ roc=
   
   # Clean up naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -6824,7 +7642,7 @@ roc=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   )
 
 # Get optimum threshold per model.
@@ -6899,7 +7717,7 @@ calibration_plot_data=
   
   # Clean up naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -6907,7 +7725,7 @@ calibration_plot_data=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   ) %>%
   
   # Compute the calibration measures.
@@ -6941,17 +7759,18 @@ calibration_plot=
         ifelse(
           event==0.3
           ,paste0(
-            'Intercept ',round(avg_intercept,2)
+            'Intercept ',formatC(round(avg_intercept,2),decimal.mark='.')
             ,' ± '
-            ,round(ci_intercept,2)
+            ,formatC(round(ci_intercept,2),decimal.mark='.')
             ,'\n'
-            ,'Slope ',round(avg_event,2)
+            ,'Slope ',formatC(round(avg_event,2),decimal.mark='.')
             ,' ± '
-            ,round(ci_event,2)
+            ,formatC(round(ci_event,2),decimal.mark='.')
           )
           ,NA
         )
     )
+    ,family='sans'
     ,size=3
     ,hjust=0
     ,vjust=1
@@ -6965,13 +7784,16 @@ calibration_plot=
   scale_x_continuous('Predicted probability',limits=c(0:1)) +
   scale_y_continuous(
     'True probability\n(95% CI)',limits=c(0,1.3),breaks=seq(0,1,0.2)
+    ,labels=scales::number_format(accuracy=0.1,decimal.mark='.')
   ) +
   theme(
     # axis.text.x=element_text(angle=90,vjust=0.5,hjust=1)
     axis.ticks.x=element_blank()
     ,axis.text.x=element_blank()
+    ,axis.text.y=element_text(family='sans')
     ,axis.title.x=element_blank()
-    ,axis.title.y=element_text(hjust=0.3)
+    ,axis.title.y=element_text(hjust=0.3,family='sans')
+    ,strip.text=element_text(family='sans')
   )
 
 # Create probability distribution table of events for the calibrated models.
@@ -6996,7 +7818,7 @@ event_dist_data=
   
   # Clean up naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -7004,7 +7826,7 @@ event_dist_data=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   )
 
 # Plot the probability distribution of events for each model, as histogram.
@@ -7014,13 +7836,17 @@ event_dist=
   geom_vline(data=opt_th,aes(xintercept=th),lty=2) +
   facet_wrap(~model,ncol=5) +
   scale_x_continuous('Predicted probability') +
-  scale_y_continuous('Events per\n10,000 visits',breaks=seq(0,0.3,0.1)) +
+  scale_y_continuous(
+    'Events per\n10,000 visits',breaks=seq(0,0.3,0.1)
+    ,labels=scales::number_format(accuracy=0.1,decimal.mark='.')
+  ) +
   theme(
     # axis.text.x=element_text(angle=90,vjust=0.5,hjust=1)
     axis.ticks.x=element_blank()
     ,axis.text.x=element_blank()
+    ,axis.text.y=element_text(family='sans')
     ,axis.title.x=element_blank()
-    ,axis.title.y=element_text(hjust=0.3)
+    ,axis.title.y=element_text(hjust=0.3,family='sans')
     ,strip.text.x=element_blank()
   )
 
@@ -7046,7 +7872,7 @@ nonevent_dist_data=
   
   # Clean up naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -7054,7 +7880,7 @@ nonevent_dist_data=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   )
 
 # Plot the probability distribution of nonevents for each model, as histogram.
@@ -7063,15 +7889,24 @@ nonevent_dist=
   qplot(event,n,data=.,geom='col',na.rm=T) +
   geom_text(
     data=opt_th,aes(x=th,y=0.2,label=round(th,2))
-    ,size=3,hjust=-0.3,vjust=0
+    ,size=3,hjust=-0.3,vjust=0,family='serif'
   ) +
   geom_vline(data=opt_th,aes(xintercept=th),lty=2) +
   facet_wrap(~model,ncol=5) +
-  scale_x_continuous('Predicted probability') +
-  scale_y_reverse('Nonevents per\n100,000 visits',breaks=seq(0,0.2,0.1)) +
+  scale_x_continuous(
+    'Predicted probability'
+    ,labels=scales::number_format(accuracy=0.01,decimal.mark='.')
+  ) +
+  scale_y_reverse(
+    'Nonevents per\n100,000 visits',breaks=seq(0,0.2,0.1)
+    ,labels=scales::number_format(accuracy=0.1,decimal.mark='.')
+  ) +
   theme(
-    axis.text.x=element_text(angle=90,vjust=0.5,hjust=1)
+    axis.title=element_text(family='sans')
+    ,axis.text.x=element_text(angle=90,vjust=0.5,hjust=1,family='sans')
+    ,axis.text.y=element_text(family='sans')
     ,strip.text.x=element_blank()
+    ,strip.text.y=element_text(family='sans')
   )
 
 # Filter only the averages in the ROC table.
@@ -7097,7 +7932,7 @@ roc_curve=
       read_xlsx('data/srma_prom.xlsx') %>%
       # To modify the citation
       # mutate(
-      #   study=str_replace(study,'\\[37\\]','[6]')
+      #   study=str_replace(study,'\\[69\\]','[6]')
       #   ,study=str_replace(study,'\\[23\\]','[7]')
       # ) %>%
       rename(tnr=spec,tpr=sens)
@@ -7108,12 +7943,12 @@ roc_curve=
       read_xlsx('data/srma_prom.xlsx') %>%
       # To modify the citation
       # mutate(
-      #   study=str_replace(study,'\\[37\\]','[6]')
+      #   study=str_replace(study,'\\[69\\]','[6]')
       #   ,study=str_replace(study,'\\[23\\]','[7]')
       # ) %>%
       rename(tnr=spec,tpr=sens)
     ,aes(label=study)
-    ,color='black',fill='white'
+    ,color='black',fill='white',family='sans'
     ,hjust=0,vjust=1
     ,size=3,alpha=0.75,label.padding=unit(0.15,'lines')
   ) +
@@ -7122,18 +7957,28 @@ roc_curve=
       opt_th %>%
       mutate(pos=rev(seq(0.1,0.5,len=5)))
     ,aes(x=0.3,y=pos,label=model)
-    ,hjust=0,vjust=1,size=3,color='black',alpha=0.75
+    ,hjust=0,vjust=1,size=3,color='black',alpha=0.75,family='sans'
     ,show.legend=F
   ) +
   
   # Customize plot.
   coord_equal() +
-  scale_x_reverse('Specificity',limits=1:0,breaks=rev(seq(0,1,0.1))) +
-  scale_y_continuous('Sensitivity',limits=0:1,breaks=seq(0,1,0.1)) +
-  scale_color_npg() +
-  scale_fill_npg() +
+  scale_x_reverse(
+    'Specificity',limits=1:0,breaks=rev(seq(0,1,0.1))
+    ,labels=scales::number_format(accuracy=0.1,decimal.mark='.')
+  ) +
+  scale_y_continuous(
+    'Sensitivity',limits=0:1,breaks=seq(0,1,0.1)
+    ,labels=scales::number_format(accuracy=0.1,decimal.mark='.')
+  ) +
+  scale_color_jama() +
+  scale_fill_jama() +
   guides(color=F,fill=F) +
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+  theme(
+    axis.title=element_text(family='sans')
+    ,axis.text.x=element_text(angle=90,hjust=1,vjust=0.5,family='sans')
+    ,axis.text.y=element_text(family='sans')
+  )
 
 # Create table for AUROC plot of the calibrated models.
 auroc_table=
@@ -7154,7 +7999,7 @@ auroc_table=
   
   # Clean up model naming.
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -7162,7 +8007,7 @@ auroc_table=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   ) %>%
   
   # Clean up subset naming.
@@ -7198,7 +8043,7 @@ auroc_table=
       
       # Clean up model naming.
       mutate(model=case_when(
-        model=='causal_ridge'~'Causal RR'
+        model=='causal_ridge'~'RR'
         ,model=='pc_elnet'~'PC-ENR'
         ,model=='pc_rf'~'PC-RF'
         ,model=='pc_gbm'~'PC-GBM'
@@ -7206,7 +8051,7 @@ auroc_table=
         ,TRUE~''
       )) %>%
       mutate(
-        model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+        model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
       ) %>%
       
       # Clean up subset naming.
@@ -7260,16 +8105,21 @@ auroc=
   facet_grid(set~.,scales='free_y',space='free') +
   coord_flip() +
   scale_x_discrete('Data Partition') +
-  scale_y_continuous('AUROC (95% CI)',breaks=seq(0,1,0.1)) +
+  scale_y_continuous(
+    'AUROC (95% CI)',breaks=seq(0,1,0.1)
+    ,labels=scales::number_format(accuracy=0.1,decimal.mark='.')
+  ) +
   theme(
     axis.title.y=element_blank()
-    ,axis.text.y=element_text(size=unit(8,'pt'))
-    ,strip.text.y=element_text(angle=0)
+    ,axis.title.x=element_text(family='sans')
+    ,axis.text.y=element_text(size=unit(8,'pt'),family='sans')
+    ,axis.text.x=element_text(family='sans')
+    ,strip.text.y=element_text(angle=0,family='sans')
   )
 ```
 
-```{r Save data for Figure 3 of the main text, eval=FALSE, include=FALSE}
-# Figure 3a
+```{r Save data for Figure 2 of the main text, eval=FALSE, include=FALSE}
+# Figure 2a
 calibration_plot_data %>%
   
   # Calibration plot data
@@ -7318,10 +8168,10 @@ calibration_plot_data %>%
       ,'Optimum threshold')
   ) %>%
   
-  # Save data for Figure 3a.
-  write_csv('data/figure3a.csv')
+  # Save data for Figure 2a.
+  write_csv('data/figure2a.csv')
 
-# Figure 3b
+# Figure 2b
 read_xlsx('data/srma_prom.xlsx') %>%
   
   # Reference from the systematic review results
@@ -7352,10 +8202,10 @@ read_xlsx('data/srma_prom.xlsx') %>%
     )
   ) %>%
   
-  # Save data for Figure 3b.
-  write_csv('data/figure3b.csv')
+  # Save data for Figure 2b.
+  write_csv('data/figure2b.csv')
 
-# Figure 3c
+# Figure 2c
 auroc_table %>%
   
   # Clean up naming.
@@ -7376,8 +8226,8 @@ auroc_table %>%
          ,'PC-GBM'
          ,'PC-RF'
          ,'PC-ENR'
-         ,'Causal RR'
-         ,'Basbug, et al. [37]'
+         ,'RR'
+         ,'Basbug, et al. [40]'
          ,'El-Achi, et al. [23]')
     )
   ) %>%
@@ -7393,11 +8243,11 @@ auroc_table %>%
     )
   ) %>%
   
-  # Save data for Figure 3c.
-  write_csv('data/figure3c.csv')
+  # Save data for Figure 2c.
+  write_csv('data/figure2c.csv')
 ```
 
-```{r Save image of Figure 3 of the main text, fig.height=8.85827, fig.width=7.08661, eval=FALSE, include=FALSE}
+```{r Save image of Figure 2 of the main text, fig.height=8.85827, fig.width=7.08661, eval=FALSE, include=FALSE}
 # fig.height=8.85827, fig.width=7.08661 on top of this chunk if shown here
 ggarrange(
     ggarrange(
@@ -7420,12 +8270,12 @@ ggarrange(
     ,ncol=1,nrow=2
   ) +
   ggsave(
-    filename="figure3.eps"
+    filename="figure2.eps"
     # To modify the citation
-    # filename="figure3b.eps"
+    # filename="figure2b.eps"
     ,device=cairo_ps
-    ,width=180
-    ,height=225
+    ,width=170
+    ,height=170/190*237.5
     ,unit='mm'
   )
 ```
@@ -7470,6 +8320,29 @@ roc %>%
   kable_classic()
 ```
 
+```{r Optimum PC-RF performance, eval=FALSE, include=FALSE}
+rbind(
+    roc %>%
+      filter(
+        model=='PC-RF'
+        & th==opt_th$th[opt_th$model=='PC-RF']
+      ) %>%
+      select(model,th,bound,tpr) %>%
+      spread(bound,tpr) %>%
+      mutate(metric='Sensitivity')
+    ,roc %>%
+      filter(
+        model=='PC-RF'
+        & th==opt_th$th[opt_th$model=='PC-RF']
+      ) %>%
+      select(model,th,bound,tnr) %>%
+      spread(bound,tnr) %>%
+      mutate(metric='Specificity')
+  ) %>%
+  kable(caption='Optimum PC-RF performance') %>%
+  kable_classic()
+```
+
 ```{r Optimum DI-VNN performance, eval=FALSE, include=FALSE}
 rbind(
     roc %>%
@@ -7500,17 +8373,17 @@ auroc_table %>%
   kable_classic()
 ```
 
-For causal ridge regression (RR), the estimates were weights or beta values, as 
-commonly described in a regression model (Table 14 in Supplemental 
-Spreadsheet). For classification task, top three highest weights were assigned 
-for chorioamnionitis, IAI, and GTI. This is similar to the effect ranks in 
-causal inferences by IPW.
+For ridge regression (RR), the estimates were weights or beta values, as 
+commonly described in a regression model (eTable 14 in R Markdown). For 
+classification task, top three highest weights were assigned for 
+chorioamnionitis, IAI, and GTI. This is similar to the effect ranks in 
+association tests by IPW.
 
 ```{r Create empty list for tables of model weight, include=FALSE}
 model_weight=list()
 ```
 
-```{r Prepare weight table of causal RR, include=FALSE}
+```{r Prepare weight table of RR, include=FALSE}
 model_weight$causal_ridge=
   rbind(
     coef(model$causal_ridge$finalModel,model$causal_ridge$bestTune$lambda) %>%
@@ -7544,10 +8417,10 @@ model_weight$causal_ridge=
   setNames(str_to_sentence(str_replace_all(colnames(.),'_',' ')))
 ```
 
-```{r Save and show weights of causal RR, eval=FALSE, include=FALSE}
+```{r Save and show weights of RR, eval=FALSE, include=FALSE}
 model_weight$causal_ridge %>%
   
-  # Save for Supplementary Spreadsheet at tab 14.
+  # Save for eTable 14.
   write_csv('data/supp_table_14.csv')
 
 model_weight$causal_ridge %>%
@@ -7557,10 +8430,10 @@ model_weight$causal_ridge %>%
 
 Three models used principal components (PCs), including PC elastic net 
 regression (PC-ENR). To transform predictors into a PC, each predictor has a 
-weight to multiply with. These weights were also shown (Table 16 in 
-Supplemental Spreadsheet). For the PCs themselves, the parameter estimates in 
-PC-ENR were similar to those in causal RR. The weights in PC-ENR were also 
-shown (Table 16 in Supplemental Spreadsheet). 
+weight to multiply with. These weights were also shown (eTable 16 in R 
+Markdown). For the PCs themselves, the parameter estimates in PC-ENR were 
+similar to those in RR. The weights in PC-ENR were also shown (eTable 16 in R 
+Markdown).
 
 ```{r Prepare weight table of PC model, include=FALSE}
 model_weight$pc=
@@ -7583,7 +8456,7 @@ model_weight$pc=
 ```{r Save and show weights of PC, eval=FALSE, include=FALSE}
 model_weight$pc %>%
   
-  # Save for Supplementary Spreadsheet at tab 15.
+  # Save for eTable 15.
   write_csv('data/supp_table_15.csv')
 
 model_weight$pc %>%
@@ -7620,7 +8493,7 @@ model_weight$pc_elnet=
 ```{r Save and show weights of PC-ENR, eval=FALSE, include=FALSE}
 model_weight$pc_elnet %>%
   
-  # Save for Supplementary Spreadsheet at tab 16.
+  # Save for eTable 16.
   write_csv('data/supp_table_16.csv')
 
 model_weight$pc_elnet %>%
@@ -7630,8 +8503,8 @@ model_weight$pc_elnet %>%
 
 For PC random forest (PC-RF) and PC gradient boosting machine (PC-GBM), the 
 parameter estimates may be represented by variable importance. It is a 
-proportion of learners (trees) that include a predictor. These numbers were
-also shown (Table 17 and 18 in Supplemental Spreadsheet).
+proportion of learners (trees) that include a predictor. These numbers were 
+also shown (eTables 17 and 18 in R Markdown).
 
 ```{r Prepare weight table of PC-RF, include=FALSE}
 model_weight$pc_rf=
@@ -7656,7 +8529,7 @@ model_weight$pc_rf=
 ```{r Save and show weights of PC-RF, eval=FALSE, include=FALSE}
 model_weight$pc_rf %>%
   
-  # Save for Supplementary Spreadsheet at tab 17.
+  # Save for eTable 17.
   write_csv('data/supp_table_17.csv')
 
 model_weight$pc_rf %>%
@@ -7687,7 +8560,7 @@ model_weight$pc_gbm=
 ```{r Save and show weights of PC-GBM, eval=FALSE, include=FALSE}
 model_weight$pc_gbm %>%
   
-  # Save for Supplementary Spreadsheet at tab 18.
+  # Save for eTable 18.
   write_csv('data/supp_table_18.csv')
 
 model_weight$pc_gbm %>%
@@ -7699,7 +8572,7 @@ For DI-VNN, we filtered predictors by differential analysis which consisted of
 multiple univariable linear regressions. The parameter estimates were expressed 
 as log of fold changes. These were equivalent to log of odds ratios. This 
 number and others, including false discovery rate (FDR), were also shown for 
-the selected predictors by FDR <0.05 (Table 19 in Supplemental Spreadsheet).
+the selected predictors by FDR <0.05 (eTable 19 in R Markdown).
 
 ```{r Prepare weight table of differential analysis, include=FALSE}
 model_weight$fit=
@@ -7750,7 +8623,7 @@ model_weight$fit=
 ```{r Save and show differential analysis, eval=FALSE, include=FALSE}
 model_weight$fit %>%
   
-  # Save for Supplementary Spreadsheet at tab 19.
+  # Save for eTable 19.
   write_csv('data/supp_table_19.csv')
 
 model_weight$fit %>%
@@ -7761,19 +8634,18 @@ model_weight$fit %>%
 Parameter estimates of the DI-VNN were extremely enormous. To get similar sense 
 with those of the other models, we used an intermediate output at a layer after 
 being fed to Inception v4 for each ontology. This showed a learning 
-representation by DI-VNN on a predictor. We have described how these were 
-computed in the main text. The intermediate outputs were shown (Table 20 in 
-Supplemental Spreadsheet). We have already pointed out several meanings of 
-these outputs in the main text for both population and individual levels. In 
-addition, connections between ontologies are also described (Table 21 in 
-Supplemental Spreadsheet).
+representation by DI-VNN on a predictor. How these were computed had been 
+described in a protocol we followed for these procedures [...]. The 
+intermediate outputs were shown (eTable 20 in R Markdown). We would point out 
+several meanings of these outputs after the next section. In addition, 
+connections between ontologies under the root are also shown (eTable 21 in 
+R Markdown).
 
 For comparison of our models with those of previous studies, we applied methods 
 in the preferred reporting items for systematic reviews and meta-analyses 
-(PRISMA) 2020 expanded checklist (Table 4 in Supplemental Spreadsheet). From 
-three literature databases and several steps, we found two prediction models as 
-described in the main text (Table 5 in Supplemental Spreadsheet). The steps are 
-shown (Figure 13).
+(PRISMA) 2020 expanded checklist (eTable 4 in Appendix). From three literature 
+databases and several steps, we found two prediction models as described in the 
+main text (eTable 5 in Appendix). The steps are shown (eFigure 14 in Appendix).
 
 ```{r A function to visualize ontoarray of estimation DI-VNN, include=FALSE}
 source('R/viz.ontoarray.reg-function.R')
@@ -7883,7 +8755,7 @@ model_weight$divnn=
 ```{r Save and show weights of DI-VNN, eval=FALSE, include=FALSE}
 model_weight$divnn %>%
   
-  # Save for Supplementary Spreadsheet at tab 20.
+  # Save for eTable 20.
   write_csv('data/supp_table_20.csv')
 
 model_weight$divnn %>%
@@ -7897,28 +8769,27 @@ input$ontology %>%
   select(-relation) %>%
   setNames(str_to_sentence(colnames(.))) %>%
   
-  # Save for Supplementary Spreadsheet at tab 21.
+  # Save for eTable 21.
   write_csv('data/supp_table_21.csv')
 ```
 
 ## Estimation of the time of delivery
 
-Estimation performances were already clearly described in the main text. The 
-Source Data Spreadsheet for Figure 4 in the main text is also available. 
-Parameter estimates of the estimation models were also shown in the same tables 
-with those of the classification models (Table 14 in Supplemental Spreadsheet). 
-For estimation task, which implicitly related to preterm delivery, the lowest 
-(negative) weights in causal RR were also assigned to chorioamnionitis, IAI, 
-and GTI, but, the second lowest rank was shifted up by multiple pregnancy. 
-Lower-rank weight means earlier time of delivery, which is, likely having more 
-chance to be a preterm delivery. It turns out our decision to choose IAI and 
-chorioamnionitis as the causal factors, instead of the effects of PROM, is 
-consistent with these findings.
+Estimation performances were already clearly described in the main text. 
+Parameter estimates of the estimation models were also shown in the same 
+eTables with those of the classification models (eTable 14 in R Markdown). For  
+estimation task, which implicitly related to preterm delivery, the lowest 
+(negative) weights in the RR were also assigned to chorioamnionitis, IAI, and  
+GTI, but, the second lowest rank was shifted up by multiple pregnancy. Lower-
+rank weight means earlier time of delivery, which is, likely having more chance 
+to be a preterm delivery. It turns out our decision to choose IAI and 
+chorioamnionitis as the associated factors, instead of those being affected of  
+PROM, is consistent with these findings.
 
-Although causal RR mostly had achieved highest proportion of criteria fulfilled 
-among the models by external validation sets, we noticed this only applies for 
-the predicted nonevents based on visual assessment. The causal factors may be 
-well-generalized to estimate the time of delivery under nonevents predicted 
+Although the RR mostly had achieved highest proportion of criteria fulfilled 
+among the models by external validation sets, we noticed this only applies for  
+the predicted non-events based on visual assessment. The associated factors may 
+be well-generalized to estimate the time of delivery under non-events predicted 
 (modeled) by DI-VNN. Nevertheless, we selected PC-RF as the best model for 
 estimation task of the time of delivery.
 
@@ -7943,7 +8814,7 @@ estimation_plot_all=
   # Clean up model naming.
   eval_timing_model_plt %>%
   mutate(model=case_when(
-    model=='causal_ridge'~'Causal RR'
+    model=='causal_ridge'~'RR'
     ,model=='pc_elnet'~'PC-ENR'
     ,model=='pc_rf'~'PC-RF'
     ,model=='pc_gbm'~'PC-GBM'
@@ -7951,7 +8822,7 @@ estimation_plot_all=
     ,TRUE~''
   )) %>%
   mutate(
-    model=factor(model,c('Causal RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
+    model=factor(model,c('RR','PC-ENR','PC-RF','PC-GBM','DI-VNN'))
   ) %>%
   
   # Clean up subset naming.
@@ -8002,9 +8873,12 @@ estimation_plot_comp=
   
   # Show the criteria fulfillment proportion.
   geom_label(
-    x=40,y=2,aes(label=paste0(round(p*100,2),'%'))
+    x=40,y=2
+    ,aes(
+      label=paste0(formatC(round(p*100,2),decimal.mark='.'),'%')
+    )
     ,hjust=1,vjust=0,color='black'
-    ,size=unit(3,'pt'),label.padding=unit(0.1,'lines')
+    ,size=unit(3,'pt'),label.padding=unit(0.1,'lines'),family='sans'
   ) +
   
   # Customize plot.
@@ -8016,9 +8890,14 @@ estimation_plot_comp=
     ,y='True time of delivery (average week)'
     ,color='Prediction of PROM by DI-VNN'
   ) +
-  scale_color_manual(values=c('#E64B35FF','#3C5488FF')) +
+  scale_color_manual(values=c('#B24745FF','#374E55FF')) +
   theme(
-    strip.text.y=element_text(angle=0)
+    axis.title=element_text(family='sans')
+    ,axis.text=element_text(family='sans')
+    ,strip.text.x=element_text(family='sans')
+    ,strip.text.y=element_text(angle=0,family='sans')
+    ,legend.title=element_text(family='sans')
+    ,legend.text=element_text(family='sans')
     ,legend.position='top'
   )
 
@@ -8079,9 +8958,9 @@ estimation_plot_best=
     y=2
     ,aes(
       x=pred_optmin+(pred_optmax-pred_optmin)/2
-      ,label=paste0('RMSE ± ',round(RMSE,1), ' weeks')
+      ,label=paste0('RMSE ± ',formatC(round(RMSE,1),decimal.mark='.'), ' weeks')
     )
-    ,size=unit(3,'pt')
+    ,size=unit(3,'pt'),family='sans'
   ) +
   
   # Show the prediction.
@@ -8091,6 +8970,7 @@ estimation_plot_best=
       x=ifelse(timing_pred==0,pred_optmin+(pred_optmax-pred_optmin)/2,NA)
       ,label=str_to_title(calib_pred),fill=calib_pred
     )
+    ,family='sans'
     ,show.legend=F
     ,na.rm=T
   ) +
@@ -8104,12 +8984,16 @@ estimation_plot_best=
     ,y='True time of delivery (95% CI)'
     ,color='Fulfilling the criteria in main text?'
   ) +
-  scale_color_manual(values=c('#7E6148FF','#00A087FF')) +
-  scale_fill_manual(values=c('#E64B35FF','#3C5488FF')) +
+  scale_color_manual(values=c('#80796B99','#79AF97FF')) +
+  scale_fill_manual(values=c('#B24745FF','#374E55FF')) +
   theme(
-    axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)
+    axis.title=element_text(family='sans')
+    ,axis.text.x=element_text(angle=90,hjust=1,vjust=0.5,family='sans')
+    ,axis.text.y=element_text(family='sans')
     ,strip.text=element_blank()
     ,strip.background=element_blank()
+    ,legend.title=element_text(family='sans')
+    ,legend.text=element_text(family='sans')
     ,legend.position='top'
   )
 ```
@@ -8236,8 +9120,8 @@ eval_timing_model_plt %>%
   kable_classic()
 ```
 
-```{r Save data for Figure 4 of the main text, eval=FALSE, include=FALSE}
-# Figure 4a
+```{r Save data for Figure 3 of the main text, eval=FALSE, include=FALSE}
+# Figure 3a
 estimation_plot_comp_data %>%
   select(-metric_name,-lb,-ub,-fall_into_interval) %>%
   select(model,set,p,everything()) %>%
@@ -8253,10 +9137,10 @@ estimation_plot_comp_data %>%
       ,'True time of delivery (average week)')
   ) %>%
   
-  # Save data for Figure 4a.
-  write_csv('data/figure4a.csv')
+  # Save data for Figure 3a.
+  write_csv('data/figure3a.csv')
 
-# Figure 4b
+# Figure 3b
 estimation_plot_best_data %>%
   select(-metric_name,-set,-model,-timing_true) %>%
   mutate_at(c('avg','lb','ub'),round) %>%
@@ -8272,11 +9156,11 @@ estimation_plot_best_data %>%
       ,'RMSE')
   ) %>%
   
-  # Save data for Figure 4b.
-  write_csv('data/figure4b.csv')
+  # Save data for Figure 3b.
+  write_csv('data/figure3b.csv')
 ```
 
-```{r Save image of Figure 4 of the main text, eval=FALSE, include=FALSE}
+```{r Save image of Figure 3 of the main text, fig.height=8.85827, fig.width=7.08661, eval=FALSE, include=FALSE}
 # fig.height=8.85827, fig.width=7.08661 on top of this chunk if shown here
 suppressWarnings(
   ggarrange(
@@ -8287,10 +9171,10 @@ suppressWarnings(
     ,ncol=1,nrow=2
   ) +
   ggsave(
-    filename="figure4.eps"
+    filename="figure3.eps"
     ,device=cairo_ps
-    ,width=180
-    ,height=225
+    ,width=170
+    ,height=170/190*237.5
     ,unit='mm'
   )
 )
@@ -8298,39 +9182,62 @@ suppressWarnings(
 
 ## Exploring deep-insight visible neural network
 
-Population-level data exploration is briefly described in the main text. For 
+Population-level data exploration is described in this Supplement. For 
 interactive figure and table of DI-VNN, we provide these in our web application 
-(https://predme.app/promtime). In this Supplementary Information, we described 
-more technical details on the DI-VNN exploration. The Source Data Spreadsheet 
-for Figure 5 in the main text is available.
+(https://predme.app/promtime). Technical details for exploring DI-VNN were 
+already described in a protocol we followed for these procedures [...].
 
-Unlike other agglomerative hierarchical clustering algorithm, a child ontology 
-term in CliXO may connect to more than one parent ontology term. For each edge, 
-we applied several blocks of state-of-the-art convolutional neural network 
-(CNN) architecture, i.e. Inception v4-Resnet. From deep (bottom) to surface 
-layer (nodes), the AUROCs were getting higher. We computed this metric using 
-parts of the architecture up to each node. This number also contributed to the 
-parameter updates of this model (Equation 5 in the main text). A node is an 
-ontology term in the form of a three-dimensional array of which non-zero values 
-are initially coming from the feature members of that ontology term.
+The network architecture of the DI-VNN is data-driven (eFigure 15b in 
+Appendix). Using the clique-extracted ontology (CliXO) (Kramer M, et al, 2014) 
+algorithm, we constructed an architecture for the convolutional neural network 
+(CNN) using only a training set (see Methods). We can consider this algorithm 
+as an agglomerative hierarchical clustering algorithm, but there could be more 
+than one parent-child connection. A child ontology array has a similar value 
+distribution with the parent one is because a neural network applies a 
+backpropagation algorithm that updates the model parameters consecutively from 
+the surface to the deeper layer following the path, which is the ontology 
+network of DI-VNN. But, unlike other neural network models, DI-VNN isolates the 
+backpropagation effect; therefore, we can trace the array values to interpret 
+the possible meaning.
 
-A child ontology array has a similar value distribution with the parent one is 
-because a neural network applies a backpropagation algorithm that updates the 
-model parameters consecutively from the surface to the deeper layer following 
-the path, which is the ontology network of DI-VNN. But, unlike other neural 
-network models, DI-VNN isolates the backpropagation effect; therefore, we can 
-trace the array values to interpret the possible meaning.
+We explored each node of the DI-VNN at the population level. The 
+diagnosis/procedure codes constructing the feature members were ICD-10 codes. 
+We began from the most visually distinguished array (eFigure 15b in Appendix) 
+which was ONT:171. These were N760 (acute vaginitis) and B379 (unspecified 
+candidiasis). A positive output does not necessarily refer to an event. 
+Nevertheless, positive and negative (color-coded) outputs tend to contribute to 
+opposite outcomes, which are interpreted based on external contextual 
+knowledge. Another distinguished array, ONT:144, was connected to the same node 
+as that of the previous array. The feature member (9059, other microscopic 
+examination of blood) tended to contribute to the same outcome as that of 
+“unspecified candidiasis”. Unlike “acute vaginitis”, which is a local 
+infection, both B379 and 9059 may be related to systemic infections. To this 
+point, we gained insights into describing coincidences between systemic vs. 
+local infection and PROM. Another array, ONT:154, was also visually 
+distinguished. Although the value of the feature member causal_A03 
+(chorioamnionitis) was zero, it was next to higher values that supported the 
+same outcome as that of “acute vaginitis”. We traced the node on the upper 
+layer to ONT:171. This array had a similar value distribution on the same 
+channel (*z*=2) to that of ONT:154.
 
-The dimensional reduction algorithm, which is *t*-moderated stochastic network 
-embedding (t-SNE) using Barnes-Hut approximation, mapped features on high 
-dimensional to lower dimensional space, as multiple localities. This algorithm 
-spreads small clusters instead of making a large bubble of clusters; thus, we 
-expected our CNN algorithm can be better extracting predictive features from 
-these localities. If a feature nearer to one than another, this means there is 
-a closer relationship between both features. The localities clustered by 
-*t*-SNE are grouped together at the root node on the most superficial layer 
-(Figure 5b in the main text). Deeper layers have different subsets of features 
-separated by the ontology grouping.
+The feature position within any ontology array was determined using *t*-SNE 
+with the Barnes-Hut approximation (see Methods) (Maaten LVD, 2014). It mapped 
+features on high dimensional to lower dimensional space, as multiple 
+localities. This algorithm spreads small clusters instead of making a large 
+bubble of clusters; thus, we expected our CNN algorithm can be better 
+extracting predictive features from these localities. If a feature nearer to 
+one than another, this means there is a closer relationship between both 
+features. The localities clustered by *t*-SNE are grouped together at the root 
+node on the most superficial layer (eFigure 15b in Appendix). Deeper layers 
+have different subsets of features separated by the ontology grouping. By 
+understanding how this algorithm works, we assumed causal_A03 (ONT:154), i.e., 
+“chorioamnionitis”, was closer to “acute vaginitis” than was “unspecified 
+candidiasis” since both were in the same channel, the positions of the first 
+and second dimensions were adjacent, and *t*-SNE preserved the neighborhood 
+identity. Acute vaginitis is semantically a genital tract infection (GTI). By 
+external contextual knowledge inferred from systematic human learning and 
+confirmed by IPW using our data, GTI and chorioamnionitis were determined to be 
+associated factors of PROM.
 
 A node on more superficial layer, which is ONT:155, consisted a feature that 
 prefers the same outcome that N760 (acute vaginitis) and causal_A03 
@@ -8342,26 +9249,380 @@ means more factors may need to interact with urethral catheterization (598) to
 be predictive for PROM. In addition, within the same ontology term, there is 
 also 8602 (injection or tattooing of skin lesion or defect). Apparently, the 
 CliXO algorithm have clustered these features together semantically, which are 
-similarly invasive procedures.
+similarly invasive procedures. In addition, local infection from acute 
+vaginitis may be related to chorioamnionitis, such that prefers the same 
+outcome, as opposed to the possible systemic infection by the unspecified 
+candidiasis.
 
-From ONT:167 and ONT:149 on the deeper layer, we can find unusual features in 
-the context of PROM, which are H527 (unspecified disorder of refraction) 
-preferring nonevents while 734 (flat foot), H521 (myopia), and H522 
-(astigmatism) preferring events. These codes might be responses to the subject 
-symptoms of edema in the feet and blurry vision. Both symptoms in a pregnant 
-woman may be typically associated with severe preeclampsia. But, a doctor may 
-avoid this association if the context does not support the symptoms, e.g. 
-symptoms by a non-pregnant subject. This may lead a doctor to assign these 
-codes responding to those symptoms. For each prediction, a human user may need 
-to explore the model to avoid misclassification by ignoring the prediction if 
-it counters the clinical reasoning. More pragmatically at individual level, the 
-predictive value may not be sufficient or the estimation may not be quite 
-precise based on the corresponding subpopulation data with respectively the 
-same predicted outcome or estimated time of delivery. In addition, albeit all 
-of the population-level patterns from this exploration, every subject may 
-reveal a different pattern using the same DI-VNN model, as described in the 
-next section.
+Exploring this DI-VNN should be done with caution, since we developed the model 
+using medical histories, which are diagnosis or procedure codes provided by 
+medical doctors. We may or may not be modeling a human pathophysiology, but, we 
+are definitely modeling the doctors’ behaviors of coding a diagnosis or 
+procedure (Beaulieu-Jones BK, et al, 2021). By providing an interface to the internal properties of this 
+model, a human user can assess each prediction case-by-case. From ONT:167 and 
+ONT:149 on the deeper layer, we can find unusual features in the context of 
+PROM, which are H527 (unspecified disorder of refraction) preferring nonevents 
+while 734 (flat foot), H521 (myopia), and H522 (astigmatism) preferring events. 
+These codes might be responses to the subject symptoms of edema in the feet and 
+blurry vision. Both symptoms in a pregnant woman may be typically associated 
+with severe preeclampsia. But, a doctor may avoid this association if the 
+context does not support the symptoms, e.g. symptoms by a non-pregnant subject. 
+This may lead a doctor to assign these codes responding to those symptoms. For 
+each prediction, a human user may need to explore the model to avoid 
+misclassification by ignoring the prediction if it counters the clinical 
+reasoning. More pragmatically at individual level, the predictive value may not 
+be sufficient or the estimation may not be quite precise based on the 
+corresponding subpopulation data with respectively the same predicted outcome 
+or estimated time of delivery. In addition, albeit all of the population-level 
+patterns from this exploration, every subject may reveal a different pattern 
+using the same DI-VNN model, as described in the next section.
 
+## Web application
+
+Briefly, we uploaded a record of 20 visits by a 19-year-old female subject from 
+December 2, 2015 to July 30, 2016, consisting of 28 code entries. After 
+determining the prediction date, which was set to July 30, 2016, we ran the 
+application in 5.14 minutes (95% CI 5.11 to 5.18 minutes when we repeated it 
+10 times). We downloaded the report after the application was completed 
+(eFigure 16 in Appendix). The predicted outcome was PROM, and the estimated 
+time of delivery was 11 weeks after the time of prediction. The predicted 
+probability was 0.867.
+
+Furthermore, after the application was done (eFigure 16 in Appendix), we tried 
+to adjust the threshold to the maximum value, such that the data for 
+population-level performances are still available and the predictive value is 
+also maximized depending on the prediction result. The population-level data 
+was the same with internal validation (calibration split; *n*=21,506) which was 
+used to plot the ROC curve (Figure 2b in the main text). The threshold was 0.67 
+with positive predictive value of 0.809 (95% CI 0.798 to 0.82). The sensitivity 
+was reasonably low (0.107, 95% CI 0.104 to 0.11) if using this threshold. But, 
+from a standpoint of prediction at individual level, a precise estimation is 
+important to determine whether a decision corresponding to this prediction can 
+be made with a good confidence. By default, the threshold is set at an optimum 
+value of 0.14 (sensitivity 0.494, 95% CI 0.489 to 0.5). Based on the predicted 
+probability case-by-case, a user can decide the threshold to adjust at.
+
+From the reported timeline (eFigure 6 in Appendix), this subject is shown 
+predicted to deliver on October 18^th 2016, approximately. If the predicted 
+outcome is not PROM, the shaded area would be red; otherwise, turquoise color 
+is applied to the area as shown. It depicted population-level estimation of 
+true time of delivery for subjects that were also estimated to deliver within 
+11 weeks and predicted as PROM by the same threshold. The population-level data 
+was the same with internal validation (*n*=107,536) which was used to plot the 
+PC-RF estimation window (Figure 3b in the main text). By population-level 
+estimation, the time of delivery might be at the beginning up to the end of 
+October. Using threshold at 0.67, this population-level estimation was shifted 
+earlier for a week compared to that at 0.14. In addition, for illustration 
+purpose, just like a real-world setting, say we know the gestational age was 
+22-23 weeks’ gestation based on last menstrual period and ultrasound 
+examination. If this estimation model is precise for this case, the subject 
+would deliver at 33-34 weeks’ gestation, which is a preterm PROM.
+
+We also saw the medical history of this subject from the reported timeline 
+(eFigure 16 in Appendix). Up to the date of prediction, the prediction model 
+used these features: (1) A09 (diarrhea and gastroenteritis of presumed 
+infectious origin); (2) J069 (unspecified acute upper respiratory infection); 
+(3) K30 (dyspepsia); and (4) 8878 (diagnostic ultrasound of gravid uterus). On 
+the timeline, these were ordered from the most positive (top) to the most 
+negative (bottom) based on each output in the ontology array.
+
+In the prediction model, any of these features were classified in the ontology 
+arrays of ONT:158, ONT:169, ONT:176, and root, as depicted by the ontology 
+network (eFigure 16 in Appendix). We also identified the deepest ontology that 
+includes all features in the timeline, which is ONT:169, but the predicted 
+outcome based on this ontology is not PROM using the same threshold with that 
+of the root. A user also can see a predictive performance of any ontologies, 
+just like AUROC of the root (0.714, 95% CI 0.712 to 0.716). It is computed for 
+the pre-calibrated DI-VNN only, since the calibrated one only used the 
+predicted probability that was the output convoluted from the root ontology 
+array.
+
+Negative values at population level tend to event, as described in the previous 
+section. From the ontology array (eFigure 16 in Appendix), J069 (unspecified 
+acute upper respiratory infection) tends to event in that array, as shown as 
+mostly negative outputs in the timeline. This feature was also surrounded by 
+more negative outputs. A09 (diarrhea and gastroenteritis of presumed infectious 
+origin) also had a negative value, but, this feature and K30 (dyspepsia) were 
+surrounded by more positive outputs in the ontology array. If we apply the same 
+illustrative gestational age, these infectious diseases (J069 and A09) were 
+diagnosed respectively ten and four weeks the start of pregnancy, as shown on 
+the timeline. Root is the only ontology that predicted PROM and included all 
+features in this subject. This is implied all of these features should be taken 
+together for the prediction. In addition, one may question why J069 
+(unspecified acute upper respiratory infection) tends to event while influenza 
+have the opposite effect (OR 0.995,95% CI 0.993 to 0.997; eTable 13 in 
+Appendix). We found that influenza, which is causal_A28, did not include J069 
+(eTable 12 in R Markdown). This implied specific acute upper respiratory 
+infection, such influenza, may not have the same effect with that by the 
+unspecified one on PROM.
+
+Beyond the root, the array of ontology ONT:169 is also shown (eFigure 17 in 
+Appendix). A09 and J069 had negative values. As described in the main text, 
+these features tend to an event. Respectively, the surrounding positive and 
+negative values were subtler in this ontology array. Since this filtered array 
+is fed forward to convolutional layers to be reduced each time passing a layer 
+(see video in the protocol [a protocol citation]), the value of A09 and J069 
+were averaged along with the adjacent values toward zero, opposite to event. In 
+turn, this coincides with lower AUROC in ONT:169 compared to that in root.
+
+Eventually, a user may want to know if the PROM prediction and estimated time 
+of delivery are similar to true values. One can save this model online and 
+return later to the web application to enter the true outcome and time of 
+delivery. In this way, a user can collect data for external validation 
+purposes, specifically describing the model performances based on local data 
+distributions. In our case, the true outcome was also PROM and the time of 
+delivery was 12 weeks after the time of prediction, a week later than the 
+predicted time of delivery.
+
+# Discussion
+
+From association tests and feature extraction to model selection and 
+exploration, we only used an internal validation set. But, the model is 
+evaluated using four external validation sets with a large sample size. This 
+has found the DI-VNN prediction was robust and the PC-RF estimation was precise 
+within a reasonable time window. All of these models used only a medical 
+history of a patient, which is easily extracted from the electronic medical 
+record systems of most healthcare providers worldwide. Neither a biomarker 
+testing nor even a laboratory test is needed. Eventually, the best models are 
+ready to use for any healthcare providers using an open-access web application 
+without changing their electronic health record systems and revealing private 
+data.
+
+To gain insights into PROM antecedents, we showed how this was achieved by 
+exploring the model at both the population (eFigure 15b in Appendix) and 
+individual levels (eFigure 16 in Appendix). If we assume that PROM is a 
+subclass of preeclampsia, this may explain why population-level exploration 
+implied an insight of systemic vs. local infection by competing risks. A 
+hematogenous infection may be associated with reproductive-tract microbial 
+dysbiosis and can affect several pregnancy outcomes, including PROM, 
+preeclampsia, and fetal growth restriction (Amir M, et al, 2020). Both 
+hematogenous and ascending infections from reproductive tract are found in PROM 
+(Romero R, et al, 2019; Solt I, 2015). Hematogenous infections included those 
+from digestive and respiratory organs. Similar to the population-level 
+exploration (eFigure 15 in Appendix), we also found a possibility of 
+hematogenous infection at the individual level (eFigure 16 in Appendix), and 
+these were from infectious gastroenteritis and unspecified acute upper 
+respiratory infection. Both population- and individual-level explorations also 
+implied a period surrounding the beginning of pregnancy as the onset of the 
+optimal time to predict PROM. Several features in the DI-VNN were 
+counterintuitive, e.g., H527 (unspecified disorder of refraction), 734 (flat 
+foot), H521 (myopia), and H522 (astigmatism). Yet, these describe blurry vision 
+and swelling in the feet, which are also symptoms of preeclampsia. Similar 
+eye-related codes, i.e., myopia and astigmatism, were also found to be 
+important in predicting preeclampsia in an RF model (Sufriyana H, et al, 2020).
+
+# References
+
+\newpage
+# Appendix
+
+\listoffigures
+\listoftables
+
+\newpage
+```{r figure-1, echo=FALSE, fig.cap='Multiple pregnancy', fig.height=5.11811, fig.width=7.08661}
+caudag_img[[1]]
+```
+
+\newpage
+```{r figure-2, echo=FALSE, fig.cap='Chorioamnionitis', fig.height=5.11811, fig.width=7.08661}
+caudag_img[[2]]
+```
+
+\newpage
+```{r figure-3, echo=FALSE, fig.cap='Intra-amniotic infection (IAI)', fig.height=5.11811, fig.width=7.08661}
+caudag_img[[3]]
+```
+
+\newpage
+```{r figure-4, echo=FALSE, fig.cap='Ante-partum hemorrhage (APH)', fig.height=5.11811, fig.width=7.08661}
+caudag_img[[5]]
+```
+
+\newpage
+```{r figure-5, echo=FALSE, fig.cap='Genital tract infection (GTI)', fig.height=3.46457, fig.width=3.46457}
+caudag_img[[9]]
+```
+
+\newpage
+```{r figure-6, echo=FALSE, fig.cap='Periodontal disease', fig.height=5.11811, fig.width=7.08661}
+caudag_img[[10]]
+```
+
+\newpage
+```{r figure-7, echo=FALSE, fig.cap='Polyhydramnios', fig.height=5.11811, fig.width=7.08661}
+caudag_img[[11]]
+```
+
+\newpage
+```{r figure-8, echo=FALSE, fig.cap='Pneumonia', fig.height=5.11811, fig.width=7.08661}
+caudag_img[[12]]
+```
+
+\newpage
+```{r figure-9, echo=FALSE, fig.cap='Asthma', fig.height=5.11811, fig.width=7.08661}
+caudag_img[[14]]
+```
+
+\newpage
+```{r figure-10, echo=FALSE, fig.cap='Low socio-economic status (SES)', fig.height=3.46457, fig.width=3.46457}
+caudag_img[[18]]
+```
+
+\newpage
+```{r figure-11, echo=FALSE, fig.cap='Maternal age', fig.height=3.46457, fig.width=3.46457}
+caudag_img[[19]]
+```
+
+\newpage
+```{r figure-12, echo=FALSE, fig.cap='Influenza', fig.height=3.46457, fig.width=3.46457}
+caudag_img[[27]]
+```
+
+\newpage
+```{r Prepare data for Figure 13 of the Supplement, include=FALSE}
+suppressWarnings(set.seed(66,sample.kind=sample.kind))
+figure13=
+  
+  # Filter the edges involving only the causal factors and outcome.
+  dag$baseline_edges[,-3] %>%
+  filter(
+    (from %in% colnames(dag$sig)[dag$sig[2,]==1] &
+     to %in% c('Y01',colnames(dag$sig)[dag$sig[2,]==1]))
+  ) %>%
+  
+  # Join with the IPW results.
+  left_join(
+    dag$ipw %>%
+      lapply(X=seq(length(.)),Y=.,function(X,Y){
+        data.frame(
+            from=names(Y)[X]
+            ,to='Y01'
+            ,marginal_effect=Y[[X]]$marginal_effect
+            ,LB=Y[[X]]$CI95_interval['LB']
+            ,UB=Y[[X]]$CI95_interval['UB']
+            ,p_value=Y[[X]]$p_value
+          ) %>%
+          `rownames<-`(NULL)
+      }) %>%
+      do.call(rbind,.)
+    ,by=c('from','to')
+  ) %>%
+  
+  # Assign the labels.
+  left_join(
+    dag$baseline_nodes %>%
+      rename(from=label) %>%
+      mutate(label=paste(from,name)) %>%
+      select(from,label)
+    ,by='from'
+  ) %>%
+  select(-from) %>%
+  rename(from=label) %>%
+  left_join(
+    dag$baseline_nodes %>%
+      rename(to=label) %>%
+      mutate(label=paste(to,name)) %>%
+      select(to,label)
+    ,by='to'
+  ) %>%
+  select(-to) %>%
+  rename(to=label) %>%
+  
+  # Convert to igraph object then ggnetwork dataframe.
+  select(from,to,everything()) %>%
+  graph_from_data_frame() %>%
+  ggnetwork(
+    layout=
+      layout_as_tree(
+        .
+        ,root=c()
+        ,mode='in'
+        ,circular=T
+      )[,2:1]
+  ) %>%
+  mutate(code=str_sub(name,1,3))  %>%
+  mutate(name=sapply(X=name,function(X)str_sub(X,5,str_count(X))))
+```
+
+```{r figure-13, echo=FALSE, fig.cap='Final association diagram', fig.height=3.46457, fig.width=3.46457}
+figure13 %>%
+  ggplot(aes(x=x,y=y,xend=xend,yend=yend,fill=code)) +
+  geom_nodes(
+    aes(color=code)
+    ,show.legend=F
+    ,size=8
+  ) +
+  geom_edges(
+    aes(color=code)
+    ,arrow=arrow(length=unit(4,'pt'),type='closed')
+    ,show.legend=F
+  ) +
+  geom_nodelabel_repel(
+    aes(label=name,fill=code)
+    ,family='sans'
+    ,size=unit(3,'pt')
+    ,alpha=0.75
+    ,show.legend=F
+  ) +
+  # scale_color_manual(
+  #   values=
+  #     unlist(mapply(
+  #       RColorBrewer::brewer.pal
+  #       ,RColorBrewer::brewer.pal.info %>%
+  #         .[.$category=='qual',] %>%
+  #         .$maxcolors
+  #       ,RColorBrewer::brewer.pal.info %>%
+  #         .[.$category=='qual',] %>%
+  #         rownames()
+  #     ))[-seq(14)]
+  # ) +
+  # scale_fill_manual(
+  #   values=
+  #     unlist(mapply(
+  #       RColorBrewer::brewer.pal
+  #       ,RColorBrewer::brewer.pal.info %>%
+  #         .[.$category=='qual',] %>%
+  #         .$maxcolors
+  #       ,RColorBrewer::brewer.pal.info %>%
+  #         .[.$category=='qual',] %>%
+  #         rownames()
+  #     ))[-seq(14)]
+  # ) +
+  scale_color_manual(
+    values=
+      c('#374E55FF','#DF8F44FF','#00A1D5FF','#B24745FF','#79AF97FF','#6A6599FF'
+        ,'#80796BFF','#374E5599','#DF8F4499','#00A1D599','#B2474599','#79AF9799'
+        )
+  ) +
+  scale_fill_manual(
+    values=
+      c('#374E55FF','#DF8F44FF','#00A1D5FF','#B24745FF','#79AF97FF','#6A6599FF'
+        ,'#80796BFF','#374E5599','#DF8F4499','#00A1D599','#B2474599','#79AF9799'
+        )
+  ) +
+  theme_blank()
+# +
+#   ggsave(
+#     filename="efigure13.eps"
+#     ,device=cairo_ps
+#     ,width=85
+#     ,height=85
+#     ,unit='mm'
+#   )
+```
+
+Caption:
+
+All associated factors were verified by inverse probability weighting (IPW) 
+using our data. Association tests were only conducted between PROM and each of 
+the associated factors. Inter-associated factor relationships were not 
+verified, but this demonstrates how an associated factor is included in the 
+associated model of another associated factor in this figure. APH, ante-partum 
+hemorrhage; GTI, genital tract infection; IAI, intra-amniotic infection; PROM, 
+prelabor rupture of membranes; SES, socio-economic status.
+
+\newpage
 ```{r Compute DI-VNN AUROC per period, include=FALSE}
 # Create a table of AUROC per period.
 auroc_per_period_data=
@@ -8478,11 +9739,18 @@ auroc_per_period=
   geom_hline(yintercept=0.5,lty=2) +
   geom_vline(xintercept=-46,lty=2) +
   scale_x_continuous('Weeks before the end of pregnancy',breaks=seq(-104,0,4)) +
-  scale_y_continuous('AUROC (95% CI)', breaks=seq(0,1,0.1)) +
+  scale_y_continuous(
+    'AUROC (95% CI)',breaks=seq(0,1,0.1)
+    ,labels=scales::number_format(accuracy=0.1,decimal.mark='.')
+  ) +
   labs(color='Higher\nthan\nAUROC\nof 0.5?') +
-  scale_color_manual(values=c('#7E6148FF','#00A087FF')) +
+  scale_color_manual(values=c('#80796B99','#79AF97FF')) +
   theme(
-    axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)
+    axis.title=element_text(family='sans')
+    ,axis.text.x=element_text(angle=90,hjust=1,vjust=0.5,family='sans')
+    ,axis.text.y=element_text(family='sans')
+    ,legend.title=element_text(family='sans')
+    ,legend.text=element_text(family='sans')
     ,legend.position='right'
   )
 ```
@@ -8516,19 +9784,19 @@ divnn_plot$base=
     ,na.rm=T
   ) +
   geom_nodelabel(
-    aes(label=ifelse(lb>0.55,paste0(round(avg,3)),NA))
+    aes(label=ifelse(lb>0.55,paste0(formatC(round(avg,3),decimal.mark='.')),NA))
     ,family='sans'
     ,size=unit(4,'pt')
     ,alpha=0.95
     ,show.legend=F
     ,na.rm=T
   ) +
-  geom_nodelabel_repel(
+  geom_label(
     aes(
       label=
         ifelse(
           name%in%paste0('ONT:',c(154,171,144,155,149,167))
-          ,name
+          ,str_remove_all(name,'ONT:')
           ,NA
         )
     )
@@ -8536,16 +9804,16 @@ divnn_plot$base=
     ,family='sans'
     ,size=unit(3,'pt')
     ,segment.size=1
-    ,alpha=0.75
-    ,hjust=0
-    ,vjust=0
-    ,nudge_x=0.02
-    ,nudge_y=0.02
+    ,alpha=0.2
+    ,hjust=0.5
+    ,vjust=0.5
+    ,nudge_x=0
+    ,nudge_y=0
     ,show.legend=F
     ,na.rm=T
   ) +
-  scale_color_gradient(low='#E64B35FF',high='#00A087FF') +
-  scale_fill_gradient(low='#E64B35FF',high='#00A087FF') +
+  scale_color_gradient(low='#B24745FF',high='#79AF97FF') +
+  scale_fill_gradient(low='#B24745FF',high='#79AF97FF') +
   theme_blank()
 
 # Convert all ontology arrays into a dataframe.
@@ -8577,7 +9845,8 @@ ontoarrays=
       mutate(ontology=X)
   }) %>%
   do.call(rbind,.) %>%
-  mutate(z=paste0("z=",z))
+  mutate(z=paste0("z=",z)) %>%
+  mutate(feature=str_replace_all(feature,'causal_','assoc_'))
 
 source('R/ontoarray-function.R')
 source('R/ontoarray_tab-function.R')
@@ -8639,7 +9908,8 @@ ontogroup=
       )
     )
   ) %>%
-  pull(text)
+  pull(text) %>%
+  str_replace_all('causal_','assoc_')
 
 # Plot the ontology arrays on the top of the network.
 divnn_plot$top=
@@ -8649,14 +9919,15 @@ divnn_plot$top=
   annotation_custom(grob=ontoarray(154,c(2),1),0.800,0.935,-0.100,0.135) +
   annotation_custom(grob=ontoarray(144,c(3),1),0.59,0.69,0.05,0.25) +
   annotation_custom(grob=ontoarray(149,c(3),1),0.45,0.55,0.2,0.4) +
-  annotation_custom(grob=ontoarray(155,c(2),1,legend=T),0.07,0.17,0.4,0.7) +
+  annotation_custom(grob=ontoarray(155,c(2),1,legend=T),0.07,0.17,0.39,0.69) +
   annotation_custom(grob=ontoarray(167,c(3,6,7),2),0.59,0.79,0.5,0.9) +
   annotate(
     geom='text'
     ,label=
       ontogroup[8:10] %>%
       paste0(collapse='\n')
-    ,x=0,y=0.3,hjust=0,vjust=0,size=unit(3,'pt'),color='#E64B35FF'
+    ,x=0,y=0.3,hjust=0,vjust=0,size=unit(3,'pt'),color='#B24745FF'
+    ,family='sans'
   ) +
   annotate(
     geom='text'
@@ -8664,71 +9935,19 @@ divnn_plot$top=
       ontogroup[1:2] %>%
       paste0(collapse='\n')
     ,x=0,y=0.2,hjust=0,vjust=0,size=unit(3,'pt'),alpha=0.75
+    ,family='sans'
   ) +
   annotate(
     geom='text'
     ,label=
       ontogroup[3:7] %>%
       paste0(collapse='\n')
-    ,x=0,y=0,hjust=0,vjust=0,size=unit(3,'pt'),color='#00A087FF'
+    ,x=0,y=0,hjust=0,vjust=0,size=unit(3,'pt'),color='#79AF97FF'
+    ,family='sans'
   )
 ```
 
-```{r Save data for Figure 5 of the main text, eval=FALSE, include=FALSE}
-# Figure 5a
-auroc_per_period_data %>%
-  select(-metric) %>%
-  select(timing, avg,everything()) %>%
-  mutate(timing=(0-timing)*4) %>%
-  arrange(timing) %>%
-  setNames(
-    c('Weeks before the end of pregnancy'
-      ,'AUROC 95% CI'
-      ,'Lower bound'
-      ,'Upper bound'
-      ,'Locally estimated scatterplot smoothing'
-      ,'Higher than AUROC of 0.5?')
-  ) %>%
-  
-  # Save data for Figure 5a.
-  write_csv('data/figure5a.csv')
-
-# Figure 5b part 1
-divnn_plot$base_data %>%
-  select(name,avg,lb,ub) %>%
-  setNames(
-    c('Ontology'
-      ,'AUROC 95% CI'
-      ,'Lower bound'
-      ,'Upper bound')
-  ) %>%
-  
-  # Save data for Figure 5b part 1.
-  write_csv('data/figure5b1.csv')
-
-# Figure 5b part 2.
-rbind(
-    ontoarray_tab(171,2)
-    ,ontoarray_tab(171,9)
-    ,ontoarray_tab(144,3)
-    ,ontoarray_tab(154,2)
-    ,ontoarray_tab(155,2)
-    ,ontoarray_tab(167,3)
-    ,ontoarray_tab(167,6)
-    ,ontoarray_tab(167,7)
-    ,ontoarray_tab(149,3)
-  ) %>%
-  setNames(
-    c('Ontology'
-      ,'Channel'
-      ,colnames(.)[-1:-2])
-  ) %>%
-  
-  # Save data for Figure 5b part 2.
-  write_csv('data/figure5b2.csv')
-```
-
-```{r Save image of Figure 5 of the main text, eval=FALSE, include=FALSE}
+```{r figure-15, echo=FALSE, fig.cap='Exploratory data analysis', fig.height=8.26772, fig.width=7.08661}
 # fig.height=8.26772, fig.width=7.08661 on top of this chunk if shown here
 ggarrange(
     auroc_per_period
@@ -8736,14 +9955,15 @@ ggarrange(
     ,heights=c(2.26772,6)
     ,labels=c('a','b')
     ,ncol=1,nrow=2
-  ) +
-  ggsave(
-    filename="figure5.eps"
-    ,device=cairo_ps
-    ,width=180
-    ,height=210
-    ,unit='mm'
   )
+# +
+#   ggsave(
+#     filename="efigure15.eps"
+#     ,device=cairo_ps
+#     ,width=170
+#     ,height=170/190*221.67
+#     ,unit='mm'
+#   )
 ```
 
 ```{r Show complete non-zero ontotype, eval=FALSE, include=FALSE}
@@ -8752,215 +9972,35 @@ visualized_codes %>%
   kable_classic()
 ```
 
-## Web application
+Caption:
 
-The Source Data Spreadsheet for Figure 6 in the main text is available. After 
-the application was done (Figure 6 in the main text), we tried to adjust the 
-threshold to the maximum value, such that the data for population-level 
-performances are still available and the predictive value is also maximized 
-depending on the prediction result. The population-level data was the same with 
-internal validation (calibration split; *n*=21,506) which was used to plot the 
-ROC curve (Figure 3b in the main text). The threshold was 0.67 with positive 
-predictive value of 0.809 (95% CI 0.798 to 0.82). The sensitivity was 
-reasonably low (0.107, 95% CI 0.104 to 0.11) if using this threshold. But, from 
-a standpoint of prediction at individual level, a precise estimation is 
-important to determine whether a decision corresponding to this prediction can 
-be made with a good confidence. By default, the threshold is set at an optimum 
-value of 0.14 (sensitivity 0.494, 95% CI 0.489 to 0.5). Based on the predicted 
-probability case-by-case, a user can decide the threshold to adjust at.
+(a) area under the receiver operating characteristic curve (AUROC) of DI-VNN 
+every 4 weeks; (b) ontology (ONT) network and arrays of the DI-VNN. Showing the 
+best time window for the prediction by the DI-VNN (a) and AUROCs of >0.55 for 
+prediction using parts of the network architecture up to each layer on which a 
+node resides (b). Each node is a CliXO term. We only show distinguished output 
+arrays for a particular channel denoted by ‘z’. A feature in the array may tend 
+to positive or negative output, color-coded based on the gradient as shown, 
+including the feature description. Yellow squares in an array refer to a 
+feature if only its output is non-zero. A feature may not have this square, 
+e.g. assoc_A03 and 8602. ONT:154 is an example of a backpropagation effect 
+from ONT:171. CliXO, clique-extracted ontology; DI-VNN, deep-insight visible 
+neural network.
 
-From the reported timeline (Figure 6 in the main text), this subject is shown 
-predicted to deliver on October 18^th 2016, approximately. If the predicted 
-outcome is not PROM, the shaded area would be red; otherwise, turquoise color 
-is applied to the area as shown. It depicted population-level estimation of 
-true time of delivery for subjects that were also estimated to deliver within 
-11 weeks and predicted as PROM by the same threshold. The population-level data 
-was the same with internal validation (*n*=107,536) which was used to plot the 
-PC-RF estimation window (Figure 4b in the main text). By population-level 
-estimation, the time of delivery might be at the beginning up to the end of 
-October. Using threshold at 0.67, this population-level estimation was shifted 
-earlier for a week compared to that at 0.14. In addition, for illustration 
-purpose, just like a real-world setting, say we know the gestational age was 
-22-23 weeks’ gestation based on last menstrual period and ultrasound 
-examination. If this estimation model is precise for this case, the subject 
-would deliver at 33-34 weeks’ gestation, which is a preterm PROM.
-
-We also saw the medical history of this subject from the reported timeline 
-(Figure 6 in the main text). Up to the date of prediction, the prediction model 
-used these features: (1) A09 (diarrhea and gastroenteritis of presumed 
-infectious origin); (2) J069 (unspecified acute upper respiratory infection); 
-(3) K30 (dyspepsia); and (4) 8878 (diagnostic ultrasound of gravid uterus). On 
-the timeline, these were ordered from the most positive (top) to the most 
-negative (bottom) based on each output in the ontology array.
-
-In the prediction model, any of these features were classified in the ontology 
-arrays of ONT:158, ONT:169, ONT:176, and root, as depicted by the ontology 
-network (Figure 6 in the main text). We also identified the deepest ontology 
-that includes all features in the timeline, which is ONT:169, but the predicted 
-outcome based on this ontology is not PROM using the same threshold with that 
-of the root. A user also can see a predictive performance of any ontologies, 
-just like AUROC of the root (0.714, 95% CI 0.712 to 0.716). It is computed for 
-the pre-calibrated DI-VNN only, since the calibrated one only used the 
-predicted probability that was the output convoluted from the root ontology 
-array.
-
-Negative values at population level tend to event, as described in the previous 
-section. From the ontology array (Figure 6 in the main text), J069 (unspecified 
-acute upper respiratory infection) tends to event in that array, as shown as 
-mostly negative outputs in the timeline. This feature was also surrounded by 
-more negative outputs. A09 (diarrhea and gastroenteritis of presumed infectious 
-origin) also had a negative value, but, this feature and K30 (dyspepsia) were 
-surrounded by more positive outputs in the ontology array. If we apply the same 
-illustrative gestational age, these infectious diseases (J069 and A09) were 
-diagnosed respectively 10 and 4 weeks the start of pregnancy, as shown on the 
-timeline. Root is the only ontology that predicted PROM and included all 
-features in this subject. This is implied all of these features should be taken 
-together for the prediction. In addition, one may question why J069 
-(unspecified acute upper respiratory infection) tends to event while influenza 
-have the opposite effect (OR 0.995,95% CI 0.993 to 0.997; Table 13 in 
-Supplemental Spreadsheet). We found that influenza, which is causal_A28, did 
-not include J069 (Table 12 in Supplemental Spreadsheet). This implied specific 
-acute upper respiratory infection, such influenza, may not have the same effect 
-with that by the unspecified one on PROM.
-
-Beyond the root, the array of ontology ONT:169 is also shown (Figure 14). A09 
-and J069 had negative values. As described in the main text, these features 
-tend to an event. Respectively, the surrounding positive and negative values 
-were subtler in this ontology array. Since this filtered array is fed forward 
-to convolutional layers to be reduced each time passing a layer (see 
-Supplemental Video), the value of A09 and J069 were averaged along with the 
-adjacent values toward zero, opposite to event. In turn, this coincides with 
-lower AUROC in ONT:169 compared to that in root.
-
-```{r figure-13, echo=FALSE, fig.cap='Ontology ONT:169', fig.height=3.26772, fig.width=7.08661}
-ontoproperties1('169',widths=c(2,1),pointer_stroke=1.5,pointer_size=1.4)
-```
-
-```{r Save data for Figure 6 of the main text, eval=FALSE, include=FALSE}
-rbind(
-  
-    # Identity results
-    results$identity_results %>%
-      select(text) %>%
-      slice(-1) %>%
-      separate(text,c('information','description'),sep=': ')
-    
-    # Population-level estimates.
-    ,results$pop_est_data %>%
-      spread(column,value) %>%
-      slice(-1) %>%
-      select(2:3) %>%
-      setNames(c('information','description')) %>%
-      rbind(
-        visualization$ontonet$node %>%
-          filter(node=='root') %>%
-          mutate(
-            information='Area under receiver operating characteristics curve'
-            ,description=
-              paste0(round(avg,3),' 95% CI',round(lb,3),' to ',round(ub,3))
-          ) %>%
-          select(information,description)
-      )
-    
-    # Timeline
-    ,results$timeline_data %>%
-      arrange(admission_date,desc(level)) %>%
-      select(-level) %>%
-      unite(ontology_feature,ontology,feature,sep=':') %>%
-      mutate(
-        output=paste0('(',ifelse(fill>=0,'positive','negative'),')')
-      ) %>%
-      unite(description,ontology_feature,output,sep=' ') %>%
-      mutate(information=paste0('Timeline ',admission_date)) %>%
-      select(information,description)
-    
-    # Ontology network
-    ,app$outputs %>%
-      mutate_all(function(x)ifelse(x>app$threshold,1,0)) %>%
-      gather(name,prediction) %>%
-      mutate(
-        name=str_replace_all(name,'ONT','ONT:')
-        ,prediction=
-          factor(
-            ifelse(prediction==1,'event','nonevent')
-            ,c('nonevent','event')
-          )
-      ) %>%
-      mutate(
-        prediction=str_to_title(prediction) %>%
-          factor(c('Nonevent','Event'))
-      ) %>%
-      mutate(
-        case=
-          ifelse(
-            name
-            %in% (
-              app$ontoarray$representation %>%
-                app$ontoarray$ontotable() %>%
-                filter(feature%in%rownames(app$input)[!is.na(app$input$I1)]) %>%
-                pull(ontology)
-            )
-            ,'(including medical history)'
-            ,''
-          )
-      ) %>%
-      unite(description,name,prediction,case,sep=' ') %>%
-      mutate(information='Ontology prediction depicted on the network') %>%
-      select(information,description) %>%
-      arrange(desc(description))
-    
-    # Ontology array
-    ,app$ontoarray$representation %>%
-      app$ontoarray$ontotable() %>%
-      filter(str_remove_all(ontology,'ONT:')=='root') %>%
-      mutate(
-        z_lab=str_remove_all(z_lab,'=')
-        ,x=paste0('x',x)
-        ,y=paste0('y',y)
-        ,feature=ifelse(is.na(feature),'',feature)
-        ,yellow_square=
-          feature
-          %in% (
-            app$input %>%
-              filter(!is.na(I1)) %>%
-              rownames_to_column(var='feature') %>%
-              inner_join(
-                app$ontoarray$representation %>%
-                  app$ontoarray$ontotable()
-                ,by='feature'
-              ) %>%
-              pull(feature) %>%
-              .[!duplicated(.)]
-          )
-        ,yellow_square=ifelse(yellow_square,'- Yellow Square','')
-        ,fill=round(fill,3)
-      ) %>%
-      select(z_lab,x,y,feature,yellow_square,fill) %>%
-      arrange(z_lab,desc(x),y) %>%
-      unite(position,x,y,sep='.') %>%
-      unite(feature,feature,yellow_square,sep='') %>%
-      mutate(feature=ifelse(feature=='',feature,paste0('(',feature,')'))) %>%
-      unite(description,position,fill,feature,sep=' ') %>%
-      mutate(information=paste0('Ontology array ',z_lab)) %>%
-      select(information,description)
-  ) %>%
-  setNames(str_to_sentence(colnames(.))) %>%
-  
-  # Save data for Figure 6.
-  write_csv('data/figure6.csv')
-```
-
-```{r Save image of Figure 6 of the main text, eval=FALSE, include=FALSE}
+\newpage
+```{r figure-16, echo=FALSE, fig.cap='A case example', fig.height=8.26772, fig.width=7.08661}
 # fig.height=8.26772, fig.width=7.08661 on top of this chunk if shown here
 ggarrange(
     ggarrange(
       results$identity_results %>%
         ggplot(aes(column,row)) +
-        geom_text(aes(label=text),hjust=0,vjust=1,size=3) +
+        geom_text(aes(label=text),hjust=0,vjust=1,size=3,family='sans') +
         geom_blank(data=data.frame(column=3,row=7)) +
         scale_y_reverse() +
         theme_blank() +
-        theme(title=element_text(size=unit(8,'pt'),face='bold')) +
+        theme(
+          title=element_text(size=unit(8,'pt'),face='bold',family='sans')
+        ) +
         ggtitle('Identity and results')
       ,results$pop_est
       ,widths=c(1,1)
@@ -8970,56 +10010,48 @@ ggarrange(
     ,ontoproperties1('root',widths=c(2,1),pointer_stroke=1.5,pointer_size=1.4)
     ,heights=c(1.7,3.3,3.26772)
     ,ncol=1,nrow=3
-  ) +
-  ggsave(
-    filename="figure6.eps"
-    ,device=cairo_ps
-    ,width=180
-    ,height=210
-    ,unit='mm'
   )
+# +
+#   ggsave(
+#     filename="efigure16.eps"
+#     ,device=cairo_ps
+#     ,width=190
+#     ,height=190/190*221.67
+#     ,unit='mm'
+#   )
 ```
 
-# Discussion
+Caption:
 
-From causal inference and feature extraction to model selection and 
-exploration, we only used an internal validation set. But, the model is 
-evaluated using four external validation sets with a large sample size (8,778 
-visits and 3,352 subjects for events only). This has found the DI-VNN 
-prediction was robust and the PC-RF estimation was precise within a reasonable 
-time window. All of these models used only a medical history of a patient, 
-which is easily extracted from the electronic medical record systems of most 
-healthcare providers worldwide. Neither a biomarker testing nor even a 
-laboratory test is needed. Eventually, the best models are ready to use for 
-any healthcare providers using an open-access web application without changing 
-their electronic health record systems and revealing private data.
+This is an example for predicting prelabor rupture of membranes (PROM) by 
+DI-VNN and estimating of the time of delivery by PC-RF. An ontology term in the 
+timeline is prefixed by ONT, followed by the number and one of the feature 
+members. 8878, diagnostic ultrasound of gravid uterus; A09, diarrhea and 
+gastroenteritis of presumed infectious origin; AUROC, area under receiver 
+operating characteristics curve; DI-VNN, deep-insight visible neural network; 
+J069, unspecified acute upper respiratory infection; K30, dyspepsia; PC, 
+principal component; RF, random forest.
 
-There were four novel approaches in this study. First, we extracted a medical 
-history as a quantity (Equation 1 in the main text) that is sensible to be 
-differential through time for affecting a future health state. We applied 
-Kaplan-Meier estimator to compute a historical rate with linear interpolation. 
-A medical history of a patient is often isolated within a healthcare provider, 
-not allowing other healthcare providers to utilize it to improve patient 
-outcome. By population-level historical rate, the isolated data are possible to 
-utilize indirectly for each condition in a medical record of a patient. We also 
-resolved a resampling method for PCs that are used for prediction (Equation 4 
-in the main text). To the best of our knowledge, most prediction models that 
-used PCs, if not all, did not apply resampling when inferencing the PCs. 
-Furthermore, it is not seldom to infer PCs before splitting the dataset into 
-training and validation subsets, which exposed to a risk of overfitting. It may 
-cause a prediction model, that uses PCs, is not robust for samples beyond the 
-training set. This situation is reasonable because PCs are typically used for 
-statistical inference and unsupervised machine learning instead of a prediction 
-model or supervised machine learning. Resampling or validation splitting are 
-more well-known in the latter task. Eventually, we also introduced a pipeline 
-to construct a data-driven CNN architecture using non-image data with feature 
-selection by differential analysis that deals high-dimensionality problem. 
-DI-VNN also enables a human user to critically appraise and explore the 
-prediction result case-by-case using extra data knowledge. This is similar to a 
-common, long-standing practice for a doctor to learn and interpret clinical 
-data for assessment of a patient’s condition. In addition, we applied a 
-systematic human learning applying a modified snowball sampling (Algorithm 1 in 
-the main text), This was intended to draw a causal diagram of PROM as the 
-assumption and used statistical learning to verify that assumption using our 
-data by IPW, one of G-methods for causal inference on time-varying exposure 
-data.
+\newpage
+```{r figure-17, echo=FALSE, fig.cap='Ontology ONT:169', fig.height=3.26772, fig.width=7.08661}
+ontoproperties1('169',widths=c(2,1),pointer_stroke=1.5,pointer_size=1.4)
+# +
+#   ggsave(
+#     filename="efigure17.eps"
+#     ,device=cairo_ps
+#     ,width=190
+#     ,height=190/7.08661*3.26772
+#     ,unit='mm'
+#   )
+```
+
+\newpage
+```{r table-13, echo=FALSE}
+cauinf_tab %>%
+  kable(caption='Association tests') %>%
+  kable_classic() %>%
+  add_footnote(
+    c('P<.05; ** P<.01; *** P<.001; CI, confidence interval')
+    ,'symbol'
+  )
+```

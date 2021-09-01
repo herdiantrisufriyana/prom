@@ -44,7 +44,7 @@ ontoarray=function(ontotype,channel,ncol,legend=F){
       aes(label=feature)
       ,color='white'
       ,family='sans'
-      ,size=unit(3,'pt')
+      ,size=unit(2.5,'pt')
       ,hjust='inward'
       ,vjust='inward'
       ,nudge_x=0.1
@@ -58,7 +58,7 @@ ontoarray=function(ontotype,channel,ncol,legend=F){
     coord_equal() +
     scale_fill_gradientn(
       "- < output > +"
-      ,colors=c('#E64B35FF',"black",'#00A087FF')
+      ,colors=c('#B24745FF',"black",'#79AF97FF')
       ,na.value=NA
       ,limit=c(-max(abs(ontoarrays$fill),na.rm=T)
                ,max(abs(ontoarrays$fill),na.rm=T))

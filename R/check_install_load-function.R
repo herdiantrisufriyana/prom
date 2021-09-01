@@ -5,7 +5,7 @@
 #' @param pkg Package, a character of the name.
 #' @param version Version, a character of the version.
 #' @param repo Repository, a character of the repository which are cran, bioc, 
-#' and github.
+#' devtools, and github.
 #' @param load Load, a logical whether the package is loaded.
 #'
 #' @details
@@ -14,7 +14,11 @@
 #' @return None.
 #' 
 
-check_install_load=function(pkg,version,repo=c('cran','bioc','github'),load=T){
+check_install_load=function(pkg
+                            ,version
+                            ,repo=c('cran','bioc','devtools','github')
+                            ,bioc_version='3.11'
+                            ,load=T){
   
   # Check if this package is already installed; otherwise, set install true
   if(pkg%in%installed.packages()[,1]){
@@ -35,7 +39,9 @@ check_install_load=function(pkg,version,repo=c('cran','bioc','github'),load=T){
     if(repo=='cran'){
       install.packages(pkg)
     }else if(repo=='bioc'){
-      BiocManager::install(pkg,update=F)
+      BiocManager::install(pkg,version=bioc_version,update=F)
+    }else if(repo=='devtools'){
+      devtools::install_version(pkg,version,upgrade=F)
     }else{
       devtools::install_github(paste0(repo,'/',pkg),upgrade=F)
     }

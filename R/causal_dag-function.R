@@ -83,10 +83,12 @@ causal_dag=function(exposure,legend=T){
       ,alpha=0.75
       ,show.legend=F
     ) +
-    scale_color_npg() +
+    scale_color_jama() +
     theme_blank() +
     theme(
-      plot.caption=element_text(size=unit(9,'pt'))
+      plot.caption=element_text(size=unit(9,'pt'),family='sans')
+      ,legend.title=element_text(family='sans')
+      ,legend.text=element_text(family='sans')
       ,legend.position='bottom'
     ) +
     labs(

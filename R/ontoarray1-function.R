@@ -181,7 +181,7 @@ ontoarray1=function(tidy_set,ontonet,batch_size){
       coord_equal() +
       scale_fill_gradientn(
         "- < output > +"
-        ,colors=c('#E64B35FF',"black",'#00A087FF')
+        ,colors=c('#B24745FF',"black",'#79AF97FF')
         ,na.value=NA
         ,limit=c(-ontoarray$max_fill[1],ontoarray$max_fill[1])
       ) +

@@ -1,4 +1,4 @@
-# Human and machine learning methods of prognostic prediction for prelabor rupture of membranes and estimation of the time of delivery: a nationwide development, validation, and deployment using medical histories
+# Prognostication for prelabor rupture of membranes and the time of delivery in nationwide insured women: development, validation, and deployment
 
 Herdiantri Sufriyana, MD, MSc; a, b Yu-Wei Wu, PhD; a, c Emily Chia-Yu Su, PhD 
 a, c, d, *
@@ -19,8 +19,7 @@ https://www.medrxiv.org/content/10.1101/2021.06.16.21258884v1
 
 The journal article will be published soon.
 
-Supplementary Information and other files can be found in any of above 
-publications.
+Supplement and other files can be found in any of above publications.
 
 
 ## System requirements
@@ -46,7 +45,7 @@ steps in the data analysis, including the DI-VNN, which are:
 and Python library)
 For model deployment, we used Shiny Server 1.4.16.958 and Node.js 12.20.0. 
 Details on other R package versions and all of the source codes (vignette) for 
-the data analysis are available (Table 6 in Supplementary Information).
+the data analysis are available (eTable 6 in the Supplement).
 
 To reproduce our work, a set of hardware requirements may be needed. We used a 
 single machine for all models, except the DI-VNN, with 16 logical processors 
@@ -86,15 +85,16 @@ for use are available in R Markdown (prom.Rmd) and R Script (prom.R), and
 other files in this repository.
 
 The R Markdown (.Rmd) contains the same texts with this document but including 
-the programming codes for the data analysis in-between as shown in 
-Supplementary Information. The codes for core steps in the analysis pipeline 
-are also provided exclusively in an R Script (.R). The codes beyond the core 
-steps were used for analytic decision or creating tables or figures. These are 
-shown to provide details on how data are processed to construct all tables and 
-figures in both the main text and this Supplementary Information, including 
-those in Source Data Spreadsheets (.xlsx) for all figures in the main text and 
-those in a single Supplemental Spreadsheet (.xlsx) with multiple tabs for all 
-tables in this Supplementary Information.
+the programming codes for the data analysis in-between as shown in the 
+Supplement. An exception is subsection of "Comparison to previous studies". The 
+codes for core steps in the analysis pipeline are also provided exclusively in 
+an R Script (.R). The codes beyond the core steps were used for analytic 
+decision or creating tables or figures. These are shown to provide details on 
+how data are processed to construct all tables and figures in both the main text and this Supplement, including those in Appendix of this Supplement (eTables 1 
+to 5, and 13) and those shown only in the R Markdown due to the complexity 
+(eTables 6 to 12 and 14 to 21). We also provided a 5-minute Video 1 to briefly 
+explain technical details on deep-insight visible neural network (DI-VNN) 
+pipeline.
 
 Nevertheless, one cannot run the markdown or script unless having the raw 
 dataset. To get raw data, one need to request an access from the BPJS Kesehatan 
